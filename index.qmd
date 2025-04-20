@@ -1,0 +1,30 @@
+---
+title: "MEMELAND"
+date: 2025/04/20
+date-format: long
+date-modified: last-modified
+# image: Materials/memeland_icon.png
+about:
+  id: hero-heading
+  template: solana
+  image-shape: rounded
+  links:
+    - icon: link
+      text: Website
+      href: https://memeland-erc.github.io/
+    - icon: github
+      text: Github
+      href: https://github.com/MEMELAND-ERC
+---
+
+::: {#hero-heading}
+
+::: {.callout-tip}
+### General Information
+
+MEMELAND is ERC SYNERGY project starting from July 2025. 
+:::
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet eu ex non luctus. Nam ligula diam, ornare quis velit sit amet, sollicitudin tempor eros. Donec id odio at lectus facilisis dapibus eget nec lectus. Quisque a luctus dolor. Nam finibus, ex id placerat consequat, justo urna vehicula mi, eu faucibus tortor turpis eu sapien. Donec lacinia vestibulum eros, non sodales justo. Quisque a rutrum justo, ac congue nunc. In eleifend tortor posuere metus ullamcorper venenatis. Nunc tristique ipsum tempus, sodales justo at, gravida erat. Duis eget sodales ex. Donec non ante eu lorem iaculis volutpat. Sed bibendum, dui nec luctus finibus, quam erat porta ex, id auctor ante enim ut risus. Morbi quis pellentesque nisi, ac convallis libero.
+
+:::
