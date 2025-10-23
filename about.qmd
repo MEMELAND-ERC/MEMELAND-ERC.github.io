@@ -6,6 +6,20 @@ date-modified: last-modified
 
 # About MEMELAND
 
+:::: {.columns}
+
+::: {.column width="33%"}
+:::
+
+::: {.column width="33%"}
+![](Materials/Logos/MEMELAND.png)
+:::
+
+::: {.column width="33%"}
+:::
+
+::::
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tellus at urna mollis luctus ut id nulla. Ut congue mollis leo, a dictum nisi pharetra eu. Curabitur pellentesque gravida consequat. In placerat mi vitae iaculis tincidunt. Aliquam sodales diam vel ullamcorper dignissim. Proin erat sem, accumsan id aliquet vitae, finibus et arcu. Vestibulum lacinia nec metus a venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 
 Curabitur ultricies est et massa sollicitudin, nec suscipit libero hendrerit. Vestibulum sapien erat, cursus ut posuere venenatis, vehicula vel turpis. Duis quis arcu vitae tellus bibendum accumsan. Donec elementum efficitur tincidunt. Nullam id urna gravida, placerat libero at, ultricies libero. Vivamus erat eros, egestas ac enim vel, placerat tempor lorem. Aliquam egestas iaculis nisl sed hendrerit. Maecenas id viverra libero, at eleifend neque.
