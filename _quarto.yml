@@ -4,42 +4,40 @@ project:
 
 website:
   title: "MEMELAND"
-    
+
+  page-footer:
+    left: "&copy; Copyright 2025, MEMELAND"
+    right: "This page is built by Ondřej Mottl with ❤️ and [Quarto](https://quarto.org/)."
+
   site-url: https://memeland-erc.github.io
   repo-url: https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io
   issue-url: https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues
+  repo-actions: source
+
+  image: Materials/Logos/MEMELAND.png
+  favicon: Materials/Logos/MEMELAND.png
 
   page-navigation: true
   back-to-top-navigation: true
 
-  # image: Materials/memeland_icon.png
-  # favicon: Materials/memeland_icon.png
-
-  page-footer: 
-    left: "&copy; Copyright 2025, MEMELAND"
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/) by Ondřej Mottl."
-  
   navbar:
+    title: MEMELAND
+    search: true
+    tools:
+      - icon: github
+        href: https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io
     left:
-      - text: Home
-        href: index.qmd
-    
       - text: About
         href: about.qmd
 
       - text: Team
         href: team.qmd
 
-      - text: Join us!
-        href: join_us.qmd      
+      - text: Contact
+        href: join_us.qmd
 
 format:
   html:
     theme:
-      - minty
-      - styles.scss
-    toc: true
-    toc-depth: 2
-
-
-
+      - custom_style.scss
+    toc: false

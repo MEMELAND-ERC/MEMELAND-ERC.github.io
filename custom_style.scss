@@ -1,0 +1,226 @@
+/*-- scss:defaults --*/
+
+// Vertical spacing between blocks of text
+$smallMargin: 5px;
+$blockMargin: 10px;
+$largeMargin: 20px;
+
+// Import MEMELAND colors
+@import "_colors";
+
+// Define missing $black variable for compatibility
+$black: #000000 !default;
+
+// Colors (using MEMELAND color scheme)
+$body-color: $black; // Text colour: black (from visual identity)
+$backgroundColor: $white;
+$heading-color: $black-slug; // Title colour: Black Slug (from visual identity)
+
+// Import MEMELAND fonts
+@import "_fonts";
+
+// Typography (MEMELAND Visual Identity)
+$mainFontSize: 12pt;
+$body-line-height: 1.5;
+
+$headdingMargin: 0;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextShadow: none;
+$headingFontWeight: bold; // Title font: Garamond bold
+
+$heading1Size: 36pt;
+$heading2Size: 34pt;
+$heading3Size: 32pt;
+$heading4Size: 20pt;
+$heading5Size: 16pt;
+$heading6Size: 14pt;
+
+/*-- scss:rules --*/
+
+/* General text styling */
+body {
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  line-height: $body-line-height;
+  color: $body-color;
+  background-color: $backgroundColor;
+}
+
+a {
+  color: $brown !important;
+  text-decoration: underline !important;
+
+  &:hover {
+    color: $white !important;
+    background-color: $brown !important;
+  }
+}
+
+/* Headings */
+h1 {
+  font-family: $headingFont;
+  font-size: $heading1Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  color: $heading-color;
+  margin-top: $largeMargin;
+  text-shadow: 3px 4px 5px $grey;
+}
+
+h2 {
+  font-family: $headingFont;
+  font-size: $heading2Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  color: $heading-color;
+  margin-top: $largeMargin;
+}
+
+h3 {
+  font-family: $headingFont;
+  font-size: $heading3Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  color: $heading-color;
+  margin-top: $largeMargin;
+}
+
+h4 {
+  font-family: $headingFont;
+  font-size: $heading4Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  color: $heading-color;
+  margin-top: $blockMargin;
+}
+
+h5 {
+  font-family: $headingFont;
+  font-size: $heading5Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  color: $heading-color;
+  margin-top: $smallMargin;
+}
+
+h6 {
+  font-family: $headingFont;
+  font-size: $heading6Size;
+  line-height: $headingLineHeight;
+  letter-spacing: $headingLetterSpacing;
+  font-weight: $headingFontWeight;
+  color: $heading-color;
+  margin-top: $smallMargin;
+}
+
+/* Code block */
+pre,
+code {
+  background-color: lighten($grey, 20%) !important;
+  color: $black;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+
+pre {
+  overflow: auto;
+  padding: $smallMargin;
+}
+
+code {
+  background-color: lighten($grey, 20%) !important;
+  padding: 0;
+}
+
+pre code {
+  background-color: transparent !important;
+  padding: $smallMargin;
+}
+
+pre a,
+code a {
+  color: $brown !important;
+  text-decoration: underline !important;
+
+  &:hover {
+    color: $white !important;
+    background-color: $brown !important;
+  }
+}
+
+/* List styling */
+ul {
+  padding-left: $largeMargin;
+  margin-left: $largeMargin;
+}
+
+ul ul {
+  padding-left: $largeMargin;
+  margin-left: $largeMargin;
+}
+
+/* Navbar */
+.navbar {
+  background: $green !important;
+  font-family: $headingFont !important;
+  font-size: 20px !important;
+  color: $black !important;
+  padding: 10px 0 !important;
+  a {
+    color: $white !important;
+    text-decoration: none !important;
+    padding: 10px !important;
+    &:hover {
+      text-decoration: underline !important;
+      background-color: $green !important;
+    }
+  }
+}
+
+.sidebar {
+  color: $black !important;
+  a {
+    color: $brown !important;
+    text-decoration: underline !important;
+    &:hover {
+      color: $white !important;
+      background-color: $brown !important;
+    }
+  }
+}
+
+.TOC {
+  color: $black !important;
+  a {
+    color: $brown !important;
+    text-decoration: underline !important;
+    &:hover {
+      color: $white !important;
+      background-color: $brown !important;
+    }
+  }
+}
+
+
+
+
+/* Language dropdown menu styling */
+.navbar .dropdown-menu {
+  background-color: $green !important;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: $white !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+  background-color: $green !important;
+  color: $white !important;
+}

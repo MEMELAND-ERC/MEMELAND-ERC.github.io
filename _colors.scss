@@ -1,0 +1,78 @@
+// MEMELAND Color Scheme (from visual identity)
+// Base colors
+$white: #ffffff !default;
+$black: #000000 !default;
+
+// MEMELAND Brand Colors
+$black-slug: #3c2912 !default; // R60 G41 B18 - Title colour
+$grey: #6a757d !default; // R106 G117 B125
+$green: #8a9a5b !default; // R138 G154 B91
+$yellow: #cccc66 !default; // R204 G204 B102
+$brown: #896a2b !default; // R137 G106 B43
+
+// Color classes for text color
+.text-color-white { color: $white !important; }
+.text-color-black { color: $black !important; }
+.text-color-black-slug { color: $black-slug !important; }
+.text-color-grey { color: $grey !important; }
+.text-color-green { color: $green !important; }
+.text-color-yellow { color: $yellow !important; }
+.text-color-brown { color: $brown !important; }
+
+// Color classes for background
+.text-background-white {
+  background-color: $white;
+  color: $black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.text-background-black {
+  background-color: $black;
+  color: $white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.text-background-grey {
+  background-color: $grey;
+  color: $black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.text-background-black-slug {
+  background-color: $black-slug;
+  color: $white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.text-background-grey {
+  background-color: $grey;
+  color: $white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.text-background-green {
+  background-color: $green;
+  color: $white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.text-background-yellow {
+  background-color: $yellow;
+  color: $black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.text-background-brown {
+  background-color: $brown;
+  color: $white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
