@@ -7,6 +7,20 @@
     "text": "Team\nWIP\n\n\n\n\n Back to top"
   },
   {
+    "objectID": "join_us.html",
+    "href": "join_us.html",
+    "title": "Join Us",
+    "section": "",
+    "text": "Join Us\nWIP\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About MEMELAND",
+    "section": "",
+    "text": "About MEMELAND\n\n\n\n\n\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tellus at urna mollis luctus ut id nulla. Ut congue mollis leo, a dictum nisi pharetra eu. Curabitur pellentesque gravida consequat. In placerat mi vitae iaculis tincidunt. Aliquam sodales diam vel ullamcorper dignissim. Proin erat sem, accumsan id aliquet vitae, finibus et arcu. Vestibulum lacinia nec metus a venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\nCurabitur ultricies est et massa sollicitudin, nec suscipit libero hendrerit. Vestibulum sapien erat, cursus ut posuere venenatis, vehicula vel turpis. Duis quis arcu vitae tellus bibendum accumsan. Donec elementum efficitur tincidunt. Nullam id urna gravida, placerat libero at, ultricies libero. Vivamus erat eros, egestas ac enim vel, placerat tempor lorem. Aliquam egestas iaculis nisl sed hendrerit. Maecenas id viverra libero, at eleifend neque.\nMorbi non diam enim. Fusce nec pellentesque massa, in semper massa. Fusce et ante quis purus consectetur consectetur at a risus. Curabitur condimentum consequat ligula, ut auctor ligula iaculis dapibus. Ut ut laoreet orci. Aenean euismod pulvinar urna a porttitor. Cras convallis justo et elit vehicula tristique. Phasellus eget libero non erat interdum imperdiet quis bibendum purus. Praesent est tortor, bibendum id eros lobortis, euismod aliquet justo. Aliquam erat volutpat. Nunc ultricies velit quis quam hendrerit, vel consectetur lectus sollicitudin. Praesent fringilla lobortis tortor quis porttitor. Cras sed varius lorem. Aliquam posuere ante eget justo imperdiet, at scelerisque sapien laoreet.\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "MEMELAND",
@@ -14,17 +28,17 @@
     "text": "Website\n  \n  \n    \n     Github\n  \n\n      \n\n\n\n\n\n\nGeneral Information\n\n\n\nMEMELAND is ERC SYNERGY project starting from July 2025.\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet eu ex non luctus. Nam ligula diam, ornare quis velit sit amet, sollicitudin tempor eros. Donec id odio at lectus facilisis dapibus eget nec lectus. Quisque a luctus dolor. Nam finibus, ex id placerat consequat, justo urna vehicula mi, eu faucibus tortor turpis eu sapien. Donec lacinia vestibulum eros, non sodales justo. Quisque a rutrum justo, ac congue nunc. In eleifend tortor posuere metus ullamcorper venenatis. Nunc tristique ipsum tempus, sodales justo at, gravida erat. Duis eget sodales ex. Donec non ante eu lorem iaculis volutpat. Sed bibendum, dui nec luctus finibus, quam erat porta ex, id auctor ante enim ut risus. Morbi quis pellentesque nisi, ac convallis libero.\n\n    \n  \n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About MEMELAND",
+    "objectID": "Materials/MEMELAND_visual_identity.html",
+    "href": "Materials/MEMELAND_visual_identity.html",
+    "title": "MEMELAND visual identity",
     "section": "",
-    "text": "About MEMELAND\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tellus at urna mollis luctus ut id nulla. Ut congue mollis leo, a dictum nisi pharetra eu. Curabitur pellentesque gravida consequat. In placerat mi vitae iaculis tincidunt. Aliquam sodales diam vel ullamcorper dignissim. Proin erat sem, accumsan id aliquet vitae, finibus et arcu. Vestibulum lacinia nec metus a venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\nCurabitur ultricies est et massa sollicitudin, nec suscipit libero hendrerit. Vestibulum sapien erat, cursus ut posuere venenatis, vehicula vel turpis. Duis quis arcu vitae tellus bibendum accumsan. Donec elementum efficitur tincidunt. Nullam id urna gravida, placerat libero at, ultricies libero. Vivamus erat eros, egestas ac enim vel, placerat tempor lorem. Aliquam egestas iaculis nisl sed hendrerit. Maecenas id viverra libero, at eleifend neque.\nMorbi non diam enim. Fusce nec pellentesque massa, in semper massa. Fusce et ante quis purus consectetur consectetur at a risus. Curabitur condimentum consequat ligula, ut auctor ligula iaculis dapibus. Ut ut laoreet orci. Aenean euismod pulvinar urna a porttitor. Cras convallis justo et elit vehicula tristique. Phasellus eget libero non erat interdum imperdiet quis bibendum purus. Praesent est tortor, bibendum id eros lobortis, euismod aliquet justo. Aliquam erat volutpat. Nunc ultricies velit quis quam hendrerit, vel consectetur lectus sollicitudin. Praesent fringilla lobortis tortor quis porttitor. Cras sed varius lorem. Aliquam posuere ante eget justo imperdiet, at scelerisque sapien laoreet.\n\n\n\n\n Back to top"
+    "text": "Title font: Garamond bold Title colour: Black Slug #3c2912 R60 G41 B18\n\n\nDark bluish-grey #6a757d R106 G117 B125 Moss Green #8a9a5b R138 G154 B91 Wild Willow #cccc66 R204 G204 B102 Corn Harvest #896a2b R137 G106 B43 Black Slug #3c2912 R60 G41 B18 Text font: Palatino lino type Text colour: black"
   },
   {
-    "objectID": "join_us.html",
-    "href": "join_us.html",
-    "title": "Join Us",
+    "objectID": "Materials/MEMELAND_visual_identity.html#colour-scheme",
+    "href": "Materials/MEMELAND_visual_identity.html#colour-scheme",
+    "title": "MEMELAND visual identity",
     "section": "",
-    "text": "Join Us\nWIP\n\n\n\n\n Back to top"
+    "text": "Dark bluish-grey #6a757d R106 G117 B125 Moss Green #8a9a5b R138 G154 B91 Wild Willow #cccc66 R204 G204 B102 Corn Harvest #896a2b R137 G106 B43 Black Slug #3c2912 R60 G41 B18 Text font: Palatino lino type Text colour: black"
   }
 ]
