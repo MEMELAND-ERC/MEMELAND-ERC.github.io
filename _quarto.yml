@@ -31,10 +31,11 @@ website:
         href: about.qmd
 
       - text: Team
-        href: team.qmd
-
-      - text: Contact
-        href: join_us.qmd
+        menu:
+          - text: Research Teams
+            href: teams.qmd
+          - text: People
+            href: people.qmd
 
 format:
   html:
