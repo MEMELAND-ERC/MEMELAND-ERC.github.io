@@ -1,30 +1,28 @@
 ---
-title: "MEMELAND"
 date: 2025/04/20
 date-format: long
 date-modified: last-modified
-# image: Materials/memeland_icon.png
-about:
-  id: hero-heading
-  template: solana
-  image-shape: rounded
-  links:
-    - icon: link
-      text: Website
-      href: https://memeland-erc.github.io/
-    - icon: github
-      text: Github
-      href: https://github.com/MEMELAND-ERC
 ---
 
-::: {#hero-heading}
+:::: {.columns}
+
+::: {.column width="70%"}
+# Molecular Ecology of Medieval European Landscapes 
+:::
+
+::: {.column width="30%"}
+![](Materials/Logos/MEMELAND.png)
+:::
+
+::::
 
 ::: {.callout-tip}
 ### General Information
 
 MEMELAND is ERC SYNERGY project starting from July 2025. 
+
+Principal Investigators: [Prof. Tony G Brown](/people.qmd#prof.-tony-g-brown), Prof. [Nathalie Dubois](/people.qmd#prof.-nathalie-dubois), [Prof. Helena Hamerow](/people.qmd#prof.-helena-hamerow), [Prof. Dr. Andreas Lang](/people.qmd#prof.-dr.-andreas-lang), and [Dr. Ondřej Mottl](/people.qmd#dr.-ondřej-mottl) (partner).
+
 :::
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet eu ex non luctus. Nam ligula diam, ornare quis velit sit amet, sollicitudin tempor eros. Donec id odio at lectus facilisis dapibus eget nec lectus. Quisque a luctus dolor. Nam finibus, ex id placerat consequat, justo urna vehicula mi, eu faucibus tortor turpis eu sapien. Donec lacinia vestibulum eros, non sodales justo. Quisque a rutrum justo, ac congue nunc. In eleifend tortor posuere metus ullamcorper venenatis. Nunc tristique ipsum tempus, sodales justo at, gravida erat. Duis eget sodales ex. Donec non ante eu lorem iaculis volutpat. Sed bibendum, dui nec luctus finibus, quam erat porta ex, id auctor ante enim ut risus. Morbi quis pellentesque nisi, ac convallis libero.
-
-:::
+Molecular Ecology of Medieval European Landscapes (MEMELAND) will pioneer Europe’s first species-level ecological history from the Roman era to the present, revealing how medieval land use continues to shape modern landscapes and biodiversity. By combining sedimentary ancient DNA (sedaDNA), lipid biomarkers, robust chronologies, and archaeobotanical evidence from 50 paired lake sites across northern and central Europe, the project will generate a uniquely detailed record of plants, animals, and associated pathogens, and translate this long-term perspective into evidence for conservation, land management, and heritage-informed restoration under climate change.

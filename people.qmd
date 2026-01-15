@@ -1,0 +1,120 @@
+---
+date: 2026/01/15
+date-format: long
+date-modified: last-modified
+sidebar: false
+---
+
+# MEMELAND People
+
+![Kick off meeting, Lorch 2025](/Materials/photos/Lorch_2025_crop.jpg)
+
+## People (alphabetical order)
+
+### Prof. Inger G Alsos <img src="https://en.uit.no/Content/564023/cache=20222601170833/transformation=kompJpgHighUtlistingLowComp/Z__Bilder_Feltbilder%20av%20meg%20selv__MG_5810_potrett.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Tromso-CI-gold)](/teams.qmd#the-arctic-university-of-norway)
+- 🏦Tromsø Museum, Arctic University of Norway
+- 📬email: inger.g.alsos(at)uit.no
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--8610--1085-8a9a5b.svg)](https://orcid.org/0000-0002-8610-1085)
+- [🔗personal webiste](https://en.uit.no/ansatte/inger.g.alsos)
+
+### Prof. Amy Bogaard <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/ab_2023.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/teams.qmd#university-of-oxford)
+- 🏦University of Oxford
+- 📬email: amy.bogaard(at)arch.ox.ac.uk
+
+### Prof. Tony G Brown <img src="https://uit.no/Content/602764/cache=20222601171113/transformation=kompJpgHighUtlistingLowComp/D__Tony%20Brown.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Tromso-PI-gold)](/teams.qmd#the-arctic-university-of-norway)
+- 🏦Tromsø Museum, Arctic University of Norway
+- 📬email: antony.g.brown(at)uit.no
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0003--2600--6603-8a9a5b.svg)](https://orcid.org/0000-0002-1990-4654)
+- [🔗personal webiste](https://uit.no/ansatte/antony.g.brown)
+
+### Dr. Michael Charles <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/charles.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/teams.qmd#university-of-oxford)
+- 🏦University of Oxford
+- 📬email: michael.charles(at)arch.ox.ac.uk
+
+### Fabian Christopher Dremel <img src="https://i1.rgstatic.net/ii/profile.image/1084162140319744-1635495805012_Q128/Fabian-Dremel.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Salzburg-Postdoc-silver)](/teams.qmd#university-of-salzburg)
+- 🏦University of Salzburg
+- 📬email:fabian.dremel(at)plus.ac.at
+- [![ORCID](https://img.shields.io/badge/orcid-0009--0004--3897--0413-8a9a5b.svg)](https://orcid.org/0009-0004-3897-0413)
+- [🔗personal webiste](https://uni-salzburg.elsevierpure.com/en/persons/fabian-christopher-dremel/)
+
+### Prof. Nathalie Dubois <img src="/Materials/Faces/Nathalie.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Eawag-PI-gold)](/teams.qmd#swiss-federal-institute-of-aquatic-science-and-technology-eawag)
+- 🏦Eawag (Department of Surface Waters Research & Management)
+- 📬email: 	nathalie.dubois(at)eawag.ch
+
+### Katja Häkli
+
+- 👤[![](https://img.shields.io/badge/Tromso-Technician-brown)](/teams.qmd#the-arctic-university-of-norway)
+- 🏦Tromsø Museum, Arctic University of Norway
+
+### Prof. Helena Hamerow <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/st_cross_portraits_by_john_cairns_20.3.24_hamerow_helena.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Oxford-PI-gold)](/teams.qmd#university-of-oxford)
+- 🏦University of Oxford
+- 📬email: helena.hamerow(at)arch.ox.ac.uk
+
+### Dr. Oliver Kern
+
+- 👤[![](https://img.shields.io/badge/Tromso-Postdoc-silver)](/teams.qmd#the-arctic-university-of-norway)
+- 🏦Tromsø Museum, Arctic University of Norway
+- 📬email: oliver.kern(at)uit.no
+
+### Prof. Dr. Andreas Lang <img src="https://www.plus.ac.at/wp-content/uploads/2021/02/Lang_01.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Salzburg-PI-gold)](/teams.qmd#university-of-salzburg)
+- 🏦University of Salzburg
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--1604--4898-8a9a5b.svg)](https://orcid.org/0000-0002-1604-4898)
+- 📬email: Andreas.Lang(at)plus.ac.at
+- [🔗personal webiste](https://uni-salzburg.elsevierpure.com/de/persons/andreas-lang-4/)
+
+### Dr. Ying Liu <img src="/Materials/Faces/Ying.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Tromso-Postdoc-silver)](/teams.qmd#the-arctic-university-of-norway)
+- 🏦Tromsø Museum, Arctic University of Norway
+- 📬email: ying.liu(at)uit.no
+
+### Dr. Ondřej Mottl <img src="/Materials/Faces/Ondrej.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Charles_University-Partner-gold)](/teams.qmd#charles-university)
+- 🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic
+- 📬email: ondrej.mottl(at)gmail.com
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--9796--5081-8a9a5b.svg)](https://orcid.org/0000-0002-9796-5081)
+- [🔗personal webiste](https://ondrejmottl.github.io/)
+
+### Marcel-Luciano Ortler <img src="https://www.plus.ac.at/wp-content/uploads/2025/11/Marcel2.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Salzburg-Postdoc-silver)](/teams.qmd#university-of-salzburg)
+- 🏦University of Salzburg
+- 📬email: marcel-luciano.ortler(at)plus.ac.at
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--2732--9514-8a9a5b.svg)](https://orcid.org/0000-0002-2732-9514)
+
+### Elizabeth Stroud <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/liz_stroudcrop.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/teams.qmd#university-of-oxford)
+- 🏦University of Oxford
+- 📬email: elizabeth.stroud(at)arch.ox.ac.uk
+
+### David Zezula <img src="https://www.plus.ac.at/wp-content/uploads/2021/02/DSC_3638_02-scaled.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Salzburg-Postdoc-silver)](/teams.qmd#university-of-salzburg)
+- 🏦University of Salzburg
+- 📬email: davidzezula(at)gmx.at
+- [🔗personal webiste](https://www.plus.ac.at/umwelt-und-biodiversitaet/forschung/fachgebiete-der-zoologie/ag-petermann/team-15/david-zezula/)
+
+### Dr. Shuang Zhang <img src="https://www.plus.ac.at/wp-content/uploads/2025/10/206098366-scaled.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Salzburg-Postdoc-silver)](/teams.qmd#university-of-salzburg)
+- 🏦University of Salzburg
+- 📬email: shuang.zhang(at)plus.ac.at
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0001--5123--2192-8a9a5b.svg)](https://orcid.org/0000-0001-5123-2192)

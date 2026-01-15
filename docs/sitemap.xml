@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://memeland-erc.github.io/team.html</loc>
-    <lastmod>2025-10-23T08:55:49.339Z</lastmod>
+    <loc>https://memeland-erc.github.io/teams.html</loc>
+    <lastmod>2026-01-15T15:20:40.309Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Materials/MEMELAND_visual_identity.html</loc>
+    <lastmod>2025-10-23T09:09:09.554Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/index.html</loc>
+    <lastmod>2026-01-15T15:25:11.753Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/about.html</loc>
+    <lastmod>2026-01-15T14:02:39.330Z</lastmod>
   </url>
   <url>
     <loc>https://memeland-erc.github.io/join_us.html</loc>
     <lastmod>2025-10-23T08:55:49.339Z</lastmod>
   </url>
   <url>
-    <loc>https://memeland-erc.github.io/about.html</loc>
-    <lastmod>2025-10-23T09:45:25.102Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/index.html</loc>
-    <lastmod>2025-10-23T09:46:16.195Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/Materials/MEMELAND_visual_identity.html</loc>
-    <lastmod>2025-10-23T09:09:09.554Z</lastmod>
+    <loc>https://memeland-erc.github.io/people.html</loc>
+    <lastmod>2026-01-15T15:12:24.779Z</lastmod>
   </url>
 </urlset>

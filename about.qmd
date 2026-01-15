@@ -4,24 +4,24 @@ date-format: long
 date-modified: last-modified
 ---
 
-# About MEMELAND
-
 :::: {.columns}
 
-::: {.column width="33%"}
+::: {.column width="32%"}
 :::
 
-::: {.column width="33%"}
+::: {.column width="36%"}
 ![](Materials/Logos/MEMELAND.png)
+
+# About project
 :::
 
-::: {.column width="33%"}
+::: {.column width="32%"}
 :::
 
 ::::
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tellus at urna mollis luctus ut id nulla. Ut congue mollis leo, a dictum nisi pharetra eu. Curabitur pellentesque gravida consequat. In placerat mi vitae iaculis tincidunt. Aliquam sodales diam vel ullamcorper dignissim. Proin erat sem, accumsan id aliquet vitae, finibus et arcu. Vestibulum lacinia nec metus a venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+European landscapes are cultural–natural hybrids: today’s biodiversity patterns were not only shaped by climate and ecology, but also by centuries of human land use, governance, and ideology. MEMELAND addresses a central gap in our understanding of this legacy by reconstructing biodiversity and land-use trajectories at species level over the last two millennia—precisely the period in which many lowland prehistoric systems were replaced by medieval and early-modern landscapes.
 
-Curabitur ultricies est et massa sollicitudin, nec suscipit libero hendrerit. Vestibulum sapien erat, cursus ut posuere venenatis, vehicula vel turpis. Duis quis arcu vitae tellus bibendum accumsan. Donec elementum efficitur tincidunt. Nullam id urna gravida, placerat libero at, ultricies libero. Vivamus erat eros, egestas ac enim vel, placerat tempor lorem. Aliquam egestas iaculis nisl sed hendrerit. Maecenas id viverra libero, at eleifend neque.
+To do this, MEMELAND integrates cutting-edge molecular proxies with established archaeological and palaeoecological approaches. We analyse sediment cores from 50 *paired* lakes (100 sites): one site located near documented elite/high-status medieval archaeology and a nearby control site with little or no comparable archaeological signal. This paired-site strategy allows us to disentangle local variability from regional trends and to test hypotheses about the “medieval agricultural revolution”, population change, technologies (e.g., the heavy/mouldboard plough), and shifting land-management regimes across three contrasting archaeological zones (non-Romanised north, central Europe, and Romanised northern Europe).
 
-Morbi non diam enim. Fusce nec pellentesque massa, in semper massa. Fusce et ante quis purus consectetur consectetur at a risus. Curabitur condimentum consequat ligula, ut auctor ligula iaculis dapibus. Ut ut laoreet orci. Aenean euismod pulvinar urna a porttitor. Cras convallis justo et elit vehicula tristique. Phasellus eget libero non erat interdum imperdiet quis bibendum purus. Praesent est tortor, bibendum id eros lobortis, euismod aliquet justo. Aliquam erat volutpat. Nunc ultricies velit quis quam hendrerit, vel consectetur lectus sollicitudin. Praesent fringilla lobortis tortor quis porttitor. Cras sed varius lorem. Aliquam posuere ante eget justo imperdiet, at scelerisque sapien laoreet.
+The project is a Synergy collaboration led from Arctic University of Norway, together with the University of Oxford, Swiss Federal Institute of Aquatic Science and Technology (Eawag), and the University of Salzburg, plus partner at Charles University. Alongside scientific publications, MEMELAND commits to open science and to returning site-level results directly to local collaborators, with interactive outputs made available through the project website. See [Research Teams](teams.qmd) and [People](people.qmd) for more information.
