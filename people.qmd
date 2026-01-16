@@ -47,11 +47,13 @@ sidebar: false
 - [![ORCID](https://img.shields.io/badge/orcid-0009--0004--3897--0413-8a9a5b.svg)](https://orcid.org/0009-0004-3897-0413)
 - [🔗personal webiste](https://uni-salzburg.elsevierpure.com/en/persons/fabian-christopher-dremel/)
 
-### Prof. Nathalie Dubois <img src="/Materials/Faces/Nathalie.jpg" align="right" width="120"/>
+### Prof. Dr. Nathalie Dubois <img src="/Materials/Faces/Nathalie.jpg" align="right" width="120"/>
 
 - 👤[![](https://img.shields.io/badge/Eawag-PI-gold)](/teams.qmd#swiss-federal-institute-of-aquatic-science-and-technology-eawag)
-- 🏦Eawag (Department of Surface Waters Research & Management)
-- 📬email: 	nathalie.dubois(at)eawag.ch
+- 🏦Swiss Federal Institute of Aquatic Science and Technology & ETH Zurich
+- 📬email: nathalie.dubois(at)eawag.ch
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0003--2349--0826-8a9a5b.svg)](https://orcid.org/0000-0003-2349-0826)
+- [🔗personal webiste](https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/nathalie-dubois/show/)
 
 ### Katja Häkli
 
@@ -98,6 +100,14 @@ sidebar: false
 - 🏦University of Salzburg
 - 📬email: marcel-luciano.ortler(at)plus.ac.at
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--2732--9514-8a9a5b.svg)](https://orcid.org/0000-0002-2732-9514)
+
+### Dr. Tobias Schneider <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLgZoYpw1VazBO5dEYkXwAVCZmdhOK-0DYQ&s" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Eawag-Postdoc-silver)](/teams.qmd#swiss-federal-institute-of-aquatic-science-and-technology-eawag)
+- 🏦Swiss Federal Institute of Aquatic Science and Technology
+- 📬email: tobias.schneider(at)eawag.ch
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--1593--0273-8a9a5b.svg)](https://orcid.org/0000-0002-1593-0273)
+- [🔗personal webiste](https://www.drtobiasschneider.com/)
 
 ### Elizabeth Stroud <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/liz_stroudcrop.jpg" align="right" width="120"/>
 
