@@ -32,9 +32,14 @@ We will collate bioarchaeological data from the sites’ catchments drawing on e
 
 ## Swiss Federal Institute of Aquatic Science and Technology (Eawag)
 
-Led by [Prof. Nathalie Dubois](/people.qmd#prof.-nathalie-dubois) at Eawag (Department of Surface Waters Research & Management), the Eawag team delivers MEMELAND's lipid-biomarker programme, providing independent, quantitative evidence of human and animal presence and of land-management intensity through time. Lipid biomarkers—especially faecal sterols/stanols (e.g., coprostanols) and bile acids—allow us to reconstruct grazing pressure, manuring, and direct human/animal inputs, and to validate and complement sedaDNA-based reconstructions at the case-study lake pairs.
+At Eawag,[Prof. Nathalie Dubois](/people.qmd#prof.-dr.-nathalie-dubois) and [Tobias Schneider](/people.qmd#dr.-tobias-schneider) use lake sediments as natural archives to investigate the climate-environment-human nexus throughout the Holocene. Within the MEMELAND project, their work focuses on fecal biomarkers, biomolecules such as sterols and bile acids produced by animals, to reconstruct grazing and manuring activity during the "medieval agricultural revolution".
+Their research revolves around questions such as (1) can fecal biomarkers provide new insights into past land use changes? (2) Can these molecular traces reveal spatio-temporal differences in agricultural practices across Europe? (3) Can lake eutrophication and oxygen depletion be linked to increased nutrient input through fecal biomarkers?
 
-All biomarker analyses are carried out in Eawag’s dedicated biomarker laboratory, using standardised extraction and fractionation workflows and targeted GC–MS quantification. In addition to faecal biomarkers, the team analyses selected compounds that inform specific land-use practices and crop histories (e.g., miliacin and cannabinol) and applies compound-specific radiocarbon approaches to help detect “old carbon” inputs linked to erosion and catchment disturbance. The Eawag laboratories provide specialist infrastructure for biomarker, sedimentological, and mass-spectrometric work that underpins these high-sensitivity measurements.
+To tackle these questions and identify anthropogenic land-use signatures, they integrate biomarker data with hyperspectral imaging and combine it with complementary geochemical and geochronological data acquired by the University of Salzburg Team.
+
+Beyond reconstructing land use, the fecal biomarker data will (a) help validate animal sedaDNA records, (b) provide independent evidence for grazing, manuring and even direct human fecal inputs.  The biomarker analyses will be complemented by compound-specific radiocarbon dating of pre-aged leaf waxes, and analyses of refractory organic carbon (ROC) to infer ploughing and stock-related soil erosion. Finally, species-specific plant biomarkers such as miliacin (millet) and cannabinol (*Cannabis spp*) will be used to detect crop cultivation (for food, medicine, fiber) and practices such as hemp retting.
+
+The results from the Eawag team will directly contribute to MEMELAND’s interdisciplinary framework, which brings together archaeobotany, sedimentary DNA, and socio-environmental modeling to reconstruct Europe’s medieval landscapes.
 
 ## University of Salzburg
 
