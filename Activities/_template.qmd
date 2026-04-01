@@ -1,0 +1,108 @@
+---
+# ============================================================
+#  HOW TO USE THIS TEMPLATE
+#  1. Save a COPY of this file in the Activities/news/ folder.
+#     Name it something short and descriptive, e.g. 2026-coring-svalbard.qmd
+#  2. Fill in all the fields below (between the --- lines).
+#  3. Replace the placeholder text in the body with your content.
+#  4. Delete any sections you don't need.
+#  5. Ask Ondrej to render and publish the site when you're done.
+# ============================================================
+
+title: "Activity Title"
+# ↑ The title shown on the page and in the listing card.
+
+date: 2026/01/01
+# ↑ Date of the activity / news item. Format: YYYY/MM/DD
+
+date-format: long
+date-modified: last-modified
+
+description: "A brief summary shown in the news listing card (aim for under 200 characters)."
+# ↑ One or two sentences. This is what people see in the news grid BEFORE clicking through.
+
+image: "../Materials/photos/placeholder.jpg"
+# ↑ Path to a photo shown as the card thumbnail in the listing.
+#   Place your photo in the Materials/photos/ folder and update the filename here.
+#   Example:  image: "../Materials/photos/coring/svalbard-coring-2026.jpg"
+#   You can leave the placeholder if you don't have a suitable image yet.
+
+categories: [uit]
+# ↑ Tags used for filtering. Use as many as you like, separated by commas.
+#   Free-form examples:  [coring, fieldwork, svalbard]
+#   Team tags that also appear on team pages: uit | oxford | eawag | salzburg | cuni
+#   You can mix both:  [coring, fieldwork, uit, oxford]
+
+sidebar: false
+---
+
+<!-- ============================================================
+     BODY — replace all placeholder text below with your content.
+     Lines starting with <!-- are comments and won't appear on the website.
+     ============================================================ -->
+
+Write a short introductory paragraph (2–4 sentences) giving readers the key
+facts: what happened (or is happening), where, and why it matters.
+
+<!-- KEY INFORMATION BOX — fill in the details below -->
+::: {.callout-note}
+## Key Information
+
+📅 **Date:** DD Month YYYY
+
+🗺️ **Location:** City, Country
+
+🔗 **More info:** [Title of link](https://example.com)
+<!-- To add more links, copy the line above and change the text and URL. -->
+:::
+
+## Background
+
+Describe the context, motivation, and significance of this activity.
+Why is it important for the MEMELAND project?
+
+## Details
+
+Describe what happened or what is planned. For events this might include
+the programme, speakers, key findings, or outcomes.
+
+<!-- HOW TO INSERT A PHOTO
+     1. Place your image file in the Materials/photos/ folder (or subfolder).
+     2. Use the syntax below. The text in quotes after the path is the
+        "alt text" — a short description of the image for accessibility
+        and for people whose images don't load. Always provide alt text.
+
+     Single image, centred, with a caption:
+
+     ![A scientist lowering a sediment corer through ice on a frozen lake in Svalbard.](../Materials/photos/your-photo.jpg){fig-align="center" fig-alt="A scientist lowering a sediment corer through ice on a frozen lake in Svalbard."}
+
+     To add a visible caption underneath the image, add it after the closing }:
+     : *Caption text here.*
+
+     Two images side by side:
+
+     ::: {layout-ncol=2}
+     ![Left image alt text.](../Materials/photos/photo1.jpg)
+
+     ![Right image alt text.](../Materials/photos/photo2.jpg)
+     :::
+-->
+
+![Replace this with a description of your photo.](../Materials/photos/placeholder.jpg){fig-align="center" fig-alt="Replace this with a description of your photo."}
+
+: *Caption: describe what is shown in the photo and credit the photographer if relevant.*
+
+<!-- OPTIONAL: HOW TO INVOLVE OTHERS — delete this block if not needed -->
+::: {.callout-tip}
+## How to get involved
+
+Describe any registration process, contact details, or next steps for
+people who want to participate or learn more.
+:::
+
+## Resources
+
+<!-- List any relevant links, documents, or publications below.
+     Format:  - [Link text](https://full-url-here.com) -->
+
+- [Relevant document or link](https://example.com)
