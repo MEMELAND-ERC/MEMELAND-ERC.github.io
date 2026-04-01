@@ -1,27 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://memeland-erc.github.io/teams.html</loc>
-    <lastmod>2026-01-16T09:31:28.743Z</lastmod>
+    <loc>https://memeland-erc.github.io/Team/uit.html</loc>
+    <lastmod>2026-04-01T10:25:40.973Z</lastmod>
   </url>
   <url>
-    <loc>https://memeland-erc.github.io/Materials/MEMELAND_visual_identity.html</loc>
-    <lastmod>2025-10-23T09:09:09.554Z</lastmod>
+    <loc>https://memeland-erc.github.io/Team/people.html</loc>
+    <lastmod>2026-04-01T10:58:53.913Z</lastmod>
   </url>
   <url>
-    <loc>https://memeland-erc.github.io/index.html</loc>
-    <lastmod>2026-01-16T09:31:46.563Z</lastmod>
+    <loc>https://memeland-erc.github.io/Team/eawag.html</loc>
+    <lastmod>2026-04-01T10:25:58.056Z</lastmod>
   </url>
   <url>
-    <loc>https://memeland-erc.github.io/about.html</loc>
-    <lastmod>2026-01-15T15:29:58.693Z</lastmod>
+    <loc>https://memeland-erc.github.io/Outputs/outputs.html</loc>
+    <lastmod>2026-04-01T10:58:57.651Z</lastmod>
   </url>
   <url>
     <loc>https://memeland-erc.github.io/join_us.html</loc>
     <lastmod>2025-10-23T08:55:49.339Z</lastmod>
   </url>
   <url>
-    <loc>https://memeland-erc.github.io/people.html</loc>
-    <lastmod>2026-01-16T09:31:07.899Z</lastmod>
+    <loc>https://memeland-erc.github.io/Activities/news/test.html</loc>
+    <lastmod>2026-04-01T10:24:52.125Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/about.html</loc>
+    <lastmod>2026-04-01T07:58:16.742Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Activities/activities.html</loc>
+    <lastmod>2026-04-01T10:58:49.180Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/index.html</loc>
+    <lastmod>2026-04-01T07:58:16.742Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Materials/MEMELAND_visual_identity.html</loc>
+    <lastmod>2025-10-23T09:09:09.554Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Team/cuni.html</loc>
+    <lastmod>2026-04-01T10:26:02.994Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Team/oxford.html</loc>
+    <lastmod>2026-04-01T10:25:53.397Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Team/salzburg.html</loc>
+    <lastmod>2026-04-01T10:25:48.531Z</lastmod>
   </url>
 </urlset>

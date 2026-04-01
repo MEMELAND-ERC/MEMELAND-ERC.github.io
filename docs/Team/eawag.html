@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-15">
+<meta name="dcterms.date" content="2026-04-01">
 
-<title>people – MEMELAND</title>
+<title>eawag – MEMELAND</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,25 +24,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./Materials/Logos/MEMELAND.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-241a2cd90417ceb4c40bfe046269225e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Materials/Logos/MEMELAND.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-241a2cd90417ceb4c40bfe046269225e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,18 +72,76 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-team-news .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-image"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-team-news'] = new List('listing-team-news', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">MEMELAND</span>
     </a>
   </div>
@@ -92,24 +152,48 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-team" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Team</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research-teams" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research Teams</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-team">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research-teams">    
         <li>
-    <a class="dropdown-item" href="./teams.html">
- <span class="dropdown-text">Research Teams</span></a>
+    <a class="dropdown-item" href="../Team/uit.html">
+ <span class="dropdown-text">The Arctic University of Norway</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./people.html">
- <span class="dropdown-text">People</span></a>
+    <a class="dropdown-item" href="../Team/oxford.html">
+ <span class="dropdown-text">University of Oxford</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Team/eawag.html">
+ <span class="dropdown-text">Swiss Federal Institute of Aquatic Science and Technology</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Team/salzburg.html">
+ <span class="dropdown-text">University of Salzburg</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../Team/cuni.html">
+ <span class="dropdown-text">Charles University</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../Team/people.html"> 
+<span class="menu-text">People</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Activities/activities.html"> 
+<span class="menu-text">Current activities</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../Outputs/outputs.html"> 
+<span class="menu-text">Outputs</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -122,7 +206,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#swiss-federal-institute-of-aquatic-science-and-technology-eawag" id="toc-swiss-federal-institute-of-aquatic-science-and-technology-eawag" class="nav-link active" data-scroll-target="#swiss-federal-institute-of-aquatic-science-and-technology-eawag">Swiss Federal Institute of Aquatic Science and Technology (Eawag)</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/blob/main/Team/eawag.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -138,14 +230,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 15, 2026</p>
+      <p class="date">April 1, 2026</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">January 16, 2026</p>
+      <p class="date-modified">April 1, 2026</p>
     </div>
   </div>
     
@@ -156,170 +248,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="memeland-people" class="level1">
-<h1>MEMELAND People</h1>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src=".\Materials/photos/Lorch_2025_crop.jpg" class="img-fluid figure-img"></p>
-<figcaption>Kick off meeting, Lorch 2025</figcaption>
-</figure>
+<section id="swiss-federal-institute-of-aquatic-science-and-technology-eawag" class="level2">
+<h2 class="anchored" data-anchor-id="swiss-federal-institute-of-aquatic-science-and-technology-eawag">Swiss Federal Institute of Aquatic Science and Technology (Eawag)</h2>
+<p>At Eawag, <a href="../Team/people.html#prof.-dr.-nathalie-dubois">Prof.&nbsp;Nathalie Dubois</a> and <a href="../Team/people.html#dr.-tobias-schneider">Dr.&nbsp;Tobias Schneider</a> use lake sediments as natural archives to investigate the climate-environment-human nexus throughout the Holocene. Within the MEMELAND project, their work focuses on fecal biomarkers, biomolecules such as sterols and bile acids produced by animals, to reconstruct grazing and manuring activity during the “medieval agricultural revolution”. Their research revolves around questions such as (1) can fecal biomarkers provide new insights into past land use changes? (2) Can these molecular traces reveal spatio-temporal differences in agricultural practices across Europe? (3) Can lake eutrophication and oxygen depletion be linked to increased nutrient input through fecal biomarkers?</p>
+<p>To tackle these questions and identify anthropogenic land-use signatures, they integrate biomarker data with hyperspectral imaging and combine it with complementary geochemical and geochronological data acquired by the University of Salzburg Team.</p>
+<p>Beyond reconstructing land use, the fecal biomarker data will (a) help validate animal sedaDNA records, (b) provide independent evidence for grazing, manuring and even direct human fecal inputs. The biomarker analyses will be complemented by compound-specific radiocarbon dating of pre-aged leaf waxes, and analyses of refractory organic carbon (ROC) to infer ploughing and stock-related soil erosion. Finally, species-specific plant biomarkers such as miliacin (millet) and cannabinol (<em>Cannabis spp</em>) will be used to detect crop cultivation (for food, medicine, fiber) and practices such as hemp retting.</p>
+<p>The results from the Eawag team will directly contribute to MEMELAND’s interdisciplinary framework, which brings together archaeobotany, sedimentary DNA, and socio-environmental modeling to reconstruct Europe’s medieval landscapes.</p>
+<section id="people" class="level3">
+<h3 class="anchored" data-anchor-id="people">People</h3>
+<ul>
+<li><a href="../Team/people.html#prof.-dr.-nathalie-dubois">Prof.&nbsp;Dr.&nbsp;Nathalie Dubois</a></li>
+<li><a href="../Team/people.html#dr.-tobias-schneider">Dr.&nbsp;Tobias Schneider</a></li>
+</ul>
+</section>
+<section id="news" class="level3">
+<h3 class="anchored" data-anchor-id="news">News</h3>
+<div id="listing-team-news" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+
 </div>
-<section id="people-alphabetical-order" class="level2">
-<h2 class="anchored" data-anchor-id="people-alphabetical-order">People (alphabetical order)</h2>
-<section id="prof.-inger-g-alsos" class="level3">
-<h3 class="anchored" data-anchor-id="prof.-inger-g-alsos">Prof.&nbsp;Inger G Alsos <img src="https://en.uit.no/Content/564023/cache=20222601170833/transformation=kompJpgHighUtlistingLowComp/Z__Bilder_Feltbilder%20av%20meg%20selv__MG_5810_potrett.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#the-arctic-university-of-norway"><img src="https://img.shields.io/badge/Tromso-CI-gold.png" class="img-fluid"></a></li>
-<li>🏦Tromsø Museum, Arctic University of Norway</li>
-<li>📬email: inger.g.alsos(at)uit.no</li>
-<li><a href="https://orcid.org/0000-0002-8610-1085"><img src="https://img.shields.io/badge/orcid-0000--0002--8610--1085-8a9a5b.svg" class="img-fluid" alt="ORCID"></a></li>
-<li><a href="https://en.uit.no/ansatte/inger.g.alsos">🔗personal webiste</a></li>
-</ul>
-</section>
-<section id="prof.-amy-bogaard" class="level3">
-<h3 class="anchored" data-anchor-id="prof.-amy-bogaard">Prof.&nbsp;Amy Bogaard <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/ab_2023.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#university-of-oxford"><img src="https://img.shields.io/badge/Oxford-Researcher-silver.png" class="img-fluid"></a></li>
-<li>🏦University of Oxford</li>
-<li>📬email: amy.bogaard(at)arch.ox.ac.uk</li>
-</ul>
-</section>
-<section id="prof.-tony-g-brown" class="level3">
-<h3 class="anchored" data-anchor-id="prof.-tony-g-brown">Prof.&nbsp;Tony G Brown <img src="https://uit.no/Content/602764/cache=20222601171113/transformation=kompJpgHighUtlistingLowComp/D__Tony%20Brown.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#the-arctic-university-of-norway"><img src="https://img.shields.io/badge/Tromso-PI-gold.png" class="img-fluid"></a></li>
-<li>🏦Tromsø Museum, Arctic University of Norway</li>
-<li>📬email: antony.g.brown(at)uit.no</li>
-<li><a href="https://orcid.org/0000-0002-1990-4654"><img src="https://img.shields.io/badge/orcid-0000--0003--2600--6603-8a9a5b.svg" class="img-fluid" alt="ORCID"></a></li>
-<li><a href="https://uit.no/ansatte/antony.g.brown">🔗personal webiste</a></li>
-</ul>
-</section>
-<section id="dr.-michael-charles" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-michael-charles">Dr.&nbsp;Michael Charles <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/charles.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#university-of-oxford"><img src="https://img.shields.io/badge/Oxford-Researcher-silver.png" class="img-fluid"></a></li>
-<li>🏦University of Oxford</li>
-<li>📬email: michael.charles(at)arch.ox.ac.uk</li>
-</ul>
-</section>
-<section id="fabian-christopher-dremel" class="level3">
-<h3 class="anchored" data-anchor-id="fabian-christopher-dremel">Fabian Christopher Dremel <img src="https://i1.rgstatic.net/ii/profile.image/1084162140319744-1635495805012_Q128/Fabian-Dremel.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#university-of-salzburg"><img src="https://img.shields.io/badge/Salzburg-Postdoc-silver.png" class="img-fluid"></a></li>
-<li>🏦University of Salzburg</li>
-<li>📬email:fabian.dremel(at)plus.ac.at</li>
-<li><a href="https://orcid.org/0009-0004-3897-0413"><img src="https://img.shields.io/badge/orcid-0009--0004--3897--0413-8a9a5b.svg" class="img-fluid" alt="ORCID"></a></li>
-<li><a href="https://uni-salzburg.elsevierpure.com/en/persons/fabian-christopher-dremel/">🔗personal webiste</a></li>
-</ul>
-</section>
-<section id="prof.-dr.-nathalie-dubois" class="level3">
-<h3 class="anchored" data-anchor-id="prof.-dr.-nathalie-dubois">Prof.&nbsp;Dr.&nbsp;Nathalie Dubois <img src="./Materials/Faces/Nathalie.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#swiss-federal-institute-of-aquatic-science-and-technology-eawag"><img src="https://img.shields.io/badge/Eawag-PI-gold.png" class="img-fluid"></a></li>
-<li>🏦Swiss Federal Institute of Aquatic Science and Technology &amp; ETH Zurich</li>
-<li>📬email: nathalie.dubois(at)eawag.ch</li>
-<li><a href="https://orcid.org/0000-0003-2349-0826"><img src="https://img.shields.io/badge/orcid-0000--0003--2349--0826-8a9a5b.svg" class="img-fluid" alt="ORCID"></a></li>
-<li><a href="https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/nathalie-dubois/show/">🔗personal webiste</a></li>
-</ul>
-</section>
-<section id="katja-häkli" class="level3">
-<h3 class="anchored" data-anchor-id="katja-häkli">Katja Häkli</h3>
-<ul>
-<li>👤<a href="./teams.html#the-arctic-university-of-norway"><img src="https://img.shields.io/badge/Tromso-Technician-brown.png" class="img-fluid"></a></li>
-<li>🏦Tromsø Museum, Arctic University of Norway</li>
-</ul>
-</section>
-<section id="prof.-helena-hamerow" class="level3">
-<h3 class="anchored" data-anchor-id="prof.-helena-hamerow">Prof.&nbsp;Helena Hamerow <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/st_cross_portraits_by_john_cairns_20.3.24_hamerow_helena.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#university-of-oxford"><img src="https://img.shields.io/badge/Oxford-PI-gold.png" class="img-fluid"></a></li>
-<li>🏦University of Oxford</li>
-<li>📬email: helena.hamerow(at)arch.ox.ac.uk</li>
-</ul>
-</section>
-<section id="dr.-oliver-kern" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-oliver-kern">Dr.&nbsp;Oliver Kern</h3>
-<ul>
-<li>👤<a href="./teams.html#the-arctic-university-of-norway"><img src="https://img.shields.io/badge/Tromso-Postdoc-silver.png" class="img-fluid"></a></li>
-<li>🏦Tromsø Museum, Arctic University of Norway</li>
-<li>📬email: oliver.kern(at)uit.no</li>
-</ul>
-</section>
-<section id="prof.-dr.-andreas-lang" class="level3">
-<h3 class="anchored" data-anchor-id="prof.-dr.-andreas-lang">Prof.&nbsp;Dr.&nbsp;Andreas Lang <img src="https://www.plus.ac.at/wp-content/uploads/2021/02/Lang_01.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#university-of-salzburg"><img src="https://img.shields.io/badge/Salzburg-PI-gold.png" class="img-fluid"></a></li>
-<li>🏦University of Salzburg</li>
-<li><a href="https://orcid.org/0000-0002-1604-4898"><img src="https://img.shields.io/badge/orcid-0000--0002--1604--4898-8a9a5b.svg" class="img-fluid" alt="ORCID"></a></li>
-<li>📬email: Andreas.Lang(at)plus.ac.at</li>
-<li><a href="https://uni-salzburg.elsevierpure.com/de/persons/andreas-lang-4/">🔗personal webiste</a></li>
-</ul>
-</section>
-<section id="dr.-ying-liu" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-ying-liu">Dr.&nbsp;Ying Liu <img src="./Materials/Faces/Ying.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#the-arctic-university-of-norway"><img src="https://img.shields.io/badge/Tromso-Postdoc-silver.png" class="img-fluid"></a></li>
-<li>🏦Tromsø Museum, Arctic University of Norway</li>
-<li>📬email: ying.liu(at)uit.no</li>
-</ul>
-</section>
-<section id="dr.-ondřej-mottl" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-ondřej-mottl">Dr.&nbsp;Ondřej Mottl <img src="./Materials/Faces/Ondrej.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#charles-university"><img src="https://img.shields.io/badge/Charles_University-Partner-gold.png" class="img-fluid"></a></li>
-<li>🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic</li>
-<li>📬email: ondrej.mottl(at)gmail.com</li>
-<li><a href="https://orcid.org/0000-0002-9796-5081"><img src="https://img.shields.io/badge/orcid-0000--0002--9796--5081-8a9a5b.svg" class="img-fluid" alt="ORCID"></a></li>
-<li><a href="https://ondrejmottl.github.io/">🔗personal webiste</a></li>
-</ul>
-</section>
-<section id="marcel-luciano-ortler" class="level3">
-<h3 class="anchored" data-anchor-id="marcel-luciano-ortler">Marcel-Luciano Ortler <img src="https://www.plus.ac.at/wp-content/uploads/2025/11/Marcel2.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#university-of-salzburg"><img src="https://img.shields.io/badge/Salzburg-Postdoc-silver.png" class="img-fluid"></a></li>
-<li>🏦University of Salzburg</li>
-<li>📬email: marcel-luciano.ortler(at)plus.ac.at</li>
-<li><a href="https://orcid.org/0000-0002-2732-9514"><img src="https://img.shields.io/badge/orcid-0000--0002--2732--9514-8a9a5b.svg" class="img-fluid" alt="ORCID"></a></li>
-</ul>
-</section>
-<section id="dr.-tobias-schneider" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-tobias-schneider">Dr.&nbsp;Tobias Schneider <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLgZoYpw1VazBO5dEYkXwAVCZmdhOK-0DYQ&amp;s" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#swiss-federal-institute-of-aquatic-science-and-technology-eawag"><img src="https://img.shields.io/badge/Eawag-Postdoc-silver.png" class="img-fluid"></a></li>
-<li>🏦Swiss Federal Institute of Aquatic Science and Technology</li>
-<li>📬email: tobias.schneider(at)eawag.ch</li>
-<li><a href="https://orcid.org/0000-0002-1593-0273"><img src="https://img.shields.io/badge/orcid-0000--0002--1593--0273-8a9a5b.svg" class="img-fluid" alt="ORCID"></a></li>
-<li><a href="https://www.drtobiasschneider.com/">🔗personal webiste</a></li>
-</ul>
-</section>
-<section id="elizabeth-stroud" class="level3">
-<h3 class="anchored" data-anchor-id="elizabeth-stroud">Elizabeth Stroud <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/liz_stroudcrop.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#university-of-oxford"><img src="https://img.shields.io/badge/Oxford-Researcher-silver.png" class="img-fluid"></a></li>
-<li>🏦University of Oxford</li>
-<li>📬email: elizabeth.stroud(at)arch.ox.ac.uk</li>
-</ul>
-</section>
-<section id="david-zezula" class="level3">
-<h3 class="anchored" data-anchor-id="david-zezula">David Zezula <img src="https://www.plus.ac.at/wp-content/uploads/2021/02/DSC_3638_02-scaled.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#university-of-salzburg"><img src="https://img.shields.io/badge/Salzburg-Postdoc-silver.png" class="img-fluid"></a></li>
-<li>🏦University of Salzburg</li>
-<li>📬email: davidzezula(at)gmx.at</li>
-<li><a href="https://www.plus.ac.at/umwelt-und-biodiversitaet/forschung/fachgebiete-der-zoologie/ag-petermann/team-15/david-zezula/">🔗personal webiste</a></li>
-</ul>
-</section>
-<section id="dr.-shuang-zhang" class="level3">
-<h3 class="anchored" data-anchor-id="dr.-shuang-zhang">Dr.&nbsp;Shuang Zhang <img src="https://www.plus.ac.at/wp-content/uploads/2025/10/206098366-scaled.jpg" align="right" width="120"></h3>
-<ul>
-<li>👤<a href="./teams.html#university-of-salzburg"><img src="https://img.shields.io/badge/Salzburg-Postdoc-silver.png" class="img-fluid"></a></li>
-<li>🏦University of Salzburg</li>
-<li>📬email: shuang.zhang(at)plus.ac.at</li>
-<li><a href="https://orcid.org/0000-0001-5123-2192"><img src="https://img.shields.io/badge/orcid-0000--0001--5123--2192-8a9a5b.svg" class="img-fluid" alt="ORCID"></a></li>
-</ul>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 
 
-</section>
+
 </section>
 </section>
 
@@ -732,7 +684,7 @@ ul.task-list li input[type="checkbox"] {
 </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions"><ul><li><a href="https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/blob/main/people.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/blob/main/Team/eawag.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This page is built by Ondřej Mottl with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
