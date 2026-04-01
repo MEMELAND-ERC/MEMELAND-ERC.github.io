@@ -1,0 +1,71 @@
+---
+title: "Outputs"
+date: 2026/04/01
+date-format: long
+date-modified: last-modified
+sidebar: true
+toc: true
+toc-depth: 2
+---
+
+This page collects the scientific outputs of the MEMELAND project.
+It will be updated as publications, datasets, and other resources become available.
+
+## Publications
+
+*No publications yet — check back soon.*
+
+<!-- When adding a publication, use this format:
+
+**Author A, Author B, Author C** (YYYY).
+Title of the paper.
+*Journal Name*, volume(issue), pages.
+[DOI link](https://doi.org/10.xxxx/xxxxx)
+| [PDF](link-to-pdf) | [Data](link-to-data)
+
+Group entries by year, newest first.
+-->
+
+## Datasets
+
+*No datasets deposited yet.*
+
+<!-- When adding a dataset entry:
+
+**Author A, Author B** (YYYY).
+*Dataset title* [Data set].
+Repository Name.
+[https://doi.org/10.xxxx/xxxxx](https://doi.org/10.xxxx/xxxxx)
+-->
+
+## Presentations & Posters
+
+*No conference presentations listed yet.*
+
+<!-- Suggested format:
+
+**Author A** (YYYY, Month). *Presentation title*.
+Conference Name, City, Country.
+[Slides](link) | [Poster](link)
+-->
+
+## Reports & Deliverables
+
+*No project reports or deliverables published yet.*
+
+<!-- Suggested format:
+
+**Deliverable D1.1** — *Title of deliverable* (YYYY, Month).
+[Download PDF](link)
+-->
+
+## Theses
+
+*No theses completed within the project yet.*
+
+<!-- Suggested format:
+
+**Student Name** (YYYY). *Thesis title*.
+[PhD / MSc] thesis, University Name.
+[Link](link)
+-->
