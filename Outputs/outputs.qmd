@@ -8,6 +8,11 @@ toc: true
 toc-depth: 2
 ---
 
+<!-- Maintainer note:
+Use this page as the single place for publications, datasets, and deliverables.
+Keep newest items first in each section and retain the provided entry formats.
+-->
+
 This page collects the scientific outputs of the MEMELAND project.
 It will be updated as publications, datasets, and other resources become available.
 

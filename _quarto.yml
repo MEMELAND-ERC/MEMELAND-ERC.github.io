@@ -1,5 +1,6 @@
 project:
   type: website
+  # Rendered website output goes to docs/ (used by GitHub Pages).
   output-dir: docs
 
 website:
@@ -27,6 +28,7 @@ website:
       - icon: github
         href: https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io
     left:
+      # Add new top-level pages here to show them in the main navigation bar.
       - text: About
         href: about.qmd
 

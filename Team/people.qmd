@@ -5,6 +5,11 @@ date-modified: last-modified
 sidebar: false
 ---
 
+<!-- Maintainer note:
+Edit this file to add, remove, or update people profiles.
+Keep names alphabetized and update links to team pages when roles change.
+-->
+
 # MEMELAND People
 
 ![Kick off meeting, Lorch 2025](/Materials/photos/Lorch_2025/Lorch_2025_crop.jpg)
