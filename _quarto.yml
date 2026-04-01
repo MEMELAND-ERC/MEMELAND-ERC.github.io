@@ -1,5 +1,6 @@
 project:
   type: website
+  # Rendered website output goes to docs/ (used by GitHub Pages).
   output-dir: docs
 
 website:
@@ -27,15 +28,31 @@ website:
       - icon: github
         href: https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io
     left:
+      # Add new top-level pages here to show them in the main navigation bar.
       - text: About
         href: about.qmd
 
-      - text: Team
+      - text: Research Teams
         menu:
-          - text: Research Teams
-            href: teams.qmd
-          - text: People
-            href: people.qmd
+          - text: The Arctic University of Norway
+            href: Team/uit.qmd
+          - text: University of Oxford
+            href: Team/oxford.qmd
+          - text: Swiss Federal Institute of Aquatic Science and Technology
+            href: Team/eawag.qmd
+          - text: University of Salzburg
+            href: Team/salzburg.qmd
+          - text: Charles University
+            href: Team/cuni.qmd
+
+      - text: People
+        href: Team/people.qmd
+      
+      - text: Current activities
+        href: Activities/activities.qmd
+      
+      - text: Outputs
+        href: Outputs/outputs.qmd
 
 format:
   html:

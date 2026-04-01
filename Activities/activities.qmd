@@ -1,0 +1,22 @@
+---
+date: 2026/04/01
+date-format: long
+date-modified: last-modified
+listing: 
+  - id: news
+    max-description-length: 500
+    fields: [title, description, image, date, categories]
+    contents: "news"
+    sort: "date desc" 
+    type: grid
+    grid-item-border: true
+    categories: true
+---
+
+  <!-- Maintainer note:
+  Add new items by creating a new .qmd file in Activities/news/.
+  This page is an automatic listing and should usually not need content edits.
+  -->
+
+::: {#news}
+:::
