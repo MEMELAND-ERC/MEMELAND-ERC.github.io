@@ -53,7 +53,8 @@ initial geochemical analyses will begin in February 2026 *(made up)*.
 
 : *Caption: This is where you would credit the photographer and describe the scene. Photo: Jane Doe / UiT — **fictional**.*
 
-![Lorsch photo](.../.../Materials/photos/Lorch_2025/Lorch_2025_crop.jpg){fig-align="center" fig-alt="Lorsch Photo"}
+![Lorsch photo](../../Materials/photos/Lorch_2025/Lorch_2025_crop.jpg){fig-align="center" fig-alt="Lorsch Photo"}
+
 : *Caption: This is a test of adding photo*
 
 ::: {.callout-tip}
