@@ -12,7 +12,7 @@
 title: "Activity Title"
 # ↑ The title shown on the page and in the listing card.
 
-date: 2026/01/01
+date: 2030/01/01
 # ↑ Date of the activity / news item. Format: YYYY/MM/DD
 
 date-format: long
