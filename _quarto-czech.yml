@@ -8,7 +8,7 @@ website:
   navbar:
     left:
       - text: O projektu
-        href: about.qmd
+        href: About/about.qmd
 
       - text: Výzkumné týmy
         menu:

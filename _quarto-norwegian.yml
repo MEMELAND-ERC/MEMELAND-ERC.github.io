@@ -8,7 +8,7 @@ website:
   navbar:
     left:
       - text: Om prosjektet
-        href: about.qmd
+        href: About/about.qmd
 
       - text: Forskergrupper
         menu:

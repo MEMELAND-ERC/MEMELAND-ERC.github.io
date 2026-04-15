@@ -8,7 +8,7 @@ website:
   navbar:
     left:
       - text: Über das Projekt
-        href: about.qmd
+        href: About/about.qmd
 
       - text: Forschungsteams
         menu:
