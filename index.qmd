@@ -4,26 +4,34 @@ date-format: long
 date-modified: last-modified
 ---
 
-:::: {.columns}
+:::::  {.content-visible when-profile="english"}
 
-::: {.column width="70%"}
-# Molecular Ecology of Medieval European Landscapes 
-:::
+{{< include _index-en.qmd >}}
 
-::: {.column width="30%"}
-![](Materials/Logos/MEMELAND.png)
-:::
+:::::
 
-::::
+::::: {.content-visible when-profile="german"}
 
-::: {.callout-tip}
-### General Information
+{{< include _index-de.qmd >}}
 
-MEMELAND is ERC SYNERGY project starting from July 2025. 
+:::::
 
-Principal Investigators: [Prof. Tony G Brown](/Team/people.qmd#prof.-tony-g-brown), Prof. [Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois), [Prof. Helena Hamerow](/Team/people.qmd#prof.-helena-hamerow), [Prof. Dr. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang), and [Dr. Ondřej Mottl](/Team/people.qmd#dr.-ondřej-mottl) (partner).
+::::: {.content-visible when-profile="french"}
 
-:::
+{{< include _index-fr.qmd >}}
 
-Molecular Ecology of Medieval European Landscapes (MEMELAND) will pioneer Europe’s first species-level ecological history from the Roman era to the present, revealing how medieval land use continues to shape modern landscapes and biodiversity. By combining sedimentary ancient DNA (sedaDNA), lipid biomarkers, robust chronologies, and archaeobotanical evidence from 50 paired lake sites across northern and central Europe, the project will generate a uniquely detailed record of plants, animals, and associated pathogens, and translate this long-term perspective into evidence for conservation, land management, and heritage-informed restoration under climate change.
+:::::
+
+::::: {.content-visible when-profile="czech"}
+
+{{< include _index-cs.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="norwegian"}
+
+{{< include _index-no.qmd >}}
+
+:::::
+
 

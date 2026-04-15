@@ -1,0 +1,38 @@
+<!-- Note de maintenance :
+Utilisez cette page comme référence unique pour les publications, ensembles de données et livrables.
+Placez les entrées les plus récentes en premier et conservez les formats fournis.
+-->
+
+Cette page rassemble les résultats scientifiques du projet MEMELAND.
+Elle sera mise à jour au fur et à mesure que des publications, ensembles de données et autres ressources seront disponibles.
+
+## Publications
+
+*Aucune publication pour l'instant — revenez bientôt.*
+
+<!-- Format pour les nouvelles entrées :
+
+**Auteur A, Auteur B, Auteur C** (AAAA).
+Titre de l'article.
+*Nom de la revue*, volume(numéro), pages.
+[Lien DOI](https://doi.org/10.xxxx/xxxxx)
+| [PDF](lien) | [Données](lien)
+
+Entrées par année, les plus récentes en premier.
+-->
+
+## Ensembles de données
+
+*Aucun ensemble de données déposé pour l'instant.*
+
+## Présentations & Posters
+
+*Aucune présentation à conférence répertoriée pour l'instant.*
+
+## Rapports & Livrables
+
+*Aucun rapport ou livrable de projet publié pour l'instant.*
+
+## Thèses
+
+*Aucune thèse achevée dans le cadre du projet pour l'instant.*

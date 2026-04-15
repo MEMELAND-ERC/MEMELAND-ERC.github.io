@@ -1,4 +1,4 @@
----
+﻿---
 date: 2026/04/01
 date-format: long
 date-modified: last-modified
@@ -18,21 +18,35 @@ listing:
     page-size: 3
 ---
 
-## Swiss Federal Institute of Aquatic Science and Technology (Eawag)
+::::: {.content-visible when-profile="english"}
 
-At Eawag, [Prof. Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois) and [Dr. Tobias Schneider](/Team/people.qmd#dr.-tobias-schneider) use lake sediments as natural archives to investigate the climate-environment-human nexus throughout the Holocene. Within the MEMELAND project, their work focuses on fecal biomarkers, biomolecules such as sterols and bile acids produced by animals, to reconstruct grazing and manuring activity during the "medieval agricultural revolution".
-Their research revolves around questions such as (1) can fecal biomarkers provide new insights into past land use changes? (2) Can these molecular traces reveal spatio-temporal differences in agricultural practices across Europe? (3) Can lake eutrophication and oxygen depletion be linked to increased nutrient input through fecal biomarkers?
+{{< include _eawag-en.qmd >}}
 
-To tackle these questions and identify anthropogenic land-use signatures, they integrate biomarker data with hyperspectral imaging and combine it with complementary geochemical and geochronological data acquired by the University of Salzburg Team.
+:::::
 
-Beyond reconstructing land use, the fecal biomarker data will (a) help validate animal sedaDNA records, (b) provide independent evidence for grazing, manuring and even direct human fecal inputs.  The biomarker analyses will be complemented by compound-specific radiocarbon dating of pre-aged leaf waxes, and analyses of refractory organic carbon (ROC) to infer ploughing and stock-related soil erosion. Finally, species-specific plant biomarkers such as miliacin (millet) and cannabinol (*Cannabis spp*) will be used to detect crop cultivation (for food, medicine, fiber) and practices such as hemp retting.
+::::: {.content-visible when-profile="german"}
 
-The results from the Eawag team will directly contribute to MEMELAND’s interdisciplinary framework, which brings together archaeobotany, sedimentary DNA, and socio-environmental modeling to reconstruct Europe’s medieval landscapes.
+{{< include _eawag-de.qmd >}}
 
-### People
+:::::
 
- - [Prof. Dr. Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois)
- - [Dr. Tobias Schneider](/Team/people.qmd#dr.-tobias-schneider)
+::::: {.content-visible when-profile="french"}
+
+{{< include _eawag-fr.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="czech"}
+
+{{< include _eawag-cs.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="norwegian"}
+
+{{< include _eawag-no.qmd >}}
+
+:::::
 
 ### News
 

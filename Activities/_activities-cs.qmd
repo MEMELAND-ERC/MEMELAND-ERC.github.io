@@ -1,0 +1,5 @@
+<!-- Poznamka pro spravce:
+Nove prispevky pridavejte vytvorenim noveho .qmd souboru v Activities/news/.
+Tato stranka je automaticky generovany seznam a obvykle nepotrebuje upravy obsahu.
+Poznamka: novinky jsou publikovany pouze v anglictine.
+-->

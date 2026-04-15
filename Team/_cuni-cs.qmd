@@ -1,0 +1,11 @@
+## Univerzita Karlova
+
+[Laborator kvantitativni ekologie](https://ondrejmottl.github.io/lab/about_the_lab.html) na Univerzite Karlove v Praze, vedeny [Dr. Ondrejem Mottlem](/Team/people.qmd#dr.-ondřej-mottl) (odborny asistent pro ekologii rostlin a Open Science Champion na Univerzite Karlove), se zameruje na zkoumani trendu biodiverzity vegetace v prostorovych i casovych meritkach. Laborator se specializuje na pokrocile kvantitativni a statisticke metody spolu s modernimi pristupy datove vedy a strojoveho uceni. Jejich vyzkum integruje koncepty a metodiky z ruznych oboru, vcetne makroekologie, paleoekologie, vedy o biodiverzite a kvantitativni ekologie.
+
+Klicovym pilirem prace laboratore je silny zavazek k otevrene vede a vedecke reprodukovatelnosti. Vsechny vystupy vyzkumu, vcetne dat, kodu a metodik, jsou verejne dostupne a plne reprodukovatelne, coz zajistuje transparentnost a umoznuje siroke vedecke komunite na jejich praci dale staven. Tento dusledny pristup k principum open science zarucuje, ze komplexni prostorove modely a analyticke workflow projektu MEMELAND mohou byt overovany, znovu vyuzivany a rozsirovany vyzkumniky po celem svete.
+
+V projektu MEMELAND hraje laborator klicovou roli pri integraci multiproxy datasetu generovanych ostatnimi tymy (sedaDNA, lipidove biomarkery, archeobotanicka data a chronologicka data) do komplexnich prostorovych modelu. Pomoci pokrocilych kvantitativnich paleoekologickych metod objasni vzorce biodiverzity a zmen vyuzivani krajiny v severni a stredni Evrope za posledni dve tisicileti. Tato prace pokryje ruzne prostorove meritka - od lokalnich biomu az po kontinenty - a umozni komplexni porozumeni tomu, jak lidske cinnosti formovaly dynamiku evropske vegetace v prubehu dejin.
+
+### Lide
+
+ - [Dr. Ondřej Mottl](/Team/people.qmd#dr.-ondřej-mottl)

@@ -1,0 +1,4 @@
+<!-- Note de maintenance :
+Ajoutez de nouveaux éléments en créant un nouveau fichier .qmd dans Activities/news/.
+Les actualités sont publiées en anglais uniquement.
+-->

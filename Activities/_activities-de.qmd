@@ -1,0 +1,4 @@
+<!-- Wartungshinweis:
+Neue Einträge durch Erstellen einer neuen .qmd-Datei in Activities/news/ hinzufügen.
+Beiträge werden ausschließlich auf Englisch veröffentlicht.
+-->

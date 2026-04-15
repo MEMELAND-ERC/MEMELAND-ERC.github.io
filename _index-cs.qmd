@@ -1,0 +1,22 @@
+:::: {.columns}
+
+::: {.column width="70%"}
+# Molekularni ekologie stredovekych evropskych krajin
+:::
+
+::: {.column width="30%"}
+![](Materials/Logos/MEMELAND.png)
+:::
+
+::::
+
+::: {.callout-tip}
+### Zakladni informace
+
+MEMELAND je projekt ERC Synergy zahajeny v cervenci 2025.
+
+Hlavni resitele: [Prof. Tony G Brown](/Team/people.qmd#prof.-tony-g-brown), Prof. [Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois), [Prof. Helena Hamerow](/Team/people.qmd#prof.-helena-hamerow), [Prof. Dr. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang) a [Dr. Ondrej Mottl](/Team/people.qmd#dr.-ondřej-mottl) (partner).
+
+:::
+
+Molecular Ecology of Medieval European Landscapes (MEMELAND) vytvari prvni evropskou ekologickou historii na urovni druhu od rimskeho obdobi po soucasnost a ukazuje, jak stredoveke vyuzivani krajiny dodnes formuje soucasne krajiny a biodiverzitu. Kombinaci sedimentarni starobyle DNA (sedaDNA), lipidovych biomarkeru, robustnich chronologii a archeobotanickych dukazu z 50 parovych jezernich lokalit v severni a stredni Evrope projekt vytvori mimoradne podrobny zaznam rostlin, zivocichu a souvisejicich patogenu a prevede tento dlouhodoby pohled do podkladu pro ochranu prirody, management krajiny a obnovu krajiny s ohledem na kulturni dedictvi v podminkach klimaticke zmeny.

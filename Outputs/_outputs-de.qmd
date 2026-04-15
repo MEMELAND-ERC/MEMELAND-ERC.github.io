@@ -1,0 +1,38 @@
+<!-- Wartungshinweis:
+Bitte alle Publikationen, Datensätze und Deliverables auf dieser Seite eintragen.
+Neueste Einträge zuerst; Format beibehalten.
+-->
+
+Diese Seite sammelt die wissenschaftlichen Ergebnisse des MEMELAND-Projekts.
+Sie wird laufend um Publikationen, Datensätze und andere Ressourcen ergänzt.
+
+## Publikationen
+
+*Noch keine Publikationen — schauen Sie bald wieder vorbei.*
+
+<!-- Format für neue Einträge:
+
+**Autor A, Autor B, Autor C** (JJJJ).
+Titel des Artikels.
+*Zeitschriftenname*, Band(Heft), Seiten.
+[DOI-Link](https://doi.org/10.xxxx/xxxxx)
+| [PDF](Link) | [Daten](Link)
+
+Einträge nach Jahr, neueste zuerst.
+-->
+
+## Datensätze
+
+*Noch keine Datensätze hinterlegt.*
+
+## Vorträge & Poster
+
+*Noch keine Konferenzbeiträge aufgeführt.*
+
+## Berichte & Deliverables
+
+*Noch keine Projektberichte oder Deliverables veröffentlicht.*
+
+## Abschlussarbeiten
+
+*Noch keine Abschlussarbeiten im Rahmen des Projekts fertiggestellt.*
