@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs/cs
+
+lang: cs
+
+website:
+  navbar:
+    left:
+      - text: O projektu
+        href: about.qmd
+
+      - text: Výzkumné týmy
+        menu:
+          - text: Arktická univerzita Norska (UiT)
+            href: Team/uit.qmd
+          - text: Oxfordská univerzita
+            href: Team/oxford.qmd
+          - text: Švýcarský federální ústav pro vědu o vodních zdrojích (Eawag)
+            href: Team/eawag.qmd
+          - text: Univerzita v Salzburgu
+            href: Team/salzburg.qmd
+          - text: Univerzita Karlova
+            href: Team/cuni.qmd
+
+      - text: Lidé
+        href: Team/people.qmd
+
+      - text: Aktivity
+        href: Activities/activities.qmd
+
+      - text: Výstupy
+        href: Outputs/outputs.qmd

@@ -1,7 +1,9 @@
 project:
   type: website
-  # Rendered website output goes to docs/ (used by GitHub Pages).
-  output-dir: docs
+
+profile:
+  default: english
+  group: [english, german, french, czech, norwegian]
 
 website:
   title: "MEMELAND"
@@ -27,32 +29,18 @@ website:
     tools:
       - icon: github
         href: https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io
-    left:
-      # Add new top-level pages here to show them in the main navigation bar.
-      - text: About
-        href: about.qmd
-
-      - text: Research Teams
+      - text: "🌐"
         menu:
-          - text: The Arctic University of Norway
-            href: Team/uit.qmd
-          - text: University of Oxford
-            href: Team/oxford.qmd
-          - text: Swiss Federal Institute of Aquatic Science and Technology
-            href: Team/eawag.qmd
-          - text: University of Salzburg
-            href: Team/salzburg.qmd
-          - text: Charles University
-            href: Team/cuni.qmd
-
-      - text: People
-        href: Team/people.qmd
-      
-      - text: Current activities
-        href: Activities/activities.qmd
-      
-      - text: Outputs
-        href: Outputs/outputs.qmd
+          - text: English
+            href: ../en
+          - text: Deutsch
+            href: ../de
+          - text: Français
+            href: ../fr
+          - text: Čeština
+            href: ../cs
+          - text: Norsk
+            href: ../no
 
 format:
   html:

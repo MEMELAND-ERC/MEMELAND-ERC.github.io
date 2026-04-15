@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs/en
+
+lang: en
+
+website:
+  navbar:
+    left:
+      - text: About
+        href: about.qmd
+
+      - text: Research Teams
+        menu:
+          - text: The Arctic University of Norway
+            href: Team/uit.qmd
+          - text: University of Oxford
+            href: Team/oxford.qmd
+          - text: Swiss Federal Institute of Aquatic Science and Technology
+            href: Team/eawag.qmd
+          - text: University of Salzburg
+            href: Team/salzburg.qmd
+          - text: Charles University
+            href: Team/cuni.qmd
+
+      - text: People
+        href: Team/people.qmd
+
+      - text: Current Activities
+        href: Activities/activities.qmd
+
+      - text: Outputs
+        href: Outputs/outputs.qmd

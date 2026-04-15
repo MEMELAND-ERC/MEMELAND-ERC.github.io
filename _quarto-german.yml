@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs/de
+
+lang: de
+
+website:
+  navbar:
+    left:
+      - text: Über das Projekt
+        href: about.qmd
+
+      - text: Forschungsteams
+        menu:
+          - text: Arktische Universität Norwegen (UiT)
+            href: Team/uit.qmd
+          - text: Universität Oxford
+            href: Team/oxford.qmd
+          - text: Eawag – Wasserforschungsinstitut des ETH-Bereichs
+            href: Team/eawag.qmd
+          - text: Universität Salzburg
+            href: Team/salzburg.qmd
+          - text: Karls-Universität Prag
+            href: Team/cuni.qmd
+
+      - text: Personen
+        href: Team/people.qmd
+
+      - text: Aktivitäten
+        href: Activities/activities.qmd
+
+      - text: Ergebnisse
+        href: Outputs/outputs.qmd
