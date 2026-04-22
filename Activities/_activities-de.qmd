@@ -1,4 +1,5 @@
-<!-- Wartungshinweis:
-Neue Einträge durch Erstellen einer neuen .qmd-Datei in Activities/news/ hinzufügen.
-Beiträge werden ausschließlich auf Englisch veröffentlicht.
--->
+# Aktivitäten
+
+Hier finden Sie Projektneuigkeiten, Veranstaltungen und weitere öffentliche Updates aus MEMELAND.
+
+News-Beiträge werden derzeit nur auf Englisch veröffentlicht.

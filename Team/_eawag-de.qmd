@@ -4,7 +4,11 @@ An der Eawag nutzen [Prof. Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-
 
 Ihre Forschung dreht sich um Fragen wie: (1) Können fäkale Biomarker neue Erkenntnisse über vergangene Landnutzungsänderungen liefern? (2) Können diese molekularen Spuren räumlich-zeitliche Unterschiede in der landwirtschaftlichen Praxis in Europa aufdecken? (3) Lässt sich die Eutrophierung von Seen mit gesteigertem Nährstoffeintrag durch fäkale Biomarker verknüpfen?
 
-Die Biomarkeranalysen werden durch eine verbindungsspezifische Radiokohlenstoffdatierung vorgealteter Blattwachse sowie Analysen von refraktärem organischem Kohlenstoff (ROC) ergänzt. Pflanzenspezifische Biomarker wie Miliacin (Hirse) und Cannabinol (*Cannabis spp*) ermöglichen den Nachweis von Kulturpflanzenanbau und Praktiken wie der Hanfröste.
+Um diese Fragen zu bearbeiten und anthropogene Signaturen der Landnutzung zu identifizieren, integrieren sie Biomarkerdaten mit hyperspektraler Bildgebung und kombinieren diese mit ergänzenden geochemischen und geochronologischen Daten, die vom Salzburger Team erhoben werden.
+
+Über die Rekonstruktion von Landnutzung hinaus werden die Daten zu fäkalen Biomarkern (a) helfen, sedaDNA-Nachweise von Tieren zu validieren, und (b) unabhängige Hinweise auf Beweidung, Düngung und sogar direkte menschliche fäkale Einträge liefern. Die Biomarkeranalysen werden durch verbindungsspezifische Radiokohlenstoffdatierungen vorgealterter Blattwachse sowie durch Analysen von refraktärem organischem Kohlenstoff (ROC) ergänzt, um Pflügen und durch Viehhaltung verursachte Bodenerosion zu erschließen. Schließlich werden artspezifische Pflanzenbiomarker wie Miliacin (Hirse) und Cannabinol (*Cannabis spp.*) verwendet, um den Anbau von Kulturpflanzen (für Nahrung, Medizin und Fasergewinnung) sowie Praktiken wie die Hanfröste nachzuweisen.
+
+Die Ergebnisse des Eawag-Teams werden unmittelbar zum interdisziplinären Rahmen von MEMELAND beitragen, der Archäobotanik, sedimentäre DNA und sozio-ökologische Modellierung zusammenführt, um Europas mittelalterliche Landschaften zu rekonstruieren.
 
 ### Personen
 

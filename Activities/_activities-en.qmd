@@ -1,5 +1,5 @@
-<!-- Maintainer note:
-Add new items by creating a new .qmd file in Activities/news/.
-This page is an automatic listing and should usually not need content edits.
-Note: news posts are published in English only.
--->
+# Activities
+
+Project updates, events, and other public-facing news from MEMELAND are collected here.
+
+News posts are currently published in English only.

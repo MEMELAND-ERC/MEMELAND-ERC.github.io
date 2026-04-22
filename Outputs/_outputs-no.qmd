@@ -1,66 +1,66 @@
-<!-- Maintainer note:
-Use this page as the single place for publications, datasets, and deliverables.
-Keep newest items first in each section and retain the provided entry formats.
+<!-- Merknad til redaktør:
+Bruk denne siden som det eneste stedet for publikasjoner, datasett og leveranser.
+Behold de nyeste oppføringene først i hver seksjon, og hold fast ved de oppgitte formatene.
 -->
 
-This page collects the scientific outputs of the MEMELAND project.
-It will be updated as publications, datasets, and other resources become available.
+Denne siden samler de vitenskapelige resultatene fra MEMELAND-prosjektet.
+Den blir oppdatert etter hvert som publikasjoner, datasett og andre ressurser blir tilgjengelige.
 
-## Publications
+## Publikasjoner
 
-*No publications yet — check back soon.*
+*Ingen publikasjoner ennå — kom tilbake snart.*
 
-<!-- When adding a publication, use this format:
+<!-- Når du legger til en publikasjon, bruk dette formatet:
 
-**Author A, Author B, Author C** (YYYY).
-Title of the paper.
-*Journal Name*, volume(issue), pages.
-[DOI link](https://doi.org/10.xxxx/xxxxx)
-| [PDF](link-to-pdf) | [Data](link-to-data)
+**Forfatter A, Forfatter B, Forfatter C** (ÅÅÅÅ).
+Tittel på artikkelen.
+*Tidsskriftnavn*, volum(hefte), sider.
+[DOI-lenke](https://doi.org/10.xxxx/xxxxx)
+| [PDF](lenke-til-pdf) | [Data](lenke-til-data)
 
-Group entries by year, newest first.
+Grupper oppføringene etter år, med de nyeste først.
 -->
 
-## Datasets
+## Datasett
 
-*No datasets deposited yet.*
+*Ingen datasett er deponert ennå.*
 
-<!-- When adding a dataset entry:
+<!-- Når du legger til et datasett, bruk dette formatet:
 
-**Author A, Author B** (YYYY).
-*Dataset title* [Data set].
-Repository Name.
+**Forfatter A, Forfatter B** (ÅÅÅÅ).
+*Tittel på datasettet* [Datasett].
+Navn på repositorium.
 [https://doi.org/10.xxxx/xxxxx](https://doi.org/10.xxxx/xxxxx)
 -->
 
-## Presentations & Posters
+## Presentasjoner og postere
 
-*No conference presentations listed yet.*
+*Ingen konferansepresentasjoner er oppført ennå.*
 
-<!-- Suggested format:
+<!-- Foreslått format:
 
-**Author A** (YYYY, Month). *Presentation title*.
-Conference Name, City, Country.
-[Slides](link) | [Poster](link)
+**Forfatter A** (ÅÅÅÅ, måned). *Tittel på presentasjonen*.
+Navn på konferanse, by, land.
+[Lysbilder](lenke) | [Poster](lenke)
 -->
 
-## Reports & Deliverables
+## Rapporter og leveranser
 
-*No project reports or deliverables published yet.*
+*Ingen prosjektrapporter eller leveranser er publisert ennå.*
 
-<!-- Suggested format:
+<!-- Foreslått format:
 
-**Deliverable D1.1** — *Title of deliverable* (YYYY, Month).
-[Download PDF](link)
+**Leveranse D1.1** — *Tittel på leveransen* (ÅÅÅÅ, måned).
+[Last ned PDF](lenke)
 -->
 
-## Theses
+## Avhandlinger
 
-*No theses completed within the project yet.*
+*Ingen avhandlinger er fullført innenfor prosjektet ennå.*
 
-<!-- Suggested format:
+<!-- Foreslått format:
 
-**Student Name** (YYYY). *Thesis title*.
-[PhD / MSc] thesis, University Name.
-[Link](link)
+**Studentnavn** (ÅÅÅÅ). *Tittel på avhandlingen*.
+[PhD / MSc]-avhandling, universitetets navn.
+[Lenke](lenke)
 -->

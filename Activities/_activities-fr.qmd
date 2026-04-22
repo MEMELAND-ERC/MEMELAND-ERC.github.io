@@ -1,4 +1,5 @@
-<!-- Note de maintenance :
-Ajoutez de nouveaux éléments en créant un nouveau fichier .qmd dans Activities/news/.
-Les actualités sont publiées en anglais uniquement.
--->
+# Activités
+
+Vous trouverez ici les actualités du projet, les événements et d'autres informations publiques liées à MEMELAND.
+
+Les actualités sont actuellement publiées en anglais uniquement.

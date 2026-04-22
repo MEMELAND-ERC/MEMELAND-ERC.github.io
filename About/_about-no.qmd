@@ -4,9 +4,9 @@
 :::
 
 ::: {.column width="36%"}
-![](/..Materials/Logos/MEMELAND.png)
+![](../Materials/Logos/MEMELAND.png)
 
-# About project
+# Om prosjektet
 :::
 
 ::: {.column width="32%"}
@@ -14,18 +14,18 @@
 
 ::::
 
-European landscapes are cultural–natural hybrids: today's biodiversity patterns were not only shaped by climate and ecology, but also by centuries of human land use, governance, and ideology. MEMELAND addresses a central gap in our understanding of this legacy by reconstructing biodiversity and land-use trajectories at species level over the last two millennia—precisely the period in which many lowland prehistoric systems were replaced by medieval and early-modern landscapes.
+Europeiske landskap er kultur-natur-hybrider: Dagens mønstre i biologisk mangfold er ikke bare formet av klima og økologi, men også av århundrer med menneskelig arealbruk, styring og ideologi. MEMELAND tar for seg et sentralt kunnskapshull i forståelsen av denne arven ved å rekonstruere utviklingen i biologisk mangfold og arealbruk på artsnivå gjennom de siste to tusen årene, altså nettopp i perioden da mange forhistoriske lavlandssystemer ble erstattet av middelalderske og tidligmoderne landskap.
 
-To do this, MEMELAND integrates cutting-edge molecular proxies with established archaeological and palaeoecological approaches. We analyse sediment cores from 50 *paired* lakes (100 sites): one site located near documented elite/high-status medieval archaeology and a nearby control site with little or no comparable archaeological signal. This paired-site strategy allows us to disentangle local variability from regional trends and to test hypotheses about the "medieval agricultural revolution", population change, technologies (e.g., the heavy/mouldboard plough), and shifting land-management regimes across three contrasting archaeological zones (non-Romanised north, central Europe, and Romanised northern Europe).
+For å gjøre dette kombinerer MEMELAND banebrytende molekylære proxydata med etablerte arkeologiske og paleoøkologiske tilnærminger. Vi analyserer sedimentkjerner fra 50 *parvise* innsjøer (100 lokaliteter): én lokalitet nær dokumentert middelaldersk elite- eller høystatusarkeologi og en nærliggende kontrollokalitet med lite eller intet sammenlignbart arkeologisk signal. Denne strategien med parvise lokaliteter gjør det mulig å skille lokal variasjon fra regionale trender og å teste hypoteser om den «middelalderske jordbruksrevolusjonen», befolkningsendringer, teknologiutvikling (for eksempel hjulplogen/vendeplogen) og skiftende regimer for landskapsforvaltning i tre kontrasterende arkeologiske soner (det ikke-romanisert nord, Sentral-Europa og det romaniserte Nord-Europa).
 
-The project is a Synergy collaboration led from Arctic University of Norway, together with the University of Oxford, Swiss Federal Institute of Aquatic Science and Technology (Eawag), and the University of Salzburg, plus partner at Charles University. Alongside scientific publications, MEMELAND commits to open science and to returning site-level results directly to local collaborators, with interactive outputs made available through the project website. See [Research Teams](#research-teams) and [People](/Team/people.qmd) for more information.
+Prosjektet er et Synergy-samarbeid ledet fra Norges arktiske universitet, i samarbeid med University of Oxford, Swiss Federal Institute of Aquatic Science and Technology (Eawag) og Universitetet i Salzburg, samt en partner ved Karlsuniversitetet. Ved siden av vitenskapelige publikasjoner forplikter MEMELAND seg til åpen forskning og til å føre resultater tilbake til lokale samarbeidspartnere på lokalitetsnivå, med interaktive resultater tilgjengeliggjort gjennom prosjektets nettside. Se [Forskningsgrupper](#forskningsgrupper) og [Personer](/Team/people.qmd) for mer informasjon.
 
-# Research Teams
+# Forskningsgrupper
 
-There are 5 main research teams within the MEMELAND project, each based in a different institution and led by a different Principal Investigator:
+Det er fem hovedgrupper i MEMELAND-prosjektet, hver forankret ved en egen institusjon og ledet av en egen hovedansvarlig forsker:
 
-- [The Arctic University of Norway, Norway](/Team/uit.qmd)
-- [University of Oxford, UK](/Team/oxford.qmd)
-- [Swiss Federal Institute of Aquatic Science and Technology (Eawag), Switzerland](/Team/eawag.qmd)
-- [University of Salzburg, Austria](/Team/salzburg.qmd)
-- [Charles University, Czech Republic](/Team/cuni.qmd)
+- [Norges arktiske universitet, Norge](/Team/uit.qmd)
+- [University of Oxford, Storbritannia](/Team/oxford.qmd)
+- [Swiss Federal Institute of Aquatic Science and Technology (Eawag), Sveits](/Team/eawag.qmd)
+- [Universitetet i Salzburg, Østerrike](/Team/salzburg.qmd)
+- [Karlsuniversitetet, Tsjekkia](/Team/cuni.qmd)

@@ -1,66 +1,66 @@
-<!-- Poznamka pro spravce:
-Pouzivejte tuto stranku jako centralni misto pro publikace, datasety a vystupy projektu.
-V kazde sekci uvadejte nejnovejsi polozky jako prvni a zachovejte uvedene formaty zaznamu.
+<!-- Poznámka pro správce:
+Používejte tuto stránku jako centrální místo pro publikace, datasety a výstupy projektu.
+V každé sekci uvádějte nejnovější položky jako první a zachovejte uvedené formáty záznamů.
 -->
 
-Tato stranka shromazduje vedecke vystupy projektu MEMELAND.
-Bude se prubezne aktualizovat s pribyvajicimi publikacemi, datasety a dalsimi zdroji.
+Tato stránka shromažďuje vědecké výstupy projektu MEMELAND.
+Bude se průběžně aktualizovat s přibývajícími publikacemi, datasety a dalšími zdroji.
 
 ## Publikace
 
-*Zatim nejsou k dispozici zadne publikace - vratte se prosim pozdeji.*
+*Zatím nejsou k dispozici žádné publikace - vraťte se prosím později.*
 
-<!-- Pri pridani publikace pouzijte tento format:
+<!-- Při přidání publikace použijte tento formát:
 
 **Autor A, Autor B, Autor C** (YYYY).
-Nazev clanku.
-*Nazev casopisu*, rocnik(cislo), strany.
+Název článku.
+*Název časopisu*, ročník(číslo), strany.
 [DOI odkaz](https://doi.org/10.xxxx/xxxxx)
 | [PDF](link-to-pdf) | [Data](link-to-data)
 
-Polozky seskupujte podle roku, od nejnovesich.
+Položky seskupujte podle roku, od nejnovějších.
 -->
 
 ## Datasety
 
-*Zatim nejsou ulozeny zadne datasety.*
+*Zatím nejsou uloženy žádné datasety.*
 
-<!-- Pri pridani zaznamu datasetu:
+<!-- Při přidání záznamu datasetu:
 
 **Autor A, Autor B** (YYYY).
-*Nazev datasetu* [Datovy soubor].
-Nazev repozitare.
+*Název datasetu* [Datový soubor].
+Název repozitáře.
 [https://doi.org/10.xxxx/xxxxx](https://doi.org/10.xxxx/xxxxx)
 -->
 
 ## Prezentace a postery
 
-*Zatim nejsou uvedeny zadne konferencni prezentace.*
+*Zatím nejsou uvedeny žádné konferenční prezentace.*
 
-<!-- Doporuceny format:
+<!-- Doporučený formát:
 
-**Autor A** (YYYY, mesic). *Nazev prezentace*.
-Nazev konference, mesto, stat.
+**Autor A** (YYYY, měsíc). *Název prezentace*.
+Název konference, město, stát.
 [Prezentace](link) | [Poster](link)
 -->
 
-## Zpravy a vystupy projektu
+## Zprávy a výstupy projektu
 
-*Zatim nejsou zverejneny zadne projektove zpravy ani oficialni vystupy.*
+*Zatím nejsou zveřejněny žádné projektové zprávy ani oficiální výstupy.*
 
-<!-- Doporuceny format:
+<!-- Doporučený formát:
 
-**Vystup D1.1** - *Nazev vystupu* (YYYY, mesic).
+**Výstup D1.1** - *Název výstupu* (YYYY, měsíc).
 [Stahnout PDF](link)
 -->
 
-## Zaverecne prace
+## Závěrečné práce
 
-*V ramci projektu zatim nebyly dokonceny zadne zaverecne prace.*
+*V rámci projektu zatím nebyly dokončeny žádné závěrečné práce.*
 
-<!-- Doporuceny format:
+<!-- Doporučený formát:
 
-**Jmeno studenta** (YYYY). *Nazev prace*.
-[PhD / Mgr.] prace, nazev univerzity.
+**Jméno studenta** (YYYY). *Název práce*.
+[PhD / Mgr.] práce, název univerzity.
 [Odkaz](link)
 -->
