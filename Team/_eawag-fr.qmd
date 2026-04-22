@@ -4,7 +4,11 @@
 
 Leurs recherches s'articulent autour de questions telles que : (1) Les biomarqueurs fécaux peuvent-ils apporter de nouvelles informations sur les changements d'utilisation des terres passés ? (2) Ces traces moléculaires peuvent-elles révéler des différences spatio-temporelles dans les pratiques agricoles à travers l'Europe ? (3) L'eutrophisation des lacs peut-elle être associée à un apport accru de nutriments via les biomarqueurs fécaux ?
 
-Les analyses de biomarqueurs seront complétées par une datation radiocarbone spécifique aux composés de cires foliaires pré-âgées, ainsi que par des analyses de carbone organique réfractaire (ROC). Des biomarqueurs végétaux spécifiques à l'espèce, tels que le miliacin (millet) et le cannabinol (*Cannabis spp*), seront utilisés pour détecter la culture de plantes cultivées et des pratiques telles que le rouissage du chanvre.
+Pour aborder ces questions et identifier les signatures anthropiques de l'usage des terres, l'équipe intègre les données de biomarqueurs à l'imagerie hyperspectrale et les combine avec des données géochimiques et géochronologiques complémentaires acquises par l'équipe de Salzbourg.
+
+Au-delà de la reconstruction de l'usage des terres, les données issues des biomarqueurs fécaux (a) aideront à valider les enregistrements de sedaDNA animal, et (b) fourniront des preuves indépendantes du pâturage, de la fumure et même d'apports fécaux humains directs. Les analyses de biomarqueurs seront complétées par une datation radiocarbone spécifique aux composés de cires foliaires pré-âgées, ainsi que par des analyses de carbone organique réfractaire (ROC) afin d'inférer le labour et l'érosion des sols liée à l'élevage. Enfin, des biomarqueurs végétaux spécifiques à certaines espèces, tels que le miliacin (millet) et le cannabinol (*Cannabis spp.*), seront utilisés pour détecter la culture de plantes utiles (alimentation, médecine, fibres) et des pratiques telles que le rouissage du chanvre.
+
+Les résultats de l'équipe Eawag contribueront directement au cadre interdisciplinaire de MEMELAND, qui réunit l'archéobotanique, l'ADN sédimentaire et la modélisation socio-environnementale pour reconstruire les paysages médiévaux de l'Europe.
 
 ### Personnes
 

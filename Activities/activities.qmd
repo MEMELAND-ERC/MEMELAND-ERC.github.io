@@ -11,6 +11,7 @@ listing:
     type: grid
     grid-item-border: true
     categories: true
+    date-format: "D MMMM YYYY"
 ---
 
 ::::: {.content-visible when-profile="english"}
@@ -42,6 +43,12 @@ listing:
 {{< include _activities-no.qmd >}}
 
 :::::
+
+<!-- Maintainer note:
+Add new items by creating a new .qmd file in Activities/news/.
+This page is an automatic listing and should usually not need content edits.
+News posts are published in English only.
+-->
 
 ::: {#news}
 :::

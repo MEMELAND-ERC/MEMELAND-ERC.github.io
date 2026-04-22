@@ -1,15 +1,15 @@
-## Swiss Federal Institute of Aquatic Science and Technology (Eawag)
+## Det sveitsiske føderale instituttet for akvatisk vitenskap og teknologi (Eawag)
 
-At Eawag, [Prof. Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois) and [Dr. Tobias Schneider](/Team/people.qmd#dr.-tobias-schneider) use lake sediments as natural archives to investigate the climate-environment-human nexus throughout the Holocene. Within the MEMELAND project, their work focuses on fecal biomarkers, biomolecules such as sterols and bile acids produced by animals, to reconstruct grazing and manuring activity during the "medieval agricultural revolution".
-Their research revolves around questions such as (1) can fecal biomarkers provide new insights into past land use changes? (2) Can these molecular traces reveal spatio-temporal differences in agricultural practices across Europe? (3) Can lake eutrophication and oxygen depletion be linked to increased nutrient input through fecal biomarkers?
+Ved Eawag bruker [Prof. Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois) og [Dr. Tobias Schneider](/Team/people.qmd#dr.-tobias-schneider) innsjøsedimenter som naturlige arkiver for å undersøke sammenhengen mellom klima, miljø og mennesker gjennom hele holocen. Innenfor MEMELAND-prosjektet fokuserer arbeidet deres på fekale biomarkører, biomolekyler som steroler og gallesyrer produsert av dyr, for å rekonstruere beitebruk og gjødsling under den «middelalderske jordbruksrevolusjonen».
+Forskningen deres dreier seg om spørsmål som: (1) Kan fekale biomarkører gi ny innsikt i tidligere endringer i arealbruk? (2) Kan disse molekylære sporene avdekke romlige og tidslige forskjeller i jordbrukspraksis i Europa? (3) Kan eutrofiering i innsjøer og oksygensvinn knyttes til økt næringstilførsel gjennom fekale biomarkører?
 
-To tackle these questions and identify anthropogenic land-use signatures, they integrate biomarker data with hyperspectral imaging and combine it with complementary geochemical and geochronological data acquired by the University of Salzburg Team.
+For å undersøke disse spørsmålene og identifisere menneskeskapte spor av arealbruk, integrerer de biomarkørdata med hyperspektral avbildning og kombinerer dette med komplementære geokjemiske og geokronologiske data innhentet av Salzburg-gruppen.
 
-Beyond reconstructing land use, the fecal biomarker data will (a) help validate animal sedaDNA records, (b) provide independent evidence for grazing, manuring and even direct human fecal inputs. The biomarker analyses will be complemented by compound-specific radiocarbon dating of pre-aged leaf waxes, and analyses of refractory organic carbon (ROC) to infer ploughing and stock-related soil erosion. Finally, species-specific plant biomarkers such as miliacin (millet) and cannabinol (*Cannabis spp*) will be used to detect crop cultivation (for food, medicine, fiber) and practices such as hemp retting.
+Utover å rekonstruere arealbruk vil dataene fra de fekale biomarkørene (a) bidra til å validere sedaDNA-registreringer av dyr og (b) gi uavhengig dokumentasjon for beiting, gjødsling og til og med direkte menneskelige fekale tilførsler. Biomarkøranalysene vil bli supplert med forbindelsesspesifikk radiokarbondatering av foraldrende bladvoks og analyser av ildfast organisk karbon (ROC) for å tolke pløying og jorderosjon knyttet til husdyrhold. Til slutt skal artsspesifikke plantebiomarkører som miliacin (hirse) og cannabinol (*Cannabis spp.*) brukes til å påvise dyrking av nyttevekster (til mat, medisin og fiber) og praksiser som røyting av hamp.
 
-The results from the Eawag team will directly contribute to MEMELAND's interdisciplinary framework, which brings together archaeobotany, sedimentary DNA, and socio-environmental modeling to reconstruct Europe's medieval landscapes.
+Resultatene fra Eawag-gruppen vil bidra direkte til MEMELANDs tverrfaglige rammeverk, som bringer sammen arkeobotanikk, sedimentært DNA og sosio-miljømessig modellering for å rekonstruere Europas middelalderlandskap.
 
-### People
+### Personer
 
  - [Prof. Dr. Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois)
  - [Dr. Tobias Schneider](/Team/people.qmd#dr.-tobias-schneider)

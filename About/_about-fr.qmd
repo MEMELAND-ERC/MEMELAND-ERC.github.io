@@ -4,7 +4,7 @@
 :::
 
 ::: {.column width="36%"}
-![](Materials/Logos/MEMELAND.png)
+![](../Materials/Logos/MEMELAND.png)
 
 # À propos du projet
 :::
