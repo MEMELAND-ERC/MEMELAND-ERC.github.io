@@ -30,7 +30,7 @@ website:
     tools:
       - icon: github
         href: https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io
-      - text: "🌐"
+      - icon: globe
         menu:
           - text: English
             href: ../en
