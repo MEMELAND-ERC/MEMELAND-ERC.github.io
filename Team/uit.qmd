@@ -1,4 +1,4 @@
----
+﻿---
 date: 2026/04/01
 date-format: long
 date-modified: last-modified
@@ -18,20 +18,35 @@ listing:
     page-size: 3
 ---
 
-## The Arctic University of Norway
+::::: {.content-visible when-profile="english"}
 
-The ArcEcoGEN Research Centre within Tromsø Museum, Arctic University of Norway (UiT) is the host institution of MEMELAND. At Tromsø [Prof Tony Brown](/Team/people.qmd#prof.-tony-g-brown) and his team both administer the project and specialize in the extraction and analysis of ancient DNA from sediments (sedaDNA). In conjunction with the Strasbourg Team Tromsø runs a field sampling team who will core lakes and some wetlands in the northern and western parts of the study area including all of Scandinavia, Central Europe and Northern Germany and France. In addition the project is using material from many other institutions that is suitable for sedaDNA analysis. In total there will be over 100 cores and 4000-8000 samples which will be used to address the changing nature of European biodiversity, focusing on the last 2000 years, or since the Roman period. This will be enabled by high-resolution dating (see the Salzburg section), and complimented by fecal and other biomarkers (Eawag Team) as well as archaeobotanical studies (Oxford Team).
-The group at Tromsø are specialists in the extraction and analysis of sedaDNA from a variety of palaeo-contexts, mostly lakes but also wetlands, floodplains, hillslope sediments and archaeological sites. This study will focus on small lakes embedded within the agricultural landscape of NW Europe. We largely use two methodologies; firstly amplicon or metabarcode analysis in which the DNA in a sample is selectively targeted and amplified before being sequenced. This is the work-horse methodology of the project as it has been shown to be the most reliable and value-for money. However, it is generally restricted to certain organism groups including vascular plants and vertebrates, although other DNA can be amplified. It also cannot be intrinsically authenticated (from damage patterns) and cannot easily go below the species level. These limitations can be overcome using non-amplicon or shotgun sequencing. The group at Tromsø is continuously developing new methods in order to improve the depth of information that can be gained from these sedimentary environments and to understand the limitations and biases of the data.
+{{< include _uit-en.qmd >}}
 
-In many instances this data will be combined with both the biomarker data and archaeobotanical data, including pollen, in order to provide a more holistic reconstruction of past agricultural ecologies. This includes not only the crops and domesticated animals, but also weeds, synanthropic species (parasites, pests, commensals etc.) and changes in NW European lowland ecosystems. This data will facilitate a new narrative of European biodiversity at two levels, the stories of individual localities and species and regional-biome scale patterns that define the biodiversity of NW Europe. This is important evidence in the fight to maintain high biodiversity and environmental quality in the face of both our changing climate and increasing pressure from population growth and technological development. Interestingly this has happened before, and the history of agriculture since the Romans were in northern Europe is one of continued population growth and prosperity but with complex implications for biodiversity and nature. This archaeological and historical dimension is the focus of the Oxford Team. The results will be published at a variety of spatial scales and be used to understand the changing nature of landscapes and ecology across the region including spatial modelling which will be undertaken in conjunction with the Laboratory of Quantitative Ecology at Charles University in Prague.
+:::::
 
-### People
+::::: {.content-visible when-profile="german"}
 
- - [Prof. Tony G Brown](/Team/people.qmd#prof.-tony-g-brown)
- - [Prof. Inger G Alsos](/Team/people.qmd#prof.-inger-g-alsos)
- - [Dr. Oliver Kern](/Team/people.qmd#dr.-oliver-kern)
- - [Dr. Ying Liu](/Team/people.qmd#dr.-ying-liu)
- - [Katja Häkli](/Team/people.qmd#katja-häkli)
+{{< include _uit-de.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="french"}
+
+{{< include _uit-fr.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="czech"}
+
+{{< include _uit-cs.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="norwegian"}
+
+{{< include _uit-no.qmd >}}
+
+:::::
 
 ### News
 

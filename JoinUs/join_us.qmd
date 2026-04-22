@@ -1,0 +1,35 @@
+---
+date: 2025/04/20
+date-format: long
+date-modified: last-modified
+---
+
+::::: {.content-visible when-profile="english"}
+
+{{< include _join_us-en.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="german"}
+
+{{< include _join_us-de.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="french"}
+
+{{< include _join_us-fr.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="czech"}
+
+{{< include _join_us-cs.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="norwegian"}
+
+{{< include _join_us-no.qmd >}}
+
+:::::

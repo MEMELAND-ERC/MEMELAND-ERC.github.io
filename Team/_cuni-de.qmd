@@ -1,0 +1,11 @@
+## Karls-Universität Prag
+
+Das [Labor für Quantitative Ökologie](https://ondrejmottl.github.io/lab/about_the_lab.html) an der Karls-Universität Prag, geleitet von [Dr. Ondřej Mottl](/Team/people.qmd#dr.-ondřej-mottl) (Assistenzprofessor für Pflanzenökologie und Open Science Champion), untersucht Trends der Vegetationsbiodiversität über räumliche und zeitliche Skalen. Das Labor ist spezialisiert auf modernste quantitative und statistische Methoden sowie auf Data-Science- und Machine-Learning-Ansätze. Die Forschung integriert Konzepte und Methoden aus Makroökologie, Paläoökologie, Biodiversitätswissenschaft und quantitativer Ökologie.
+
+Ein Kernprinzip der Laborarbeit ist das starke Bekenntnis zu offener Wissenschaft und wissenschaftlicher Reproduzierbarkeit. Alle Forschungsoutputs – Daten, Code und Methoden – werden öffentlich zugänglich und vollständig reproduzierbar gemacht, um Transparenz zu gewährleisten und der breiteren wissenschaftlichen Gemeinschaft den Aufbau auf diese Arbeiten zu ermöglichen.
+
+Im Rahmen von MEMELAND spielt das Labor eine zentrale Rolle bei der Integration der von den anderen Teams generierten Multiproxy-Datensätze (sedaDNA, Lipidbiomarker, archäobotanische Daten, chronologische Daten) in umfassende Raummodelle. Mithilfe fortschrittlicher quantitativer paläoökologischer Methoden werden Muster des Biodiversitäts- und Landnutzungswandels in Nord- und Mitteleuropa über die letzten zwei Jahrtausende beleuchtet.
+
+### Personen
+
+ - [Dr. Ondřej Mottl](/Team/people.qmd#dr.-ondřej-mottl)

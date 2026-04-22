@@ -1,0 +1,31 @@
+:::: {.columns}
+
+::: {.column width="32%"}
+:::
+
+::: {.column width="36%"}
+![](Materials/Logos/MEMELAND.png)
+
+# Über das Projekt
+:::
+
+::: {.column width="32%"}
+:::
+
+::::
+
+Europäische Landschaften sind kulturell-natürliche Hybride: Die heutigen Biodiversitätsmuster wurden nicht nur durch Klima und Ökologie geprägt, sondern auch durch Jahrhunderte menschlicher Landnutzung, Verwaltung und Ideologie. MEMELAND schließt eine zentrale Wissenslücke, indem es Biodiversitäts- und Landnutzungsverläufe auf Artenebene über die letzten zwei Jahrtausende rekonstruiert – genau der Zeitraum, in dem viele vorgeschichtliche Tieflandsysteme durch mittelalterliche und frühneuzeitliche Landschaften ersetzt wurden.
+
+Dazu integriert MEMELAND modernste molekulare Proxies mit bewährten archäologischen und paläoökologischen Ansätzen. Wir analysieren Sedimentkerne aus 50 *gepaarten* Seen (100 Standorte): ein Standort in der Nähe dokumentierter mittelalterlicher Elite-/Hochstatus-Archäologie und ein nahegelegener Kontrollstandort mit wenig oder keinem vergleichbaren archäologischen Signal. Diese Strategie ermöglicht es, lokale Variabilität von regionalen Trends zu trennen und Hypothesen zur "mittelalterlichen Agrarrevolution", zum Bevölkerungswandel, zu Technologien (z. B. dem Schwerpflug) und zu sich wandelnden Landbewirtschaftungsregimen zu testen.
+
+Das Projekt ist eine Synergy-Kollaboration unter der Leitung der Arktischen Universität Norwegen, zusammen mit der Universität Oxford, dem Wasserforschungsinstitut des ETH-Bereichs (Eawag) und der Universität Salzburg sowie dem Partner Karls-Universität Prag. Neben wissenschaftlichen Publikationen verpflichtet sich MEMELAND zu offener Wissenschaft und zur direkten Rückgabe standortbezogener Ergebnisse an lokale Kooperationspartner. Weitere Informationen unter [Forschungsteams](#forschungsteams) und [Personen](/Team/people.qmd).
+
+# Forschungsteams
+
+Das MEMELAND-Projekt umfasst 5 Hauptforschungsteams, die jeweils an einer anderen Institution angesiedelt und von einem anderen Principal Investigator geleitet werden:
+
+- [Arktische Universität Norwegen, Norwegen](/Team/uit.qmd)
+- [Universität Oxford, UK](/Team/oxford.qmd)
+- [Wasserforschungsinstitut des ETH-Bereichs (Eawag), Schweiz](/Team/eawag.qmd)
+- [Universität Salzburg, Österreich](/Team/salzburg.qmd)
+- [Karls-Universität, Tschechische Republik](/Team/cuni.qmd)

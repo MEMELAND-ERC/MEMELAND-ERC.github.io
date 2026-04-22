@@ -1,0 +1,13 @@
+## Universität Salzburg
+
+An der Universität Salzburg untersucht [Prof. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang) mit seinem Team, wie Landschaftsprozesse und Sedimentarchive mittelalterliche Umweltveränderungen dokumentieren. Ihre Arbeit beginnt mit der Identifizierung geeigneter Seenstandorte in Nord-, West- und Mitteleuropa, gefolgt von der Entnahme paariger Sedimentkerne für MEMELAND. Mithilfe von Bathymetrie-Surveys, Sedimentdicken-Tests und Nesje-Kernern werden überlappende Kerne gewonnen, die die Sediment-Wasser-Grenzfläche einschließen und die oberen 1–3 m der Ablagerungen der letzten zwei Jahrtausende bewahren.
+
+Im Zentrum der Forschung steht die Bereitstellung des chronologischen Rahmens, der die europäische Kulturgeschichte mit der Ökodynamik verknüpft. Da die Datierung von Sedimenten dieses Zeitraums als besonders schwierig gilt, wendet das Team einen Mehrmethoden-Modellierungsansatz an: 14C-AMS-Datierung unverkohlter Pflanzenmakrofossilien, kurzlebige Isotope (210Pb und 137Cs), sphärische Kohlenstoffpartikel, optisch stimulierte Lumineszenz sowie Tephrahorizonte und historische Überflutungsereignisse. Die chronometrischen Ergebnisse werden in Alters-Tiefen-Modelle mit Bayesscher und KI-gestützter Modellierung (Bacon und CSciBox) umgewandelt, mit dem Ziel einer Präzision unter 100 Jahren (2σ) für die letzten 2.000 Jahre.
+
+### Personen
+
+ - [Prof. Dr. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang)
+ - [Fabian Christopher Dremel](/Team/people.qmd#fabian-christopher-dremel)
+ - [Marcel-Luciano Ortler](/Team/people.qmd#marcel-luciano-ortler)
+ - [David Zezula](/Team/people.qmd#david-zezula)
+ - [Dr. Shuang Zhang](/Team/people.qmd#dr.-shuang-zhang)

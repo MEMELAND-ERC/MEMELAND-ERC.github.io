@@ -1,0 +1,31 @@
+:::: {.columns}
+
+::: {.column width="32%"}
+:::
+
+::: {.column width="36%"}
+![](Materials/Logos/MEMELAND.png)
+
+# O projektu
+:::
+
+::: {.column width="32%"}
+:::
+
+::::
+
+Evropske krajiny jsou kulturne-prirodni hybridy: dnesni vzorce biodiverzity nejsou formovany jen klimatem a ekologii, ale i staletimi lidskeho vyuzivani krajiny, spravy a ideologii. MEMELAND vyplnuje zasadni mezeru v poznani tohoto dedictvi rekonstrukci biodiverzity a trajektorii vyuzivani krajiny na urovni druhu za posledni dve tisicileti, tedy prave v obdobi, kdy mnoho nizinnych pravekych systemu nahradily stredoveke a ranenovoveke krajiny.
+
+K dosazeni tohoto cile MEMELAND spojuje nejmodernejsi molekularni proxy s osvedcenymi archeologickymi a paleoekologickymi pristupy. Analyzujeme sedimentarni jadra z 50 *parovych* jezer (100 lokalit): jednu lokalitu v blizkosti dolozene stredoveke archeologie elitniho/vysokeho statusu a blizkou kontrolni lokalitu s malym nebo zadnym srovnatelnym archeologickym signalem. Tato strategie parovych lokalit nam umoznuje oddelit lokalni variabilitu od regionalnich trendu a testovat hypotezy o "stredoveke zemedelske revoluci", zmenach populace, technologiich (napr. tezky radlicny/radlickovy pluh) a promene rezimu hospodareni v krajine napric tremi kontrastnimi archeologickymi zonami (neromanizovany sever, stredni Evropa a romanizovana severni Evropa).
+
+Projekt je spolupraci typu Synergy vedenou Arktickou univerzitou Norska ve spolupraci s Oxfordskou univerzitou, Svycarskym federalnim institutem pro vedu a technologie vodnich zdroju (Eawag), Univerzitou v Salzburgu a partnerem z Univerzity Karlovy. Vedle vedeckych publikaci se MEMELAND hlasi k otevrene vede a k navraceni vysledku na urovni jednotlivych lokalit primo mistnim spolupracovnikum; interaktivni vystupy budou dostupne na projektovem webu. Vice informaci najdete v [Vyzkumnych tymech](#research-teams) a sekci [Lide](/Team/people.qmd).
+
+# Vyzkumne tymy
+
+V projektu MEMELAND je pet hlavnich vyzkumnych tymu, kazdy pusobici v jine instituci a vedeny jinym hlavnim resitelem:
+
+- [Arkticka univerzita Norska, Norsko](/Team/uit.qmd)
+- [Oxfordska univerzita, Velka Britanie](/Team/oxford.qmd)
+- [Svycarsky federalni institut pro vedu a technologie vodnich zdroju (Eawag), Svycarsko](/Team/eawag.qmd)
+- [Univerzita v Salzburgu, Rakousko](/Team/salzburg.qmd)
+- [Univerzita Karlova, Ceska republika](/Team/cuni.qmd)

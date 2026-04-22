@@ -1,0 +1,15 @@
+## Svycarsky federalni institut pro vedu a technologie vodnich zdroju (Eawag)
+
+V Eawag [Prof. Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois) a [Dr. Tobias Schneider](/Team/people.qmd#dr.-tobias-schneider) vyuzivaji jezerni sedimenty jako prirodni archivy pro studium vazeb mezi klimatem, prostredim a clovekem v prubehu holocenu. V ramci projektu MEMELAND se jejich prace soustreduje na fekalni biomarkery, tedy biomolekuly jako steroly a zlucove kyseliny produkovane zivocichy, ktere slouzi k rekonstrukci pastvy a hnojeni behem "stredoveke zemedelske revoluce".
+Jejich vyzkum se opira o otazky jako: (1) mohou fekalni biomarkery prinest nove poznatky o zmenach vyuzivani krajiny v minulosti? (2) Mohou tyto molekularni stopy odhalit prostorove a casove rozdily v zemedelskych praktikach napric Evropou? (3) Lze eutrofizaci jezer a ubytek kysliku propojit se zvysenym prisunem zivin dolozenym fekalnimi biomarkery?
+
+Aby tyto otazky zodpovedeli a identifikovali antropogenni signatury vyuzivani krajiny, propojuji biomarkerova data s hyperspektralnim snimkovanim a kombinuji je s doplnkovymi geochemickymi a geochronologickymi daty ziskanymi tymem Univerzity v Salzburgu.
+
+Krome rekonstrukce vyuzivani krajiny pomohou data fekalnich biomarkeru (a) validovat zaznamy zivocisne sedaDNA, (b) poskytnout nezavisle dukazy o pastve, hnojeni a dokonce i primych lidskych fekalnich vstupech. Biomarkerove analyzy budou doplneny slouceninove specifickym radiouhlikovym datovanim predstarych vosku z listu a analyzami refrakterniho organickeho uhliku (ROC) pro odhad eroze pudy spojene s orbou a chovem hospodarskych zvirat. Nakonec budou druhove specificke rostlinne biomarkery, jako miliacin (proso) a cannabinol (*Cannabis spp*), vyuzity k detekci pestovani plodin (potravina, lecivo, vlakno) a praktik, jako je rosen i konopi.
+
+Vysledky tymu Eawag primo prispeji k interdisciplinarnimu ramci MEMELAND, ktery propojuje archeobotaniku, sedimentarni DNA a socio-environmentalni modelovani za ucelem rekonstrukce stredovekych evropskych krajin.
+
+### Lide
+
+ - [Prof. Dr. Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois)
+ - [Dr. Tobias Schneider](/Team/people.qmd#dr.-tobias-schneider)

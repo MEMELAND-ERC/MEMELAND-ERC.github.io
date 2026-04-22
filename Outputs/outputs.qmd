@@ -8,65 +8,35 @@ toc: true
 toc-depth: 2
 ---
 
-<!-- Maintainer note:
-Use this page as the single place for publications, datasets, and deliverables.
-Keep newest items first in each section and retain the provided entry formats.
--->
+::::: {.content-visible when-profile="english"}
 
-This page collects the scientific outputs of the MEMELAND project.
-It will be updated as publications, datasets, and other resources become available.
+{{< include _outputs-en.qmd >}}
 
-## Publications
+:::::
 
-*No publications yet — check back soon.*
+::::: {.content-visible when-profile="german"}
 
-<!-- When adding a publication, use this format:
+{{< include _outputs-de.qmd >}}
 
-**Author A, Author B, Author C** (YYYY).
-Title of the paper.
-*Journal Name*, volume(issue), pages.
-[DOI link](https://doi.org/10.xxxx/xxxxx)
-| [PDF](link-to-pdf) | [Data](link-to-data)
+:::::
 
-Group entries by year, newest first.
--->
+::::: {.content-visible when-profile="french"}
 
-## Datasets
+{{< include _outputs-fr.qmd >}}
 
-*No datasets deposited yet.*
+:::::
 
-<!-- When adding a dataset entry:
+::::: {.content-visible when-profile="czech"}
 
-**Author A, Author B** (YYYY).
-*Dataset title* [Data set].
-Repository Name.
-[https://doi.org/10.xxxx/xxxxx](https://doi.org/10.xxxx/xxxxx)
--->
+{{< include _outputs-cs.qmd >}}
 
-## Presentations & Posters
+:::::
 
-*No conference presentations listed yet.*
+::::: {.content-visible when-profile="norwegian"}
 
-<!-- Suggested format:
+{{< include _outputs-no.qmd >}}
 
-**Author A** (YYYY, Month). *Presentation title*.
-Conference Name, City, Country.
-[Slides](link) | [Poster](link)
--->
-
-## Reports & Deliverables
-
-*No project reports or deliverables published yet.*
-
-<!-- Suggested format:
-
-**Deliverable D1.1** — *Title of deliverable* (YYYY, Month).
-[Download PDF](link)
--->
-
-## Theses
-
-*No theses completed within the project yet.*
+:::::
 
 <!-- Suggested format:
 

@@ -1,0 +1,12 @@
+## Université d'Oxford
+
+L'équipe d'Oxford examine comment les données sedaDNA s'articulent avec les données archéobotaniques et polliniques, l'archéologie des établissements et les sources écrites. Nous nous concentrons sur les changements écologiques (ou les continuités) lors d'époques charnières : la transition de la fin de l'époque romaine vers la période post-romaine (IVe-VIe siècles), la "révolution agricole" médiévale (Xe-XIIIe siècles) et les crises démographiques du XIVe siècle. L'écologie fonctionnelle des mauvaises herbes nous permettra de retracer les changements de fertilité des sols et de perturbation. L'analyse archéobotanique permettra de suivre les changements dans la diversité des cultures et l'apparition de nouvelles espèces, tandis que les données polliniques permettront d'évaluer l'importance relative de l'arable, des pâturages et des forêts.
+
+L'impact de la charrue à versoir est d'une importance capitale pour cette période. Des expériences de culture au Laboratoire Lauresham d'archéologie expérimentale exploreront son impact sur les isotopes stables et l'écologie des mauvaises herbes. En collaboration avec les historiens locaux, les sources écrites et les archives archéologiques locales permettront de contextualiser les résultats scientifiques. Le workflow FOSSILPOL sera utilisé pour constituer un ensemble de données uniforme d'enregistrements polliniques fossiles à l'échelle de l'Europe.
+
+### Personnes
+
+ - [Prof. Helena Hamerow](/Team/people.qmd#prof.-helena-hamerow)
+ - [Prof. Amy Bogaard](/Team/people.qmd#prof.-amy-bogaard)
+ - [Dr. Michael Charles](/Team/people.qmd#dr.-michael-charles)
+ - [Elizabeth Stroud](/Team/people.qmd#elizabeth-stroud)

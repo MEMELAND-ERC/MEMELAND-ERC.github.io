@@ -1,0 +1,13 @@
+## Université de Salzbourg
+
+À l'Université de Salzbourg, [le Prof. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang) et son équipe étudient comment les processus géomorphologiques et les archives sédimentaires enregistrent les changements environnementaux médiévaux. Leurs travaux débutent par l'identification de sites lacustres adaptés en Europe du Nord, de l'Ouest et du Centre, suivie du carottage par paires pour récupérer des séquences sédimentaires continues pour MEMELAND. Grâce à des relevés bathymétriques rapides, des tests d'épaisseur de sédiments et des carottiers Nesje de 10 cm de diamètre continus, ils obtiennent des carottes qui préservent les 1 à 3 m supérieurs de sédiments représentant les deux derniers millénaires.
+
+Leur recherche est centrée sur la fourniture de la colonne vertébrale chronologique nécessaire pour relier l'histoire culturelle européenne à l'écodynamique. La datation des sédiments de cette période étant réputée difficile, l'équipe applique une approche de modélisation multi-méthodes combinant la datation 14C AMS, les isotopes à courte durée de vie (210Pb et 137Cs), les particules carbonées sphériques, la luminescence stimulée optiquement et des niveaux de tephra ou d'événements d'inondation historiques. Ces résultats chronométriques sont transformés en modèles âge-profondeur à l'aide de la modélisation bayésienne et par IA (Bacon et CSciBox), avec l'objectif d'atteindre une précision inférieure à 100 ans (2σ) pour les 2 000 dernières années.
+
+### Personnes
+
+ - [Prof. Dr. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang)
+ - [Fabian Christopher Dremel](/Team/people.qmd#fabian-christopher-dremel)
+ - [Marcel-Luciano Ortler](/Team/people.qmd#marcel-luciano-ortler)
+ - [David Zezula](/Team/people.qmd#david-zezula)
+ - [Dr. Shuang Zhang](/Team/people.qmd#dr.-shuang-zhang)

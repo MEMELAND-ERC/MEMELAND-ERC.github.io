@@ -1,0 +1,17 @@
+## Univerzita v Salzburgu
+
+Na Univerzite v Salzburgu [Prof. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang) a jeho tym zkoumaji, jak krajinne procesy a sedimentarni archivy zaznamenavaji stredoveke zmeny zivotniho prostredi. Jejich prace zacina vyberem vhodnych jezernich lokalit napric severni, zapadni a stredni Evropou, po nemz nasleduje vrtani parovych lokalit za ucelem ziskani souvislych sedimentarnich sekvenci pro MEMELAND. Pomoci rychlych batymetrickych pruzkumu, testovani mocnosti sedimentu a kontinuialnich vrtaku Nesje o prumeru 10 cm spolu s gravitacnimi vrtaky Uwitec ziskavaji prekryvajici se jadra zahrnujici rozhrani voda-blato a zachovavajici hornich 1-3 m sedimentu reprezentujicich posledni dve tisicileti. Kazde jadro je zpracovano v kompletnim systemu oznacovani vzorku pomoci carovych kodu, aby byl odber od terenu po laborator plne konzistentni a dohledatelny.
+
+Jejich vyzkum je zameren na poskytnuti chronologicke kostry nezbytne pro propojeni evropskych kulturnich dejin s ekodynamikou pomoci presnych a stredne az vysoce presnych chronologii. Datovani sedimentu z tohoto obdobi je povazovano za "obzvlast obtizne", a proto tym pouziva multimethodni modelovaci pristup. Ten kombinuje 14C AMS datovani nezuhelnatelych jednorocnich rostlinnych makrozbytku s kratkodobymi izotopy (210Pb a 137Cs), sferoidalnimi uhlikatymi casticemi, opticky stimulovanou luminiscenci a kotvici body tam, kde lze identifikovat tefru nebo historicke povodnove udalosti. Tyto chronometricke vysledky jsou prevadeny na modely vek-hloubka pomoci bayesovskeho a AI modelovani v Bacon a CSciBox, s cilem dosahnout presnosti pod 100 let (2sigma) pro poslednich 2000 let. Inverze veku odhaluji obdobi silne eroze povodi a propojuji chronologicke nejistoty s narusenim pudy a predstarnutim biomarkeru.
+
+Aby bylo mozne porozumet, jak sedimenty odrazeji dopady vyuzivani krajiny, provadi salzbursky tym take odbery v povodich pro charakterizaci pudnich profilu, koluvialnich a aluvialnich ulozenin a pro stanoveni propojenosti povodi pomoci pristupu modelovani malych povodi. Tyto analyzy podporuji interpretace intenzity eroze, transportu sedimentu a sirsiho krajinneho kontextu jader.
+
+Univerzita v Salzburgu tak poskytuje klicove vrtne prace, charakterizaci povodi a presny chronologicky ramec, ktere tvori zaklad rekonstrukce environmentalnich zmen a intenzity hospodareni v krajine projektu MEMELAND za posledni dve tisicileti.
+
+### Lide
+
+ - [Prof. Dr. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang)
+ - [Fabian Christopher Dremel](/Team/people.qmd#fabian-christopher-dremel)
+ - [Marcel-Luciano Ortler](/Team/people.qmd#marcel-luciano-ortler)
+ - [David Zezula](/Team/people.qmd#david-zezula)
+ - [Dr. Shuang Zhang](/Team/people.qmd#dr.-shuang-zhang)

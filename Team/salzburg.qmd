@@ -1,4 +1,4 @@
----
+﻿---
 date: 2026/04/01
 date-format: long
 date-modified: last-modified
@@ -18,26 +18,37 @@ listing:
     page-size: 3
 ---
 
-## University of Salzburg
+::::: {.content-visible when-profile="english"}
 
-At the University of Salzburg, [Prof. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang) and his team investigate how landscape processes and sediment archives record medieval environmental change. Their work begins with identifying suitable lake sites across northern, western and central Europe, followed by paired-site coring to recover continuous sediment sequences for MEMELAND. Using rapid bathymetric surveys, sediment-thickness testing, and continuous 10 cm diameter Nesje corers together with Uwitec gravity corers, they obtain overlapping cores that include the mud–water interface and preserve the upper 1–3 m of sediment representing the last two millennia. Each core is processed using a complete barcoding sample labelling system to ensure consistent and traceable sampling from field to laboratory.
+{{< include _salzburg-en.qmd >}}
 
-Their research centres on providing the chronological backbone necessary to link European cultural history to ecodynamics using accurate and moderate-high-precision chronologies. Dating sediments from this period is described as “notoriously difficult,” so the team applies a multi-method modelling approach. This combines 14C AMS dating of un-charred annual plant macrofossils with short-lived isotopes (210Pb and 137Cs), spheroidal carbonaceous particles, optically stimulated luminescence, and tie-points where tephra or historic flooding events can be identified. These chronometric results are transformed into age–depth models using Bayesian and AI modelling in Bacon and CSciBox, with the aim of achieving under 100 years precision (2σ) for the last 2000 years. Age inversions reveal periods of severe catchment erosion, linking chronological uncertainties to soil disturbance and the pre-ageing of biomarkers.
+:::::
 
-To understand how sediments reflect land-use impacts, the Salzburg team also conducts sampling within the catchments to characterise soil profiles, colluvial and alluvial deposits, and to establish catchment connectivity using a small-catchment modelling approach. These analyses support interpretations of erosion intensity, sediment delivery, and the wider landscape context of the cores.
+::::: {.content-visible when-profile="german"}
 
-Together, the University of Salzburg provides the essential drilling, catchment characterisation, and precise chronological framework that underpin MEMELAND’s reconstruction of environmental change and farming intensity across the last two millennia.
+{{< include _salzburg-de.qmd >}}
 
-### People
+:::::
 
- - [Prof. Dr. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang)
- - [Fabian Christopher Dremel](/Team/people.qmd#fabian-christopher-dremel)
- - [Marcel-Luciano Ortler](/Team/people.qmd#marcel-luciano-ortler)
- - [David Zezula](/Team/people.qmd#david-zezula)
- - [Dr. Shuang Zhang](/Team/people.qmd#dr.-shuang-zhang)
+::::: {.content-visible when-profile="french"}
+
+{{< include _salzburg-fr.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="czech"}
+
+{{< include _salzburg-cs.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="norwegian"}
+
+{{< include _salzburg-no.qmd >}}
+
+:::::
 
 ### News
 
 ::: {#team-news}
 :::
-

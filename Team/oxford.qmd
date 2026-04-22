@@ -1,4 +1,4 @@
----
+﻿---
 date: 2026/04/01
 date-format: long
 date-modified: last-modified
@@ -18,18 +18,35 @@ listing:
     page-size: 3
 ---
 
-## University of Oxford
+::::: {.content-visible when-profile="english"}
 
-The Oxford team will examine how sedaDNA data align with archaeobotanical and pollen data, settlement archaeology and written sources. We will focus on ecological change (or continuity) during pivotal eras, such as the late Roman to post-Roman transition (4th-6th centuries), the medieval ‘agricultural revolution’ (10th-13th centuries), and the demographic crises of the 14th century. Functional weed ecology will allow us to trace changes in soil fertility and disturbance, notably in regions where arable regimes became increasingly large-scale and low-input. Archaeobotanical analysis will also be used to trace changes in crop diversity and the appearance of new crops while pollen data will allow us to gauge the relative importance of arable, pasture, and woodland. The impact of the mouldboard plough is critically important in this period. It resulted in increasing levels of soil disturbance as reflected in arable weed ecologies. Cultivation experiments at the Lauresham Laboratory for Experimental Archaeology will explore the impact of the mouldboard plough on crop stable isotopes and arable weed ecology, allowing us to interpret isotope and weed data from archaeological excavations more accurately. Animal bone assemblages from excavated settlements will be compared to the sedaDNA and faecal biomarkers to trace changing animal husbandry practices, e.g. stocking densities, changing ratios of sheep/cattle/pig, etc.  Working with local historians, we will use written sources alongside local archaeological records to contextualize science-based results and trace changes in farming regimes, biodiversity and land use at individual sites and regions.
+{{< include _oxford-en.qmd >}}
 
-We will collate bioarchaeological data from the sites’ catchments drawing on existing databases, including measurements of stable isotope values of cereals, as this can reflect nutrient status and manuring.  Functional weed ecology will be applied to the archaeobotanical, pollen and sedaDNA data along with a new approach to functional grazing ecology. Pollen data will be obtained from local studies or the European Pollen Database; where needed, new cores will be taken. Special attention will be paid to coprophilous spores which can provide independent data for comparison with the sedaDNA and the faecal biomarkers. Micro-charcoal will also be counted as the use of fire is a variable part of medieval land management. To establish a uniform dataset of fossil pollen records across whole Europe for map-wise comparison with our sedaDNA results, we will employ the FOSSILPOL workflow. This methodology enables us to acquire data from the Neotoma Paleoecology Database, which is the most extensive curated repository of paleo-environmental research, and apply project-specific criteria to curate data of high quality. The multi-proxy core data will be used for spatial modelling of vegetation combined with functional ecological analysis to assess land management regimes.
+:::::
 
-### People
+::::: {.content-visible when-profile="german"}
 
- - [Prof. Helena Hamerow](/Team/people.qmd#prof.-helena-hamerow)
- - [Prof. Amy Bogaard](/Team/people.qmd#prof.-amy-bogaard)
- - [Dr. Michael Charles](/Team/people.qmd#dr.-michael-charles)
- - [Elizabeth Stroud](/Team/people.qmd#elizabeth-stroud)
+{{< include _oxford-de.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="french"}
+
+{{< include _oxford-fr.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="czech"}
+
+{{< include _oxford-cs.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="norwegian"}
+
+{{< include _oxford-no.qmd >}}
+
+:::::
 
 ### News
 

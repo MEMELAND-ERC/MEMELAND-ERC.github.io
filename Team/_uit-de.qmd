@@ -1,0 +1,13 @@
+## Arktische Universität Norwegen (UiT)
+
+Das ArcEcoGEN-Forschungszentrum im Tromsø-Museum der Arktischen Universität Norwegen (UiT) ist die Gastinstitution von MEMELAND. In Tromsø leiten [Prof. Tony Brown](/Team/people.qmd#prof.-tony-g-brown) und sein Team das Projekt und sind auf die Extraktion und Analyse alter DNA aus Sedimenten (sedaDNA) spezialisiert. Das Team in Tromsø unterhält außerdem eine Feldprobennahmegruppe, die Seen und Feuchtgebiete in den nördlichen und westlichen Teilen des Untersuchungsgebiets beprobt, einschließlich ganz Skandinaviens, Mitteleuropas sowie Nord-Deutschlands und Frankreichs. Insgesamt werden über 100 Kerne und 4.000–8.000 Proben gewonnen, um die Veränderungen der europäischen Biodiversität der letzten 2.000 Jahre zu untersuchen. Ergänzt wird die sedaDNA-Analyse durch hochauflösende Datierungen (Arbeitsgruppe Salzburg), fäkale und andere Biomarker (Eawag-Team) sowie archäobotanische Studien (Oxford-Team).
+
+Die Tromsø-Gruppe ist auf die Extraktion und Analyse von sedaDNA aus verschiedenen Paläo-Kontexten spezialisiert – hauptsächlich aus Seen, aber auch aus Feuchtgebieten, Auen, Hangabschwemmungen und archäologischen Stätten. Das Projekt konzentriert sich auf kleine Seen in der Agrarlandschaft Nordwesteuropas. In der Methodenentwicklung werden zwei Hauptansätze verfolgt: Amplikon- bzw. Metataxonomie-Analyse (Barcoding) sowie Shotgun-Sequenzierung. Die Tromsø-Gruppe entwickelt kontinuierlich neue Methoden, um Informationstiefe und Verständnis der Grenzen und Verzerrungen dieser Sedimentdaten zu verbessern.
+
+### Personen
+
+ - [Prof. Tony G Brown](/Team/people.qmd#prof.-tony-g-brown)
+ - [Prof. Inger G Alsos](/Team/people.qmd#prof.-inger-g-alsos)
+ - [Dr. Oliver Kern](/Team/people.qmd#dr.-oliver-kern)
+ - [Dr. Ying Liu](/Team/people.qmd#dr.-ying-liu)
+ - [Katja Häkli](/Team/people.qmd#katja-häkli)

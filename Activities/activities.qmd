@@ -13,10 +13,35 @@ listing:
     categories: true
 ---
 
-  <!-- Maintainer note:
-  Add new items by creating a new .qmd file in Activities/news/.
-  This page is an automatic listing and should usually not need content edits.
-  -->
+::::: {.content-visible when-profile="english"}
+
+{{< include _activities-en.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="german"}
+
+{{< include _activities-de.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="french"}
+
+{{< include _activities-fr.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="czech"}
+
+{{< include _activities-cs.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="norwegian"}
+
+{{< include _activities-no.qmd >}}
+
+:::::
 
 ::: {#news}
 :::
