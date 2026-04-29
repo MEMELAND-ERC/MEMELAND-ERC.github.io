@@ -58,10 +58,29 @@ _Requested by @[issue author's GitHub handle]_
 - **The agent must NEVER merge a PR**
 - Delete the branch after merge
 
+## docs/ merge conflicts
+
+Conflicts in the `docs/` folder are expected and harmless — the site is fully re-rendered after every merge to `main`.
+
+When a PR or rebase produces conflicts in `docs/`, **always prefer the branch's version** (i.e. keep the newly rendered output):
+
+```bash
+# During a rebase or merge conflict
+git checkout --ours docs/
+git add docs/
+```
+
+> `--ours` keeps the current branch's files when rebasing onto main.
+> If using `git merge` instead of `git rebase`, swap `--ours` / `--theirs` accordingly — always keep the branch's rendered output.
+
+Note this in the PR description if it applied, e.g.:
+
+> _`docs/` conflicts resolved in favour of this branch; site will be re-rendered on merge._
+
 ## PR iteration (after review comments)
 
 1. Rebase onto main: `git rebase main`
-2. For `docs/` conflicts, resolve with: `git checkout --theirs docs/`
+2. For `docs/` conflicts, resolve with: `git checkout --ours docs/` (see "docs/ merge conflicts" above)
 3. Apply requested fixes + re-render
 4. Force-push: `git push --force-with-lease`
 5. Re-invoke `change-reviewer`
