@@ -98,11 +98,53 @@
     "text": "Thèses\nAucune thèse achevée dans le cadre du projet pour l’instant."
   },
   {
+    "objectID": "Activities/news/2026-eawag-postdoc-hiring.html",
+    "href": "Activities/news/2026-eawag-postdoc-hiring.html",
+    "title": "Eawag team is hiring a postdoctoral researcher in organic geochemistry",
+    "section": "",
+    "text": "The Eawag Team is recruiting a 3-year postdoctoral researcher in organic geochemistry to join the MEMELAND project starting this summer. This is an exciting opportunity to contribute to cutting-edge paleolimnological research using lipid biomarkers as proxies for past environmental change."
+  },
+  {
+    "objectID": "Activities/news/2026-eawag-postdoc-hiring.html#we-are-recruiting",
+    "href": "Activities/news/2026-eawag-postdoc-hiring.html#we-are-recruiting",
+    "title": "Eawag team is hiring a postdoctoral researcher in organic geochemistry",
+    "section": "We are recruiting!",
+    "text": "We are recruiting!\nThe Eawag Team will be recruiting a 3-yr postdoctoral researcher in organic geochemistry starting this summer for the MEMELAND project."
+  },
+  {
+    "objectID": "Activities/news/2026-eawag-postdoc-hiring.html#the-ideal-candidate",
+    "href": "Activities/news/2026-eawag-postdoc-hiring.html#the-ideal-candidate",
+    "title": "Eawag team is hiring a postdoctoral researcher in organic geochemistry",
+    "section": "The ideal candidate",
+    "text": "The ideal candidate\nThe postdoc will play a central role in the lipid‑biomarker component of the project, with a particular focus on faecal and cultivar biomarkers.\nA strong background in organic geochemistry, as well as hands‑on experience with GC‑MS, is therefore highly desirable."
+  },
+  {
+    "objectID": "Activities/news/2026-eawag-postdoc-hiring.html#interested",
+    "href": "Activities/news/2026-eawag-postdoc-hiring.html#interested",
+    "title": "Eawag team is hiring a postdoctoral researcher in organic geochemistry",
+    "section": "Interested?",
+    "text": "Interested?\nApply here"
+  },
+  {
+    "objectID": "JoinUs/join_us.html",
+    "href": "JoinUs/join_us.html",
+    "title": "Nous rejoindre",
+    "section": "",
+    "text": "Nous rejoindre\nCette page est en cours de construction — revenez bientôt.\n\n\n\n\n Retour au sommet"
+  },
+  {
+    "objectID": "About/about.html",
+    "href": "About/about.html",
+    "title": "À propos du projet",
+    "section": "",
+    "text": "À propos du projet\n\n\n\n\n\nLes paysages européens sont des hybrides culturels-naturels : les schémas actuels de biodiversité n’ont pas seulement été façonnés par le climat et l’écologie, mais aussi par des siècles d’utilisation humaine des terres, de gouvernance et d’idéologie. MEMELAND comble une lacune centrale dans notre compréhension de cet héritage en reconstruisant les trajectoires de biodiversité et d’utilisation des terres au niveau des espèces sur les deux derniers millénaires — précisément la période durant laquelle de nombreux systèmes préhistoriques des plaines ont été remplacés par des paysages médiévaux et modernes.\nPour ce faire, MEMELAND intègre des proxies moléculaires de pointe avec des approches archéologiques et paléoécologiques établies. Nous analysons des carottes sédimentaires de 50 lacs appariés (100 sites) : un site situé près d’une archéologie médiévale d’élite documentée et un site de contrôle voisin avec peu ou pas de signal archéologique comparable. Cette stratégie de sites appariés nous permet de dissocier la variabilité locale des tendances régionales et de tester des hypothèses sur la “révolution agricole médiévale”, les changements de population, les technologies (par ex., la charrue à versoir) et l’évolution des régimes de gestion des terres.\nLe projet est une collaboration Synergy dirigée depuis l’Université arctique de Norvège, avec l’Université d’Oxford, l’Institut fédéral suisse des sciences et technologies aquatiques (Eawag) et l’Université de Salzbourg, ainsi que le partenaire Université Charles de Prague. Parallèlement aux publications scientifiques, MEMELAND s’engage pour la science ouverte et la restitution des résultats site par site aux collaborateurs locaux. Voir Équipes de recherche et Personnes pour plus d’informations.\n\nÉquipes de recherche\nLe projet MEMELAND comprend 5 équipes de recherche principales, chacune basée dans une institution différente et dirigée par un investigateur principal différent :\n\nUniversité arctique de Norvège, Norvège\nUniversité d’Oxford, Royaume-Uni\nInstitut fédéral suisse des sciences et technologies aquatiques (Eawag), Suisse\nUniversité de Salzbourg, Autriche\nUniversité Charles, République tchèque\n\n\n\n\n\n Retour au sommet"
+  },
+  {
     "objectID": "Activities/news/test.html",
     "href": "Activities/news/test.html",
     "title": "🧪 FICTIONAL EXAMPLE — Do not publish as real news",
     "section": "",
-    "text": "Important⚠️ This is a fictional example — nothing here is real\n\n\n\nThis page was created to show team members what a finished news post looks like on the website. The story, names, dates, and results below are completely made up. When writing your own post, copy _template.qmd instead of editing this file.\nThe UiT team returned this week from a highly successful two-week field campaign at Lake Mývatn in northern Iceland (fictional). Despite challenging weather conditions, the team retrieved a 4-metre sediment core expected to yield a detailed record of environmental change spanning the last 10,000 years (fictional)."
+    "text": "⚠️ This is a fictional example — nothing here is real\n\n\n\nThis page was created to show team members what a finished news post looks like on the website. The story, names, dates, and results below are completely made up. When writing your own post, copy _template.qmd instead of editing this file.\nThe UiT team returned this week from a highly successful two-week field campaign at Lake Mývatn in northern Iceland (fictional). Despite challenging weather conditions, the team retrieved a 4-metre sediment core expected to yield a detailed record of environmental change spanning the last 10,000 years (fictional)."
   },
   {
     "objectID": "Activities/news/test.html#background-fictional",
@@ -116,7 +158,7 @@
     "href": "Activities/news/test.html#details-fictional",
     "title": "🧪 FICTIONAL EXAMPLE — Do not publish as real news",
     "section": "Details (fictional)",
-    "text": "Details (fictional)\nWorking from a purpose-built ice platform in temperatures as low as −15 °C (made up), the team deployed a freeze-core sampler and a gravity corer over three separate sites. A total of five cores were recovered, with the longest measuring 412 cm (made up). Preliminary visual inspection revealed distinct tephra layers that will allow precise dating of the sequence.\nThe cores have been transported to the UiT cold laboratory in Tromsø (made up), where sub-sampling and initial geochemical analyses will begin in February 2026 (made up).\n\n\n\nCaption: This is where you would credit the photographer and describe the scene. Photo: Jane Doe / UiT — fictional.\n\n\n\nCaption: This is a test of adding photo\n\n\n\n\n\n\n\n\nAstuceHow to get involved (fictional)\n\n\n\nThis section is optional. In a real post, describe how others can participate, register, or get in touch. For questions about the example itself, contact Ondrej."
+    "text": "Details (fictional)\nWorking from a purpose-built ice platform in temperatures as low as −15 °C (made up), the team deployed a freeze-core sampler and a gravity corer over three separate sites. A total of five cores were recovered, with the longest measuring 412 cm (made up). Preliminary visual inspection revealed distinct tephra layers that will allow precise dating of the sequence.\nThe cores have been transported to the UiT cold laboratory in Tromsø (made up), where sub-sampling and initial geochemical analyses will begin in February 2026 (made up).\n\n\n\nCaption: This is where you would credit the photographer and describe the scene. Photo: Jane Doe / UiT — fictional.\n\n\n\nCaption: This is a test of adding photo\n\n\n\n\n\n\n\n\nHow to get involved (fictional)\n\n\n\nThis section is optional. In a real post, describe how others can participate, register, or get in touch. For questions about the example itself, contact Ondrej."
   },
   {
     "objectID": "Activities/news/test.html#resources-fictional",
@@ -126,25 +168,11 @@
     "text": "Resources (fictional)\n\nMEMELAND project website (real link)\nUiT The Arctic University of Norway (real link)"
   },
   {
-    "objectID": "About/about.html",
-    "href": "About/about.html",
-    "title": "À propos du projet",
-    "section": "",
-    "text": "À propos du projet\n\n\n\n\n\nLes paysages européens sont des hybrides culturels-naturels : les schémas actuels de biodiversité n’ont pas seulement été façonnés par le climat et l’écologie, mais aussi par des siècles d’utilisation humaine des terres, de gouvernance et d’idéologie. MEMELAND comble une lacune centrale dans notre compréhension de cet héritage en reconstruisant les trajectoires de biodiversité et d’utilisation des terres au niveau des espèces sur les deux derniers millénaires — précisément la période durant laquelle de nombreux systèmes préhistoriques des plaines ont été remplacés par des paysages médiévaux et modernes.\nPour ce faire, MEMELAND intègre des proxies moléculaires de pointe avec des approches archéologiques et paléoécologiques établies. Nous analysons des carottes sédimentaires de 50 lacs appariés (100 sites) : un site situé près d’une archéologie médiévale d’élite documentée et un site de contrôle voisin avec peu ou pas de signal archéologique comparable. Cette stratégie de sites appariés nous permet de dissocier la variabilité locale des tendances régionales et de tester des hypothèses sur la “révolution agricole médiévale”, les changements de population, les technologies (par ex., la charrue à versoir) et l’évolution des régimes de gestion des terres.\nLe projet est une collaboration Synergy dirigée depuis l’Université arctique de Norvège, avec l’Université d’Oxford, l’Institut fédéral suisse des sciences et technologies aquatiques (Eawag) et l’Université de Salzbourg, ainsi que le partenaire Université Charles de Prague. Parallèlement aux publications scientifiques, MEMELAND s’engage pour la science ouverte et la restitution des résultats site par site aux collaborateurs locaux. Voir Équipes de recherche et Personnes pour plus d’informations.\n\nÉquipes de recherche\nLe projet MEMELAND comprend 5 équipes de recherche principales, chacune basée dans une institution différente et dirigée par un investigateur principal différent :\n\nUniversité arctique de Norvège, Norvège\nUniversité d’Oxford, Royaume-Uni\nInstitut fédéral suisse des sciences et technologies aquatiques (Eawag), Suisse\nUniversité de Salzbourg, Autriche\nUniversité Charles, République tchèque\n\n\n\n\n\n Retour au sommet"
-  },
-  {
-    "objectID": "JoinUs/join_us.html",
-    "href": "JoinUs/join_us.html",
-    "title": "Nous rejoindre",
-    "section": "",
-    "text": "Nous rejoindre\nCette page est en cours de construction — revenez bientôt.\n\n\n\n\n Retour au sommet"
-  },
-  {
     "objectID": "Activities/activities.html",
     "href": "Activities/activities.html",
     "title": "Activités",
     "section": "",
-    "text": "Activités\nVous trouverez ici les actualités du projet, les événements et d’autres informations publiques liées à MEMELAND.\nLes actualités sont actuellement publiées en anglais uniquement.\n✏️ Soumettre une actualité\n\n\n\n\n\n\n\n\n\n\n\n🧪 FICTIONAL EXAMPLE — Do not publish as real news\n\n\n\nEXAMPLE\n\ncoring\n\nfieldwork\n\nuit\n\n\n\n⚠️ MADE-UP EXAMPLE ONLY — This entire post is fictional and exists only to show what a finished news page looks like. Do not cite or share.\n\n\n\n2 janvier 2026\n\n\n\n\n\n\nAucun article correspondant\n\n\n\n\n\n\n Retour au sommet"
+    "text": "Activités\nVous trouverez ici les actualités du projet, les événements et d’autres informations publiques liées à MEMELAND.\nLes actualités sont actuellement publiées en anglais uniquement.\n✏️ Soumettre une actualité\n\n\n\n\n\n\n\n\n\nEawag team is hiring a postdoctoral researcher in organic geochemistry\n\n\n\neawag\n\n\nrecruitment\n\n\n\nEawag is looking for a postdoctoral researcher in organic geochemistry to join the MEMELAND team.\n\n\n\n29 avril 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🧪 FICTIONAL EXAMPLE — Do not publish as real news\n\n\n\nEXAMPLE\n\n\ncoring\n\n\nfieldwork\n\n\nuit\n\n\n\n⚠️ MADE-UP EXAMPLE ONLY — This entire post is fictional and exists only to show what a finished news page looks like. Do not cite or share.\n\n\n\n2 janvier 2026\n\n\n\n\n\n\n\n\nAucun article correspondant\n\n\n\n\n\n\n\n Retour au sommet"
   },
   {
     "objectID": "Team/cuni.html",
@@ -193,6 +221,6 @@
     "href": "index.html",
     "title": "Écologie moléculaire des paysages médiévaux européens",
     "section": "",
-    "text": "Écologie moléculaire des paysages médiévaux européens\n\n\n\n\n\n\n\n\n\n\n\nAstuceInformations générales\n\n\n\nMEMELAND est un projet ERC SYNERGY débutant en juillet 2025.\nInvestigateurs principaux : Prof. Tony G Brown, Prof. Nathalie Dubois, Prof. Helena Hamerow, Prof. Dr. Andreas Lang, et Dr. Ondřej Mottl (partenaire).\n\n\nMEMELAND (Molecular Ecology of Medieval European Landscapes) va inaugurer la première histoire écologique de l’Europe au niveau des espèces, de l’époque romaine à nos jours, révélant comment l’utilisation médiévale des terres continue de façonner les paysages modernes et la biodiversité. En combinant l’ADN ancien sédimentaire (sedaDNA), les biomarqueurs lipidiques, des chronologies robustes et des données archéobotaniques provenant de 50 sites lacustres appariés à travers l’Europe du Nord et du Centre, le projet produira un enregistrement detaillé des plantes, des animaux et des agents pathogènes associés, et traduira cette perspective à long terme en données pour la conservation, la gestion des terres et la restauration guidée par le patrimoine face au changement climatique.\n\n\n\n Retour au sommet"
+    "text": "Écologie moléculaire des paysages médiévaux européens\n\n\n\n\n\n\n\n\n\n\n\nInformations générales\n\n\n\nMEMELAND est un projet ERC SYNERGY débutant en juillet 2025.\nInvestigateurs principaux : Prof. Tony G Brown, Prof. Nathalie Dubois, Prof. Helena Hamerow, Prof. Dr. Andreas Lang, et Dr. Ondřej Mottl (partenaire).\n\n\nMEMELAND (Molecular Ecology of Medieval European Landscapes) va inaugurer la première histoire écologique de l’Europe au niveau des espèces, de l’époque romaine à nos jours, révélant comment l’utilisation médiévale des terres continue de façonner les paysages modernes et la biodiversité. En combinant l’ADN ancien sédimentaire (sedaDNA), les biomarqueurs lipidiques, des chronologies robustes et des données archéobotaniques provenant de 50 sites lacustres appariés à travers l’Europe du Nord et du Centre, le projet produira un enregistrement detaillé des plantes, des animaux et des agents pathogènes associés, et traduira cette perspective à long terme en données pour la conservation, la gestion des terres et la restauration guidée par le patrimoine face au changement climatique.\n\n\n\n Retour au sommet"
   }
 ]
