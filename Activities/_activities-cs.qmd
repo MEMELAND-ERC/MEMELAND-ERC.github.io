@@ -3,3 +3,5 @@
 Zde najdete novinky o projektu, akce a další veřejné aktuality MEMELANDu.
 
 Novinky jsou v současnosti publikovány pouze v angličtině.
+
+[✏️ Odeslat novinku](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new?template=01_news_post.yml){.btn .btn-memeland target="_blank"}

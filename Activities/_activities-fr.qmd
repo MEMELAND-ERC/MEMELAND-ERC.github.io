@@ -3,3 +3,5 @@
 Vous trouverez ici les actualités du projet, les événements et d'autres informations publiques liées à MEMELAND.
 
 Les actualités sont actuellement publiées en anglais uniquement.
+
+[✏️ Soumettre une actualité](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new?template=01_news_post.yml){.btn .btn-memeland target="_blank"}
