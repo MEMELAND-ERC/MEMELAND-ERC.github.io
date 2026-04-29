@@ -3,3 +3,5 @@
 Hier finden Sie Projektneuigkeiten, Veranstaltungen und weitere öffentliche Updates aus MEMELAND.
 
 News-Beiträge werden derzeit nur auf Englisch veröffentlicht.
+
+[✏️ Neuigkeit einreichen](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new?template=01_news_post.yml){.btn .btn-memeland target="_blank"}

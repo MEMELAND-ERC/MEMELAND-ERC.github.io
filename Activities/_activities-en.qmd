@@ -3,3 +3,5 @@
 Project updates, events, and other public-facing news from MEMELAND are collected here.
 
 News posts are currently published in English only.
+
+[✏️ Submit a news item](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new?template=01_news_post.yml){.btn .btn-memeland target="_blank"}

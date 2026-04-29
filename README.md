@@ -9,6 +9,27 @@ The website is **multilingual**: it is available in **English, German, French, C
 
 ---
 
+## Submitting Content Requests via GitHub Issues
+
+The primary way to request website changes is through **GitHub Issues**. A GitHub Copilot agent will pick up each issue, implement the changes, and open a Pull Request for review by @OndrejMottl.
+
+Go to **[Issues → New issue](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new/choose)** and choose the template that fits your request:
+
+| Template | Use for |
+|---|---|
+| 📰 New activity or news post | Sharing a field campaign, event, publication announcement, or other project update |
+| ✏️ Update existing page content | Editing text on any page in any language |
+| 🖼️ Media request | Adding, replacing, or removing a photo or logo |
+| 🔤 Language correction | Fixing a spelling mistake, grammar error, or translation |
+| 🐞 Website bug report | Reporting a broken page, broken link, or rendering problem |
+| 📄 New output | Adding a publication, dataset, presentation, report, or thesis |
+
+**No technical knowledge required.** Fill in the form, submit, and the agent will handle the rest. If information is missing, it will post a comment asking for clarification before making any changes.
+
+Once the agent opens a Pull Request, @OndrejMottl reviews and merges it. The site re-renders automatically after the merge.
+
+---
+
 ## For Non-Technical Editors
 
 This section covers everything you need to update content without knowing Quarto or web development.
@@ -237,7 +258,14 @@ Open the URL shown in your terminal to view the site before publishing.
 
 The site is published automatically from the `docs/` folder on the `main` branch via GitHub Pages.
 
-Typical update sequence:
+**Automated workflow (via GitHub Issues + Copilot agent):**
+
+1. Submit a GitHub Issue using one of the templates.
+2. The Copilot agent creates a branch, implements the changes, renders all five languages, and opens a Pull Request.
+3. @OndrejMottl reviews and merges.
+4. The site re-renders automatically after every merge to `main` and goes live within a minute.
+
+**Manual workflow (for maintainers):**
 
 1. Edit the relevant `_<page>-<lang>.qmd` source file(s).
 2. Run `.\render_all.ps1` (or `bash render_all.sh`).

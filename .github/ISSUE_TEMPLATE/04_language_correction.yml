@@ -1,0 +1,62 @@
+name: "🔤 Language correction (typo, grammar, translation)"
+description: "Fix a spelling mistake, grammatical error, or incorrect translation on any language version of the website"
+title: "[Language correction]: "
+labels:
+  - "🔤 type:language-correction"
+  - "❓ status:needs-info"
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping keep the MEMELAND website accurate! 🙏
+
+        Please provide the exact incorrect text and the correction. No technical knowledge needed.
+
+  - type: checkboxes
+    id: languages
+    attributes:
+      label: Which language version contains the error?
+      description: Select all that apply.
+      options:
+        - label: English
+        - label: "German (Deutsch)"
+        - label: "French (Français)"
+        - label: "Czech (Čeština)"
+        - label: "Norwegian (Norsk)"
+
+  - type: input
+    id: page-url
+    attributes:
+      label: URL of the page with the error
+      description: Copy the address from your browser.
+      placeholder: "https://memeland-erc.github.io/de/About/about.html"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-text
+    attributes:
+      label: Current (incorrect) text
+      description: Copy and paste the exact text as it appears on the page, including a few surrounding words so we can locate it.
+      placeholder: "...the team recieved a sediment core from..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: corrected-text
+    attributes:
+      label: Corrected text
+      description: Write the corrected version.
+      placeholder: "...the team retrieved a sediment core from..."
+    validations:
+      required: true
+
+  - type: input
+    id: note
+    attributes:
+      label: Brief note (optional)
+      description: "E.g. \"wrong tense\", \"missing accent\", \"incorrect translation of technical term\"."
+      placeholder: "spelling error"
+    validations:
+      required: false

@@ -1,0 +1,90 @@
+name: "✏️ Update existing page content"
+description: "Request a text edit, correction, or addition to an existing page (for language typos use the Language correction template)"
+title: "[Update content]: "
+labels:
+  - "✏️ type:update-content"
+  - "❓ status:needs-info"
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide the URL of the page to update and the exact change needed.
+        For spelling/grammar fixes, use the **Language correction** template instead.
+
+  - type: input
+    id: page-url
+    attributes:
+      label: URL of the page to update
+      description: Copy the address from your browser.
+      placeholder: "https://memeland-erc.github.io/en/About/about.html"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: languages
+    attributes:
+      label: Which language version(s) need updating?
+      description: Select all that apply. If you only provide content for some languages, Copilot will ask for the rest before publishing.
+      options:
+        - label: English
+        - label: "German (Deutsch)"
+        - label: "French (Français)"
+        - label: "Czech (Čeština)"
+        - label: "Norwegian (Norsk)"
+
+  - type: dropdown
+    id: update-type
+    attributes:
+      label: Type of update
+      options:
+        - Replace existing text
+        - Add a new section
+        - Remove a section
+        - Fix a broken link
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-text
+    attributes:
+      label: Current text (copy and paste the text that should change)
+      description: Optional but helpful — paste the exact text as it appears on the page now.
+      render: markdown
+      value: |
+        Paste the current text here (or write "N/A" if you are adding something new).
+    validations:
+      required: false
+
+  - type: textarea
+    id: new-text
+    attributes:
+      label: Replacement or new text
+      description: Write the new content exactly as it should appear. For multilingual updates, include each language clearly labelled.
+      render: markdown
+      value: |
+        ### English
+        Write the new English text here.
+
+        ### German
+        Write the German text here (or write "same as English" if not applicable).
+
+        ### French
+        Write the French text here.
+
+        ### Czech
+        Write the Czech text here.
+
+        ### Norwegian
+        Write the Norwegian text here.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights confirmation
+      options:
+        - label: I confirm this content can be published on the MEMELAND website.
+          required: true

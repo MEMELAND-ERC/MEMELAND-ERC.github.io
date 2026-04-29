@@ -1,0 +1,63 @@
+name: "🐞 Website bug report"
+description: "Report a broken page, broken link, rendering problem, or other technical issue"
+title: "[Bug]: "
+labels:
+  - "🐞 type:bug"
+  - "❓ status:needs-info"
+assignees: []
+body:
+  - type: input
+    id: page-url
+    attributes:
+      label: URL of the affected page
+      description: Copy the address from your browser.
+      placeholder: "https://memeland-erc.github.io/en/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: What is wrong?
+      description: Describe what you see happening.
+      value: |
+        Describe the problem here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What should happen instead?
+      value: |
+        Describe the expected behaviour here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1. Go to ...
+        2. Click on ...
+        3. See ...
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: "Chrome 124 on Windows 11, or Safari on iPhone 15"
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot or error message (optional)
+      description: Drag and drop a screenshot here, or paste any error text.
+      render: shell
+    validations:
+      required: false

@@ -224,3 +224,22 @@ ul ul {
   background-color: $green !important;
   color: $white !important;
 }
+
+/* MEMELAND branded button */
+.btn-memeland {
+  background-color: $brown;
+  color: $white !important;
+  border: 2px solid $brown;
+  text-decoration: none !important;
+  font-family: $headingFont;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 8px 16px;
+
+  &:hover {
+    background-color: $black-slug !important;
+    border-color: $black-slug !important;
+    color: $white !important;
+    text-decoration: none !important;
+  }
+}

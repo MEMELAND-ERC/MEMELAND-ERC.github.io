@@ -1,0 +1,128 @@
+name: "📄 New output (publication, dataset, presentation, report, thesis)"
+description: "Add a new scientific output to the Outputs page"
+title: "[New output]: "
+labels:
+  - "📄 type:output"
+  - "❓ status:needs-info"
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add a new output to the MEMELAND website 🎉
+
+        Please fill in the fields below. Outputs are listed in **all language versions** of the website.
+        Copilot will handle the formatting and placement — just provide the details.
+
+  - type: dropdown
+    id: output-type
+    attributes:
+      label: Type of output
+      description: Select the category this output belongs to.
+      options:
+        - Publication (journal article, book chapter)
+        - Dataset
+        - Presentation or poster
+        - Report or deliverable
+        - Thesis (PhD or MSc)
+    validations:
+      required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: Author(s)
+      description: "Last name, First initial — e.g. Smith J, Doe A, Brown K"
+      placeholder: "Smith J, Doe A"
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Year
+      placeholder: "2026"
+    validations:
+      required: true
+
+  - type: input
+    id: output-title
+    attributes:
+      label: Title
+      description: Full title of the publication, dataset, presentation, report, or thesis.
+      placeholder: "Lake sediment archives reveal Holocene climate variability in northern Europe"
+    validations:
+      required: true
+
+  - type: input
+    id: doi-link
+    attributes:
+      label: DOI or URL
+      description: Persistent link to the output (DOI, Zenodo, institutional repository, etc.).
+      placeholder: "https://doi.org/10.xxxx/xxxxx"
+    validations:
+      required: true
+
+  - type: input
+    id: venue
+    attributes:
+      label: Journal / Repository / Conference / University
+      description: "Where was it published or presented? E.g. journal name, data repository, conference name, or university."
+      placeholder: "Quaternary Science Reviews"
+    validations:
+      required: false
+
+  - type: input
+    id: details
+    attributes:
+      label: Volume, issue, pages or degree type
+      description: "For articles: volume(issue), pages. For theses: PhD or MSc. For deliverables: deliverable number (e.g. D1.1)."
+      placeholder: "45(3), 112–130  OR  PhD thesis  OR  D2.1"
+    validations:
+      required: false
+
+  - type: input
+    id: pdf-link
+    attributes:
+      label: PDF or slides link (if available)
+      placeholder: "https://example.com/paper.pdf"
+    validations:
+      required: false
+
+  - type: input
+    id: data-link
+    attributes:
+      label: Data link (if available)
+      description: Link to associated dataset, code, or supplementary materials.
+      placeholder: "https://zenodo.org/record/..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: team-tags
+    attributes:
+      label: Which MEMELAND team(s) is this output from?
+      description: Select all that apply.
+      options:
+        - label: "uit — UiT The Arctic University of Norway"
+        - label: "oxford — University of Oxford"
+        - label: "eawag — Eawag (Swiss Federal Institute of Aquatic Science and Technology)"
+        - label: "salzburg — University of Salzburg"
+        - label: "cuni — Charles University Prague"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes (optional)
+      description: Any extra context, e.g. if this is an ERC-acknowledged output, or if the entry should appear in a specific position.
+      placeholder: "This paper is formally acknowledged as MEMELAND output in the ERC reporting."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights confirmation
+      options:
+        - label: I confirm this output can be listed on the MEMELAND website.
+          required: true

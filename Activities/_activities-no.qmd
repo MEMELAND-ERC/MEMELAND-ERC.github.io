@@ -3,3 +3,5 @@
 Her finner du prosjektnyheter, arrangementer og andre offentlige oppdateringer fra MEMELAND.
 
 Nyhetssaker publiseres foreløpig bare på engelsk.
+
+[✏️ Send inn en nyhetssak](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new?template=01_news_post.yml){.btn .btn-memeland target="_blank"}
