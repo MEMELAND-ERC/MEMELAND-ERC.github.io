@@ -1,0 +1,59 @@
+name: "🖼️ Media request (image, logo, photo)"
+description: "Add, replace, or remove an image or logo on the website"
+title: "[Media]: "
+labels:
+  - "🖼️ type:media"
+  - "❓ status:needs-info"
+assignees: []
+body:
+  - type: input
+    id: page-url
+    attributes:
+      label: URL of the page to update
+      description: Copy the address from your browser.
+      placeholder: "https://memeland-erc.github.io/en/Team/people.html"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: What should happen with the image?
+      options:
+        - Add a new image
+        - Replace an existing image
+        - Remove an image
+    validations:
+      required: true
+
+  - type: textarea
+    id: asset
+    attributes:
+      label: Image file or URL
+      description: Paste a direct URL to the image, or drag and drop the file into this box.
+      value: |
+        Image URL or attachment:
+
+        Where on the page should it appear:
+    validations:
+      required: true
+
+  - type: textarea
+    id: alt-caption
+    attributes:
+      label: Alt text and caption
+      description: Alt text is required for accessibility. Caption is optional.
+      value: |
+        Alt text (describe the image for screen readers):
+
+        Caption (optional, shown below the image):
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights confirmation
+      options:
+        - label: I confirm I have permission to publish this image on the MEMELAND website.
+          required: true

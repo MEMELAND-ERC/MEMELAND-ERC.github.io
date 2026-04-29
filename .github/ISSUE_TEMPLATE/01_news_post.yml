@@ -1,0 +1,136 @@
+name: "📰 New activity or news post"
+description: "Share a project update, field campaign, event, or other news from MEMELAND"
+title: "[New news]: "
+labels:
+  - "📰 type:news-post"
+  - "❓ status:needs-info"
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thank you for sharing MEMELAND news! 🙏
+
+        Please fill in the fields below. News posts are published in **English only**.
+        Copilot will handle the technical side — just provide the content.
+
+        If you are unsure about any field, leave it blank and add a comment below explaining what you need.
+
+  - type: input
+    id: title
+    attributes:
+      label: News title
+      description: The headline shown on the page and in the news grid.
+      placeholder: "UiT team completes successful coring campaign in Iceland"
+    validations:
+      required: true
+
+  - type: input
+    id: activity-date
+    attributes:
+      label: Date of the activity or event
+      description: When did this happen (or when will it happen)? Format YYYY-MM-DD or a range like 2026-03-10 to 2026-03-14.
+      placeholder: "2026-03-10"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Short summary (shown in the news card)
+      description: 1–2 sentences summarising the news. This appears in the news grid before clicking through. Keep it under 200 characters if possible.
+      placeholder: "The UiT team retrieved a 4-metre sediment core from Lake Mývatn during a two-week field campaign."
+    validations:
+      required: true
+
+  - type: textarea
+    id: full-text
+    attributes:
+      label: Full story
+      description: Write the full text of the news post here. Plain text is fine — you can use headings (##), bullet points (-), and bold (**text**) if you like.
+      render: markdown
+      value: |
+        Write a short introductory paragraph here.
+
+        ## Background
+
+        Why is this activity important for MEMELAND?
+
+        ## Details
+
+        What happened? Where? Who was involved? What were the outcomes?
+
+        ## Resources
+
+        - [Link title](https://example.com)
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location (if applicable)
+      description: City, country, or "online".
+      placeholder: "Tromsø, Norway"
+    validations:
+      required: false
+
+  - type: input
+    id: more-info-link
+    attributes:
+      label: Link for more information (if applicable)
+      description: External website, paper, or resource related to this news.
+      placeholder: "https://example.com"
+    validations:
+      required: false
+
+  - type: input
+    id: photo
+    attributes:
+      label: Photo or image (if available)
+      description: |
+        Paste a URL to an image, or describe the file you want to include (e.g. "see attached").
+        You can also drag and drop an image directly into this text box.
+      placeholder: "https://example.com/photo.jpg  OR  attached below"
+    validations:
+      required: false
+
+  - type: input
+    id: photo-caption
+    attributes:
+      label: Photo caption and credit
+      description: Describe the photo and name the photographer.
+      placeholder: "Sediment core retrieval at Lake Mývatn. Photo: Jane Doe / UiT."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: team-tags
+    attributes:
+      label: Which MEMELAND team(s) is this news about?
+      description: Select all that apply. These tags allow filtering in the news grid.
+      options:
+        - label: "uit — UiT The Arctic University of Norway"
+        - label: "oxford — University of Oxford"
+        - label: "eawag — Eawag (Swiss Federal Institute of Aquatic Science and Technology)"
+        - label: "salzburg — University of Salzburg"
+        - label: "cuni — Charles University Prague"
+
+  - type: input
+    id: extra-categories
+    attributes:
+      label: Additional tags (optional)
+      description: "Free-form keywords for filtering, separated by commas. Examples: fieldwork, coring, conference, outreach, publication"
+      placeholder: "fieldwork, coring, Iceland"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Content and photo rights
+      options:
+        - label: I confirm this text can be published on the MEMELAND website.
+          required: true
+        - label: I confirm I have permission to publish any photo or image provided above.
+          required: true
