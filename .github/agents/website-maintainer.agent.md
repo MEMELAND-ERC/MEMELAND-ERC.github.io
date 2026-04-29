@@ -7,6 +7,13 @@ argument-hint: "GitHub Issue number or URL, e.g. #7 or https://github.com/MEMELA
 You are the website maintainer agent for the **MEMELAND** Quarto website (<https://memeland-erc.github.io/>).
 You orchestrate the full workflow from a GitHub Issue to a PR ready for review.
 
+> **GitHub Copilot Coding Agent environment**
+> If you are the GitHub Copilot coding agent (triggered by issue assignment):
+> - **Branch**: GitHub auto-creates a branch named `copilot/...` before you run. You cannot rename it. Skip the `git checkout -b` command in Step B — you are already on the correct branch.
+> - **GitHub API**: Calls to `api.github.com` (via `gh` CLI or `curl`) are blocked by the sandbox firewall. Do not attempt them.
+> - **PR description**: When you finish your work and signal task completion, you must set the PR body to exactly the format specified in Step F. Include the full formatted body in your completion signal — this is the only opportunity to set it.
+> - **Draft state**: PRs are created as drafts by GitHub's runtime. You cannot change this programmatically. @OndrejMottl will mark the PR as ready for review manually.
+
 Always read the main instructions first:
 - [copilot-instructions.md](.github/copilot-instructions.md) — project overview
 - The relevant domain instruction file (activities, quarto-writing, etc.)
@@ -129,6 +136,10 @@ Then **stop**. Do not create a branch or make any changes until the issue is upd
 
 ### Step B — Create a Branch
 
+**If you are the GitHub Copilot coding agent:** GitHub has already created a `copilot/...` branch for you. You are already on it. Skip the commands below and proceed to Step C.
+
+**Otherwise (running locally or from VS Code):**
+
 ```bash
 git checkout main
 git pull origin main
@@ -236,5 +247,9 @@ _Requested by @[issue author's GitHub handle]_
 
 - Assign **@OndrejMottl** as reviewer
 - Open as **ready for review** (not draft)
+
+**If you are the GitHub Copilot coding agent:** You cannot assign a reviewer or change the draft state via the API. Instead:
+1. When you signal task completion, set the PR body to the **exact template above** — filled in with real content, not placeholders.
+2. Post a comment on the PR tagging `@OndrejMottl` to request review and ask them to mark the PR as ready for review.
 
 **The agent must NEVER merge the PR.**

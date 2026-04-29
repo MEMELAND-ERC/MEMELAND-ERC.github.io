@@ -38,6 +38,7 @@ Before reviewing, collect:
 - **Category tag spellings** — in news post frontmatter, team tags must be exactly: `uit`, `oxford`, `eawag`, `salzburg`, `cuni`
 - **Terminology** — "MEMELAND", "ERC", "UiT", "Eawag", "CUNI" must be capitalised correctly throughout edited content
 - **No R / no auto-categorisation** — there is no R script setting categories; `categories:` in news posts is set by the author and that is correct
+- **Branch naming (check #15)** — accept either `issue[N]-*` (local/VS Code runs) or `copilot/*` (GitHub Copilot coding agent runs); both are valid
 
 ---
 

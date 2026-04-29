@@ -1,11 +1,24 @@
 name: Auto-assign issues to Copilot
 
+# IMPORTANT: This workflow requires a Personal Access Token (PAT) stored as
+# the repository secret COPILOT_TRIGGER_PAT.
+#
+# Why a PAT is needed:
+#   The GitHub Copilot coding agent is only activated when the assignment event
+#   is triggered by a real user token. Assignments made with GITHUB_TOKEN
+#   (a bot) are suppressed by GitHub's event system and do not wake the agent.
+#
+# How to create the PAT (classic token is simplest):
+#   1. Sign in as @OndrejMottl (or any org member with a Copilot seat)
+#   2. Go to Settings → Developer settings → Personal access tokens → Tokens (classic)
+#   3. Click "Generate new token (classic)"
+#   4. Select the "repo" scope (this includes read/write access to issues)
+#   5. Copy the token and add it as a repository secret named COPILOT_TRIGGER_PAT
+#      (Repository Settings → Secrets and variables → Actions → New repository secret)
+
 on:
   issues:
     types: [opened]
-
-permissions:
-  issues: write
 
 jobs:
   assign-to-copilot:
@@ -14,11 +27,11 @@ jobs:
       - name: Assign issue to Copilot Coding Agent
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.COPILOT_TRIGGER_PAT }}
           script: |
             await github.rest.issues.addAssignees({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.issue.number,
+              issue_number: context.payload.issue.number,
               assignees: ['copilot'],
             });
