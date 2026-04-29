@@ -2,6 +2,40 @@
 
 Use this file when rendering the MEMELAND website or committing the `docs/` output.
 
+## Check and install Quarto
+
+Before rendering, verify Quarto is installed:
+
+```bash
+quarto --version
+```
+
+If the command is not found, install Quarto for your platform:
+
+**Linux / GitHub Actions (Debian/Ubuntu):**
+
+```bash
+wget -q https://quarto.org/download/latest/quarto-linux-amd64.deb
+sudo dpkg -i quarto-linux-amd64.deb
+quarto --version
+```
+
+**macOS (Homebrew):**
+
+```bash
+brew install --cask quarto
+quarto --version
+```
+
+**Windows (PowerShell — winget):**
+
+```powershell
+winget install --id Posit.Quarto -e
+quarto --version
+```
+
+Alternatively, download the installer directly from <https://quarto.org/docs/download/>.
+
 ## Render command
 
 The MEMELAND site must be rendered for **all five language profiles**. From the repository root:
@@ -71,10 +105,7 @@ The MEMELAND site uses **no R code**. No R installation or `renv::restore()` is 
 ## Environment setup (CI / sandbox)
 
 ```bash
-# Install Quarto (latest)
-wget -q https://quarto.org/download/latest/quarto-linux-amd64.deb
-sudo dpkg -i quarto-linux-amd64.deb
-quarto --version
+# Install Quarto if needed (see "Check and install Quarto" above)
 
 # Render all profiles
 quarto render --profile english
