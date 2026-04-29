@@ -1,0 +1,36 @@
+---
+title: "Eawag team is hiring a postdoctoral researcher in organic geochemistry"
+date: 2026/04/29
+date-format: long
+date-modified: last-modified
+description: "Eawag is looking for a postdoctoral researcher in organic geochemistry to join the MEMELAND team."
+categories: [eawag, recruitment]
+sidebar: false
+---
+
+The Eawag Team is recruiting a 3-year postdoctoral researcher in organic geochemistry to join the MEMELAND project starting this summer.
+This is an exciting opportunity to contribute to cutting-edge paleolimnological research using lipid biomarkers as proxies for past environmental change.
+
+::: {.callout-note}
+## Key Information
+
+📅 **Date:** 29 April 2026 – 30 May 2026
+
+🗺️ **Location:** Duebendorf, Switzerland
+
+🔗 **More info:** [Apply here](https://apply.refline.ch/673277/1354/pub/en/index.html)
+:::
+
+## We are recruiting!
+
+The Eawag Team will be recruiting a 3-yr postdoctoral researcher in organic geochemistry starting this summer for the MEMELAND project.
+
+## The ideal candidate
+
+The postdoc will play a central role in the lipid‑biomarker component of the project, with a particular focus on faecal and cultivar biomarkers.
+
+A strong background in organic geochemistry, as well as hands‑on experience with GC‑MS, is therefore highly desirable.
+
+## Interested?
+
+Apply [here](https://apply.refline.ch/673277/1354/pub/en/index.html)
