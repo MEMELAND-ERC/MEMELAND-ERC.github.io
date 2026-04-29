@@ -8,9 +8,6 @@ categories: [eawag, recruitment]
 sidebar: false
 ---
 
-The Eawag Team is recruiting a 3-year postdoctoral researcher in organic geochemistry to join the MEMELAND project starting this summer.
-This is an exciting opportunity to contribute to cutting-edge paleolimnological research using lipid biomarkers as proxies for past environmental change.
-
 ::: {.callout-note}
 ## Key Information
 
