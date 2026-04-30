@@ -15,7 +15,7 @@
 
 MEMELAND er et ERC Synergy-prosjekt som startet i juli 2025.
 
-Hovedansvarlige forskere: prof. Antony G. Brown, prof. Nathalie Dubois, prof. Helena Hamerow, prof. dr. Andreas Lang og dr. Ondřej Mottl (partner).
+Hovedansvarlige forskere: [prof. Antony G. Brown](/Team/people.qmd#prof.-tony-g-brown), prof. [Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois), [prof. Helena Hamerow](/Team/people.qmd#prof.-helena-hamerow), [prof. dr. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang) og [dr. Ondřej Mottl](/Team/people.qmd#dr.-ondřej-mottl) (partner).
 
 :::
 
