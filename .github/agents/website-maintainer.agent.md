@@ -238,7 +238,20 @@ Invoke the `change-reviewer` subagent. Provide:
 - The list of files changed
 - The branch name
 
-Fix every flagged item before continuing. Re-run `change-reviewer` after fixes.
+**If change-reviewer returns ✅ ALL CHECKS PASSED:** proceed to Step F.
+
+**If change-reviewer returns ⚠️ FLAGS:**
+
+- **Fixable FLAGs** (wrong content, missing file, YAML error): fix them, re-render if needed, re-run `change-reviewer`. Repeat until all clear.
+- **Unfixable FLAGs** (environment issues such as Quarto version mismatch, or missing information that only the submitter can provide): do NOT proceed to request review. Set the PR description to include the full FLAG table and a prominent warning at the top:
+
+```markdown
+> ⚠️ **REVIEW BLOCKED — unfixable flags found. @OndrejMottl please review before merging.**
+>
+> [paste the full FLAG table here]
+```
+
+Then signal task completion with this blocked PR description. Do NOT mark the PR as ready for review.
 
 ---
 
@@ -266,6 +279,6 @@ _Requested by @[issue author's GitHub handle]_
 
 **If you are the GitHub Copilot coding agent:** You cannot assign a reviewer or change the draft state via the API. Instead:
 1. When you signal task completion, set the PR body to the **exact template above** — filled in with real content, not placeholders.
-2. Post a comment on the PR tagging `@OndrejMottl` to request review and ask them to mark the PR as ready for review.
+2. Include a line at the end of the PR body: `@OndrejMottl — please mark this PR as ready for review.` (GitHub will deliver this as a notification; do not attempt to post it via `gh` CLI or `curl` — those are blocked in the sandbox).
 
 **The agent must NEVER merge the PR.**

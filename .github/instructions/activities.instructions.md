@@ -59,6 +59,16 @@ You may combine both: `categories: [fieldwork, coring, uit, oxford]`
 
 News posts are published in **English only**. No language variant files are needed.
 
+## Content faithfulness rule
+
+**Use the submitter's text verbatim.** Do not paraphrase, expand, summarise, or add sentences not present in the issue. The only permitted editorial changes are:
+
+- Fixing obvious typos
+- Applying the required Markdown/callout structure
+- Splitting a wall of text into the recommended sections when it makes the structure clearer
+
+If the issue text is thin or vague, use it as-is and leave the gaps empty rather than inventing content. Do not add marketing language, benefit statements, or background sentences that were not submitted.
+
 ### Recommended sections (adapt as needed)
 
 1. **Opening paragraph** — 2–4 sentences: what happened, where, why it matters

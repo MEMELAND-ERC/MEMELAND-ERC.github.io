@@ -74,6 +74,9 @@ Before reviewing, collect:
 | 25 | HTML | Images render | ✅ PASS | |
 | 26 | HTML | No Quarto error banners | ✅ PASS | |
 | 27 | HTML | Language pages render | ✅ PASS | |
+| 28 | HTML | Quarto version correct | ✅ PASS | |
+| 29 | HTML | docs/ scope proportional | ✅ PASS | |
+| 30 | Content | Content faithful to issue | ✅ PASS | |
 ```
 
 End with either:
