@@ -13,10 +13,10 @@
 ::: {.callout-tip}
 ### Generell informasjon
 
-MEMELAND er et ERC Synergy-prosjekt som starter i juli 2025.
+MEMELAND er et ERC Synergy-prosjekt som startet i juli 2025.
 
-Hovedansvarlige forskere: [Prof. Tony G Brown](/Team/people.qmd#prof.-tony-g-brown), prof. [Nathalie Dubois](/Team/people.qmd#prof.-dr.-nathalie-dubois), [Prof. Helena Hamerow](/Team/people.qmd#prof.-helena-hamerow), [Prof. Dr. Andreas Lang](/Team/people.qmd#prof.-dr.-andreas-lang) og [Dr. Ondřej Mottl](/Team/people.qmd#dr.-ondřej-mottl) (partner).
+Hovedansvarlige forskere: prof. Antony G. Brown, prof. Nathalie Dubois, prof. Helena Hamerow, prof. dr. Andreas Lang og dr. Ondřej Mottl (partner).
 
 :::
 
-Molecular Ecology of Medieval European Landscapes (MEMELAND) skal utvikle Europas første økologiske historie på artsnivå fra romertiden og fram til i dag, og vise hvordan middelalderens arealbruk fortsatt former dagens landskap og biologiske mangfold. Ved å kombinere sedimentært gammelt DNA (sedaDNA), lipidbiomarkører, robuste kronologier og arkeobotaniske data fra 50 parvise innsjølokaliteter i Nord- og Sentral-Europa, vil prosjektet skape en enestående detaljert oversikt over planter, dyr og tilknyttede patogener, og omsette dette langtidsperspektivet til kunnskap for naturforvaltning, landskapsforvaltning og restaurering med kulturhistorisk forankring under klimaendringer.
+Molecular Ecology of Medieval European Landscapes (MEMELAND) skal utvikle Europas første økologiske historie på artsnivå fra romertiden og frem til i dag, og vise hvordan middelalderens arealbruk fortsatt former dagens landskap og biologiske mangfold. Ved å kombinere sedimentært gammelt DNA (sedaDNA), lipidbiomarkører, robuste kronologier og arkeobotaniske data fra 50 parvise innsjølokaliteter i Nord- og Sentral-Europa, vil prosjektet gi en enestående detaljert oversikt over planter, dyr og tilknyttede patogener, og omsette dette langtidsperspektivet til kunnskap for natur- og landskapsforvaltning samt restaurering med kulturhistorisk forankring under klimaendringer.

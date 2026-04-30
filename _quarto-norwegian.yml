@@ -31,3 +31,10 @@ website:
 
       - text: Resultater
         href: Outputs/outputs.qmd
+
+  page-footer:
+    center: "[✏️ Meld et problem](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new/choose)"
+
+language:
+  title-block-published: "Publisert"
+  title-block-modified: "Sist oppdatert"
