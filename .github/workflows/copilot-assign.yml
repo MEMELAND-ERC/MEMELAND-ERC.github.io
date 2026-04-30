@@ -3,23 +3,25 @@ name: Auto-assign issues to Copilot
 # This workflow posts a comment @github-copilot when a new issue is opened,
 # which triggers the GitHub Copilot coding agent (if enabled for the org).
 #
-# It requires a Personal Access Token (PAT) stored as COPILOT_TRIGGER_PAT
-# because the @github-copilot mention only triggers the agent when posted
-# by a real user token — not the built-in GITHUB_TOKEN (bot).
+# It requires a Personal Access Token (PAT) stored as COPILOT_TRIGGER_PAT.
+# The built-in GITHUB_TOKEN cannot assign copilot-swe-agent[bot]; a real user
+# token from someone with a Copilot seat is required.
 #
 # How to create the PAT (classic token is simplest):
-#   1. Sign in as @OndrejMottl (or any org member with a Copilot seat)
+#   1. Sign in as @OndrejMottl (must have an active Copilot seat)
 #   2. Go to Settings → Developer settings → Personal access tokens → Tokens (classic)
 #   3. Click "Generate new token (classic)"
-#   4. Select the "repo" scope (this includes write access to issue comments)
+#   4. Select the "repo" scope (covers issues, pull_requests, contents, actions)
 #   5. Copy the token and add it as a repository secret named COPILOT_TRIGGER_PAT
 #      (Repository Settings → Secrets and variables → Actions → New repository secret)
 #
-# Manual trigger (alternative):
-#   Open the issue → add a comment: @github-copilot use agent: website-maintainer
-#   Read all instructions in .github/ first (especially .github/agents/website-maintainer.agent.md),
-#   then follow the full issue → PR workflow defined there.
-
+# If using a fine-grained PAT instead, it needs ALL of the following:
+#   - Metadata: Read-only
+#   - Actions: Read and write
+#   - Contents: Read and write
+#   - Issues: Read and write
+#   - Pull requests: Read and write
+# (Missing any one of these will cause a 403 error.)
 on:
   issues:
     types: [opened]
