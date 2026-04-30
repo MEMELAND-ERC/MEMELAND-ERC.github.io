@@ -1,32 +1,24 @@
 name: Auto-assign issues to Copilot
 
-# IMPORTANT: This workflow requires a Personal Access Token (PAT) stored as
-# the repository secret COPILOT_TRIGGER_PAT.
+# This workflow posts a comment @github-copilot when a new issue is opened,
+# which triggers the GitHub Copilot coding agent (if enabled for the org).
 #
-# Why a PAT is needed:
-#   The GitHub Copilot coding agent is only activated when the assignment event
-#   is triggered by a real user token. Assignments made with GITHUB_TOKEN
-#   (a bot) are suppressed by GitHub's event system and do not wake the agent.
+# It requires a Personal Access Token (PAT) stored as COPILOT_TRIGGER_PAT
+# because the @github-copilot mention only triggers the agent when posted
+# by a real user token — not the built-in GITHUB_TOKEN (bot).
 #
 # How to create the PAT (classic token is simplest):
 #   1. Sign in as @OndrejMottl (or any org member with a Copilot seat)
 #   2. Go to Settings → Developer settings → Personal access tokens → Tokens (classic)
 #   3. Click "Generate new token (classic)"
-#   4. Select the "repo" scope (this includes read/write access to issues)
+#   4. Select the "repo" scope (this includes write access to issue comments)
 #   5. Copy the token and add it as a repository secret named COPILOT_TRIGGER_PAT
 #      (Repository Settings → Secrets and variables → Actions → New repository secret)
 #
-# Manual assignment (alternative to this workflow):
-#   If you need to assign Copilot manually via the GitHub UI:
-#   1. Open the issue → click "Assignees" → click the Copilot icon
-#      (or use the "Assign agent to issue" button if shown)
-#   2. In the "Custom agent" dropdown, select: website-maintainer
-#   3. In "Optional prompt", enter:
-#      Read all instructions in .github first, then follow website-maintainer.agent.md
-#   4. Click Assign
-#
-# This workflow automates steps 1–3 by assigning Copilot and posting
-# the same prompt as a comment so Copilot picks it up on start.
+# Manual trigger (alternative):
+#   Open the issue → add a comment: @github-copilot use agent: website-maintainer
+#   Read all instructions in .github/ first (especially .github/agents/website-maintainer.agent.md),
+#   then follow the full issue → PR workflow defined there.
 
 on:
   issues:
@@ -36,18 +28,6 @@ jobs:
   assign-to-copilot:
     runs-on: ubuntu-latest
     steps:
-      - name: Assign issue to Copilot Coding Agent
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.COPILOT_TRIGGER_PAT }}
-          script: |
-            await github.rest.issues.addAssignees({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.payload.issue.number,
-              assignees: ['copilot'],
-            });
-
       - name: Post agent instructions as prompt comment
         uses: actions/github-script@v7
         with:
@@ -57,5 +37,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.issue.number,
-              body: '@copilot Use the **website-maintainer** custom agent. Read all instructions in `.github/` first (especially `.github/agents/website-maintainer.agent.md`), then follow the full issue → PR workflow defined there.',
+              body: '@github-copilot Use the **website-maintainer** custom agent. Read all instructions in `.github/` first (especially `.github/agents/website-maintainer.agent.md`), then follow the full issue → PR workflow defined there.',
             });
