@@ -196,6 +196,22 @@ Load the relevant instruction file before writing any `.qmd` files:
 
 Read [quarto-rendering.instructions.md](.github/instructions/quarto-rendering.instructions.md) first.
 
+  **Before rendering, install the exact pinned Quarto version declared in `QUARTO_VERSION`:**
+
+```bash
+REQUIRED=$(cat QUARTO_VERSION)
+INSTALLED=$(quarto --version 2>/dev/null || echo "none")
+
+if [ "$INSTALLED" != "$REQUIRED" ]; then
+  echo "Installing Quarto $REQUIRED..."
+  wget -q "https://github.com/quarto-dev/quarto-cli/releases/download/v${REQUIRED}/quarto-${REQUIRED}-linux-amd64.deb"
+  sudo dpkg -i "quarto-${REQUIRED}-linux-amd64.deb"
+  quarto --version
+fi
+```
+
+Once the correct version is confirmed, render all five profiles:
+
 ```bash
 quarto render --profile english
 quarto render --profile german

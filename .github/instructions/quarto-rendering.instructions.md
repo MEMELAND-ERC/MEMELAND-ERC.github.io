@@ -2,15 +2,40 @@
 
 Use this file when rendering the MEMELAND website or committing the `docs/` output.
 
-## Check and install Quarto
+## Pinned Quarto version
 
-Before rendering, verify Quarto is installed:
+The required Quarto version is declared in `QUARTO_VERSION` at the repository root.
 
-```bash
-quarto --version
+```
+cat QUARTO_VERSION   # → e.g. 1.9.37
 ```
 
-If the command is not found, install Quarto for your platform:
+**All renders — local and sandbox — must use exactly this version.**
+The render scripts (`render_all.sh` / `render_all.ps1`) enforce this automatically and will abort with a clear error if the installed version does not match.
+
+## Check and install Quarto
+
+Before rendering, verify the correct version is installed:
+
+```bash
+quarto --version   # must match the content of QUARTO_VERSION
+```
+
+If the version is missing or wrong, install the exact pinned version for your platform.
+
+**Linux / GitHub Actions sandbox (specific version):**
+
+```bash
+REQUIRED=$(cat QUARTO_VERSION)
+wget -q "https://github.com/quarto-dev/quarto-cli/releases/download/v${REQUIRED}/quarto-${REQUIRED}-linux-amd64.deb"
+sudo dpkg -i "quarto-${REQUIRED}-linux-amd64.deb"
+quarto --version   # confirm
+```
+
+**macOS / Windows — download the specific installer from:**
+<https://github.com/quarto-dev/quarto-cli/releases> — find the release matching the version in `QUARTO_VERSION`.
+
+If the command is not found at all, install Quarto for your platform:
 
 **Linux / GitHub Actions (Debian/Ubuntu):**
 

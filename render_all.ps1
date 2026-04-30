@@ -1,5 +1,23 @@
 $ErrorActionPreference = "Stop"
 
+# --- Quarto version check ---
+$requiredVersion = (Get-Content 'QUARTO_VERSION' -Raw).Trim()
+$installedVersion = (quarto --version 2>$null) | Select-Object -First 1
+if (-not $installedVersion) { $installedVersion = 'not-found' }
+
+if ($installedVersion -ne $requiredVersion) {
+    Write-Error @"
+Quarto version mismatch.
+  Required : $requiredVersion  (declared in QUARTO_VERSION)
+  Installed: $installedVersion
+
+Install the correct version: https://quarto.org/docs/download/
+"@
+    exit 1
+}
+
+Write-Host "Quarto $installedVersion -- OK"
+
 $profiles = @(
     "english",
     "german",
