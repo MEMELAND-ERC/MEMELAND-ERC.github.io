@@ -1,7 +1,7 @@
 # MEMELAND Website
 
 This repository contains the source code for the MEMELAND project website:
-<https://memeland-erc.github.io/>
+<https://memeland.no/>
 
 The site is built with [Quarto](https://quarto.org/). Source files are written in `.qmd` format and the generated website is published from the `docs/` folder via GitHub Pages.
 
