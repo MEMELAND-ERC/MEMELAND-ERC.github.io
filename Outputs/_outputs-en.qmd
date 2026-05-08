@@ -35,7 +35,7 @@ Repository Name.
 
 ## Presentations & Posters
 
-**[Schneider T](/Team/people.qmd), [Brown A](/Team/people.qmd), [Mackay H](/Team/people.qmd), [Lang A](/Team/people.qmd), [Hamerow H](/Team/people.qmd), [Mottl O](/Team/people.qmd), [Dubois N](/Team/people.qmd)** (2026, April). *Sedimentary faecal biomarkers in European lakes: tracing land-use activity during the medieval agricultural revolution*.
+**[Schneider T](/Team/people.qmd#dr.-tobias-schneider), [Brown A](/Team/people.qmd#prof.-tony-g-brown), Mackay H, [Lang A](/Team/people.qmd#prof.-dr.-andreas-lang), [Hamerow H](/Team/people.qmd#prof.-helena-hamerow), [Mottl O](/Team/people.qmd#dr.-ondřej-mottl), [Dubois N](/Team/people.qmd#prof.-dr.-nathalie-dubois)** (2026, April). *Sedimentary faecal biomarkers in European lakes: tracing land-use activity during the medieval agricultural revolution*.
 EGU General Assembly 2026, Vienna, Austria.
 [![DOI](https://img.shields.io/badge/DOI-10.5194%2Fegusphere--egu26--7602-896a2b?style=flat-square)](https://doi.org/10.5194/egusphere-egu26-7602) [![Poster](https://img.shields.io/badge/Poster-download-8a9a5b.png?style=flat-square)](https://github.com/user-attachments/files/27480442/EGU2026_Schneider.et.al-2026-04-27_printed.pdf)
 
