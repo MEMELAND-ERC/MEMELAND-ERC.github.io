@@ -1,0 +1,29 @@
+---
+title: "Lessons from the Past: digging into the past to build a sustainable future"
+date: 2026/03/23
+date-format: long
+date-modified: last-modified
+description: "MEMELAND attended the Lessons from the Past conference at the University of Liverpool, where researchers discussed how knowledge from the past can inform modern challenges."
+categories: [oxford, conference]
+sidebar: false
+---
+
+::: {.callout-note}
+## Key Information
+
+📅 **Date:** 23 March 2026
+
+🗺️ **Location:** Liverpool, United Kingdom
+
+🔗 **More info:** [conference website](https://lessonsfromthepast.info)
+:::
+
+## Details
+
+Elizabeth Stroud attended the inaugural Lessons from the Past conference hosted by the University of Liverpool. This conference brought together researchers studying humans in the past such as archaeologists, evolutionary anthropologists, historians, classicists and Egyptologists to discuss how the deep understanding of the past can help challenges of the modern world. Framed around the UN sustainability goals, the conference was divided into two parts. The first day consisted of presentations and posters on how knowledge from the past could be used to combat current world challenges, with presentations detailing research which could support tangible recommendations to a specific policy body. The second day revolved around workshops based around three chosen presentations, with the aim to help facilitate the presented policy recommendations of those presentations.
+
+The MEMELAND project was presented as a poster which highlighted the different methods we are using and information that the various teams will be collecting. The conference was successful in drawing interested researchers together to contemplate how knowledge of the past can help inform today's big challenges. The discussions were informative but did highlight the need for archaeologists to further advocate the value of the collected data sets.
+
+## Resources
+
+- [conference website](https://lessonsfromthepast.info)
