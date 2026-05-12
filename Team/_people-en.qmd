@@ -63,6 +63,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - 👤[![](https://img.shields.io/badge/Oxford-PI-gold)](/Team/oxford.qmd)
 - 🏦University of Oxford
 - 📬email: helena.hamerow(at)arch.ox.ac.uk
+- https://orcid.org/0000-0001-5643-5888
 
 ### Dr. Oliver Kern
 
