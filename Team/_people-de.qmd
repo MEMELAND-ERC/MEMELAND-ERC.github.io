@@ -31,11 +31,12 @@ Namen alphabetisch sortieren und Links zu Teamseiten bei Rollenänderungen aktua
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0003--2600--6603-8a9a5b.svg)](https://orcid.org/0000-0002-1990-4654)
 - [🔗persönliche Website](https://uit.no/ansatte/antony.g.brown)
 
-### Dr. Michael Charles <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/charles.jpg" align="right" width="120"/>
+### Prof. Michael Charles <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/charles.jpg" align="right" width="120"/>
 
 - 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/Team/oxford.qmd)
 - 🏦Universität Oxford
 - 📬E-Mail: michael.charles(at)arch.ox.ac.uk
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--9630--7589-8a9a5b.svg)](https://orcid.org/0000-0002-9630-7589)
 
 ### Fabian Christopher Dremel <img src="https://i1.rgstatic.net/ii/profile.image/1084162140319744-1635495805012_Q128/Fabian-Dremel.jpg" align="right" width="120"/>
 
