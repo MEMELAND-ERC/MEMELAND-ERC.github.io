@@ -25,6 +25,7 @@ Report each item as **PASS** or **FLAG**.
 | No placeholder text remaining | No template skeleton text such as `"Write a short introductory paragraph here."`, `"Describe the problem here."`, or similar |
 | Dates, links, names match issue | Values in the file match what the submitter provided |
 | Image path is real or omitted | `image:` in frontmatter points to a file that actually exists in `Materials/photos/`, or is absent |
+| Image omission noted if photo was requested | If the issue provided a photo (local path or unreachable URL) but the post has no `image:`, confirm the PR description explains why and that the submitter was asked to provide the file |
 
 ### 3. File Paths and Links
 

@@ -94,7 +94,10 @@ Check that every required field is filled and not left as the template placehold
 Check whether translated text is provided for all selected languages. If some language sections say "same as English" or are blank, note this — you will need to ask the submitter for the missing translations before implementing.
 
 **For Template 01 — image check:**
-If a photo URL is provided, attempt to fetch it to confirm it is reachable.
+Inspect the "Photo or image" field:
+- **If it contains a URL** (starts with `http://` or `https://`): attempt to fetch it to confirm it is reachable. If unreachable, flag it.
+- **If it contains a local file path** (starts with `/`, `~`, `C:\`, `C:/`, `/Users/`, `/home/`, or any pattern that is clearly a path on the submitter's machine): this file is **inaccessible** to the agent. Flag it — ask the submitter to attach the image directly to the GitHub issue as a file attachment (drag and drop onto the issue text area).
+- **If the field is empty or absent:** no image is available; proceed without one.
 
 **For Templates 02 and 04 — source file check:**
 Derive the likely `.qmd` source path from the provided URL. Example:
@@ -165,7 +168,10 @@ Load the relevant instruction file before writing any `.qmd` files:
    - Add any free-form tags from the extra-categories field
 3. Write body from the "Full story" field
 4. Add Key Information callout if location and/or link were provided
-5. If a photo URL was provided: download to `Materials/photos/`, update `image:` frontmatter, add image block in body with `fig-alt` and caption
+5. Handle the "Photo or image" field:
+   - **If a URL was provided and is reachable:** download to `Materials/photos/`, update `image:` frontmatter, add image block in body with `fig-alt` and caption
+   - **If a local file path was provided:** do NOT include an `image:` field — the path is on the submitter's machine and is inaccessible. This case should have been caught in Step A3; if it was not, omit the image entirely and note the omission in the PR description
+   - **If absent:** omit the `image:` field entirely
 
 **For Template 02 (content update):**
 1. Identify the `.qmd` file(s) from the page URL and selected languages
