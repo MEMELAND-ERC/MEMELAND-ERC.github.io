@@ -22,6 +22,7 @@ Jména ponechte v abecedním pořadí a při změně rolí aktualizujte odkazy n
 - 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/Team/oxford.qmd)
 - 🏦Oxfordská univerzita
 - 📬e-mail: amy.bogaard(at)arch.ox.ac.uk
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--6716--8890-8a9a5b.svg)](https://orcid.org/0000-0002-6716-8890)
 
 ### Prof. Tony G Brown <img src="https://uit.no/Content/602764/cache=20222601171113/transformation=kompJpgHighUtlistingLowComp/D__Tony%20Brown.jpg" align="right" width="120"/>
 
@@ -64,6 +65,7 @@ Jména ponechte v abecedním pořadí a při změně rolí aktualizujte odkazy n
 - 👤[![](https://img.shields.io/badge/Oxford-PI-gold)](/Team/oxford.qmd)
 - 🏦Oxfordská univerzita
 - 📬e-mail: helena.hamerow(at)arch.ox.ac.uk
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0001--5643--5888-8a9a5b.svg)](https://orcid.org/0000-0001-5643-5888)
 
 ### Dr. Oliver Kern
 
@@ -108,11 +110,12 @@ Jména ponechte v abecedním pořadí a při změně rolí aktualizujte odkazy n
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--1593--0273-8a9a5b.svg)](https://orcid.org/0000-0002-1593-0273)
 - [🔗osobní web](https://www.drtobiasschneider.com/)
 
-### Elizabeth Stroud <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/liz_stroudcrop.jpg" align="right" width="120"/>
+### Dr Elizabeth Stroud <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/liz_stroudcrop.jpg" align="right" width="120"/>
 
 - 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/Team/oxford.qmd)
 - 🏦Oxfordská univerzita
 - 📬e-mail: elizabeth.stroud(at)arch.ox.ac.uk
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0003--4299--6638-8a9a5b.svg)](https://orcid.org/0000-0003-4299-6638)
 
 ### David Zezula <img src="https://www.plus.ac.at/wp-content/uploads/2021/02/DSC_3638_02-scaled.jpg" align="right" width="120"/>
 
