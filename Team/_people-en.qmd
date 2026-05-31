@@ -15,13 +15,14 @@ Keep names alphabetized and update links to team pages when roles change.
 - 🏦Tromsø Museum, Arctic University of Norway
 - 📬email: inger.g.alsos(at)uit.no
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--8610--1085-8a9a5b.svg)](https://orcid.org/0000-0002-8610-1085)
-- [🔗personal webiste](https://en.uit.no/ansatte/inger.g.alsos)
+- [🔗personal website](https://en.uit.no/ansatte/inger.g.alsos)
 
 ### Prof. Amy Bogaard <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/ab_2023.jpg" align="right" width="120"/>
 
 - 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/Team/oxford.qmd)
 - 🏦University of Oxford
 - 📬email: amy.bogaard(at)arch.ox.ac.uk
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--6716--8890-8a9a5b.svg)](https://orcid.org/0000-0002-6716-8890)
 
 ### Prof. Tony G Brown <img src="https://uit.no/Content/602764/cache=20222601171113/transformation=kompJpgHighUtlistingLowComp/D__Tony%20Brown.jpg" align="right" width="120"/>
 
@@ -29,7 +30,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - 🏦Tromsø Museum, Arctic University of Norway
 - 📬email: antony.g.brown(at)uit.no
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0003--2600--6603-8a9a5b.svg)](https://orcid.org/0000-0002-1990-4654)
-- [🔗personal webiste](https://uit.no/ansatte/antony.g.brown)
+- [🔗personal website](https://uit.no/ansatte/antony.g.brown)
 
 ### Prof. Michael Charles <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/charles.jpg" align="right" width="120"/>
 
@@ -44,7 +45,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - 🏦University of Salzburg
 - 📬email:fabian.dremel(at)plus.ac.at
 - [![ORCID](https://img.shields.io/badge/orcid-0009--0004--3897--0413-8a9a5b.svg)](https://orcid.org/0009-0004-3897-0413)
-- [🔗personal webiste](https://uni-salzburg.elsevierpure.com/en/persons/fabian-christopher-dremel/)
+- [🔗personal website](https://uni-salzburg.elsevierpure.com/en/persons/fabian-christopher-dremel/)
 
 ### Prof. Dr. Nathalie Dubois <img src="/Materials/Faces/Nathalie.jpg" align="right" width="120"/>
 
@@ -52,7 +53,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - 🏦Swiss Federal Institute of Aquatic Science and Technology & ETH Zurich
 - 📬email: nathalie.dubois(at)eawag.ch
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0003--2349--0826-8a9a5b.svg)](https://orcid.org/0000-0003-2349-0826)
-- [🔗personal webiste](https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/nathalie-dubois/show/)
+- [🔗personal website](https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/nathalie-dubois/show/)
 
 ### Katja Häkli
 
@@ -64,6 +65,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - 👤[![](https://img.shields.io/badge/Oxford-PI-gold)](/Team/oxford.qmd)
 - 🏦University of Oxford
 - 📬email: helena.hamerow(at)arch.ox.ac.uk
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0001--5643--5888-8a9a5b.svg)](https://orcid.org/0000-0001-5643-5888)
 
 ### Dr. Oliver Kern
 
@@ -77,7 +79,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - 🏦University of Salzburg
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--1604--4898-8a9a5b.svg)](https://orcid.org/0000-0002-1604-4898)
 - 📬email: Andreas.Lang(at)plus.ac.at
-- [🔗personal webiste](https://uni-salzburg.elsevierpure.com/de/persons/andreas-lang-4/)
+- [🔗personal website](https://uni-salzburg.elsevierpure.com/de/persons/andreas-lang-4/)
 
 ### Dr. Ying Liu <img src="/Materials/Faces/Ying.jpg" align="right" width="120"/>
 
@@ -91,7 +93,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - 🏦Department of Botany, Faculty of Science, Charles University, Prague, Czech Republic
 - 📬email: ondrej.mottl(at)gmail.com
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--9796--5081-8a9a5b.svg)](https://orcid.org/0000-0002-9796-5081)
-- [🔗personal webiste](https://ondrejmottl.github.io/)
+- [🔗personal website](https://ondrejmottl.github.io/)
 
 ### Marcel-Luciano Ortler <img src="https://www.plus.ac.at/wp-content/uploads/2025/11/Marcel2.jpg" align="right" width="120"/>
 
@@ -106,20 +108,21 @@ Keep names alphabetized and update links to team pages when roles change.
 - 🏦Swiss Federal Institute of Aquatic Science and Technology
 - 📬email: tobias.schneider(at)eawag.ch
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--1593--0273-8a9a5b.svg)](https://orcid.org/0000-0002-1593-0273)
-- [🔗personal webiste](https://www.drtobiasschneider.com/)
+- [🔗personal website](https://www.drtobiasschneider.com/)
 
-### Elizabeth Stroud <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/liz_stroudcrop.jpg" align="right" width="120"/>
+### Dr Elizabeth Stroud <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/liz_stroudcrop.jpg" align="right" width="120"/>
 
 - 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/Team/oxford.qmd)
 - 🏦University of Oxford
 - 📬email: elizabeth.stroud(at)arch.ox.ac.uk
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0003--4299--6638-8a9a5b.svg)](https://orcid.org/0000-0003-4299-6638)
 
 ### David Zezula <img src="https://www.plus.ac.at/wp-content/uploads/2021/02/DSC_3638_02-scaled.jpg" align="right" width="120"/>
 
 - 👤[![](https://img.shields.io/badge/Salzburg-Postdoc-silver)](/Team/salzburg.qmd)
 - 🏦University of Salzburg
 - 📬email: davidzezula(at)gmx.at
-- [🔗personal webiste](https://www.plus.ac.at/umwelt-und-biodiversitaet/forschung/fachgebiete-der-zoologie/ag-petermann/team-15/david-zezula/)
+- [🔗personal website](https://www.plus.ac.at/umwelt-und-biodiversitaet/forschung/fachgebiete-der-zoologie/ag-petermann/team-15/david-zezula/)
 
 ### Dr. Shuang Zhang <img src="https://www.plus.ac.at/wp-content/uploads/2025/10/206098366-scaled.jpg" align="right" width="120"/>
 

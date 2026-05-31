@@ -1,59 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://memeland-erc.github.io/Materials/MEMELAND_visual_identity.html</loc>
-    <lastmod>2026-05-14T08:33:29.792Z</lastmod>
-  </url>
-  <url>
     <loc>https://memeland-erc.github.io/Team/uit.html</loc>
-    <lastmod>2026-05-14T08:33:29.811Z</lastmod>
+    <lastmod>2026-05-08T09:15:27.574Z</lastmod>
   </url>
   <url>
     <loc>https://memeland-erc.github.io/Team/people.html</loc>
-    <lastmod>2026-05-14T08:33:29.811Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/Team/salzburg.html</loc>
-    <lastmod>2026-05-14T08:33:29.811Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/Outputs/outputs.html</loc>
-    <lastmod>2026-05-14T08:33:29.810Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/Activities/news/2026-eawag-postdoc-hiring.html</loc>
-    <lastmod>2026-05-14T08:33:29.784Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/Activities/news/2026-egu-vienna-meetup.html</loc>
-    <lastmod>2026-05-14T08:33:29.784Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/About/about.html</loc>
-    <lastmod>2026-05-14T08:33:29.784Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/JoinUs/join_us.html</loc>
-    <lastmod>2026-05-14T08:33:29.785Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/Activities/activities.html</loc>
-    <lastmod>2026-05-14T08:33:29.784Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/Team/cuni.html</loc>
-    <lastmod>2026-05-14T08:33:29.811Z</lastmod>
-  </url>
-  <url>
-    <loc>https://memeland-erc.github.io/Team/oxford.html</loc>
-    <lastmod>2026-05-14T08:33:29.811Z</lastmod>
+    <lastmod>2026-05-08T09:15:27.574Z</lastmod>
   </url>
   <url>
     <loc>https://memeland-erc.github.io/Team/eawag.html</loc>
-    <lastmod>2026-05-14T08:33:29.811Z</lastmod>
+    <lastmod>2026-05-08T09:15:27.563Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Outputs/outputs.html</loc>
+    <lastmod>2026-05-08T09:15:27.548Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/JoinUs/join_us.html</loc>
+    <lastmod>2026-05-08T09:15:27.544Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Activities/news/2026-egu-vienna-meetup.html</loc>
+    <lastmod>2026-05-10T12:38:24.730Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Activities/activities.html</loc>
+    <lastmod>2026-05-08T09:15:27.538Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/About/about.html</loc>
+    <lastmod>2026-05-08T09:15:27.532Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Activities/news/2026-eawag-postdoc-hiring.html</loc>
+    <lastmod>2026-05-08T09:15:27.538Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Activities/news/2026-lessons-from-the-past.html</loc>
+    <lastmod>2026-05-30T08:37:30.330Z</lastmod>
   </url>
   <url>
     <loc>https://memeland-erc.github.io/index.html</loc>
-    <lastmod>2026-05-14T08:33:29.904Z</lastmod>
+    <lastmod>2026-05-08T09:15:27.841Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Materials/MEMELAND_visual_identity.html</loc>
+    <lastmod>2026-01-14T14:27:54.085Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Team/cuni.html</loc>
+    <lastmod>2026-05-08T09:15:27.563Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Team/oxford.html</loc>
+    <lastmod>2026-05-08T09:15:27.563Z</lastmod>
+  </url>
+  <url>
+    <loc>https://memeland-erc.github.io/Team/salzburg.html</loc>
+    <lastmod>2026-05-08T09:15:27.574Z</lastmod>
   </url>
 </urlset>
