@@ -1,0 +1,21 @@
+---
+title: "MEMELAND members at the LAC conference"
+date: 2026/03/20
+date-format: long
+date-modified: last-modified
+description: "As part of the MEMELAND project, Prof. Antony Brown, Prof. Andreas Lang, and Dr. Ying Liu participated in the ninth International Landscape Archaeology Conference (LAC), held from 18 to 21 March 2026 in Bamberg."
+categories: [uit, salzburg, conference]
+sidebar: false
+---
+
+As part of the MEMELAND project, Prof. Antony Brown, Prof. Andreas Lang, and Dr. Ying Liu participated in the ninth International Landscape Archaeology Conference (LAC), held from 18 to 21 March 2026 in Bamberg, Germany.
+
+The team presented key findings from the MEMELAND project and engaged in scholarly exchange with fellow researchers, fostering interdisciplinary discussion on palaeoenvironmental reconstruction and past landscape dynamics.
+
+::: {.callout-note}
+## Key Information
+
+📅 **Date:** 20 March 2026
+
+🗺️ **Location:** Bamberg
+:::
