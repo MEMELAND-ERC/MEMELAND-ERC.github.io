@@ -5,7 +5,7 @@ date-format: long
 date-modified: last-modified
 description: "From 22 February to 11 March 2026, the MEMELAND team - Prof. Antony G. Brown, Dr. Oliver A. Kern, Dr. Ying Liu, and M.Sc. Marcel-Luciano Ortler - conducted a lake-coring campaign across the United Kingdom."
 image: "../../Materials/photos/field-work-campaign-uk-2026.jpg"
-categories: [uit, salzburg, "field work", coring]
+categories: [uit, salzburg, fieldwork, coring]
 sidebar: false
 ---
 
