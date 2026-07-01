@@ -1,5 +1,5 @@
 ---
-title: "Field work Campaign Northern Europe (Sweden – Denmark – Germany)"
+title: "Field Work Campaign Northern Europe (Sweden – Denmark – Germany)"
 date: 2026/05/18
 date-format: long
 date-modified: last-modified
@@ -27,6 +27,6 @@ The goal at each lake was to retrieve sediments spanning from today to c. 2000 y
 
 Most of the lakes chosen are situated in close vicinity to Medieval high-status sites, such as abbeys or monasteries, which have a rich history including a substantial anthropogenic impact on local ecosystems from deforestation, agriculture, and animal husbandry. However, some of the lakes represent the opposite: they provide the background signal from mostly undisturbed areas with minimal human interference. By pairing these lakes with those from high-status sites, we aim to disentangle the natural baseline and the human impact within an area. An example of such a lake-pair is Mündesee (ML37 MUS) and Amtssee (ML36 AMT, located next to Chorin Abbey), located only 15 km apart.
 
-![The MEMELAND team after 16 days of hard work, celebrating the successful completion of the campaign with the final core recovered from Schweriner Innensee (Schwerin Castle in the background).](../../Materials/photos/field-work-campaign-ger-2026.jpg){fig-align="center" fig-alt="The MEMELAND team after 16 busy but very successful days of coring in the Northern Europe."}
+![The MEMELAND team after 16 days of hard work, celebrating the successful completion of the campaign with the final core recovered from Schweriner Innensee (Schwerin Castle in the background).](../../Materials/photos/field-work-campaign-ger-2026.jpg){fig-align="center" fig-alt="The MEMELAND team after 16 busy but very successful days of coring in Northern Europe."}
 
 : *The MEMELAND team after 16 days of hard work. Photo: Ying Liu, UiT.*
