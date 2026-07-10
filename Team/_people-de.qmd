@@ -67,6 +67,12 @@ Namen alphabetisch sortieren und Links zu Teamseiten bei Rollenänderungen aktua
 - 📬E-Mail: helena.hamerow(at)arch.ox.ac.uk
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0001--5643--5888-8a9a5b.svg)](https://orcid.org/0000-0001-5643-5888)
 
+### Andréa Julien
+
+- 👤[![](https://img.shields.io/badge/Oxford-Postdoc-silver)](/Team/oxford.qmd)
+- 🏦Universität Oxford
+- 📬E-Mail: andreajulienpro(at)gmail.com
+
 ### Dr. Oliver Kern
 
 - 👤[![](https://img.shields.io/badge/Tromso-Postdoc-silver)](/Team/uit.qmd)
