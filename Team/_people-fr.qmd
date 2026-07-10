@@ -95,7 +95,7 @@ Gardez les noms classés par ordre alphabétique et mettez à jour les liens ver
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--9796--5081-8a9a5b.svg)](https://orcid.org/0000-0002-9796-5081)
 - [🔗site personnel](https://ondrejmottl.github.io/)
 
-### Yulia Mun <img src="/Materials/Faces/Yulia.jpg" align="right" width="120"/>
+### Yulia Mun <img src="/Materials/Faces/Yulia.jpg" align="right" width="120" alt="Yulia Mun"/>
 
 - 👤[![](https://img.shields.io/badge/Tromso-Project_Coordinator-silver)](/Team/uit.qmd)
 - 🏦Musée de Tromsø, Université arctique de Norvège
