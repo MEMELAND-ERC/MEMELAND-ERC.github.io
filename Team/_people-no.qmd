@@ -98,7 +98,7 @@ Behold navnene i alfabetisk rekkefølge og oppdater lenkene til teamsidene når 
 ### Dr. Yulia Mun
 
 - 👤[![](https://img.shields.io/badge/Tromso-Project_Coordinator-silver)](/Team/uit.qmd)
-- 🏦Norges arktiske universitetsmuseum
+- 🏦Tromsø Museum, Norges arktiske universitet
 - 📬e-post: yulia.mun(at)uit.no
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--7784--6982-8a9a5b.svg)](https://orcid.org/0000-0002-7784-6982)
 
