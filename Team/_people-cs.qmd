@@ -95,6 +95,13 @@ Jména ponechte v abecedním pořadí a při změně rolí aktualizujte odkazy n
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--9796--5081-8a9a5b.svg)](https://orcid.org/0000-0002-9796-5081)
 - [🔗osobní web](https://ondrejmottl.github.io/)
 
+### Dr. Yulia Mun
+
+- 👤[![](https://img.shields.io/badge/Tromso-Project_Coordinator-silver)](/Team/uit.qmd)
+- 🏦Tromsø Museum, Arktická univerzita Norska
+- 📬e-mail: yulia.mun(at)uit.no
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--7784--6982-8a9a5b.svg)](https://orcid.org/0000-0002-7784-6982)
+
 ### Marcel-Luciano Ortler <img src="https://www.plus.ac.at/wp-content/uploads/2025/11/Marcel2.jpg" align="right" width="120"/>
 
 - 👤[![](https://img.shields.io/badge/Salzburg-Postdoc-silver)](/Team/salzburg.qmd)
