@@ -95,6 +95,11 @@ Namen alphabetisch sortieren und Links zu Teamseiten bei Rollenänderungen aktua
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--9796--5081-8a9a5b.svg)](https://orcid.org/0000-0002-9796-5081)
 - [🔗persönliche Website](https://ondrejmottl.github.io/)
 
+### Yulia Mun <img src="/Materials/Faces/Yulia.jpg" align="right" width="120"/>
+
+- 👤[![](https://img.shields.io/badge/Tromso-Project_Coordinator-silver)](/Team/uit.qmd)
+- 🏦Tromsø Museum, Arktische Universität Norwegen
+
 ### Marcel-Luciano Ortler <img src="https://www.plus.ac.at/wp-content/uploads/2025/11/Marcel2.jpg" align="right" width="120"/>
 
 - 👤[![](https://img.shields.io/badge/Salzburg-Postdoc-silver)](/Team/salzburg.qmd)
