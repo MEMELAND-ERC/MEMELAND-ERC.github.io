@@ -67,6 +67,12 @@ Behold navnene i alfabetisk rekkefølge og oppdater lenkene til teamsidene når 
 - 📬e-post: helena.hamerow(at)arch.ox.ac.uk
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0001--5643--5888-8a9a5b.svg)](https://orcid.org/0000-0001-5643-5888)
 
+### Andréa Julien <img src="/Materials/Faces/Andrea.jpg" align="right" width="120" alt="Andréa Julien"/>
+
+- 👤[![](https://img.shields.io/badge/Oxford-Postdoc-silver)](/Team/oxford.qmd)
+- 🏦Universitetet i Oxford
+- 📬e-post: andreajulienpro(at)gmail.com
+
 ### Dr. Oliver Kern
 
 - 👤[![](https://img.shields.io/badge/Tromso-Postdoc-silver)](/Team/uit.qmd)
@@ -94,6 +100,13 @@ Behold navnene i alfabetisk rekkefølge og oppdater lenkene til teamsidene når 
 - 📬e-post: ondrej.mottl(at)gmail.com
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--9796--5081-8a9a5b.svg)](https://orcid.org/0000-0002-9796-5081)
 - [🔗personlig nettside](https://ondrejmottl.github.io/)
+
+### Dr. Yulia Mun <img src="/Materials/Faces/Yulia.jpg" align="right" width="120" alt="Yulia Mun"/>
+
+- 👤[![](https://img.shields.io/badge/Tromso-Project_Coordinator-silver)](/Team/uit.qmd)
+- 🏦Tromsø Museum, Norges arktiske universitetsmuseum
+- 📬e-post: yulia.mun(at)uit.no
+- [![ORCID](https://img.shields.io/badge/orcid-0000--0002--7784--6982-8a9a5b.svg)](https://orcid.org/0000-0002-7784-6982)
 
 ### Marcel-Luciano Ortler <img src="https://www.plus.ac.at/wp-content/uploads/2025/11/Marcel2.jpg" align="right" width="120"/>
 
