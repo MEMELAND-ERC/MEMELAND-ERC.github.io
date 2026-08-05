@@ -1,0 +1,22 @@
+---
+title: "Salzburg cold store fully operational including roof & shelf storage."
+date: 2026/02/03
+date-format: long
+date-modified: last-modified
+description: "Salzburg cold store fully operational including roof & shelf storage."
+image: "../../Materials/photos/salzburg-cold-store.jpg"
+categories: [salzburg]
+sidebar: false
+---
+
+Salzburg cold store fully operational including roof & shelf storage.
+
+::: {.callout-note}
+## Key Information
+
+📅 **Date:** 3 February 2026
+
+🗺️ **Location:** Salzburg, Austria
+:::
+
+![Salzburg cold store fully operational including roof and shelf storage.](../../Materials/photos/salzburg-cold-store.jpg){fig-align="center" fig-alt="Salzburg cold store fully operational including roof and shelf storage."}
