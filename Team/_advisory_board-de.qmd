@@ -1,7 +1,5 @@
 # MEMELAND-Beirat
 
-Der MEMELAND-Beirat bietet dem Konsortium strategische Beratung und unabhangiges wissenschaftliches Feedback.
+Die detaillierten Mitgliederprofile sind derzeit auf Englisch verfugbar:
 
-Die Mitgliederliste und kurze Profile werden hier veroffentlicht.
-
-Mehr zum Projekt: [MEMELAND-Projektseite an der UiT](https://en.uit.no/project/memeland_en).
+{{< include _advisory_board-en.qmd >}}

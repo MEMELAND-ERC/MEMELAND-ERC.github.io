@@ -1,7 +1,5 @@
 # Conseil consultatif MEMELAND
 
-Le conseil consultatif MEMELAND fournit au consortium des orientations strategiques et un retour scientifique independant.
+Les profils detailles des membres sont actuellement disponibles en anglais:
 
-La liste des membres et de courts profils seront publies ici.
-
-Plus d'informations: [page du projet MEMELAND a UiT](https://en.uit.no/project/memeland_en).
+{{< include _advisory_board-en.qmd >}}

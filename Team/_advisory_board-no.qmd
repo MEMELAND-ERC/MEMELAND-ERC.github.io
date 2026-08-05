@@ -1,7 +1,5 @@
 # MEMELAND radgivende utvalg
 
-MEMELANDs radgivende utvalg gir konsortiet strategiske rad og uavhengige vitenskapelige tilbakemeldinger.
+Detaljerte medlemsprofiler er forelopig tilgjengelige pa engelsk:
 
-Medlemslisten og korte profiler vil bli publisert her.
-
-Mer om prosjektet: [MEMELAND-prosjektsiden ved UiT](https://en.uit.no/project/memeland_en).
+{{< include _advisory_board-en.qmd >}}
