@@ -34,6 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../Materials/Logos/MEMELAND.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -71,7 +73,93 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Suchen"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-open-positions .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-open-positions'] = new List('listing-open-positions', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-closed-positions .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-closed-positions'] = new List('listing-closed-positions', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -143,6 +231,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Aktivitäten</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link active" href="../JoinUs/join_us.html" aria-current="page"> 
+<span class="menu-text">Arbeiten Sie mit uns</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../Outputs/outputs.html"> 
 <span class="menu-text">Ergebnisse</span></a>
   </li>  
@@ -211,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Geändert</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">8. Mai 2026</p>
+      <p class="date-modified">5. August 2026</p>
     </div>
   </div>
     
@@ -222,11 +314,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="mitmachen" class="level1">
-<h1>Mitmachen</h1>
-<p><em>Diese Seite befindet sich noch im Aufbau — schauen Sie bald wieder vorbei.</em></p>
+<section id="arbeiten-sie-mit-uns" class="level1">
+<h1>Arbeiten Sie mit uns</h1>
+<p>Aktuelle MEMELAND-Stellen finden Sie unten. Offene Positionen stehen zuerst, wahrend geschlossene Ausschreibungen als Archiv erhalten bleiben.</p>
+<section id="offene-stellen" class="level2">
+<h2 class="anchored" data-anchor-id="offene-stellen">Offene Stellen</h2>
+<div id="listing-open-positions" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="dWl0JTJDcmVjcnVpdG1lbnQ=" data-listing-date-sort="1785708000000" data-listing-file-modified-sort="1785949680706" data-listing-date-modified-sort="1785949680000" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../Activities/news/2026-uit-phd-fellowship.html" class="no-external">Join our MEMELAND team as a PhD Fellow. Application deadline: 16 August 2026</a>
+</h3>
+<div class="delink listing-description"><a href="../Activities/news/2026-uit-phd-fellowship.html" class="no-external">
+<p>UiT invites applications for a fully funded four-year PhD Fellowship in ancient sedimentary DNA research. Application deadline: 16 August 2026.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../Activities/news/2026-uit-phd-fellowship.html" class="no-external">
+<div class="listing-date">
+3 August 2026
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">Keine Treffer</div>
+</div>
+</section>
+<section id="geschlossene-stellen" class="level2">
+<h2 class="anchored" data-anchor-id="geschlossene-stellen">Geschlossene Stellen</h2>
+<div id="listing-closed-positions" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="ZWF3YWclMkNyZWNydWl0bWVudA==" data-listing-date-sort="1777413600000" data-listing-file-modified-sort="1785949677954" data-listing-date-modified-sort="1785949677000" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../Activities/news/2026-eawag-postdoc-hiring.html" class="no-external">Eawag team is hiring a postdoctoral researcher in organic geochemistry</a>
+</h3>
+<div class="delink listing-description"><a href="../Activities/news/2026-eawag-postdoc-hiring.html" class="no-external">
+<p>Eawag is looking for a postdoctoral researcher in organic geochemistry to join the MEMELAND team.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../Activities/news/2026-eawag-postdoc-hiring.html" class="no-external">
+<div class="listing-date">
+29 April 2026
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">Keine Treffer</div>
+</div>
 
 
+
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Zurück nach oben</a></main> <!-- /main -->
