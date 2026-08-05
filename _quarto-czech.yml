@@ -33,7 +33,7 @@ website:
       - text: Aktivity
         href: Activities/activities.qmd
 
-      - text: Pracujte s nami
+      - text: Pracujte s námi
         href: JoinUs/join_us.qmd
 
       - text: Výstupy
