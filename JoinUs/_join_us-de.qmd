@@ -1,3 +1,13 @@
-# Mitmachen
+# Arbeiten Sie mit uns
 
-*Diese Seite befindet sich noch im Aufbau — schauen Sie bald wieder vorbei.*
+Aktuelle MEMELAND-Stellen finden Sie unten. Offene Positionen stehen zuerst, wahrend geschlossene Ausschreibungen als Archiv erhalten bleiben.
+
+## Offene Stellen
+
+::: {#open-positions}
+:::
+
+## Geschlossene Stellen
+
+::: {#closed-positions}
+:::

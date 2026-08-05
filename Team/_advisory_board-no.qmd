@@ -1,0 +1,102 @@
+# MEMELAND rådgivende utvalg
+
+Det rådgivende utvalget består av eksperter fra et bredt spekter av fagfelt.
+
+## Medlemmer
+
+### Dr. Kim Cohen
+
+- 🏦Forsker, institutt for fysisk geografi, Universitetet i Utrecht
+- 🔬Forskningsfokus: kvartærgeologi og den holocene Rhin-Meuse-deltaen, med kombinasjon av geologiske og geografiske metoder for rekonstruksjon av landskapsutvikling
+- 📬email: k.m.cohen(at)uu.nl
+
+### Professor Eugene Costello <img src="https://en.uit.no/Content/931211/transformation=scale10000x800/PV%20ECostello%2072_Cr.JPG" align="right" width="120"/>
+
+- 🏦Miljøhistoriker og landskapsarkeolog, University College Cork
+- 🔬Forskningsfokus: jordbrukspraksis, miljømessige og økonomiske endringer, samt ERC-prosjektet DeepCattle om historien til kommersielt storfehold i Europa
+- 📬email: ecostello(at)ucc.ie
+
+### Prof. Dr. Wim De Clercq <img src="https://en.uit.no/Content/931173/cache=1781092188000/Wim%20De%20Clercq-Kirst%20van%20der%20Vorst%20Agentschap%20Onroerend%20Erfgoed.PNG" align="right" width="120"/>
+
+- 🏦Professor, Universitetet i Gent; Historical Archaeology Research Group (HARG)
+- 🔬Forskningsfokus: landskapsarkeologi, bosetningsutvikling og materiell kultur i Nordvest-Europa, spesielt middelalderlig landskapsendring rundt Brugge
+- 📬email: w.declercq(at)ugent.be
+
+### Professor Mark Gardiner <img src="https://en.uit.no/Content/931166/transformation=scale10000x180/Mark%20Gardiner.png" align="right" width="120"/>
+
+- 🏦Professor emeritus i middelalderarkeologi, University of Lincoln
+- 🔬Forskningsfokus: middelalderlandskap, arealbruk og bosettingsmønster i Storbritannia, Irland og Nord-Atlanteren, med vekt på forholdet mellom arealbruk og sosial organisering
+- 📬email: mgardiner(at)lincoln.ac.uk
+
+### Dr. Jorn Erik Henriksen <img src="https://en.uit.no/Content/931163/cache=1781092045000/J%C3%B8rn%20Erik%20Henriksen.jpg" align="right" width="120"/>
+
+- 🏦Førsteamanuensis i arkeologi, Arctic University Museum of Norway (UiT)
+- 🔬Forskningsfokus: jernalder og middelalder i Nord-Norge
+- 📬email: jorn.henriksen(at)uit.no
+
+### Dr. W.Z. Hoek <img src="https://en.uit.no/Content/931174/cache=1781092198000/WimHoek.jpg" align="right" width="120"/>
+
+- 🏦Forsker, institutt for fysisk geografi, Universitetet i Utrecht
+- 🔬Forskningsfokus: klima-, vegetasjons- og landskapsinteraksjoner i sen Weichsel og holocen, inkludert multi-proxy-analyser og datering av innsjosedimentarkiver
+- 📬email: W.Z.Hoek(at)uu.nl
+
+### Professor Richard C Hoffmann <img src="https://en.uit.no/Content/931169/cache=1781092133000/Richard%20Hoffmann.jpeg" align="right" width="120"/>
+
+- 🏦Professor emeritus og senior scholar, York University
+- 🔬Forskningsfokus: tverrfaglig miljohistorie om fiskeri, agroøkosystemer og bruk av naturressurser i middelalderens Europa
+- 📬email: medfish(at)yorku.ca
+
+### Dr. Martin Janovsky <img src="https://en.uit.no/Content/931167/cache=1781092108000/Martin%20Janovsky.jpg" align="right" width="120"/>
+
+- 🏦Forsker, institutt for arkeologi, Karlsuniversitetet
+- 🔬Forskningsfokus: middelalderlandskap og langsiktige menneskelige påvirkninger på jord og sedimenter ved bruk av geoarkeologiske metoder, inkludert mikromorfologi, geokjemi og stabile isotoper
+- 📬email: martin.janovsky(at)ff.cuni.cz
+
+### Dr. Catherine Jessen <img src="https://en.uit.no/Content/931162/cache=1781091051000/Catherine%20Jessen.JPEG" align="right" width="120"/>
+
+- 🏦Geolog og geoarkeolog, Danmarks nasjonalmuseum
+- 🔬Forskningsfokus: rekonstruksjon av tidligere klima, miljøer og menneske-miljø-interaksjoner gjennom analyser av innsjosedimenter, sedimentkartlegging og stratigrafi
+- 📬email: Catherine.Jessen(at)natmus.dk
+
+### Mag. Dr. Thomas Kuhtreiber <img src="https://en.uit.no/Content/931171/cache=1781092166000/Thomas%20Ku%CC%88htreiber-036.jpg" align="right" width="120"/>
+
+- 🏦Forsker, institutt for forhistorisk og historisk arkeologi, Universitetet i Wien
+- 🔬Forskningsfokus: miljø- og landskapsarkeologi i middelalder og tidlig nytid, bygd miljø, materiell kultur og sosiale identiteter
+- 📬email: thomas.kuehtreiber(at)univie.ac.at
+
+### Prof. Laurent Lespez <img src="https://en.uit.no/Content/931165/cache=1781092074000/Laurent%20Lespez.jpg" align="right" width="120"/>
+
+- 🏦Geomorfolog, geoarkeolog og geograf, Université Paris-Est Créteil og CNRS
+- 🔬Forskningsfokus: langsiktige endringer i miljø og landskap, og integrering av historiske utviklingsforløp i elveforvaltning og restaurering
+- 📬email: laurent.lespez(at)lgp.cnrs.fr
+
+### Professor Amanda Power <img src="https://en.uit.no/Content/931160/transformation=scale10000x180/Amanda%20Power.jpg" align="right" width="120"/>
+
+- 🏦Professor i middelalderhistorie, University of Oxford
+- 🔬Forskningsfokus: miljohistorie, religion, makt og tankehistorie, med vekt på global middelalderhistorie og historiske røtter til dagens miljøforandringer
+- 📬email: amanda.power(at)history.ox.ac.uk
+
+### Professor Carl Sayer <img src="https://en.uit.no/Content/931161/transformation=scale10000x180/Carl%20Sayer.jpeg" align="right" width="120"/>
+
+- 🏦Professor, Department of Geography, University College London
+- 🔬Forskningsfokus: bevaring og restaurering av ferskvann, inkludert økologi og paleo-økologi i innsjøer, elver og dammer
+- 📬email: c.sayer(at)ucl.ac.uk
+
+### Prof. Dr. phil. Gerrit Jasper Schenk <img src="https://en.uit.no/Content/931170/cache=1781092156000/SCHENK.jpg" align="right" width="120"/>
+
+- 🏦Professor i middelalderhistorie, Technische Universität Darmstadt
+- 🔬Forskningsfokus: miljohistorie, katastrofestudier, byhistorie, infrastruktur og begreps- og ritualhistorie; leder prosjekter om Fluvial Anthroposphere
+- 📬email: schenk(at)pg.tu-darmstadt.de
+
+### Professor Kevin Walsh <img src="https://en.uit.no/Content/931164/transformation=scale10000x180/Kevin%20Walsh.jpg" align="right" width="120"/>
+
+- 🏦Professor emeritus, Department of Archaeology, University of York; Research Associate, Centre Camille Jullian, Aix-Marseille Université
+- 🔬Forskningsfokus: landskapsarkeologi og langsiktige menneske-miljø-interaksjoner i Middelhavet og de europeiske Alpene, inkludert pastorale systemer og landskapstransformasjon
+- 📬email: kevin.walsh(at)york.ac.uk
+
+### Dr. Lukas Werther <img src="https://en.uit.no/Content/934849/cache=1785845472000/WERTHER_copy.jpg" align="right" width="120"/>
+
+- 🏦Forsker, Deutsches Archäologisches Institut (DAI), Römisch-Germanische Kommission
+- 🔬Forskningsfokus: landskapsarkeologi, vannforvaltning, maktlandskap og ressursbruk i tidlig- og høymiddelalderen i Europa
+- 📬email: lukas.werther(at)dainst.de
+

@@ -1,0 +1,25 @@
+---
+title: "DNA from Lake Mud: Tiefer See in Maulbronn in the Scientific Spotlight"
+date: 2025/12/23
+date-format: long
+date-modified: last-modified
+description: "PZ News featured MEMELAND's lake sediment research in Maulbronn and its contribution to reconstructing historical biodiversity."
+categories: [salzburg, outreach, media]
+sidebar: false
+---
+
+MEMELAND was featured in PZ News with coverage of lake sediment research at Tiefer See and Aalkistensee in Maulbronn.
+
+::: {.callout-note}
+## Key Information
+
+📅 **Date:** 23 December 2025
+
+🗺️ **Location:** Maulbronn, Germany
+
+🔗 **More info:** [DNA from Lake Mud: Tiefer See in Maulbronn in the Scientific Spotlight (PZ News)](https://www.pz-news.de/region_artikel,-DNA-aus-See-Schlamm-Tiefer-See-in-Maulbronn-im-Fokus-der-Wissenschaft-_arid,2309364.html)
+:::
+
+## Resources
+
+- [DNA from Lake Mud: Tiefer See in Maulbronn in the Scientific Spotlight](https://www.pz-news.de/region_artikel,-DNA-aus-See-Schlamm-Tiefer-See-in-Maulbronn-im-Fokus-der-Wissenschaft-_arid,2309364.html)

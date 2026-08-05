@@ -38,3 +38,17 @@ EGU General Assembly 2026, Vienna, Austria.
 ## Thèses
 
 *Aucune thèse achevée dans le cadre du projet pour l'instant.*
+
+## Couverture mediatique
+
+**Muhlacker Tagblatt** (2026, 29 janvier). *Kick-off for a "Project of the Century"*.
+[Article du projet](/Activities/news/2026-startschuss-jahrhundertprojekt.qmd) | [Article original](https://www.muehlacker-tagblatt.de/Maulbronn/Startschuss-fuer-ein-Jahrhundertprojekt-427845.html)
+
+**PZ News** (2025, 23 decembre). *DNA from Lake Mud: Tiefer See in Maulbronn in the Scientific Spotlight*.
+[Article du projet](/Activities/news/2025-dna-aus-see-schlamm-maulbronn.qmd) | [Article original](https://www.pz-news.de/region_artikel,-DNA-aus-See-Schlamm-Tiefer-See-in-Maulbronn-im-Fokus-der-Wissenschaft-_arid,2309364.html)
+
+**Universite de Salzbourg** (2025, 27 aout). *MEMELAND - A Journey Through 2,000 Years of European Environmental History*.
+[Article du projet](/Activities/news/2025-plus-memeland-zeitreise.qmd) | [Article original](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
+
+**ORF Salzburg** (2026, 21 juin). *Lake Sediments Decode the History of Agriculture*.
+[Article du projet](/Activities/news/2026-orf-salzburg-feature.qmd) | [Article original](https://salzburg.orf.at/stories/3359419/)

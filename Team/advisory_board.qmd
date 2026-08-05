@@ -1,0 +1,36 @@
+---
+date: 2026/08/05
+date-format: long
+date-modified: last-modified
+sidebar: false
+---
+
+::::: {.content-visible when-profile="english"}
+
+{{< include _advisory_board-en.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="german"}
+
+{{< include _advisory_board-de.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="french"}
+
+{{< include _advisory_board-fr.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="czech"}
+
+{{< include _advisory_board-cs.qmd >}}
+
+:::::
+
+::::: {.content-visible when-profile="norwegian"}
+
+{{< include _advisory_board-no.qmd >}}
+
+:::::

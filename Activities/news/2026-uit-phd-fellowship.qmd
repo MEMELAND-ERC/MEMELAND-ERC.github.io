@@ -5,7 +5,9 @@ date-format: long
 date-modified: last-modified
 description: "UiT invites applications for a fully funded four-year PhD Fellowship in ancient sedimentary DNA research. Application deadline: 16 August 2026."
 image: "../../Materials/photos/uit-phd-fellowship-2026.jpg"
-categories: [uit]
+categories: [uit, recruitment]
+vacancy_status: open
+expiry_date: 2026/08/16
 sidebar: false
 ---
 

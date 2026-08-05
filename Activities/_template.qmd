@@ -33,6 +33,14 @@ categories: [uit]
 #   Team tags that also appear on team pages: uit | oxford | eawag | salzburg | cuni
 #   You can mix both:  [coring, fieldwork, uit, oxford]
 
+# For hiring posts, also add `recruitment` here and include the fields below.
+
+vacancy_status: open
+# ↑ Only for hiring posts. Use `open` or `closed`.
+
+expiry_date: 2030/01/31
+# ↑ Optional for hiring posts. Use the application deadline in YYYY/MM/DD format.
+
 sidebar: false
 ---
 

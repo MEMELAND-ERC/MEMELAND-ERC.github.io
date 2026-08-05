@@ -60,6 +60,20 @@ Navn på konferanse, by, land.
 
 *Ingen avhandlinger er fullført innenfor prosjektet ennå.*
 
+## Medieomtale
+
+**Muhlacker Tagblatt** (2026, 29. januar). *Kick-off for a "Project of the Century"*.
+[Prosjektinnlegg](/Activities/news/2026-startschuss-jahrhundertprojekt.qmd) | [Original omtale](https://www.muehlacker-tagblatt.de/Maulbronn/Startschuss-fuer-ein-Jahrhundertprojekt-427845.html)
+
+**PZ News** (2025, 23. desember). *DNA from Lake Mud: Tiefer See in Maulbronn in the Scientific Spotlight*.
+[Prosjektinnlegg](/Activities/news/2025-dna-aus-see-schlamm-maulbronn.qmd) | [Original omtale](https://www.pz-news.de/region_artikel,-DNA-aus-See-Schlamm-Tiefer-See-in-Maulbronn-im-Fokus-der-Wissenschaft-_arid,2309364.html)
+
+**Universitetet i Salzburg** (2025, 27. august). *MEMELAND - A Journey Through 2,000 Years of European Environmental History*.
+[Prosjektinnlegg](/Activities/news/2025-plus-memeland-zeitreise.qmd) | [Original omtale](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
+
+**ORF Salzburg** (2026, 21. juni). *Lake Sediments Decode the History of Agriculture*.
+[Prosjektinnlegg](/Activities/news/2026-orf-salzburg-feature.qmd) | [Original omtale](https://salzburg.orf.at/stories/3359419/)
+
 <!-- Foreslått format:
 
 **Studentnavn** (ÅÅÅÅ). *Tittel på avhandlingen*.

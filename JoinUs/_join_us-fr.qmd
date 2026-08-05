@@ -1,3 +1,13 @@
-# Nous rejoindre
+# Travaillez avec nous
 
-*Cette page est en cours de construction — revenez bientôt.*
+Consultez ci-dessous les offres MEMELAND en cours. Les postes ouverts apparaissent d'abord, tandis que les appels clotures restent disponibles dans les archives.
+
+## Postes ouverts
+
+::: {#open-positions}
+:::
+
+## Postes clotures
+
+::: {#closed-positions}
+:::

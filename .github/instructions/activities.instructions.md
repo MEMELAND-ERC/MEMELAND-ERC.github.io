@@ -36,6 +36,8 @@ sidebar: false
 - `description:` — required; wrap in quotes; keep concise (≤ 200 characters)
 - `image:` — optional; relative path from the news file to the image in `Materials/photos/`; omit entirely if no real image is available
 - `categories:` — required; list of tags in square brackets (see Category tags below)
+- `vacancy_status:` — required for hiring posts; use `open` or `closed`
+- `expiry_date:` — optional for hiring posts; use `YYYY/MM/DD` for the application deadline
 - `sidebar: false` — always include
 
 ### Category tags
@@ -51,7 +53,10 @@ sidebar: false
 | `cuni` | Charles University Prague |
 
 **Free-form tags** (examples):
-- `fieldwork`, `coring`, `conference`, `workshop`, `outreach`, `publication`, `collaboration`
+- `fieldwork`, `coring`, `conference`, `workshop`, `outreach`, `publication`, `collaboration`, `media`
+
+Use `media` for external press coverage or institutional news stories about MEMELAND.
+Use `recruitment` for vacancies so they can appear automatically on the Work with us page.
 
 You may combine both: `categories: [fieldwork, coring, uit, oxford]`
 

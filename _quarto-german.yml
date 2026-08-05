@@ -24,10 +24,17 @@ website:
             href: Team/cuni.qmd
 
       - text: Personen
-        href: Team/people.qmd
+        menu:
+          - text: Kernteam
+            href: Team/people.qmd
+          - text: Beirat
+            href: Team/advisory_board.qmd
 
       - text: Aktivitäten
         href: Activities/activities.qmd
+
+      - text: Arbeiten Sie mit uns
+        href: JoinUs/join_us.qmd
 
       - text: Ergebnisse
         href: Outputs/outputs.qmd

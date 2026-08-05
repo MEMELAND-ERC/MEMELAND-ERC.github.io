@@ -2,6 +2,28 @@
 date: 2025/04/20
 date-format: long
 date-modified: last-modified
+sidebar: false
+listing:
+  - id: open-positions
+    contents: "../Activities/news/*.qmd"
+    include:
+      vacancy_status: open
+    type: default
+    sort: "date desc"
+    fields: [title, description, date]
+    date-format: "D MMMM YYYY"
+    filter-ui: false
+    sort-ui: false
+  - id: closed-positions
+    contents: "../Activities/news/*.qmd"
+    include:
+      vacancy_status: closed
+    type: default
+    sort: "date desc"
+    fields: [title, description, date]
+    date-format: "D MMMM YYYY"
+    filter-ui: false
+    sort-ui: false
 ---
 
 ::::: {.content-visible when-profile="english"}
