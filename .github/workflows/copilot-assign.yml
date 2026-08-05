@@ -28,6 +28,8 @@ on:
 
 jobs:
   assign-to-copilot:
+    # Allow manual opt-out by adding the `⏸️ no-agent` label to an issue.
+    if: ${{ !contains(github.event.issue.labels.*.name, '⏸️ no-agent') }}
     runs-on: ubuntu-latest
     steps:
       - name: Assign issue to Copilot Coding Agent
