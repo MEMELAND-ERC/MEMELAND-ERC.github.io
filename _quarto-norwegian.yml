@@ -24,7 +24,11 @@ website:
             href: Team/cuni.qmd
 
       - text: Personer
-        href: Team/people.qmd
+        menu:
+          - text: Kjerneteam
+            href: Team/people.qmd
+          - text: Radgivende utvalg
+            href: Team/advisory_board.qmd
 
       - text: Aktiviteter
         href: Activities/activities.qmd
