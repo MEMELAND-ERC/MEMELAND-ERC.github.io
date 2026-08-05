@@ -1,3 +1,13 @@
-# Join Us
+# Work with Us
 
-*This page is work in progress — check back soon.*
+Find current MEMELAND vacancies below. Open positions are listed first, while closed calls remain available as an archive.
+
+## Open Positions
+
+::: {#open-positions}
+:::
+
+## Closed Positions
+
+::: {#closed-positions}
+:::

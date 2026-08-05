@@ -5,6 +5,8 @@ date-format: long
 date-modified: last-modified
 description: "Eawag is looking for a postdoctoral researcher in organic geochemistry to join the MEMELAND team."
 categories: [eawag, recruitment]
+vacancy_status: closed
+expiry_date: 2026/05/30
 sidebar: false
 ---
 

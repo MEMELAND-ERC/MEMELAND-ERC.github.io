@@ -1,3 +1,13 @@
-# Přidejte se k nám
+# Pracujte s nami
 
-*Tato stránka se připravuje - vraťte se prosím brzy.*
+Nize najdete aktualni pozice projektu MEMELAND. Nejprve jsou uvedeny otevrene pozice, uzavrene vyzvy zustavaji dostupne v archivu.
+
+## Otevrene pozice
+
+::: {#open-positions}
+:::
+
+## Uzavrene pozice
+
+::: {#closed-positions}
+:::

@@ -33,6 +33,9 @@ website:
       - text: Aktiviteter
         href: Activities/activities.qmd
 
+      - text: Arbeid med oss
+        href: JoinUs/join_us.qmd
+
       - text: Resultater
         href: Outputs/outputs.qmd
 

@@ -4,7 +4,6 @@ title: "[New news]: "
 labels:
   - "📰 type:news-post"
   - "❓ status:needs-info"
-assignees: []
 body:
   - type: markdown
     attributes:
@@ -120,8 +119,29 @@ body:
     id: extra-categories
     attributes:
       label: Additional tags (optional)
-      description: "Free-form keywords for filtering, separated by commas. Examples: fieldwork, coring, conference, outreach, publication, media"
-      placeholder: "fieldwork, coring, media"
+      description: "Free-form keywords for filtering, separated by commas. Examples: fieldwork, coring, conference, outreach, publication, media, recruitment"
+      placeholder: "fieldwork, coring, recruitment"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: vacancy-status
+    attributes:
+      label: Vacancy status (only for hiring posts)
+      description: Choose a status if this news item is a job advert.
+      options:
+        - not a hiring post
+        - open
+        - closed
+    validations:
+      required: false
+
+  - type: input
+    id: application-deadline
+    attributes:
+      label: Application deadline (only for hiring posts)
+      description: Use YYYY-MM-DD if this is a job advert.
+      placeholder: "2026-08-16"
     validations:
       required: false
 
