@@ -1,0 +1,32 @@
+---
+title: "Join our MEMELAND team as a PhD Fellow. Application deadline: 16 August 2026"
+date: 2026/08/03
+date-format: long
+date-modified: last-modified
+description: "UiT invites applications for a fully funded four-year PhD Fellowship in ancient sedimentary DNA research. Application deadline: 16 August 2026."
+image: "../../Materials/photos/uit-phd-fellowship-2026.jpg"
+categories: [uit]
+sidebar: false
+---
+
+This is an exciting opportunity to join an international research team investigating the ecological history of European freshwater ecosystems using cutting-edge ancient sedimentary DNA approaches.
+
+Application deadline: **16 August 2026**.
+
+::: {.callout-note}
+## Key Information
+
+📅 **Date:** 3 August 2026
+
+🗺️ **Location:** Tromso, Norway
+
+🔗 **More info:** [Apply here by 16 August 2026](https://www.jobbnorge.no/en/available-jobs/job/303780/phd-fellow-in-ancient-sedimentary-dna-of-freshwater-fish-and-ecological-interactions-in-europe)
+:::
+
+![Sediment core retrieval.](../../Materials/photos/uit-phd-fellowship-2026.jpg){fig-align="center" fig-alt="Sediment core retrieval."}
+
+: *Sediment core retrieval.*
+
+## Resources
+
+- [Apply here by 16 August 2026](https://www.jobbnorge.no/en/available-jobs/job/303780/phd-fellow-in-ancient-sedimentary-dna-of-freshwater-fish-and-ecological-interactions-in-europe)
