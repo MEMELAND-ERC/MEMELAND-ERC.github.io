@@ -24,7 +24,11 @@ website:
             href: Team/cuni.qmd
 
       - text: Lidé
-        href: Team/people.qmd
+        menu:
+          - text: Hlavní tým
+            href: Team/people.qmd
+          - text: Poradní sbor
+            href: Team/advisory_board.qmd
 
       - text: Aktivity
         href: Activities/activities.qmd
