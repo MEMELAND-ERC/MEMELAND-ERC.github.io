@@ -1,5 +1,101 @@
 # Poradni sbor MEMELAND
 
-Podrobne profily clenu jsou zatim dostupne v anglictine:
+Poradni sbor tvori odbornice a odbornici z sirokeho spektra disciplin.
 
-{{< include _advisory_board-en.qmd >}}
+## Clenove
+
+### Dr. Kim Cohen
+
+- 🏦Vyzkumnik, katedra fyzicke geografie, Utrechtska univerzita
+- 🔬Vyzkumny fokus: kvartarni geologie a holocenni delta Ryn-Meuse; kombinace geologickych a geografickych metod pro rekonstrukci vyvoje krajiny
+- 📬email: k.m.cohen(at)uu.nl
+
+### Professor Eugene Costello <img src="https://en.uit.no/Content/931211/transformation=scale10000x800/PV%20ECostello%2072_Cr.JPG" align="right" width="120"/>
+
+- 🏦Environmentalni historik a krajiny archeolog, University College Cork
+- 🔬Vyzkumny fokus: zemedelske praktiky, environmentalni a ekonomicke zmeny a projekt ERC DeepCattle o historii komercniho chovu skotu v Evrope
+- 📬email: ecostello(at)ucc.ie
+
+### Prof. Dr. Wim De Clercq <img src="https://en.uit.no/Content/931173/cache=1781092188000/Wim%20De%20Clercq-Kirst%20van%20der%20Vorst%20Agentschap%20Onroerend%20Erfgoed.PNG" align="right" width="120"/>
+
+- 🏦Profesor, Ghentska univerzita; Historical Archaeology Research Group (HARG)
+- 🔬Vyzkumny fokus: krajinna archeologie, vyvoj sidelnich struktur a materialni kultura v severozapadni Evrope, zejmena promeny stredoveke krajiny v okoli Brug
+- 📬email: w.declercq(at)ugent.be
+
+### Professor Mark Gardiner <img src="https://en.uit.no/Content/931166/transformation=scale10000x180/Mark%20Gardiner.png" align="right" width="120"/>
+
+- 🏦Emeritni profesor stredoveke archeologie, University of Lincoln
+- 🔬Vyzkumny fokus: stredoveke krajiny, vyuziti pudy a modely osidleni v Britanii, Irsku a severnim Atlantiku, se zamerenim na vztah mezi vyuzitim krajiny a socialni organizaci
+- 📬email: mgardiner(at)lincoln.ac.uk
+
+### Dr. Jorn Erik Henriksen <img src="https://en.uit.no/Content/931163/cache=1781092045000/J%C3%B8rn%20Erik%20Henriksen.jpg" align="right" width="120"/>
+
+- 🏦Docent archeologie, Arctic University Museum of Norway (UiT)
+- 🔬Vyzkumny fokus: doba zelezna a stredovek v severnim Norsku
+- 📬email: jorn.henriksen(at)uit.no
+
+### Dr. W.Z. Hoek <img src="https://en.uit.no/Content/931174/cache=1781092198000/WimHoek.jpg" align="right" width="120"/>
+
+- 🏦Vyzkumnik, katedra fyzicke geografie, Utrechtska univerzita
+- 🔬Vyzkumny fokus: interakce klimatu, vegetace a krajiny v pozdnim weichselu a holocenu, vcetne multi-proxy analyz a datovani jezernich sedimentarnich zaznamu
+- 📬email: W.Z.Hoek(at)uu.nl
+
+### Professor Richard C Hoffmann <img src="https://en.uit.no/Content/931169/cache=1781092133000/Richard%20Hoffmann.jpeg" align="right" width="120"/>
+
+- 🏦Emeritni profesor a senior scholar, York University
+- 🔬Vyzkumny fokus: interdisciplinarni environmentalni historie rybarstvi, agroekosystemu a vyuzivani prirodnich zdroju ve stredoveke Evrope
+- 📬email: medfish(at)yorku.ca
+
+### Dr. Martin Janovsky <img src="https://en.uit.no/Content/931167/cache=1781092108000/Martin%20Janovsky.jpg" align="right" width="120"/>
+
+- 🏦Vyzkumnik, katedra archeologie, Univerzita Karlova
+- 🔬Vyzkumny fokus: stredoveke krajiny a dlouhodobe lidske dopady na pudy a sedimenty s vyuzitim geoarcheologickych metod, vcetne mikromorfologie, geochemie a stabilnich izotopu
+- 📬email: martin.janovsky(at)ff.cuni.cz
+
+### Dr. Catherine Jessen <img src="https://en.uit.no/Content/931162/cache=1781091051000/Catherine%20Jessen.JPEG" align="right" width="120"/>
+
+- 🏦Geolozka a geoarcheolozka, Narodni muzeum Danska
+- 🔬Vyzkumny fokus: rekonstrukce minulich klimat, prostredi a interakci clovek-prostredi pomoci analyz jezernich sedimentu, mapovani sedimentu a stratigrafie
+- 📬email: Catherine.Jessen(at)natmus.dk
+
+### Mag. Dr. Thomas Kuhtreiber <img src="https://en.uit.no/Content/931171/cache=1781092166000/Thomas%20Ku%CC%88htreiber-036.jpg" align="right" width="120"/>
+
+- 🏦Vyzkumnik, institut prehistoricke a historicke archeologie, Videnska univerzita
+- 🔬Vyzkumny fokus: environmentalni a krajinna archeologie stredoveku a ranho novoveku, zastavene prostredi, materialni kultura a socialni identity
+- 📬email: thomas.kuehtreiber(at)univie.ac.at
+
+### Prof. Laurent Lespez <img src="https://en.uit.no/Content/931165/cache=1781092074000/Laurent%20Lespez.jpg" align="right" width="120"/>
+
+- 🏦Geomorfolog, geoarcheolog a geograf, Universite Paris-Est Creteil a CNRS
+- 🔬Vyzkumny fokus: dlouhodobe zmeny prostredi a krajiny a zaclenovani historickych trajektorii do managementu a obnovy recnich systemu
+- 📬email: laurent.lespez(at)lgp.cnrs.fr
+
+### Professor Amanda Power <img src="https://en.uit.no/Content/931160/transformation=scale10000x180/Amanda%20Power.jpg" align="right" width="120"/>
+
+- 🏦Profesorka stredovekych dejin, University of Oxford
+- 🔬Vyzkumny fokus: environmentalni dejiny, nabozenstvi, moc a mysleni se zamerenim na globalni stredoveke dejiny a na historicke koreny soucasnych environmentalnich zmen
+- 📬email: amanda.power(at)history.ox.ac.uk
+
+### Professor Carl Sayer <img src="https://en.uit.no/Content/931161/transformation=scale10000x180/Carl%20Sayer.jpeg" align="right" width="120"/>
+
+- 🏦Profesor, Department of Geography, University College London
+- 🔬Vyzkumny fokus: ochrana a obnova sladkovodnich ekosystemu, vcetne ekologie a paleoekologie jezer, rek a rybniku
+- 📬email: c.sayer(at)ucl.ac.uk
+
+### Prof. Dr. phil. Gerrit Jasper Schenk <img src="https://en.uit.no/Content/931170/cache=1781092156000/SCHENK.jpg" align="right" width="120"/>
+
+- 🏦Profesor stredovekych dejin, Technicka univerzita Darmstadt
+- 🔬Vyzkumny fokus: environmentalni dejiny, studium katastrof, urbanni dejiny, infrastruktura, dejiny pojmu a ritualu; vede projekty o Fluvialni antroposfere
+- 📬email: schenk(at)pg.tu-darmstadt.de
+
+### Professor Kevin Walsh <img src="https://en.uit.no/Content/931164/transformation=scale10000x180/Kevin%20Walsh.jpg" align="right" width="120"/>
+
+- 🏦Emeritni profesor, Department of Archaeology, University of York; Research Associate, Centre Camille Jullian, Aix-Marseille Universite
+- 🔬Vyzkumny fokus: krajinna archeologie a dlouhodobe interakce clovek-prostredi ve Stredomori a Evropskych Alpach, vcetne pastevnich systemu a transformace krajiny
+- 📬email: kevin.walsh(at)york.ac.uk
+
+### Dr. Lukas Werther <img src="https://en.uit.no/Content/934849/cache=1785845472000/WERTHER_copy.jpg" align="right" width="120"/>
+
+- 🏦Vyzkumnik, Nemecky archeologicky institut (DAI), Rimsko-germanska komise
+- 🔬Vyzkumny fokus: krajinna archeologie, vodni management, mocenske krajiny a vyuzivani zdroju v ranem a vrcholnem stredoveku napric Evropou
+- 📬email: lukas.werther(at)dainst.de

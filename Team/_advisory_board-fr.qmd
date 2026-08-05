@@ -1,5 +1,101 @@
 # Conseil consultatif MEMELAND
 
-Les profils detailles des membres sont actuellement disponibles en anglais:
+Le conseil consultatif reunit des expertes et experts issus d'un large eventail de disciplines.
 
-{{< include _advisory_board-en.qmd >}}
+## Membres
+
+### Dr. Kim Cohen
+
+- 🏦Chercheur, departement de geographie physique, universite d'Utrecht
+- 🔬Champ de recherche: geologie quaternaire et delta Rhin-Meuse a l'Holocene, avec combinaison de methodes geologiques et geographiques pour reconstruire l'evolution des paysages
+- 📬email: k.m.cohen(at)uu.nl
+
+### Professor Eugene Costello <img src="https://en.uit.no/Content/931211/transformation=scale10000x800/PV%20ECostello%2072_Cr.JPG" align="right" width="120"/>
+
+- 🏦Historien de l'environnement et archeologue du paysage, University College Cork
+- 🔬Champ de recherche: pratiques agricoles, changements environnementaux et economiques, et projet ERC DeepCattle sur l'histoire de l'elevage bovin commercial en Europe
+- 📬email: ecostello(at)ucc.ie
+
+### Prof. Dr. Wim De Clercq <img src="https://en.uit.no/Content/931173/cache=1781092188000/Wim%20De%20Clercq-Kirst%20van%20der%20Vorst%20Agentschap%20Onroerend%20Erfgoed.PNG" align="right" width="120"/>
+
+- 🏦Professeur, universite de Gand; Historical Archaeology Research Group (HARG)
+- 🔬Champ de recherche: archeologie du paysage, developpement de l'habitat et culture materielle en Europe du Nord-Ouest, en particulier la transformation des paysages medievaux autour de Bruges
+- 📬email: w.declercq(at)ugent.be
+
+### Professor Mark Gardiner <img src="https://en.uit.no/Content/931166/transformation=scale10000x180/Mark%20Gardiner.png" align="right" width="120"/>
+
+- 🏦Professeur emerite d'archeologie medievale, University of Lincoln
+- 🔬Champ de recherche: paysages medievaux, usages des terres et modeles d'occupation en Grande-Bretagne, Irlande et Atlantique Nord, avec accent sur les liens entre usage des terres et organisation sociale
+- 📬email: mgardiner(at)lincoln.ac.uk
+
+### Dr. Jorn Erik Henriksen <img src="https://en.uit.no/Content/931163/cache=1781092045000/J%C3%B8rn%20Erik%20Henriksen.jpg" align="right" width="120"/>
+
+- 🏦Professeur associe d'archeologie, Arctic University Museum of Norway (UiT)
+- 🔬Champ de recherche: age du Fer et periode medievale dans le nord de la Norvege
+- 📬email: jorn.henriksen(at)uit.no
+
+### Dr. W.Z. Hoek <img src="https://en.uit.no/Content/931174/cache=1781092198000/WimHoek.jpg" align="right" width="120"/>
+
+- 🏦Chercheur, departement de geographie physique, universite d'Utrecht
+- 🔬Champ de recherche: interactions climat-vegetation-paysages au Weichselien tardif et a l'Holocene, y compris analyses multi-proxy et datation des archives sedimentaires lacustres
+- 📬email: W.Z.Hoek(at)uu.nl
+
+### Professor Richard C Hoffmann <img src="https://en.uit.no/Content/931169/cache=1781092133000/Richard%20Hoffmann.jpeg" align="right" width="120"/>
+
+- 🏦Professeur emerite et senior scholar, York University
+- 🔬Champ de recherche: histoire environnementale interdisciplinaire des pecheries, des agroecosystemes et des usages des ressources naturelles en Europe medievale
+- 📬email: medfish(at)yorku.ca
+
+### Dr. Martin Janovsky <img src="https://en.uit.no/Content/931167/cache=1781092108000/Martin%20Janovsky.jpg" align="right" width="120"/>
+
+- 🏦Chercheur, departement d'archeologie, universite Charles
+- 🔬Champ de recherche: paysages medievaux et impacts humains de long terme sur les sols et sediments a l'aide de methodes geoarcheologiques, dont micromorphologie, geochimie et isotopes stables
+- 📬email: martin.janovsky(at)ff.cuni.cz
+
+### Dr. Catherine Jessen <img src="https://en.uit.no/Content/931162/cache=1781091051000/Catherine%20Jessen.JPEG" align="right" width="120"/>
+
+- 🏦Geologue et geoarcheologue, Musee national du Danemark
+- 🔬Champ de recherche: reconstitution des climats passes, des environnements et des interactions humains-environnement par analyses de sediments lacustres, cartographie sedimentaire et stratigraphie
+- 📬email: Catherine.Jessen(at)natmus.dk
+
+### Mag. Dr. Thomas Kuhtreiber <img src="https://en.uit.no/Content/931171/cache=1781092166000/Thomas%20Ku%CC%88htreiber-036.jpg" align="right" width="120"/>
+
+- 🏦Chercheur, institut de prehistoire et d'archeologie historique, universite de Vienne
+- 🔬Champ de recherche: archeologie environnementale et du paysage du Moyen Age et de l'epoque moderne, cadre bati, culture materielle et identites sociales
+- 📬email: thomas.kuehtreiber(at)univie.ac.at
+
+### Prof. Laurent Lespez <img src="https://en.uit.no/Content/931165/cache=1781092074000/Laurent%20Lespez.jpg" align="right" width="120"/>
+
+- 🏦Geomorphologue, geoarcheologue et geographe, universite Paris-Est Creteil et CNRS
+- 🔬Champ de recherche: changements environnementaux et paysagers de long terme, et integration des trajectoires historiques dans la gestion et la restauration des rivieres
+- 📬email: laurent.lespez(at)lgp.cnrs.fr
+
+### Professor Amanda Power <img src="https://en.uit.no/Content/931160/transformation=scale10000x180/Amanda%20Power.jpg" align="right" width="120"/>
+
+- 🏦Professeure d'histoire medievale, University of Oxford
+- 🔬Champ de recherche: histoire environnementale, religion, pouvoir et pensee, avec un accent sur l'histoire medievale globale et les racines anciennes et medievales des changements environnementaux contemporains
+- 📬email: amanda.power(at)history.ox.ac.uk
+
+### Professor Carl Sayer <img src="https://en.uit.no/Content/931161/transformation=scale10000x180/Carl%20Sayer.jpeg" align="right" width="120"/>
+
+- 🏦Professeur, Department of Geography, University College London
+- 🔬Champ de recherche: conservation et restauration des eaux douces, y compris ecologie et paleoecologie des lacs, rivieres et etangs
+- 📬email: c.sayer(at)ucl.ac.uk
+
+### Prof. Dr. phil. Gerrit Jasper Schenk <img src="https://en.uit.no/Content/931170/cache=1781092156000/SCHENK.jpg" align="right" width="120"/>
+
+- 🏦Professeur d'histoire medievale, universite technique de Darmstadt
+- 🔬Champ de recherche: histoire environnementale, etudes des catastrophes, histoire urbaine, infrastructures, histoire des concepts et des rituels; responsable de projets sur la Fluvial Anthroposphere
+- 📬email: schenk(at)pg.tu-darmstadt.de
+
+### Professor Kevin Walsh <img src="https://en.uit.no/Content/931164/transformation=scale10000x180/Kevin%20Walsh.jpg" align="right" width="120"/>
+
+- 🏦Professeur emerite, Department of Archaeology, University of York; Research Associate, Centre Camille Jullian, Aix-Marseille Universite
+- 🔬Champ de recherche: archeologie du paysage et interactions humains-environnement de long terme en Mediterranee et dans les Alpes europeennes, avec expertise des systemes pastoraux et des transformations paysageres
+- 📬email: kevin.walsh(at)york.ac.uk
+
+### Dr. Lukas Werther <img src="https://en.uit.no/Content/934849/cache=1785845472000/WERTHER_copy.jpg" align="right" width="120"/>
+
+- 🏦Chercheur, Institut archeologique allemand (DAI), Commission romano-germanique
+- 🔬Champ de recherche: archeologie du paysage, gestion de l'eau, paysages du pouvoir et usage des ressources au haut et plein Moyen Age en Europe
+- 📬email: lukas.werther(at)dainst.de
