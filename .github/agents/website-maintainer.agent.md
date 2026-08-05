@@ -263,6 +263,27 @@ Then signal task completion with this blocked PR description. Do NOT mark the PR
 
 ### Step F — Open PR
 
+Before opening (or signaling completion to open) a PR, run this guard and proceed only if there is a real diff against `main`:
+
+```bash
+git fetch origin main
+
+# Abort PR creation if this branch has no file changes vs main.
+if git diff --quiet origin/main...HEAD; then
+  echo "No file changes against main. Do not open a PR."
+  echo "Likely failure mode: placeholder commit only (e.g., 'Initial plan')."
+  exit 1
+fi
+
+# Optional visibility: list changed files for PR summary.
+git diff --name-only origin/main...HEAD
+```
+
+If the guard fails:
+- Do not open (or request opening) a PR
+- Post a short issue comment explaining that no repository changes were produced and implementation needs to be retried
+- Stop
+
 Create a PR ready for review with this description format:
 
 ```markdown
