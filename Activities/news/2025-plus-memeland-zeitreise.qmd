@@ -1,5 +1,5 @@
 ---
-title: "MEMELAND - Eine Zeitreise durch 2000 Jahre europaische Umweltgeschichte"
+title: "MEMELAND - A Journey Through 2,000 Years of European Environmental History"
 date: 2025/08/27
 date-format: long
 date-modified: last-modified
@@ -17,9 +17,9 @@ The University of Salzburg published a news feature introducing MEMELAND and its
 
 🗺️ **Location:** Salzburg, Austria
 
-🔗 **More info:** [MEMELAND - Eine Zeitreise durch 2000 Jahre europaische Umweltgeschichte (University of Salzburg)](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
+🔗 **More info:** [MEMELAND - A Journey Through 2,000 Years of European Environmental History (University of Salzburg)](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
 :::
 
 ## Resources
 
-- [MEMELAND - Eine Zeitreise durch 2000 Jahre europaische Umweltgeschichte](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
+- [MEMELAND - A Journey Through 2,000 Years of European Environmental History](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
