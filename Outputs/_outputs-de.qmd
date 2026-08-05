@@ -38,3 +38,17 @@ EGU General Assembly 2026, Vienna, Austria.
 ## Abschlussarbeiten
 
 *Noch keine Abschlussarbeiten im Rahmen des Projekts fertiggestellt.*
+
+## Medienberichte
+
+**Muhlacker Tagblatt** (2026, 29. Januar). *Startschuss fur ein Jahrhundertprojekt*.
+[Projektbeitrag](/Activities/news/2026-startschuss-jahrhundertprojekt.qmd) | [Originalbericht](https://www.muehlacker-tagblatt.de/Maulbronn/Startschuss-fuer-ein-Jahrhundertprojekt-427845.html)
+
+**PZ News** (2025, 23. Dezember). *DNA aus See-Schlamm: Tiefer See in Maulbronn im Fokus der Wissenschaft*.
+[Projektbeitrag](/Activities/news/2025-dna-aus-see-schlamm-maulbronn.qmd) | [Originalbericht](https://www.pz-news.de/region_artikel,-DNA-aus-See-Schlamm-Tiefer-See-in-Maulbronn-im-Fokus-der-Wissenschaft-_arid,2309364.html)
+
+**Universitat Salzburg** (2025, 27. August). *MEMELAND - Eine Zeitreise durch 2000 Jahre europaische Umweltgeschichte*.
+[Projektbeitrag](/Activities/news/2025-plus-memeland-zeitreise.qmd) | [Originalbericht](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
+
+**ORF Salzburg** (2026, 21. Juni). *Seeboden entschlusseln Geschichte des Ackerbaus*.
+[Projektbeitrag](/Activities/news/2026-orf-salzburg-feature.qmd) | [Originalbericht](https://salzburg.orf.at/stories/3359419/)

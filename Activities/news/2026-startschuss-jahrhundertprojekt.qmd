@@ -1,0 +1,25 @@
+---
+title: "Startschuss fur ein Jahrhundertprojekt"
+date: 2026/01/29
+date-format: long
+date-modified: last-modified
+description: "Muhlacker Tagblatt reported on major restoration plans at Tiefer See in Maulbronn and highlighted MEMELAND's related scientific work."
+categories: [salzburg, outreach, media]
+sidebar: false
+---
+
+MEMELAND was featured in regional media coverage discussing the Tiefer See restoration project in Maulbronn.
+
+::: {.callout-note}
+## Key Information
+
+📅 **Date:** 29 January 2026
+
+🗺️ **Location:** Maulbronn, Germany
+
+🔗 **More info:** [Startschuss fur ein "Jahrhundertprojekt" (Muhlacker Tagblatt)](https://www.muehlacker-tagblatt.de/Maulbronn/Startschuss-fuer-ein-Jahrhundertprojekt-427845.html)
+:::
+
+## Resources
+
+- [Startschuss fur ein "Jahrhundertprojekt"](https://www.muehlacker-tagblatt.de/Maulbronn/Startschuss-fuer-ein-Jahrhundertprojekt-427845.html)

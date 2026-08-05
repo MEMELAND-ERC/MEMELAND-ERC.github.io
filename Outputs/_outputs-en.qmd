@@ -60,6 +60,20 @@ Conference Name, City, Country.
 
 *No theses completed within the project yet.*
 
+## Media Mentions
+
+**Muhlacker Tagblatt** (2026, January 29). *Startschuss fur ein Jahrhundertprojekt*.
+[Project news post](/Activities/news/2026-startschuss-jahrhundertprojekt.qmd) | [Original coverage](https://www.muehlacker-tagblatt.de/Maulbronn/Startschuss-fuer-ein-Jahrhundertprojekt-427845.html)
+
+**PZ News** (2025, December 23). *DNA aus See-Schlamm: Tiefer See in Maulbronn im Fokus der Wissenschaft*.
+[Project news post](/Activities/news/2025-dna-aus-see-schlamm-maulbronn.qmd) | [Original coverage](https://www.pz-news.de/region_artikel,-DNA-aus-See-Schlamm-Tiefer-See-in-Maulbronn-im-Fokus-der-Wissenschaft-_arid,2309364.html)
+
+**University of Salzburg** (2025, August 27). *MEMELAND - Eine Zeitreise durch 2000 Jahre europaische Umweltgeschichte*.
+[Project news post](/Activities/news/2025-plus-memeland-zeitreise.qmd) | [Original coverage](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
+
+**ORF Salzburg** (2026, June 21). *Seeboden entschlusseln Geschichte des Ackerbaus*.
+[Project news post](/Activities/news/2026-orf-salzburg-feature.qmd) | [Original coverage](https://salzburg.orf.at/stories/3359419/)
+
 <!-- Suggested format:
 
 **Student Name** (YYYY). *Thesis title*.

@@ -120,8 +120,8 @@ body:
     id: extra-categories
     attributes:
       label: Additional tags (optional)
-      description: "Free-form keywords for filtering, separated by commas. Examples: fieldwork, coring, conference, outreach, publication"
-      placeholder: "fieldwork, coring, Iceland"
+      description: "Free-form keywords for filtering, separated by commas. Examples: fieldwork, coring, conference, outreach, publication, media"
+      placeholder: "fieldwork, coring, media"
     validations:
       required: false
 

@@ -5,7 +5,7 @@ date-format: long
 date-modified: last-modified
 description: "The University of Salzburg's MEMELAND research was featured on ORF Salzburg, showcasing how lake sediments unlock 2,000 years of European agricultural history."
 image: "../../Materials/photos/orf-salzburg-2026.jpg"
-categories: [salzburg, outreach]
+categories: [salzburg, outreach, media]
 sidebar: false
 ---
 

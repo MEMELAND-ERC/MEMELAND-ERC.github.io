@@ -51,7 +51,9 @@ sidebar: false
 | `cuni` | Charles University Prague |
 
 **Free-form tags** (examples):
-- `fieldwork`, `coring`, `conference`, `workshop`, `outreach`, `publication`, `collaboration`
+- `fieldwork`, `coring`, `conference`, `workshop`, `outreach`, `publication`, `collaboration`, `media`
+
+Use `media` for external press coverage or institutional news stories about MEMELAND.
 
 You may combine both: `categories: [fieldwork, coring, uit, oxford]`
 

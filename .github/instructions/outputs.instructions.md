@@ -16,13 +16,14 @@ The container file `Outputs/outputs.qmd` must **not** be edited by hand.
 
 ## Section names
 
-Each per-language file contains five sections (in order):
+Each per-language file contains six sections (in order):
 
 1. `## Publications`
 2. `## Datasets`
 3. `## Presentations & Posters`
 4. `## Reports & Deliverables`
 5. `## Theses`
+6. `## Media Mentions`
 
 Match the issue's `Type of output` dropdown to the correct section.
 
@@ -51,6 +52,15 @@ Spaces in the text must be replaced with `_`. Forward slashes `/` in DOI strings
 ## Entry formats
 
 DOI is **required** for publications and datasets. Use a badge for every link provided.
+
+For `Media Mentions`, use this format:
+
+```markdown
+**Outlet Name** (YYYY, Month DD). *Title of the media piece*.
+[Project news post](/Activities/news/YYYY-short-slug.qmd) | [Original coverage](https://example.com)
+```
+
+Keep media entries newest-first.
 
 ### Publication
 

@@ -1,0 +1,25 @@
+---
+title: "MEMELAND - Eine Zeitreise durch 2000 Jahre europaische Umweltgeschichte"
+date: 2025/08/27
+date-format: long
+date-modified: last-modified
+description: "The University of Salzburg published a feature on MEMELAND's reconstruction of 2,000 years of European environmental change."
+categories: [salzburg, outreach, media]
+sidebar: false
+---
+
+The University of Salzburg published a news feature introducing MEMELAND and its environmental DNA approach.
+
+::: {.callout-note}
+## Key Information
+
+📅 **Date:** 27 August 2025
+
+🗺️ **Location:** Salzburg, Austria
+
+🔗 **More info:** [MEMELAND - Eine Zeitreise durch 2000 Jahre europaische Umweltgeschichte (University of Salzburg)](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
+:::
+
+## Resources
+
+- [MEMELAND - Eine Zeitreise durch 2000 Jahre europaische Umweltgeschichte](https://www.plus.ac.at/news/memeland-eine-zeitreise-durch-2000-jahre-europaeische-umweltgeschichte/)
