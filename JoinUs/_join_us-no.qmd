@@ -2,6 +2,8 @@
 
 Her finner du aktuelle stillinger i MEMELAND. Aapne stillinger vises forst, mens avsluttede utlysninger blir staende som arkiv.
 
+For generelle henvendelser, kontakt [memeland@uit.no](mailto:memeland@uit.no).
+
 ## Aapne stillinger
 
 ::: {#open-positions}

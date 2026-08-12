@@ -29,3 +29,5 @@ There are 5 main research teams within the MEMELAND project, each based in a dif
 - [Swiss Federal Institute of Aquatic Science and Technology (Eawag), Switzerland](/Team/eawag.qmd)
 - [University of Salzburg, Austria](/Team/salzburg.qmd)
 - [Charles University, Czech Republic](/Team/cuni.qmd)
+
+For general inquiries, contact [memeland@uit.no](mailto:memeland@uit.no).

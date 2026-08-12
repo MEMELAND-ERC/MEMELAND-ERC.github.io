@@ -29,3 +29,5 @@ Le projet MEMELAND comprend 5 équipes de recherche principales, chacune basée 
 - [Institut fédéral suisse des sciences et technologies aquatiques (Eawag), Suisse](/Team/eawag.qmd)
 - [Université de Salzbourg, Autriche](/Team/salzburg.qmd)
 - [Université Charles, République tchèque](/Team/cuni.qmd)
+
+Pour toute question générale, contactez [memeland@uit.no](mailto:memeland@uit.no).

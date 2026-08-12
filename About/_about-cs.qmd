@@ -29,3 +29,5 @@ V projektu MEMELAND působí pět hlavních výzkumných týmů, z nichž každ�
 - [Švýcarský federální institut pro vědu a technologie vodních zdrojů (Eawag), Švýcarsko](/Team/eawag.qmd)
 - [Univerzita v Salcburku, Rakousko](/Team/salzburg.qmd)
 - [Univerzita Karlova, Česká republika](/Team/cuni.qmd)
+
+Pro obecné dotazy kontaktujte [memeland@uit.no](mailto:memeland@uit.no).

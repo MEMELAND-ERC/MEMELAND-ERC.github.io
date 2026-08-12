@@ -2,6 +2,8 @@
 
 Nize najdete aktualni pozice projektu MEMELAND. Nejprve jsou uvedeny otevrene pozice, uzavrene vyzvy zustavaji dostupne v archivu.
 
+Pro obecné dotazy kontaktujte [memeland@uit.no](mailto:memeland@uit.no).
+
 ## Otevrene pozice
 
 ::: {#open-positions}
