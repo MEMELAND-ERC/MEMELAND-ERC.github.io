@@ -29,3 +29,5 @@ Det er fem hovedgrupper i MEMELAND-prosjektet, hver forankret ved en egen instit
 - [Swiss Federal Institute of Aquatic Science and Technology (Eawag), Sveits](/Team/eawag.qmd)
 - [Universitetet i Salzburg, Østerrike](/Team/salzburg.qmd)
 - [Karlsuniversitetet, Tsjekkia](/Team/cuni.qmd)
+
+For generelle henvendelser, kontakt [memeland@uit.no](mailto:memeland@uit.no).

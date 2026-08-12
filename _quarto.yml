@@ -11,7 +11,7 @@ website:
 
   page-footer:
     left: "&copy; Copyright 2025, MEMELAND"
-    center: "[✏️ Suggest change](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new/choose)"
+    center: "[✏️ Suggest change](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new/choose) | [✉️ Contact](mailto:memeland@uit.no)"
     right: "This page is built by Ondřej Mottl with ❤️ and [Quarto](https://quarto.org/)."
 
   site-url: https://memeland-erc.github.io

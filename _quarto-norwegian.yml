@@ -40,7 +40,7 @@ website:
         href: Outputs/outputs.qmd
 
   page-footer:
-    center: "[✏️ Meld et problem](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new/choose)"
+    center: "[✏️ Meld et problem](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new/choose) | [✉️ Kontakt](mailto:memeland@uit.no)"
 
 language:
   title-block-published: "Publisert"

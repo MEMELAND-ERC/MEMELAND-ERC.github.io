@@ -29,3 +29,5 @@ Das MEMELAND-Projekt umfasst 5 Hauptforschungsteams, die jeweils an einer andere
 - [Wasserforschungsinstitut des ETH-Bereichs (Eawag), Schweiz](/Team/eawag.qmd)
 - [Universität Salzburg, Österreich](/Team/salzburg.qmd)
 - [Karls-Universität, Tschechische Republik](/Team/cuni.qmd)
+
+Für allgemeine Anfragen kontaktieren Sie [memeland@uit.no](mailto:memeland@uit.no).
