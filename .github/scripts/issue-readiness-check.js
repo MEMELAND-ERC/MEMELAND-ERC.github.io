@@ -199,7 +199,10 @@ function validateMedia(sections, reasons) {
   if (!normalize(sections['What should happen with the image?'])) {
     reasons.push('Image action must be selected.');
   }
-  if (isPlaceholderText(sections['Image file or URL'], ['Image URL or attachment:\n\nWhere on the page should it appear:'])) {
+  const asset = unwrapCodeFence(sections['Image file or URL']);
+  const assetMatch = asset.match(/^Image URL or attachment:\s*\n([\s\S]*?)\n\s*Where on the page should it appear:\s*\n([\s\S]*)$/i);
+  const assetSource = normalize(assetMatch ? assetMatch[1] : asset);
+  if (!assetSource || isPlaceholderText(sections['Image file or URL'], ['Image URL or attachment:\n\nWhere on the page should it appear:'])) {
     reasons.push('Image file or URL must be provided.');
   }
 
