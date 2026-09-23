@@ -11,6 +11,9 @@ permissions:
 jobs:
   readiness-check:
     runs-on: ubuntu-latest
+    concurrency:
+      group: copilot-readiness-${{ github.event.issue.number }}
+      cancel-in-progress: true
     steps:
       - name: Check out repository
         uses: actions/checkout@v4

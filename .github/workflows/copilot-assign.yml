@@ -47,6 +47,25 @@ jobs:
         with:
           github-token: ${{ secrets.COPILOT_TRIGGER_PAT }}
           script: |
+            const issue = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+            });
+
+            const currentLabels = issue.data.labels.map((label) =>
+              typeof label === 'string' ? label : label.name
+            );
+
+            if (
+              !currentLabels.includes('🤖 ready-for-copilot') ||
+              currentLabels.includes('❓ status:needs-info') ||
+              currentLabels.includes('⏸️ no-agent')
+            ) {
+              core.notice('Issue labels are no longer in a ready state; skipping Copilot assignment.');
+              return;
+            }
+
             await github.request('POST /repos/{owner}/{repo}/issues/{issue_number}/assignees', {
               owner: context.repo.owner,
               repo: context.repo.repo,
