@@ -1,7 +1,9 @@
 name: Auto-assign issues to Copilot
 
-# This workflow posts a comment @github-copilot when a new issue is opened,
-# which triggers the GitHub Copilot coding agent (if enabled for the org).
+# This workflow assigns an issue to the GitHub Copilot coding agent only after
+# a maintainer explicitly marks the issue ready with the `🤖 ready-for-copilot`
+# label. New issues start with `❓ status:needs-info`, so we intentionally do
+# not trigger on `issues.opened`.
 #
 # It requires a Personal Access Token (PAT) stored as COPILOT_TRIGGER_PAT.
 # The built-in GITHUB_TOKEN cannot assign copilot-swe-agent[bot]; a real user
@@ -24,12 +26,20 @@ name: Auto-assign issues to Copilot
 # (Missing any one of these will cause a 403 error.)
 on:
   issues:
-    types: [opened]
+    types: [labeled]
+
+permissions: {}
 
 jobs:
   assign-to-copilot:
-    # Allow manual opt-out by adding the `⏸️ no-agent` label to an issue.
-    if: ${{ !contains(github.event.issue.labels.*.name, '⏸️ no-agent') }}
+    # Start Copilot only from an explicit maintainer signal, and allow
+    # `⏸️ no-agent` / `❓ status:needs-info` to block automation.
+    if: >-
+      ${{
+        github.event.label.name == '🤖 ready-for-copilot' &&
+        !contains(github.event.issue.labels.*.name, '⏸️ no-agent') &&
+        !contains(github.event.issue.labels.*.name, '❓ status:needs-info')
+      }}
     runs-on: ubuntu-latest
     steps:
       - name: Assign issue to Copilot Coding Agent
@@ -37,6 +47,25 @@ jobs:
         with:
           github-token: ${{ secrets.COPILOT_TRIGGER_PAT }}
           script: |
+            const issue = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+            });
+
+            const currentLabels = issue.data.labels.map((label) =>
+              typeof label === 'string' ? label : label.name
+            );
+
+            if (
+              !currentLabels.includes('🤖 ready-for-copilot') ||
+              currentLabels.includes('❓ status:needs-info') ||
+              currentLabels.includes('⏸️ no-agent')
+            ) {
+              core.notice('Issue labels are no longer in a ready state; skipping Copilot assignment.');
+              return;
+            }
+
             await github.request('POST /repos/{owner}/{repo}/issues/{issue_number}/assignees', {
               owner: context.repo.owner,
               repo: context.repo.repo,
