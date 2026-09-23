@@ -348,13 +348,14 @@ async function run({ github, context, core }) {
     core.notice(`Reasons: ${result.reasons.join(' | ')}`);
   }
 
+  if (hasNoAgent) {
+    await removeLabel(github, issue, READY_LABEL);
+    core.notice('Issue is opted out via ⏸️ no-agent; skipping readiness label updates.');
+    return;
+  }
+
   if (result.ready) {
     await removeLabel(github, issue, NEEDS_INFO_LABEL);
-    if (hasNoAgent) {
-      await removeLabel(github, issue, READY_LABEL);
-      core.notice('Issue content is ready, but automation is opted out via ⏸️ no-agent.');
-      return;
-    }
     await addLabels(github, issue, [READY_LABEL]);
     core.notice('Issue is ready for Copilot.');
     return;
