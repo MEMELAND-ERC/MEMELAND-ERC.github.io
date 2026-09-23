@@ -115,6 +115,13 @@ Gardez les noms classés par ordre alphabétique et mettez à jour les liens ver
 - 📬e-mail : marcel-luciano.ortler(at)plus.ac.at
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--2732--9514-8a9a5b.svg)](https://orcid.org/0000-0002-2732-9514)
 
+### Ricardo N. Santos
+
+- 👤Eawag postdoc
+- 🏦Swiss Federal Institute of Aquatic Science and Technology
+- 📬email: ricardo.santos(at)eawag.ch
+- ORCID 0000-0002-8252-3619
+
 ### Dr. Tobias Schneider <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLgZoYpw1VazBO5dEYkXwAVCZmdhOK-0DYQ&s" align="right" width="120"/>
 
 - 👤[![](https://img.shields.io/badge/Eawag-Postdoc-silver)](/Team/eawag.qmd)
