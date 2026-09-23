@@ -34,16 +34,14 @@ jobs:
               return;
             }
 
-            const openPrs = await github.paginate(
-              github.rest.pulls.list,
+            const searchQuery = `repo:${owner}/${repo} is:pr is:open head:${branch}`;
+            const prs = await github.paginate(
+              github.rest.search.issuesAndPullRequests,
               {
-                owner,
-                repo,
-                state: 'open',
+                q: searchQuery,
                 per_page: 100
               }
             );
-            const prs = openPrs.filter((pr) => pr.head?.ref === branch);
 
             if (prs.length === 0) {
               core.notice(`No open PR found for branch ${branch}; skipping.`);
