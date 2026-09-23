@@ -4,15 +4,20 @@ name: Close Empty Copilot PRs
 # close it automatically and explain why.
 
 on:
-  pull_request_target:
-    types: [opened, synchronize, reopened]
+  workflow_run:
+    workflows: ["Running Copilot cloud agent"]
+    types: [completed]
 
 permissions:
   pull-requests: write
 
 jobs:
   close-empty:
-    if: startsWith(github.event.pull_request.head.ref, 'copilot/')
+    if: >-
+      ${{
+        github.event.workflow_run.conclusion == 'success' &&
+        startsWith(github.event.workflow_run.head_branch, 'copilot/')
+      }}
     runs-on: ubuntu-latest
     steps:
       - name: Close PR when no files changed
@@ -21,43 +26,69 @@ jobs:
           script: |
             const owner = context.repo.owner;
             const repo = context.repo.repo;
-            const prNumber = context.payload.pull_request.number;
+            const run = context.payload.workflow_run;
+            const branch = run.head_branch;
+            const headOwner = run.head_repository?.owner?.login;
 
-            const files = await github.paginate(
-              github.rest.pulls.listFiles,
+            if (!branch || !headOwner) {
+              core.notice('Missing head branch or head owner on workflow_run payload; skipping.');
+              return;
+            }
+
+            const prs = await github.paginate(
+              github.rest.pulls.list,
               {
                 owner,
                 repo,
-                pull_number: prNumber,
+                state: 'open',
+                head: `${headOwner}:${branch}`,
                 per_page: 100
               }
             );
 
-            if (files.length > 0) {
-              core.info(`PR #${prNumber} has ${files.length} changed files; leaving open.`);
+            if (prs.length === 0) {
+              core.notice(`No open PR found for branch ${branch}; skipping.`);
               return;
             }
 
-            const body = [
-              "This PR was auto-closed because it contains no file changes compared to the base branch.",
-              "",
-              "Likely cause: the agent created only a placeholder commit (for example, `Initial plan`) but did not commit implementation changes.",
-              "",
-              "Please re-run the issue automation after ensuring the non-empty diff guard passes before PR creation."
-            ].join("\n");
+            for (const pr of prs) {
+              const prNumber = pr.number;
+              const files = await github.paginate(
+                github.rest.pulls.listFiles,
+                {
+                  owner,
+                  repo,
+                  pull_number: prNumber,
+                  per_page: 100
+                }
+              );
 
-            await github.rest.issues.createComment({
-              owner,
-              repo,
-              issue_number: prNumber,
-              body
-            });
+              if (files.length > 0) {
+                core.info(`PR #${prNumber} has ${files.length} changed files; leaving open.`);
+                continue;
+              }
 
-            await github.rest.pulls.update({
-              owner,
-              repo,
-              pull_number: prNumber,
-              state: "closed"
-            });
+              const body = [
+                "This PR was auto-closed because it contains no file changes compared to the base branch.",
+                "",
+                "Likely cause: the agent created only a placeholder commit (for example, `Initial plan`) but did not commit implementation changes.",
+                "",
+                "Please re-run the issue automation after ensuring the non-empty diff guard passes before PR creation."
+              ].join("\n");
 
-            core.notice(`Closed empty Copilot PR #${prNumber}.`);
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: prNumber,
+                body
+              });
+
+              await github.rest.pulls.update({
+                owner,
+                repo,
+                pull_number: prNumber,
+                state: "closed"
+              });
+
+              core.notice(`Closed empty Copilot PR #${prNumber}.`);
+            }
