@@ -18,6 +18,12 @@ function normalize(text) {
   return (text || '').replace(/\r\n/g, '\n').trim();
 }
 
+function unwrapCodeFence(text) {
+  const value = normalize(text);
+  const match = value.match(/^```[^\n]*\n([\s\S]*?)\n```$/);
+  return match ? match[1].trim() : value;
+}
+
 function isChecked(value) {
   return /- \[[xX]\]/.test(value || '');
 }
@@ -28,20 +34,59 @@ function countChecked(value) {
 
 function parseSections(body) {
   const sections = {};
-  const text = normalize(body);
-  const regex = /^### (.+)\n+([\s\S]*?)(?=^### |\Z)/gm;
-  for (const match of text.matchAll(regex)) {
-    sections[match[1].trim()] = normalize(match[2]);
+  const lines = normalize(body).split('\n');
+  let currentHeading = null;
+  let currentLines = [];
+  let inFence = false;
+
+  const commit = () => {
+    if (currentHeading) {
+      sections[currentHeading] = normalize(currentLines.join('\n'));
+    }
+  };
+
+  for (const line of lines) {
+    if (line.startsWith('```')) {
+      inFence = !inFence;
+    }
+    if (!inFence && line.startsWith('### ')) {
+      commit();
+      currentHeading = line.slice(4).trim();
+      currentLines = [];
+      continue;
+    }
+    if (currentHeading) {
+      currentLines.push(line);
+    }
   }
+  commit();
   return sections;
 }
 
 function parseLanguageContent(text) {
   const blocks = {};
-  const regex = /^### (English|German|French|Czech|Norwegian)\n+([\s\S]*?)(?=^### |\Z)/gm;
-  for (const match of normalize(text).matchAll(regex)) {
-    blocks[match[1]] = normalize(match[2]);
+  const lines = unwrapCodeFence(text).split('\n');
+  let currentHeading = null;
+  let currentLines = [];
+
+  const commit = () => {
+    if (currentHeading) {
+      blocks[currentHeading] = normalize(currentLines.join('\n'));
+    }
+  };
+
+  for (const line of lines) {
+    if (line.startsWith('### ')) {
+      commit();
+      currentHeading = line.slice(4).trim();
+      currentLines = [];
+      continue;
+    }
+    if (currentHeading) {
+      currentLines.push(line);
+    }
   }
+  commit();
   return blocks;
 }
 
@@ -51,7 +96,7 @@ function getTemplate(issue) {
 }
 
 function isPlaceholderText(value, placeholders = []) {
-  const text = normalize(value);
+  const text = unwrapCodeFence(value);
   return !text || placeholders.some((placeholder) => text === normalize(placeholder));
 }
 
