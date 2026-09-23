@@ -34,16 +34,16 @@ jobs:
               return;
             }
 
-            const prs = await github.paginate(
+            const openPrs = await github.paginate(
               github.rest.pulls.list,
               {
                 owner,
                 repo,
                 state: 'open',
-                head: `${owner}:${branch}`,
                 per_page: 100
               }
             );
+            const prs = openPrs.filter((pr) => pr.head?.ref === branch);
 
             if (prs.length === 0) {
               core.notice(`No open PR found for branch ${branch}; skipping.`);
