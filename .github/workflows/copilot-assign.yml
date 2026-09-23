@@ -28,6 +28,8 @@ on:
   issues:
     types: [labeled]
 
+permissions: {}
+
 jobs:
   assign-to-copilot:
     # Start Copilot only from an explicit maintainer signal, and allow
