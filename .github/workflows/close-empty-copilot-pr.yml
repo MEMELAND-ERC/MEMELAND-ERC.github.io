@@ -28,13 +28,14 @@ jobs:
             const repo = context.repo.repo;
             const run = context.payload.workflow_run;
             const branch = run.head_branch;
+            const headOwner = run.head_repository?.owner?.login;
 
-            if (!branch) {
-              core.notice('No head branch on workflow_run payload; skipping.');
+            if (!branch || !headOwner) {
+              core.notice('Missing head branch or head owner on workflow_run payload; skipping.');
               return;
             }
 
-            const searchQuery = `repo:${owner}/${repo} is:pr is:open head:${branch}`;
+            const searchQuery = `repo:${owner}/${repo} is:pr is:open head:${headOwner}:${branch}`;
             const prs = await github.paginate(
               github.rest.search.issuesAndPullRequests,
               {
