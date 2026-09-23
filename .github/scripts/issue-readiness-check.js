@@ -108,7 +108,8 @@ function validateNews(sections, reasons) {
   if (isPlaceholderText(sections['News title'], ['UiT team completes successful coring campaign in Iceland'])) {
     reasons.push('News title is missing or still uses the placeholder text.');
   }
-  if (isPlaceholderText(sections['Date of the activity or event'], ['2026-03-10'])) {
+  const activityDate = normalize(sections['Date of the activity or event']);
+  if (!activityDate) {
     reasons.push('Date of the activity or event is missing.');
   }
   if (isPlaceholderText(sections['Short summary (shown in the news card)'], ['The UiT team retrieved a 4-metre sediment core from Lake Mývatn during a two-week field campaign.'])) {
