@@ -1,0 +1,23 @@
+name: Copilot issue readiness check
+
+on:
+  issues:
+    types: [opened, edited, reopened, labeled, unlabeled]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  readiness-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Evaluate issue readiness
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const run = require('./.github/scripts/issue-readiness-check.js');
+            await run({ github, context, core });
