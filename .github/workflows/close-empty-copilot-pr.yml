@@ -35,11 +35,13 @@ jobs:
               return;
             }
 
-            const searchQuery = `repo:${owner}/${repo} is:pr is:open head:${headOwner}:${branch}`;
             const prs = await github.paginate(
-              github.rest.search.issuesAndPullRequests,
+              github.rest.pulls.list,
               {
-                q: searchQuery,
+                owner,
+                repo,
+                state: 'open',
+                head: `${headOwner}:${branch}`,
                 per_page: 100
               }
             );
