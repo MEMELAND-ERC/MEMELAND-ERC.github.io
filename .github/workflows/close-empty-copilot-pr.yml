@@ -36,15 +36,27 @@ jobs:
               return;
             }
 
-            const { data: openPrs } = await github.rest.pulls.list({
-              owner,
-              repo,
-              state: 'open',
-              per_page: 100
-            });
-            const prs = openPrs.filter(
-              (pr) => pr.head?.ref === branch && pr.head?.repo?.owner?.login === headOwner
-            );
+            const prs = [];
+            let page = 1;
+            while (true) {
+              const { data: openPrs } = await github.rest.pulls.list({
+                owner,
+                repo,
+                state: 'open',
+                per_page: 100,
+                page
+              });
+              if (!openPrs.length) break;
+
+              for (const pr of openPrs) {
+                if (pr.head?.ref === branch && pr.head?.repo?.owner?.login === headOwner) {
+                  prs.push(pr);
+                }
+              }
+
+              if (prs.length > 0) break;
+              page += 1;
+            }
 
             if (prs.length === 0) {
               core.notice(`No open PR found for branch ${branch}; skipping.`);
