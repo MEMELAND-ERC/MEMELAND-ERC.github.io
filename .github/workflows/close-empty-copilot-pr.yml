@@ -36,15 +36,14 @@ jobs:
               return;
             }
 
-            const prs = await github.paginate(
-              github.rest.pulls.list,
-              {
-                owner,
-                repo,
-                state: 'open',
-                head: `${headOwner}:${branch}`,
-                per_page: 100
-              }
+            const { data: openPrs } = await github.rest.pulls.list({
+              owner,
+              repo,
+              state: 'open',
+              per_page: 100
+            });
+            const prs = openPrs.filter(
+              (pr) => pr.head?.ref === branch && pr.head?.repo?.owner?.login === headOwner
             );
 
             if (prs.length === 0) {
