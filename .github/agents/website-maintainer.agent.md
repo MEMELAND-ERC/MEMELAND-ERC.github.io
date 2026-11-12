@@ -1,18 +1,18 @@
 ---
-description: "Main orchestrator agent for the MEMELAND website. Handles the full issue-to-PR workflow: validates issue completeness, creates branch, implements .qmd changes, renders Quarto, invokes the change-reviewer subagent, and opens a PR ready for review. Use when: processing a new GitHub Issue, adding news posts, updating multilingual pages, fixing website bugs."
+description: "Main orchestrator agent for the MEMELAND website. Handles the full issue-to-PR workflow: validates issue completeness, implements .qmd source changes on Copilot's managed branch, checks them with a preview render into _preview/ (docs/ is rebuilt by CI after merge), invokes the change-reviewer subagent, and prepares the existing draft PR. Use when: processing a new GitHub Issue, adding news posts, updating multilingual pages, fixing website bugs."
 tools: [read, edit, search, execute, agent, todo, web]
 argument-hint: "GitHub Issue number or URL, e.g. #7 or https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/7"
 ---
 
 You are the website maintainer agent for the **MEMELAND** Quarto website (<https://memeland-erc.github.io/>).
-You orchestrate the full workflow from a GitHub Issue to a PR ready for review.
+You orchestrate the full workflow from a GitHub Issue to a reviewed draft PR.
 
-> **GitHub Copilot Coding Agent environment**
-> If you are the GitHub Copilot coding agent (triggered by issue assignment):
-> - **Branch**: GitHub auto-creates a branch named `copilot/...` before you run. You cannot rename it. Skip the `git checkout -b` command in Step B — you are already on the correct branch.
+> **GitHub Copilot cloud-agent environment**
+> - **Branch and PR**: GitHub has already created the `copilot/...` branch and a draft PR before this session starts. Work on that branch. Do not create or switch branches, and do not open another PR.
+> - **Commit and push**: Do not run `git commit` or `git push`. GitHub's managed finalizer commits and pushes the working-tree changes to the PR branch after the session ends.
 > - **GitHub API**: Calls to `api.github.com` (via `gh` CLI or `curl`) are blocked by the sandbox firewall. Do not attempt them.
-> - **PR description**: When you finish your work and signal task completion, you must set the PR body to exactly the format specified in Step F. Include the full formatted body in your completion signal — this is the only opportunity to set it.
-> - **Draft state**: PRs are created as drafts by GitHub's runtime. You cannot change this programmatically. @OndrejMottl will mark the PR as ready for review manually.
+> - **PR description**: When you finish, give the PR summary in exactly the format in Step F. This is the only opportunity to set it.
+> - **Draft state**: Keep the PR as a draft. Copilot cannot mark its own PR ready for review; @OndrejMottl does that after reviewing the result.
 
 Always read the main instructions first:
 - [copilot-instructions.md](.github/copilot-instructions.md) — project overview
@@ -143,20 +143,11 @@ Then **stop**. Do not create a branch or make any changes until the issue is upd
 
 ---
 
-### Step B — Create a Branch
+### Step B — Confirm the Managed Branch
 
-**If you are the GitHub Copilot coding agent:** GitHub has already created a `copilot/...` branch for you. You are already on it. Skip the commands below and proceed to Step C.
+GitHub Copilot cloud agent has already created the `copilot/` branch and draft PR before this session starts. Work on the current branch. Do **not** create or switch branches, and do not open a second PR.
 
-**Otherwise (running locally or from VS Code):**
-
-```bash
-git checkout main
-git pull origin main
-git checkout -b issue[N]-short-description
-```
-
-Replace `[N]` with the issue number and `short-description` with 2–4 words in kebab-case
-(e.g. `issue7-add-iceland-coring`).
+Run `git status --short --branch` to confirm the working branch. If it is not a `copilot/` branch, report the blocker and stop.
 
 ---
 
@@ -234,17 +225,15 @@ quarto render --profile czech     --output-dir _preview/cs
 quarto render --profile norwegian --output-dir _preview/no
 ```
 
-Check the rendered pages in `_preview/<lang>/`, then commit **source files only** (`.qmd`, images, config):
+Check the rendered pages in `_preview/<lang>/`, then verify a **source-only diff**:
 
-```bash
-git status --short            # must show no docs/ and no _preview/ paths
-git add <changed source files>
-git commit -m "[short description of change]"
-```
+- Run `git status --short` and `git diff --name-only` (plus `git diff --cached --name-only` if anything is staged).
+- The diff must contain only the intended source files (`.qmd`, images, config). It must not contain anything under `docs/` or `_preview/`. If `docs/` shows up as changed, restore it with `git checkout origin/main -- docs/`.
+- A completed implementation must have at least one intended changed file. Do not claim success with an empty diff.
 
-If `docs/` shows up as changed, discard it with `git checkout origin/main -- docs/` before committing.
+Do **not** run `git commit` or `git push`. Copilot's managed finalizer commits and pushes the working-tree changes to the already-provisioned PR branch after the session ends.
 
-If render fails for any profile and you cannot fix it from your change: commit the source anyway, note the failure in the PR, tag @OndrejMottl. Do NOT merge.
+If render fails for any profile and you cannot fix it from your change: keep the source changes, note the failure in the PR summary, tag @OndrejMottl. Do NOT merge.
 
 ---
 
@@ -260,7 +249,7 @@ Invoke the `change-reviewer` subagent. Provide:
 **If change-reviewer returns ⚠️ FLAGS:**
 
 - **Fixable FLAGs** (wrong content, missing file, YAML error): fix them, re-render if needed, re-run `change-reviewer`. Repeat until all clear.
-- **Unfixable FLAGs** (environment issues such as Quarto version mismatch, or missing information that only the submitter can provide): do NOT proceed to request review. Set the PR description to include the full FLAG table and a prominent warning at the top:
+- **Unfixable FLAGs** (environment issues such as Quarto version mismatch, or missing information that only the submitter can provide): do not keep retrying. Put this banner at the top of the PR summary in Step F, followed by the full FLAG table:
 
 ```markdown
 > ⚠️ **REVIEW BLOCKED — unfixable flags found. @OndrejMottl please review before merging.**
@@ -268,51 +257,21 @@ Invoke the `change-reviewer` subagent. Provide:
 > [paste the full FLAG table here]
 ```
 
-Then signal task completion with this blocked PR description. Do NOT mark the PR as ready for review.
-
 ---
 
-### Step F — Open PR
+### Step F — Prepare the Existing Draft PR
 
-Before opening (or signaling completion to open) a PR, run this guard and proceed only if there is a real diff against `main`:
+The draft PR already exists. Before finishing, repeat the Step D checks: `git status --short` must list the intended source files and nothing under `docs/` or `_preview/`. If the diff is empty, do not report a completed implementation; say in the PR summary that no repository changes were produced and the implementation needs to be retried.
 
-```bash
-git fetch origin main
-
-# Abort PR creation if this branch has no file changes vs main.
-if git diff --quiet origin/main...HEAD; then
-  echo "No file changes against main. Do not open a PR."
-  echo "Likely failure mode: placeholder commit only (e.g., 'Initial plan')."
-  exit 1
-fi
-
-# Generated output must not be part of the PR.
-if ! git diff --quiet origin/main...HEAD -- docs/ _preview/; then
-  echo "docs/ or _preview/ changed. Restore them from main and commit:"
-  echo "  git checkout origin/main -- docs/ && git rm -r --cached --ignore-unmatch _preview"
-  exit 1
-fi
-
-# Optional visibility: list changed files for PR summary.
-git diff --name-only origin/main...HEAD
-```
-
-If the generated-output check fails, run the restore commands it prints, commit, and run the guard again.
-
-If the guard fails:
-- Do not open (or request opening) a PR
-- Post a short issue comment explaining that no repository changes were produced and implementation needs to be retried
-- Stop
-
-Create a PR ready for review with this description format:
+Provide a final summary in this format so Copilot can update the PR, filled in with real content, not placeholders:
 
 ```markdown
 ## Summary
 [1–3 sentences describing what was changed and why]
 
 ## Changes
-- [file 1]
-- [file 2]
+- [file 1] — [what changed]
+- [file 2] — [what changed]
 
 ## Closes
 - close #[issue number]
@@ -321,11 +280,57 @@ Create a PR ready for review with this description format:
 _Requested by @[issue author's GitHub handle]_
 ```
 
-- Assign **@OndrejMottl** as reviewer
-- Open as **ready for review** (not draft)
+List source files only; `docs/` and `_preview/` are never part of the PR.
 
-**If you are the GitHub Copilot coding agent:** You cannot assign a reviewer or change the draft state via the API. Instead:
-1. When you signal task completion, set the PR body to the **exact template above** — filled in with real content, not placeholders.
-2. Include a line at the end of the PR body: `@OndrejMottl — please mark this PR as ready for review.` (GitHub will deliver this as a notification; do not attempt to post it via `gh` CLI or `curl` — those are blocked in the sandbox).
+- Assign **@OndrejMottl** as reviewer.
+- Keep the PR as a **draft**. Copilot cloud agent cannot mark its own PR ready for review; @OndrejMottl does that after reviewing the result.
 
-**The agent must NEVER merge the PR.**
+---
+
+### Step G — Handling PR Feedback (Iteration Cycle)
+
+When @OndrejMottl leaves review comments on the PR and asks you to make changes, follow this cycle.
+
+#### G1. Rebase onto main
+
+Another PR may have been merged into `main` while this branch was open. Always rebase before making any fixes to avoid divergence.
+
+```bash
+git fetch origin main
+git rebase origin/main
+```
+
+PRs no longer touch `docs/`, so `docs/` conflicts should not occur. If one appears (for example on an older branch), take `main`'s version — `docs/` is rebuilt by CI after merge:
+
+```bash
+# If there are conflicts in docs/:
+git checkout --theirs docs/
+git add docs/
+git rebase --continue
+```
+
+Conflicts in source `.qmd` files must be resolved carefully — prefer the incoming (`main`) state as the baseline and re-apply only the changes required by the issue.
+
+#### G2. Apply Fixes
+
+Address every review comment. Load the relevant instruction files again if the fix touches news posts, outputs, multilingual pages, or writing conventions.
+
+#### G3. Verify the Working Tree
+
+Repeat the Step D preview render for the affected profiles and the Step D diff checks: the requested source files are changed, and nothing under `docs/` or `_preview/` is. Leave the changes for Copilot's managed finalizer to commit and push. Do not run `git commit`, `git push`, or a force-push from the session.
+
+#### G4. Re-invoke the Reviewer
+
+Invoke the `change-reviewer` subagent again with the updated file list. Fix any new flags, then re-request review from @OndrejMottl on the PR.
+
+---
+
+## Hard Rules
+
+- **NEVER merge a PR.** Only @OndrejMottl merges PRs.
+- Never commit directly to `main`.
+- Never change or commit `docs/` or `_preview/`; CI renders `docs/` after merge.
+- Never manually create a branch, commit, push, or open another PR from a Copilot cloud-agent session; GitHub manages those operations.
+- Never describe an implementation as complete when the working-tree diff is empty.
+- Keep the PR in draft; only @OndrejMottl marks it ready for review.
+- Squash-merge is the only accepted merge strategy (for the maintainer to apply).

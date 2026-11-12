@@ -77,7 +77,7 @@ python -m http.server 8000 -d _preview   # then open http://localhost:8000/en/
 ## If a render fails
 
 1. Fix the cause if it is in your change, and render again.
-2. If it is not fixable from your change (environment, Quarto bug), commit the source changes anyway, describe the failure in the PR, and tag @OndrejMottl. Do NOT merge.
+2. If it is not fixable from your change (environment, Quarto bug), keep the source changes anyway (a Copilot cloud-agent session leaves them for GitHub's managed finalizer to commit; locally, commit them), describe the failure in the PR, and tag @OndrejMottl. Do NOT merge.
 
 ## What to never do
 

@@ -12,6 +12,14 @@ const NEEDS_INFO_LABEL = '❓ status:needs-info';
 const NO_AGENT_LABEL = '⏸️ no-agent';
 const COPILOT_LOGINS = ['copilot', 'copilot-swe-agent', 'copilot-swe-agent[bot]'];
 
+const CUSTOM_INSTRUCTIONS = [
+  'Implement the issue now; do not stop after writing a plan.',
+  'Read all instructions in .github/ first, especially .github/agents/website-maintainer.agent.md.',
+  'Work on the branch and draft PR provisioned by Copilot. Do not manually create a branch, commit, push, or open another PR.',
+  'Change source files only: preview renders go to _preview/, never docs/ (it is rebuilt automatically after merge).',
+  'Before finishing an implementation, verify that git status shows the intended changes.',
+].join(' ');
+
 function labelNames(issue) {
   return (issue.labels || []).map((label) => (typeof label === 'string' ? label : label.name));
 }
@@ -60,8 +68,7 @@ async function assignCopilot({ github, context, core, issueNumber, force = false
       target_repo: `${owner}/${repo}`,
       base_branch: 'main',
       custom_agent: 'website-maintainer',
-      custom_instructions:
-        'Read all instructions in .github/ first (especially .github/agents/website-maintainer.agent.md), then follow the full issue → PR workflow defined there.',
+      custom_instructions: CUSTOM_INSTRUCTIONS,
       model: '',
     },
     headers: {
