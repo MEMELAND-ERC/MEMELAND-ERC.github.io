@@ -1,8 +1,11 @@
-﻿---
+---
 date: 2026/01/15
 date-format: long
 date-modified: last-modified
 sidebar: false
+filters:
+  - at: post-render
+    path: ../_filters/restore-heading-ids.lua
 ---
 
 ::::: {.content-visible when-profile="english"}

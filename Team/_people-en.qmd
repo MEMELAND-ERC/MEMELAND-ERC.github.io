@@ -17,7 +17,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--8610--1085-8a9a5b.svg)](https://orcid.org/0000-0002-8610-1085)
 - [🔗personal website](https://en.uit.no/ansatte/inger.g.alsos)
 
-### Prof. Amy Bogaard <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/ab_2023.jpg" align="right" width="120"/>
+### Prof. Amy Bogaard <img src="https://archit.site.ox.ac.uk/sites/g/files/vzsiac2871/files/styles/oxfcms_medium_3_4/public/archit/images/person/ab_2023.jpg.webp?h=18045876&amp;itok=eBZMqrZr" align="right" width="120" alt="Prof. Amy Bogaard"/>
 
 - 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/Team/oxford.qmd)
 - 🏦University of Oxford
@@ -32,7 +32,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0003--2600--6603-8a9a5b.svg)](https://orcid.org/0000-0002-1990-4654)
 - [🔗personal website](https://uit.no/ansatte/antony.g.brown)
 
-### Prof. Michael Charles <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/charles.jpg" align="right" width="120"/>
+### Prof. Michael Charles <img src="https://archit.site.ox.ac.uk/sites/g/files/vzsiac2871/files/styles/oxfcms_medium_3_4/public/archit/images/person/charles.jpg.webp?h=e46eee89&amp;itok=WXNkSPdw" align="right" width="120" alt="Prof. Michael Charles"/>
 
 - 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/Team/oxford.qmd)
 - 🏦University of Oxford
@@ -55,25 +55,25 @@ Keep names alphabetized and update links to team pages when roles change.
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0003--2349--0826-8a9a5b.svg)](https://orcid.org/0000-0003-2349-0826)
 - [🔗personal website](https://www.eawag.ch/en/about-us/portrait/organisation/staff/profile/nathalie-dubois/show/)
 
-### Katja Häkli
+### Dr. Katja Häkli <img src="/Materials/Faces/Katja.jpg" align="right" width="120" alt="Dr. Katja Häkli"/>
 
 - 👤[![](https://img.shields.io/badge/Tromso-Technician-brown)](/Team/uit.qmd)
 - 🏦Tromsø Museum, Arctic University of Norway
 
-### Prof. Helena Hamerow <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/st_cross_portraits_by_john_cairns_20.3.24_hamerow_helena.jpg" align="right" width="120"/>
+### Prof. Helena Hamerow <img src="https://archit.site.ox.ac.uk/sites/g/files/vzsiac2871/files/styles/oxfcms_medium_3_4/public/archit/images/person/st_cross_portraits_by_john_cairns_20.3.24_hamerow_helena.jpg.webp?h=82f92a78&amp;itok=BI33lZuj" align="right" width="120" alt="Prof. Helena Hamerow"/>
 
 - 👤[![](https://img.shields.io/badge/Oxford-PI-gold)](/Team/oxford.qmd)
 - 🏦University of Oxford
 - 📬email: helena.hamerow(at)arch.ox.ac.uk
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0001--5643--5888-8a9a5b.svg)](https://orcid.org/0000-0001-5643-5888)
 
-### Andréa Julien <img src="/Materials/Faces/Andrea.jpg" align="right" width="120" alt="Andréa Julien"/>
+### Dr Andréa Julien <img src="/Materials/Faces/Andrea.jpg" align="right" width="120" alt="Dr Andréa Julien"/>
 
 - 👤[![](https://img.shields.io/badge/Oxford-Postdoc-silver)](/Team/oxford.qmd)
 - 🏦University of Oxford
 - 📬email: andreajulienpro(at)gmail.com
 
-### Dr. Oliver Kern
+### Dr. Oliver A. Kern <img src="/Materials/Faces/Oliver.jpg" align="right" width="120" alt="Dr. Oliver A. Kern"/>
 
 - 👤[![](https://img.shields.io/badge/Tromso-Postdoc-silver)](/Team/uit.qmd)
 - 🏦Tromsø Museum, Arctic University of Norway
@@ -115,12 +115,13 @@ Keep names alphabetized and update links to team pages when roles change.
 - 📬email: marcel-luciano.ortler(at)plus.ac.at
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--2732--9514-8a9a5b.svg)](https://orcid.org/0000-0002-2732-9514)
 
-### Ricardo N. Santos <img src="/Materials/Faces/Ricardo.png" align="right" width="120" alt="Ricardo N. Santos"/>
+### Dr. Ricardo N. Santos <img src="/Materials/Faces/Ricardo.png" align="right" width="120" alt="Dr. Ricardo N. Santos"/>
 
 - 👤[![](https://img.shields.io/badge/Eawag-Postdoc-silver)](/Team/eawag.qmd)
 - 🏦Swiss Federal Institute of Aquatic Science and Technology
-- 📬email: ricardo.santos(at)eawag.ch
+- 📬email: ricardo.n.santos(at)eawag.ch
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--8252--3619-8a9a5b.svg)](https://orcid.org/0000-0002-8252-3619)
+- [🔗personal website](https://ricardoansantos.github.io/)
 
 ### Dr. Tobias Schneider <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLgZoYpw1VazBO5dEYkXwAVCZmdhOK-0DYQ&s" align="right" width="120"/>
 
@@ -130,7 +131,7 @@ Keep names alphabetized and update links to team pages when roles change.
 - [![ORCID](https://img.shields.io/badge/orcid-0000--0002--1593--0273-8a9a5b.svg)](https://orcid.org/0000-0002-1593-0273)
 - [🔗personal website](https://www.drtobiasschneider.com/)
 
-### Dr Elizabeth Stroud <img src="https://www.arch.ox.ac.uk/sites/default/files/styles/person_profile_photo/public/archit/images/person/liz_stroudcrop.jpg" align="right" width="120"/>
+### Dr Elizabeth Stroud <img src="https://archit.site.ox.ac.uk/sites/g/files/vzsiac2871/files/styles/oxfcms_medium_3_4/public/archit/images/person/liz_stroudcrop.jpg.webp?h=a815c1c3&amp;itok=MjlRq5CZ" align="right" width="120" alt="Dr Elizabeth Stroud"/>
 
 - 👤[![](https://img.shields.io/badge/Oxford-Researcher-silver)](/Team/oxford.qmd)
 - 🏦University of Oxford

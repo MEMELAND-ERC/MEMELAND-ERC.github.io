@@ -97,7 +97,7 @@ The readiness check has already confirmed that text exists for every selected la
 - **Blank or still the template placeholder** for a selected language: ask the submitter for it (see A4).
 
 **For Team/people pages (any template):**
-Names, academic titles, e-mail addresses, links, ORCID IDs and photos are language-neutral. Apply such changes to all five `_<page>-<lang>.qmd` files even if the submitter ticked only English. When a `### ` heading on `Team/_people-<lang>.qmd` changes, its anchor changes too (e.g. `### Dr. Katja Häkli` → `#dr.-katja-häkli`); update every link to the old anchor (team pages `Team/_<team>-<lang>.qmd`, news posts).
+Names, academic titles, e-mail addresses, links, ORCID IDs and photos are language-neutral. Apply such changes to all five `_<page>-<lang>.qmd` files even if the submitter ticked only English. When a `### ` heading on `Team/_people-<lang>.qmd` changes, its anchor changes too (e.g. `### Dr. Katja Häkli` → `#dr.-katja-häkli`); update every link to the old anchor (team pages `Team/_<team>-<lang>.qmd`, `Outputs/_outputs-<lang>.qmd`, `_index-<lang>.qmd`, news posts). In every language, link to the plain anchor derived from the English heading (`/Team/people.qmd#dr.-katja-häkli`), never a numbered one (`#dr.-katja-häkli-1`): the `_filters/restore-heading-ids.lua` filter on `Team/people.qmd` gives every language's people page the plain IDs.
 
 **For Template 01 — image check:**
 Inspect the "Photo or image" field:
