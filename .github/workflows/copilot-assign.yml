@@ -1,13 +1,19 @@
-name: Auto-assign issues to Copilot
+name: Assign issue to Copilot (manual)
 
-# This workflow assigns an issue to the GitHub Copilot coding agent only after
-# a maintainer explicitly marks the issue ready with the `🤖 ready-for-copilot`
-# label. New issues start with `❓ status:needs-info`, so we intentionally do
-# not trigger on `issues.opened`.
+# Manual maintainer override: assigns one issue to the GitHub Copilot coding
+# agent regardless of its readiness labels (it still skips closed issues and
+# issues that Copilot is already assigned to).
+#
+# Normal issues do NOT need this: copilot-readiness-check.yml assigns Copilot
+# automatically as soon as an issue passes the readiness check.
+#
+# Run it from the Actions tab ("Run workflow") or with:
+#   gh workflow run copilot-assign.yml -f issue_number=<N>
 #
 # It requires a Personal Access Token (PAT) stored as COPILOT_TRIGGER_PAT.
 # The built-in GITHUB_TOKEN cannot assign copilot-swe-agent[bot]; a real user
-# token from someone with a Copilot seat is required.
+# token from someone with a Copilot seat is required. The same secret is used
+# by copilot-readiness-check.yml.
 #
 # How to create the PAT (classic token is simplest):
 #   1. Sign in as @OndrejMottl (must have an active Copilot seat)
@@ -25,60 +31,34 @@ name: Auto-assign issues to Copilot
 #   - Pull requests: Read and write
 # (Missing any one of these will cause a 403 error.)
 on:
-  issues:
-    types: [labeled]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: "Issue number to assign to Copilot"
+        required: true
+        type: number
 
 permissions: {}
 
 jobs:
   assign-to-copilot:
-    # Start Copilot only from an explicit maintainer signal, and allow
-    # `⏸️ no-agent` / `❓ status:needs-info` to block automation.
-    if: >-
-      ${{
-        github.event.label.name == '🤖 ready-for-copilot' &&
-        !contains(github.event.issue.labels.*.name, '⏸️ no-agent') &&
-        !contains(github.event.issue.labels.*.name, '❓ status:needs-info')
-      }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - name: Assign issue to Copilot Coding Agent
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Assign issue to Copilot coding agent
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.COPILOT_TRIGGER_PAT }}
           script: |
-            const issue = await github.rest.issues.get({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.payload.issue.number,
-            });
-
-            const currentLabels = issue.data.labels.map((label) =>
-              typeof label === 'string' ? label : label.name
-            );
-
-            if (
-              !currentLabels.includes('🤖 ready-for-copilot') ||
-              currentLabels.includes('❓ status:needs-info') ||
-              currentLabels.includes('⏸️ no-agent')
-            ) {
-              core.notice('Issue labels are no longer in a ready state; skipping Copilot assignment.');
-              return;
-            }
-
-            await github.request('POST /repos/{owner}/{repo}/issues/{issue_number}/assignees', {
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.payload.issue.number,
-              assignees: ['copilot-swe-agent[bot]'],
-              agent_assignment: {
-                target_repo: `${context.repo.owner}/${context.repo.repo}`,
-                base_branch: 'main',
-                custom_agent: 'website-maintainer',
-                custom_instructions: 'Read all instructions in .github/ first (especially .github/agents/website-maintainer.agent.md), then follow the full issue → PR workflow defined there.',
-                model: ''
-              },
-              headers: {
-                'X-GitHub-Api-Version': '2022-11-28'
-              }
+            const assignCopilot = require('./.github/scripts/assign-copilot.js');
+            await assignCopilot({
+              github,
+              context,
+              core,
+              issueNumber: Number(context.payload.inputs.issue_number),
+              force: true,
             });
