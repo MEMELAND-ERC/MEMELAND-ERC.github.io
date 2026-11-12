@@ -14,29 +14,26 @@ The website is maintained by @OndrejMottl. Content is primarily submitted by Yul
 |-----------|---------|
 | Static site generator | [Quarto](https://quarto.org/) |
 | Source files | `*.qmd` files (YAML frontmatter + Markdown) |
-| Output | `docs/` folder — **committed to the repository** |
+| Output | `docs/` folder — generated **only** by the `Re-render site after merge` workflow; never committed in PRs |
 | Styling | `custom_style.scss` + `_colors.scss` + `_fonts.scss` |
 | Site config | `_quarto.yml` (global) + `_quarto-<lang>.yml` per language |
 | Languages | English (`en`), German (`de`), French (`fr`), Czech (`cs`), Norwegian (`no`) |
 
 ## Rendering Process
 
-Rendering must be done for **all five language profiles**:
+The published site in `docs/` is rendered and committed automatically by the `Re-render site after merge` workflow after every merge into `main`, using the Quarto version pinned in `QUARTO_VERSION`.
+
+**PRs contain source changes only. Never commit `docs/`.**
+
+To check a change, render a preview into the git-ignored `_preview/` folder:
 
 ```bash
-quarto render --profile english
-quarto render --profile german
-quarto render --profile french
-quarto render --profile czech
-quarto render --profile norwegian
+quarto render --profile english --output-dir _preview/en   # repeat per affected language
 ```
 
-Or use the convenience scripts:
+Or render all five languages into `_preview/` with the convenience scripts:
 - `bash render_all.sh` — macOS / Linux / GitHub Actions
 - `.\render_all.ps1` — Windows PowerShell
-
-After rendering, `docs/index.html` must exist as a redirect to the English version.
-The `docs/` folder output **must be committed** alongside source `.qmd` changes in the same branch and PR.
 
 **No R or renv is required.** The MEMELAND site uses pure Quarto only.
 
@@ -85,7 +82,7 @@ When assigned an issue, follow this sequence:
 
 3. **Implement** — Write/edit `.qmd` files following the relevant instruction files.
 
-4. **Render** — Run all five profiles (`bash render_all.sh` or equivalent). Commit all `docs/` output.
+4. **Preview render** — Render the affected profiles into `_preview/` to check the result. Commit source files only, never `docs/`.
 
 5. **Review** — Invoke the `change-reviewer` subagent. Fix any flagged items before continuing.
 
@@ -100,7 +97,7 @@ When assigned an issue, follow this sequence:
 | News / activity posts | [activities.instructions.md](.github/instructions/activities.instructions.md) |
 | Outputs page | [outputs.instructions.md](.github/instructions/outputs.instructions.md) |
 | Any `.qmd` file | [quarto-writing.instructions.md](.github/instructions/quarto-writing.instructions.md) |
-| Rendering and committing `docs/` | [quarto-rendering.instructions.md](.github/instructions/quarto-rendering.instructions.md) |
+| Preview rendering (and why `docs/` is never committed) | [quarto-rendering.instructions.md](.github/instructions/quarto-rendering.instructions.md) |
 | Branch / PR / Git workflow | [github-workflow.instructions.md](.github/instructions/github-workflow.instructions.md) |
 | Reviewing changes | [review.instructions.md](.github/instructions/review.instructions.md) |
 
