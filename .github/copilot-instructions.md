@@ -78,15 +78,21 @@ When assigned an issue, follow this sequence:
    If anything is missing, post exactly one friendly comment tagging the issue author.
    If blocked by an unexpected problem, tag @OndrejMottl.
 
-2. **Branch** — Create `issue[N]-short-description` from `main`. Never work on `main` directly.
+2. **Branch** — Work on the current `copilot/` branch and draft PR provisioned by GitHub. Never work on `main`, create another branch, or open another PR from the cloud-agent session.
 
 3. **Implement** — Write/edit `.qmd` files following the relevant instruction files.
 
-4. **Preview render** — Render the affected profiles into `_preview/` to check the result. Commit source files only, never `docs/`.
+4. **Preview render and verify a source-only diff** — Render the affected profiles into `_preview/` to check the result. Confirm the diff contains the intended source files and nothing under `docs/` or `_preview/`.
 
 5. **Review** — Invoke the `change-reviewer` subagent. Fix any flagged items before continuing.
 
-6. **Open PR** — Create a PR (ready for review) with summary, changes list, and `- close #[N]`. Assign @OndrejMottl as reviewer.
+6. **Prepare PR** — Update the existing **draft** PR summary. It must include:
+   - Summary of changes (source files only)
+   - `- close #[issue number]`
+   - `_Requested by @[issue author]_` footer
+   - Tag @OndrejMottl as reviewer
+
+Before finishing, verify that `git status --short` and the staged/unstaged diff contain the intended changed files. Do not report a completed implementation with an empty diff. Do not run `git commit`, `git push`, or create a PR manually; GitHub's managed finalizer performs those operations. Keep the PR in draft for @OndrejMottl to mark ready.
 
 > **The agent must NEVER merge a PR.**
 
