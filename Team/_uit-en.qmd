@@ -9,6 +9,6 @@ In many instances this data will be combined with both the biomarker data and ar
 
  - [Prof. Tony G Brown](/Team/people.qmd#prof.-tony-g-brown)
  - [Prof. Inger G Alsos](/Team/people.qmd#prof.-inger-g-alsos)
- - [Dr. Oliver Kern](/Team/people.qmd#dr.-oliver-kern)
+ - [Dr. Oliver A. Kern](/Team/people.qmd#dr.-oliver-a.-kern)
  - [Dr. Ying Liu](/Team/people.qmd#dr.-ying-liu)
- - [Katja Häkli](/Team/people.qmd#katja-häkli)
+ - [Dr. Katja Häkli](/Team/people.qmd#dr.-katja-häkli)
