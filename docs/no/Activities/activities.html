@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="nb" xml:lang="nb"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -38,14 +41,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-7e27559c3ba551b42a95326d9eb508c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-9965eb2b747d01879db6baa38c7ca017.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,16 +99,10 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -135,19 +133,18 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Nettsted">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">MEMELAND</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Søk"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Slå på navigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Slå på navigering" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -245,6 +242,7 @@ window.Quarto = {
       </ul>
     </div>
 </div>
+            <div id="quarto-search" class="" title="Søk"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -255,7 +253,7 @@ window.Quarto = {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     <h5 class="quarto-listing-category-title">Kategorier</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Alle <span class="quarto-category-count">(15)</span></div><div class="category" data-category="QnVsdmVya2V0">Bulverket <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29uZmVyZW5jZQ==">conference <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Y29yaW5n">coring <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZWF3YWc=">eawag <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ZWd1MjY=">egu26 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZmllbGR3b3Jr">fieldwork <span class="quarto-category-count">(3)</span></div><div class="category" data-category="bWVkaWE=">media <span class="quarto-category-count">(5)</span></div><div class="category" data-category="b3V0cmVhY2g=">outreach <span class="quarto-category-count">(5)</span></div><div class="category" data-category="b3hmb3Jk">oxford <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVjcnVpdG1lbnQ=">recruitment <span class="quarto-category-count">(2)</span></div><div class="category" data-category="c2FsemJ1cmc=">salzburg <span class="quarto-category-count">(10)</span></div><div class="category" data-category="VGluZ3N0JUMzJUE0ZGV0ciVDMyVBNHNr">Tingstädeträsk <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dWl0">uit <span class="quarto-category-count">(6)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -299,8 +297,8 @@ News posts are published in English only.
 -->
 <div id="listing-news" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="dWl0JTJDc2FsemJ1cmc=" data-listing-date-sort="1791158400000" data-listing-file-modified-sort="1794470240160" data-listing-date-modified-sort="1794470240000" data-listing-reading-time-sort="2" data-listing-word-count-sort="238">
-<a href="../Activities/news/2026-field-work-campaign-ireland.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="dWl0JTJDc2FsemJ1cmc=" data-listing-date-sort="1791158400000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="2" data-listing-word-count-sort="238">
+<a href="../Activities/news/2026-field-work-campaign-ireland.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../Materials/photos/2026-field-work-campaign-ireland.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -316,7 +314,7 @@ Field Work Campaign Ireland
 <div class="listing-category" onclick="window.quartoListingCategory('c2FsemJ1cmc='); return false;">salzburg</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>During October 2026, the MEMELAND team set out to core 9 lakes across Ireland. On the way there, Aqualate Mere (England), a key site for MEMELAND, was re-cored to a depth of 5.5 m.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -327,8 +325,8 @@ Field Work Campaign Ireland
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="b3V0cmVhY2glMkNtZWRpYQ==" data-listing-date-sort="1786492800000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
-<a href="../Activities/news/2026-memeland-youtube-channel.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="b3V0cmVhY2glMkNtZWRpYQ==" data-listing-date-sort="1786492800000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<a href="../Activities/news/2026-memeland-youtube-channel.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
 <div class="card-body post-contents">
@@ -342,7 +340,7 @@ MEMELAND Launches Official YouTube Channel
 <div class="listing-category" onclick="window.quartoListingCategory('bWVkaWE='); return false;">media</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>MEMELAND is now on YouTube, with our first published video covering ORF media coverage.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -353,8 +351,8 @@ MEMELAND Launches Official YouTube Channel
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="dWl0JTJDcmVjcnVpdG1lbnQ=" data-listing-date-sort="1785715200000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
-<a href="../Activities/news/2026-uit-phd-fellowship.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="dWl0JTJDcmVjcnVpdG1lbnQ=" data-listing-date-sort="1785715200000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+<a href="../Activities/news/2026-uit-phd-fellowship.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../Materials/photos/uit-phd-fellowship-2026.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -370,7 +368,7 @@ Join our MEMELAND team as a PhD Fellow. Application deadline: 16 August 2026
 <div class="listing-category" onclick="window.quartoListingCategory('cmVjcnVpdG1lbnQ='); return false;">recruitment</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>UiT invites applications for a fully funded four-year PhD Fellowship in ancient sedimentary DNA research. Application deadline: 16 August 2026.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -381,8 +379,8 @@ Join our MEMELAND team as a PhD Fellow. Application deadline: 16 August 2026
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="dWl0JTJDZmllbGR3b3JrJTJDY29yaW5nJTJDVGluZ3N0JUMzJUE0ZGV0ciVDMyVBNHNrJTJDQnVsdmVya2V0" data-listing-date-sort="1785283200000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
-<a href="../Activities/news/2026-field-work-gotland-sweden.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="dWl0JTJDZmllbGR3b3JrJTJDY29yaW5nJTJDVGluZ3N0JUMzJUE0ZGV0ciVDMyVBNHNrJTJDQnVsdmVya2V0" data-listing-date-sort="1785283200000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
+<a href="../Activities/news/2026-field-work-gotland-sweden.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../Materials/photos/2026-gotland-fieldwork-1.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -404,7 +402,7 @@ Field Work on Gotland, Sweden
 <div class="listing-category" onclick="window.quartoListingCategory('QnVsdmVya2V0'); return false;">Bulverket</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>The UiT team cored Tingstädeträsk on Gotland, Sweden, the site of the famous medieval Bulverket.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -415,8 +413,8 @@ Field Work on Gotland, Sweden
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="c2FsemJ1cmclMkNvdXRyZWFjaCUyQ21lZGlh" data-listing-date-sort="1782000000000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
-<a href="../Activities/news/2026-orf-salzburg-feature.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="4" data-categories="c2FsemJ1cmclMkNvdXRyZWFjaCUyQ21lZGlh" data-listing-date-sort="1782000000000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
+<a href="../Activities/news/2026-orf-salzburg-feature.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../Materials/photos/orf-salzburg-2026.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -434,7 +432,7 @@ MEMELAND Research Featured on ORF Salzburg
 <div class="listing-category" onclick="window.quartoListingCategory('bWVkaWE='); return false;">media</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>The University of Salzburg’s MEMELAND research was featured on ORF Salzburg, showcasing how lake sediments unlock 2,000 years of European agricultural history.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -445,8 +443,8 @@ MEMELAND Research Featured on ORF Salzburg
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="dWl0JTJDZWF3YWclMkNzYWx6YnVyZyUyQ2ZpZWxkd29yayUyQ2NvcmluZw==" data-listing-date-sort="1779062400000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="2" data-listing-word-count-sort="291">
-<a href="../Activities/news/2026-field-work-campaign-northern-europe.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="5" data-categories="dWl0JTJDZWF3YWclMkNzYWx6YnVyZyUyQ2ZpZWxkd29yayUyQ2NvcmluZw==" data-listing-date-sort="1779062400000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="2" data-listing-word-count-sort="291">
+<a href="../Activities/news/2026-field-work-campaign-northern-europe.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../Materials/photos/field-work-campaign-ger-2026.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -468,7 +466,7 @@ Field Work Campaign Northern Europe (Sweden – Denmark – Germany)
 <div class="listing-category" onclick="window.quartoListingCategory('Y29yaW5n'); return false;">coring</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>During May and June 2026, the MEMELAND team successfully cored 16 lakes in Southern Sweden, Denmark, and Northern Germany over the course of 16 days.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -479,8 +477,8 @@ Field Work Campaign Northern Europe (Sweden – Denmark – Germany)
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="ZWF3YWclMkNzYWx6YnVyZyUyQ2VndTI2" data-listing-date-sort="1777939200000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="2" data-listing-word-count-sort="292">
-<a href="../Activities/news/2026-egu-vienna-meetup.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="6" data-categories="ZWF3YWclMkNzYWx6YnVyZyUyQ2VndTI2" data-listing-date-sort="1777939200000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="2" data-listing-word-count-sort="292">
+<a href="../Activities/news/2026-egu-vienna-meetup.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../Materials/photos/egu_2026/egu2026-vienna-meetup.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -498,7 +496,7 @@ MEMELAND at EGU2026: Dung, Lakes, and Medieval Landscapes
 <div class="listing-category" onclick="window.quartoListingCategory('ZWd1MjY='); return false;">egu26</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>At EGU 2026, Tobi introduced MEMELAND’s faecal biomarker framework for tracing medieval land use through lake sediment archives. Beyond the poster session, Marcel (right) and Tobi (left) met to align fieldwork plans and strengthen the next phase of collaboration.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -509,8 +507,8 @@ MEMELAND at EGU2026: Dung, Lakes, and Medieval Landscapes
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="ZWF3YWclMkNyZWNydWl0bWVudA==" data-listing-date-sort="1777420800000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
-<a href="../Activities/news/2026-eawag-postdoc-hiring.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="7" data-categories="ZWF3YWclMkNyZWNydWl0bWVudA==" data-listing-date-sort="1777420800000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="1" data-listing-word-count-sort="82">
+<a href="../Activities/news/2026-eawag-postdoc-hiring.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
 <div class="card-body post-contents">
@@ -524,7 +522,7 @@ Eawag team is hiring a postdoctoral researcher in organic geochemistry
 <div class="listing-category" onclick="window.quartoListingCategory('cmVjcnVpdG1lbnQ='); return false;">recruitment</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>Eawag is looking for a postdoctoral researcher in organic geochemistry to join the MEMELAND team.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -535,8 +533,8 @@ Eawag team is hiring a postdoctoral researcher in organic geochemistry
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="b3hmb3JkJTJDY29uZmVyZW5jZQ==" data-listing-date-sort="1774224000000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
-<a href="../Activities/news/2026-lessons-from-the-past.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="8" data-categories="b3hmb3JkJTJDY29uZmVyZW5jZQ==" data-listing-date-sort="1774224000000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="2" data-listing-word-count-sort="247">
+<a href="../Activities/news/2026-lessons-from-the-past.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../Materials/photos/LessonsFromThePast2026/IMG_4503.jpeg" class="thumbnail-image card-img" style="height: 150px;">
@@ -552,7 +550,7 @@ Lessons from the Past: digging into the past to build a sustainable future
 <div class="listing-category" onclick="window.quartoListingCategory('Y29uZmVyZW5jZQ=='); return false;">conference</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>MEMELAND attended the Lessons from the Past conference at the University of Liverpool to discuss how knowledge of the past can inform modern challenges.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -563,8 +561,8 @@ Lessons from the Past: digging into the past to build a sustainable future
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="dWl0JTJDc2FsemJ1cmclMkNjb25mZXJlbmNl" data-listing-date-sort="1773964800000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="1" data-listing-word-count-sort="121">
-<a href="../Activities/news/2026-lac-bamberg.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="9" data-categories="dWl0JTJDc2FsemJ1cmclMkNjb25mZXJlbmNl" data-listing-date-sort="1773964800000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="1" data-listing-word-count-sort="121">
+<a href="../Activities/news/2026-lac-bamberg.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img loading='lazy' src="../Materials/photos/lac_2026/1000010630_reduced.jpeg" alt="Prof. Antony G. Brown presenting the MEMELAND project at the International Landscape Archaeology Conference Foto: Dr. Ying Liu" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
@@ -580,7 +578,7 @@ MEMELAND members at the LAC conference
 <div class="listing-category" onclick="window.quartoListingCategory('Y29uZmVyZW5jZQ=='); return false;">conference</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>As part of the MEMELAND project, Prof.&nbsp;Antony Brown, Prof.&nbsp;Andreas Lang, and Dr.&nbsp;Ying Liu participated in the ninth International Landscape Archaeology Conference (LAC), held from 18 to 21 March 2026 in Bamberg.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -591,8 +589,8 @@ MEMELAND members at the LAC conference
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="dWl0JTJDc2FsemJ1cmclMkNmaWVsZHdvcmslMkNjb3Jpbmc=" data-listing-date-sort="1771718400000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
-<a href="../Activities/news/2026-field-work-campaign-united-kingdom.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="10" data-categories="dWl0JTJDc2FsemJ1cmclMkNmaWVsZHdvcmslMkNjb3Jpbmc=" data-listing-date-sort="1771718400000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="2" data-listing-word-count-sort="237">
+<a href="../Activities/news/2026-field-work-campaign-united-kingdom.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../Materials/photos/field-work-campaign-uk-2026.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -612,7 +610,7 @@ Field work Campaign United Kingdom (Wales – England – Scotland)
 <div class="listing-category" onclick="window.quartoListingCategory('Y29yaW5n'); return false;">coring</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>From 22 February to 11 March 2026, the MEMELAND team - Prof.&nbsp;Antony G. Brown, Dr.&nbsp;Oliver A. Kern, Dr.&nbsp;Ying Liu, and M.Sc. Marcel-Luciano Ortler - conducted a lake-coring campaign across the United Kingdom.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -623,8 +621,8 @@ Field work Campaign United Kingdom (Wales – England – Scotland)
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="c2FsemJ1cmc=" data-listing-date-sort="1770076800000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
-<a href="../Activities/news/2026-salzburg-cold-store-operational.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="11" data-categories="c2FsemJ1cmc=" data-listing-date-sort="1770076800000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="1" data-listing-word-count-sort="37">
+<a href="../Activities/news/2026-salzburg-cold-store-operational.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../Materials/photos/salzburg-cold-store.jpg" class="thumbnail-image card-img" style="height: 150px;">
@@ -638,7 +636,7 @@ Salzburg cold store fully operational including roof &amp; shelf storage.
 <div class="listing-category" onclick="window.quartoListingCategory('c2FsemJ1cmc='); return false;">salzburg</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>Salzburg cold store fully operational including roof &amp; shelf storage.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -649,8 +647,8 @@ Salzburg cold store fully operational including roof &amp; shelf storage.
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="c2FsemJ1cmclMkNvdXRyZWFjaCUyQ21lZGlh" data-listing-date-sort="1769644800000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
-<a href="../Activities/news/2026-startschuss-jahrhundertprojekt.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="12" data-categories="c2FsemJ1cmclMkNvdXRyZWFjaCUyQ21lZGlh" data-listing-date-sort="1769644800000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<a href="../Activities/news/2026-startschuss-jahrhundertprojekt.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
 <div class="card-body post-contents">
@@ -666,7 +664,7 @@ Kick-off for a “Project of the Century”
 <div class="listing-category" onclick="window.quartoListingCategory('bWVkaWE='); return false;">media</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>Muhlacker Tagblatt reported on major restoration plans at Tiefer See in Maulbronn and highlighted MEMELAND’s related scientific work.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -677,8 +675,8 @@ Kick-off for a “Project of the Century”
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="c2FsemJ1cmclMkNvdXRyZWFjaCUyQ21lZGlh" data-listing-date-sort="1766448000000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
-<a href="../Activities/news/2025-dna-aus-see-schlamm-maulbronn.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="13" data-categories="c2FsemJ1cmclMkNvdXRyZWFjaCUyQ21lZGlh" data-listing-date-sort="1766448000000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
+<a href="../Activities/news/2025-dna-aus-see-schlamm-maulbronn.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
 <div class="card-body post-contents">
@@ -694,7 +692,7 @@ DNA from Lake Mud: Tiefer See in Maulbronn in the Scientific Spotlight
 <div class="listing-category" onclick="window.quartoListingCategory('bWVkaWE='); return false;">media</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>PZ News featured MEMELAND’s lake sediment research in Maulbronn and its contribution to reconstructing historical biodiversity.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -705,8 +703,8 @@ DNA from Lake Mud: Tiefer See in Maulbronn in the Scientific Spotlight
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="c2FsemJ1cmclMkNvdXRyZWFjaCUyQ21lZGlh" data-listing-date-sort="1756252800000" data-listing-file-modified-sort="1794470186743" data-listing-date-modified-sort="1794470186000" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
-<a href="../Activities/news/2025-plus-memeland-zeitreise.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="14" data-categories="c2FsemJ1cmclMkNvdXRyZWFjaCUyQ21lZGlh" data-listing-date-sort="1756252800000" data-listing-file-modified-sort="1794473060885" data-listing-date-modified-sort="1794473060000" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
+<a href="../Activities/news/2025-plus-memeland-zeitreise.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
 <div class="card-body post-contents">
@@ -722,7 +720,7 @@ MEMELAND - A Journey Through 2,000 Years of European Environmental History
 <div class="listing-category" onclick="window.quartoListingCategory('bWVkaWE='); return false;">media</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="card-text listing-description">
 <p>The University of Salzburg published a feature on MEMELAND’s reconstruction of 2,000 years of European environmental change.</p>
 </div>
 <div class="card-attribution card-text-small end">
@@ -820,7 +818,8 @@ MEMELAND - A Journey Through 2,000 Years of European Environmental History
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -829,8 +828,69 @@ MEMELAND - A Journey Through 2,000 Years of European Environmental History
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -844,6 +904,7 @@ MEMELAND - A Journey Through 2,000 Years of European Environmental History
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -1006,44 +1067,54 @@ MEMELAND - A Journey Through 2,000 Years of European Environmental History
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1141,6 +1212,9 @@ MEMELAND - A Journey Through 2,000 Years of European Environmental History
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Rullbar kode","output":"Rullbare utdata"};
   </script>
 </div> <!-- /content -->
 <footer class="footer">
