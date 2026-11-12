@@ -5,7 +5,9 @@ name: Close Empty Copilot PRs
 
 on:
   workflow_run:
-    workflows: ["Running Copilot cloud agent"]
+    # Must match the workflow *name* ("Copilot cloud agent"), not the run
+    # title ("Running Copilot cloud agent").
+    workflows: ["Copilot cloud agent"]
     types: [completed]
 
 permissions:

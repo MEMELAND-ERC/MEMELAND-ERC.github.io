@@ -2,6 +2,9 @@ const READY_LABEL = '🤖 ready-for-copilot';
 const NEEDS_INFO_LABEL = '❓ status:needs-info';
 const NO_AGENT_LABEL = '⏸️ no-agent';
 
+// Hidden marker that identifies the single status comment this check maintains.
+const STATUS_MARKER = '<!-- memeland-readiness -->';
+
 const TITLE_PREFIXES = {
   '[New news]:': 'news',
   '[Update content]:': 'update-content',
@@ -11,8 +14,22 @@ const TITLE_PREFIXES = {
   '[New output]:': 'output',
 };
 
+// Fallback when the submitter edited the title prefix away.
+const TYPE_LABELS = {
+  '📰 type:news-post': 'news',
+  '✏️ type:update-content': 'update-content',
+  '🖼️ type:media': 'media',
+  '🔤 type:language-correction': 'language-correction',
+  '🐞 type:bug': 'bug',
+  '📄 type:output': 'output',
+};
+
 const LANGUAGE_NAMES = ['English', 'German', 'French', 'Czech', 'Norwegian'];
 const MEMELAND_URL_RE = /^https?:\/\/(?:www\.)?(?:memeland\.no|memeland-erc\.github\.io)\//i;
+// Matches the per-language placeholders of template 02, e.g.
+// "Write the new English text here." and "Write the French text here."
+const LANGUAGE_PLACEHOLDER_RE = /^Write the (?:new )?\w+ text here/i;
+const SAME_AS_ENGLISH_RE = /^same as english\.?$/i;
 
 function normalize(text) {
   return (text || '').replace(/\r\n/g, '\n').trim();
@@ -92,7 +109,10 @@ function parseLanguageContent(text) {
 
 function getTemplate(issue) {
   const title = normalize(issue.title);
-  return Object.entries(TITLE_PREFIXES).find(([prefix]) => title.startsWith(prefix))?.[1] || null;
+  const fromTitle = Object.entries(TITLE_PREFIXES).find(([prefix]) => title.startsWith(prefix))?.[1];
+  if (fromTitle) return fromTitle;
+  const labels = issue.labels || [];
+  return Object.entries(TYPE_LABELS).find(([label]) => labels.includes(label))?.[1] || null;
 }
 
 function isPlaceholderText(value, placeholders = []) {
@@ -172,17 +192,35 @@ Write the Norwegian text here.`,
       .filter((line) => /- \[[xX]\]/.test(line))
       .map((line) => line.replace(/^- \[[xX]\]\s*/, '').replace(/\s+\(.*\)$/, '').trim());
     const languageBlocks = parseLanguageContent(newText);
+    // Without any "### <Language>" heading, the whole text applies to every
+    // selected language (e.g. a name or an e-mail address).
+    const hasLanguageHeadings = LANGUAGE_NAMES.some((language) => language in languageBlocks);
+    const textFor = (language) =>
+      hasLanguageHeadings ? normalize(languageBlocks[language]) : unwrapCodeFence(newText);
+    const englishText = textFor('English');
+    const hasRealEnglishText =
+      Boolean(englishText) &&
+      !LANGUAGE_PLACEHOLDER_RE.test(englishText) &&
+      !SAME_AS_ENGLISH_RE.test(englishText);
+
     for (const language of selectedLanguages) {
-      const content = normalize(languageBlocks[language]);
+      const content = textFor(language);
       if (!content) {
         reasons.push(`Replacement or new text is missing for ${language}.`);
         continue;
       }
-      if (/^same as english$/i.test(content)) {
-        reasons.push(`Replacement or new text for ${language} cannot be "same as English".`);
-      }
-      if (/^Write the new .* text here/i.test(content)) {
+      if (LANGUAGE_PLACEHOLDER_RE.test(content)) {
         reasons.push(`Replacement or new text for ${language} still uses the template placeholder.`);
+        continue;
+      }
+      // "same as English" is fine for other languages: the agent copies
+      // language-neutral text and translates prose (flagged in the PR).
+      if (SAME_AS_ENGLISH_RE.test(content)) {
+        if (language === 'English') {
+          reasons.push('Replacement or new text for English cannot be "same as English".');
+        } else if (!hasRealEnglishText) {
+          reasons.push(`Replacement or new text for ${language} says "same as English", but no English text is provided.`);
+        }
       }
     }
   }
@@ -330,41 +368,111 @@ async function removeLabel(github, issue, label) {
   }
 }
 
+function statusCommentBody(result) {
+  if (result.ready) {
+    return [
+      STATUS_MARKER,
+      '✅ **Thank you! Your request has everything it needs.**',
+      '',
+      'The website assistant (GitHub Copilot) will now start working on it and open a pull request for the website maintainer to review. The pull request will appear on this issue within a few minutes.',
+    ].join('\n');
+  }
+  return [
+    STATUS_MARKER,
+    '👋 **Thank you for your request!** Before the website assistant can start, please complete the following:',
+    '',
+    ...result.reasons.map((reason) => `- ${reason}`),
+    '',
+    'To do so, edit the issue (click **···** at the top right of the issue text, then **Edit**) and save. This check runs again automatically every time you save.',
+    '',
+    'If anything is unclear, mention `@OndrejMottl` in a comment.',
+  ].join('\n');
+}
+
+// Keep exactly one status comment per issue and edit it in place, so repeated
+// edits do not flood the issue with bot comments.
+async function upsertStatusComment(github, issue, body) {
+  const comments = await github.paginate(github.rest.issues.listComments, {
+    owner: issue.owner,
+    repo: issue.repo,
+    issue_number: issue.number,
+    per_page: 100,
+  });
+  const existing = comments.find((comment) => (comment.body || '').startsWith(STATUS_MARKER));
+
+  if (!existing) {
+    await github.rest.issues.createComment({
+      owner: issue.owner,
+      repo: issue.repo,
+      issue_number: issue.number,
+      body,
+    });
+    return 'created';
+  }
+  if (existing.body === body) {
+    return 'unchanged';
+  }
+  await github.rest.issues.updateComment({
+    owner: issue.owner,
+    repo: issue.repo,
+    comment_id: existing.id,
+    body,
+  });
+  return 'updated';
+}
+
 async function run({ github, context, core }) {
-  const labels = (context.payload.issue.labels || []).map((label) => label.name);
+  const payloadIssue = context.payload.issue;
+  const labels = (payloadIssue.labels || []).map((label) => label.name);
   const issue = {
     owner: context.repo.owner,
     repo: context.repo.repo,
-    number: context.payload.issue.number,
-    title: context.payload.issue.title || '',
-    body: context.payload.issue.body || '',
+    number: payloadIssue.number,
+    title: payloadIssue.title || '',
+    body: payloadIssue.body || '',
+    labels,
   };
 
+  if (payloadIssue.state === 'closed') {
+    core.notice('Issue is closed; skipping readiness check.');
+    return { ready: false, template: null, optedOut: false, closed: true };
+  }
+
   const result = evaluateIssue(issue);
-  const hasNoAgent = labels.includes(NO_AGENT_LABEL);
+  const optedOut = labels.includes(NO_AGENT_LABEL);
 
   core.notice(`Template: ${result.template || 'unsupported'}`);
   if (result.reasons.length) {
     core.notice(`Reasons: ${result.reasons.join(' | ')}`);
   }
 
-  if (hasNoAgent) {
+  if (optedOut) {
     await removeLabel(github, issue, READY_LABEL);
     core.notice('Issue is opted out via ⏸️ no-agent; skipping readiness label updates.');
-    return;
+    return { ready: result.ready, template: result.template, optedOut: true, closed: false };
   }
 
   if (result.ready) {
     await removeLabel(github, issue, NEEDS_INFO_LABEL);
     await addLabels(github, issue, [READY_LABEL]);
     core.notice('Issue is ready for Copilot.');
-    return;
+  } else {
+    await removeLabel(github, issue, READY_LABEL);
+    await addLabels(github, issue, [NEEDS_INFO_LABEL]);
+    core.notice('Issue is not ready for Copilot.');
   }
 
-  await removeLabel(github, issue, READY_LABEL);
-  await addLabels(github, issue, [NEEDS_INFO_LABEL]);
-  core.notice('Issue is not ready for Copilot.');
+  // Only talk to submitters of template issues; maintainers' own issues
+  // (no template) get labels but no bot comment.
+  if (result.template) {
+    const outcome = await upsertStatusComment(github, issue, statusCommentBody(result));
+    core.notice(`Status comment: ${outcome}.`);
+  }
+
+  return { ready: result.ready, template: result.template, optedOut: false, closed: false };
 }
 
 module.exports = run;
 module.exports.evaluateIssue = evaluateIssue;
+module.exports.statusCommentBody = statusCommentBody;
+module.exports.STATUS_MARKER = STATUS_MARKER;

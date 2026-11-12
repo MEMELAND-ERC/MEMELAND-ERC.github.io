@@ -91,7 +91,13 @@ Check that every required field is filled and not left as the template placehold
 #### A3. Additional Checks
 
 **For Template 02 (multilingual update):**
-Check whether translated text is provided for all selected languages. If some language sections say "same as English" or are blank, note this — you will need to ask the submitter for the missing translations before implementing.
+The readiness check has already confirmed that text exists for every selected language. Interpret it as follows:
+- **No `### <Language>` headings:** the whole text applies to every selected language.
+- **"same as English":** if the text is language-neutral (names, academic titles, e-mail addresses, URLs, ORCID IDs), copy the English text verbatim. If it is prose, translate the English text yourself and list every translated passage in the PR description under a heading `Machine-translated, please check`.
+- **Blank or still the template placeholder** for a selected language: ask the submitter for it (see A4).
+
+**For Team/people pages (any template):**
+Names, academic titles, e-mail addresses, links, ORCID IDs and photos are language-neutral. Apply such changes to all five `_<page>-<lang>.qmd` files even if the submitter ticked only English. When a `### ` heading on `Team/_people-<lang>.qmd` changes, its anchor changes too (e.g. `### Dr. Katja Häkli` → `#dr.-katja-häkli`); update every link to the old anchor (team pages `Team/_<team>-<lang>.qmd`, news posts).
 
 **For Template 01 — image check:**
 Inspect the "Photo or image" field:
@@ -175,8 +181,8 @@ Load the relevant instruction file before writing any `.qmd` files:
 
 **For Template 02 (content update):**
 1. Identify the `.qmd` file(s) from the page URL and selected languages
-2. For each selected language, edit `_<page>-<lang>.qmd` with the provided replacement text
-3. If some language translations are missing: post a comment asking the submitter, then stop
+2. For each selected language, edit `_<page>-<lang>.qmd` with the provided replacement text, following the Template 02 rules in Step A3 ("same as English", no language headings, language-neutral Team/people data in all five files)
+3. If a selected language is blank or still the template placeholder: post a comment asking the submitter, then stop
 
 **For Template 03 (media):**
 1. Download or reference the provided image; place in `Materials/photos/` or appropriate subfolder
