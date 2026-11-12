@@ -4,3 +4,6 @@
 
 Materials/Website content/
 quarto-*.deb
+
+# Ignore Quarto preview files
+/_preview/
