@@ -1,157 +1,92 @@
 # Quarto Rendering Instructions
 
-Use this file when rendering the MEMELAND website or committing the `docs/` output.
+Use this file when rendering the MEMELAND website.
+
+## Who builds `docs/`
+
+`docs/` is the published website (GitHub Pages serves it from `main`). It is generated **only** by the `Re-render site after merge` workflow (`.github/workflows/rerender-on-merge.yml`), which renders all five languages after every merge into `main` and commits the result.
+
+**Pull requests change source files only. Never commit `docs/`.**
+
+You still render locally (or in the agent sandbox) to check that your change builds and looks right, but into the git-ignored `_preview/` folder, never into `docs/`.
 
 ## Pinned Quarto version
 
-The required Quarto version is declared in `QUARTO_VERSION` at the repository root.
-
-```
-cat QUARTO_VERSION   # → e.g. 1.9.37
-```
-
-**All renders — local and sandbox — must use exactly this version.**
-The render scripts (`render_all.sh` / `render_all.ps1`) enforce this automatically and will abort with a clear error if the installed version does not match.
-
-## Check and install Quarto
-
-Before rendering, verify the correct version is installed:
+The Quarto version is declared in `QUARTO_VERSION` at the repository root. The re-render workflow installs exactly this version, so use the same one for previews:
 
 ```bash
-quarto --version   # must match the content of QUARTO_VERSION
+cat QUARTO_VERSION   # e.g. 1.11.9
+quarto --version     # should match
 ```
 
-If the version is missing or wrong, install the exact pinned version for your platform.
-
-**Linux / GitHub Actions sandbox (specific version):**
+**Linux / GitHub Actions sandbox (install the pinned version):**
 
 ```bash
-REQUIRED=$(cat QUARTO_VERSION)
-wget -q "https://github.com/quarto-dev/quarto-cli/releases/download/v${REQUIRED}/quarto-${REQUIRED}-linux-amd64.deb"
-sudo dpkg -i "quarto-${REQUIRED}-linux-amd64.deb"
-quarto --version   # confirm
-```
-
-**macOS / Windows — download the specific installer from:**
-<https://github.com/quarto-dev/quarto-cli/releases> — find the release matching the version in `QUARTO_VERSION`.
-
-If the command is not found at all, install Quarto for your platform:
-
-**Linux / GitHub Actions (Debian/Ubuntu):**
-
-```bash
-wget -q https://quarto.org/download/latest/quarto-linux-amd64.deb
-sudo dpkg -i quarto-linux-amd64.deb
+REQUIRED=$(tr -d '[:space:]' < QUARTO_VERSION)
+INSTALLED=$(quarto --version 2>/dev/null || echo "none")
+if [ "$INSTALLED" != "$REQUIRED" ]; then
+  wget -q "https://github.com/quarto-dev/quarto-cli/releases/download/v${REQUIRED}/quarto-${REQUIRED}-linux-amd64.deb"
+  sudo dpkg -i "quarto-${REQUIRED}-linux-amd64.deb"
+fi
 quarto --version
 ```
 
-**macOS (Homebrew):**
+**macOS / Windows:** download the installer for the pinned version from <https://github.com/quarto-dev/quarto-cli/releases>.
+
+To upgrade Quarto for the whole project, change `QUARTO_VERSION` in its own PR; the next merge re-renders the site with the new version.
+
+## Preview render
+
+Render each language profile you need into `_preview/<lang>/` with `--output-dir`:
 
 ```bash
-brew install --cask quarto
-quarto --version
+quarto render --profile english   --output-dir _preview/en
+quarto render --profile german    --output-dir _preview/de
+quarto render --profile french    --output-dir _preview/fr
+quarto render --profile czech     --output-dir _preview/cs
+quarto render --profile norwegian --output-dir _preview/no
 ```
 
-**Windows (PowerShell — winget):**
-
-```powershell
-winget install --id Posit.Quarto -e
-quarto --version
-```
-
-Alternatively, download the installer directly from <https://quarto.org/docs/download/>.
-
-## Render command
-
-The MEMELAND site must be rendered for **all five language profiles**. From the repository root:
+Or render all five at once with the convenience scripts (from the repo root):
 
 ```bash
-quarto render --profile english
-quarto render --profile german
-quarto render --profile french
-quarto render --profile czech
-quarto render --profile norwegian
-```
-
-Or use the convenience scripts (from the repo root):
-
-```bash
-bash render_all.sh        # macOS / Linux / GitHub Actions
+bash render_all.sh        # macOS / Linux / Git Bash / sandbox
 .\render_all.ps1          # Windows PowerShell
 ```
 
-## After rendering — root redirect
+Which profiles to render:
 
-After all five profiles complete, ensure `docs/index.html` exists as a redirect:
+- **News posts** (`Activities/news/`, English only): `english` is enough.
+- **Multilingual pages** (About, Team, Outputs, JoinUs, Home): every language you changed.
+- **Config or style changes** (`_quarto*.yml`, `*.scss`): all five.
 
-```bash
-cat <<'EOF' > docs/index.html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta http-equiv="refresh" content="0; url=en/index.html" />
-    <link rel="canonical" href="https://memeland-erc.github.io/en/index.html" />
-    <title>Redirecting to English version...</title>
-  </head>
-  <body>
-    <p>If you are not redirected automatically, <a href="en/index.html">click here</a>.</p>
-  </body>
-</html>
-EOF
-```
-
-This redirect is created automatically by `render_all.sh` and `render_all.ps1`.
-
-## Output directories
-
-| Profile | Output directory |
-|---------|-----------------|
-| english | `docs/en/` |
-| german | `docs/de/` |
-| french | `docs/fr/` |
-| czech | `docs/cs/` |
-| norwegian | `docs/no/` |
-
-The root `docs/index.html` redirect is generated after all profiles are rendered.
-
-## Committing docs/
-
-**ALL `docs/` changes must be committed** alongside source `.qmd` changes in the same branch and PR.
+To browse the preview with working search and listings:
 
 ```bash
-git add .
-git commit -m "Add news post: Iceland coring 2026; render docs"
+python -m http.server 8000 -d _preview   # then open http://localhost:8000/en/
 ```
+
+| Profile | Preview directory | Published directory (CI only) |
+|---------|-------------------|-------------------------------|
+| english | `_preview/en/` | `docs/en/` |
+| german | `_preview/de/` | `docs/de/` |
+| french | `_preview/fr/` | `docs/fr/` |
+| czech | `_preview/cs/` | `docs/cs/` |
+| norwegian | `_preview/no/` | `docs/no/` |
+
+## If a render fails
+
+1. Fix the cause if it is in your change, and render again.
+2. If it is not fixable from your change (environment, Quarto bug), commit the source changes anyway, describe the failure in the PR, and tag @OndrejMottl. Do NOT merge.
+
+## What to never do
+
+- Do NOT commit `docs/` or `_preview/`. If `git status` shows changes in `docs/`, discard them: `git checkout origin/main -- docs/`
+- Do NOT render without `--output-dir _preview/<lang>`: plain `quarto render --profile <name>` writes into `docs/`
+- Do NOT edit files in `docs/` manually
+- Do NOT use `quarto render` without `--profile` (it renders only the default profile)
+- Do NOT use `[no-render]` in the merge commit of a content change: it stops the site from being re-rendered
 
 ## No R or renv required
 
 The MEMELAND site uses **no R code**. No R installation or `renv::restore()` is needed. Pure Quarto only.
-
-## Environment setup (CI / sandbox)
-
-```bash
-# Install Quarto if needed (see "Check and install Quarto" above)
-
-# Render all profiles
-quarto render --profile english
-quarto render --profile german
-quarto render --profile french
-quarto render --profile czech
-quarto render --profile norwegian
-```
-
-## Fallback if render fails
-
-If `quarto render` fails for any profile:
-
-1. Commit the source `.qmd` changes only (no `docs/` changes)
-2. Note the failure in the PR description
-3. Tag @OndrejMottl in the PR
-4. Do NOT merge
-
-## What to never do
-
-- Do NOT edit files in `docs/` manually
-- Do NOT commit `docs/` without re-rendering all five profiles
-- Do NOT skip the `docs/index.html` redirect
-- Do NOT use `quarto render` without `--profile` (it renders only the default profile)

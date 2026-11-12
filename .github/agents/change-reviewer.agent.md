@@ -25,15 +25,16 @@ For each check, report:
 Before reviewing, collect:
 1. The issue number, template type (01–05), and full issue description
 2. The list of source `.qmd` files changed on the branch (diff against `main`)
-3. The rendered HTML output files in `docs/` that correspond to the changed sources
+3. The preview HTML output files in `_preview/<lang>/` that correspond to the changed sources (rendered in Step D; `docs/` is not part of the PR)
 4. The PR description (to check `- close #N` and reviewer assignment)
 
 ---
 
 ## Special rules for MEMELAND
 
-- **News posts** (`Activities/news/`) are **English only** — check only `docs/en/Activities/` for rendered output; do not flag missing translated versions of news posts
-- **Multilingual page changes** (About, Team, Outputs, JoinUs) — verify that `docs/en/`, `docs/de/`, `docs/fr/`, `docs/cs/`, and `docs/no/` all contain updated HTML for the changed page
+- **News posts** (`Activities/news/`) are **English only** — check only `_preview/en/Activities/` for rendered output; do not flag missing translated versions of news posts
+- **Multilingual page changes** (About, Team, Outputs, JoinUs) — verify that `_preview/<lang>/` contains updated HTML for the changed page in every changed language
+- **Generated output** — the PR must not change `docs/` or `_preview/`; `docs/` is rendered by the `Re-render site after merge` workflow after merge
 - **Language corrections** (Template 04) — verify the exact replacement text appears in the rendered HTML for the correct language subdirectory
 - **Category tag spellings** — in news post frontmatter, team tags must be exactly: `uit`, `oxford`, `eawag`, `salzburg`, `cuni`
 - **Terminology** — "MEMELAND", "ERC", "UiT", "Eawag", "CUNI" must be capitalised correctly throughout edited content
@@ -62,8 +63,8 @@ Before reviewing, collect:
 | 13 | Paths | External URLs plausible | ✅ PASS | |
 | 14 | Paths | Image relative paths resolve | ✅ PASS | |
 | 15 | Workflow | Branch named correctly | ✅ PASS | |
-| 16 | Workflow | docs/ committed | ✅ PASS | |
-| 17 | Workflow | docs/index.html redirect present | ✅ PASS | |
+| 16 | Workflow | docs/ not changed in the PR | ✅ PASS | |
+| 17 | Workflow | _preview/ not committed | ✅ PASS | |
 | 18 | Workflow | close #N in PR | ✅ PASS | |
 | 19 | Workflow | @OndrejMottl assigned | ✅ PASS | |
 | 20 | Workflow | PR not merged | ✅ PASS | |
@@ -75,7 +76,7 @@ Before reviewing, collect:
 | 26 | HTML | No Quarto error banners | ✅ PASS | |
 | 27 | HTML | Language pages render | ✅ PASS | |
 | 28 | HTML | Quarto version correct | ✅ PASS | |
-| 29 | HTML | docs/ scope proportional | ✅ PASS | |
+| 29 | HTML | Preview covers every changed language | ✅ PASS | |
 | 30 | Content | Content faithful to issue | ✅ PASS | |
 ```
 

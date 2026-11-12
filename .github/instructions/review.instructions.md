@@ -42,8 +42,8 @@ Report each item as **PASS** or **FLAG**.
 | Check | Detail |
 |-------|--------|
 | Branch named correctly | `issue[N]-short-description` format |
-| `docs/` committed | For news-only changes: `docs/en/Activities/news/` at minimum; for multilingual changes: all five `docs/<lang>/` dirs |
-| `docs/index.html` redirect present | Root redirect file exists after render |
+| `docs/` not changed | The PR diff against `main` contains no `docs/` paths (`docs/` is rendered by the `Re-render site after merge` workflow after merge) |
+| `_preview/` not committed | The PR diff contains no `_preview/` paths |
 | `- close #[N]` in PR description | Issue closing reference is present |
 | @OndrejMottl assigned as reviewer | PR has @OndrejMottl as reviewer |
 | Agent has NOT merged the PR | Confirm the PR is still open |
@@ -56,15 +56,16 @@ Report each item as **PASS** or **FLAG**.
 | Correct capitalisation | "MEMELAND", "ERC", "UiT", "Eawag", "CUNI", "Oxford", "Salzburg" |
 | Consistent English | British or American English is acceptable; must be consistent within a single post |
 
-### 6. Rendered HTML
+### 6. Rendered HTML (preview in `_preview/`)
 
 | Check | Detail |
 |-------|--------|
-| HTML file exists and is non-empty | Expected output file(s) in `docs/` exist and are not empty |
-| News post appears in listing | `docs/en/Activities/activities.html` contains the new post title |
+| HTML file exists and is non-empty | Expected output file(s) in `_preview/<lang>/` exist and are not empty |
+| News post appears in listing | `_preview/en/Activities/activities.html` contains the new post title |
 | Images render | `<img>` src attributes in HTML resolve (no broken image references) |
 | No Quarto error banners | No `"Error:"` or `"Warning:"` banners visible in the rendered HTML body |
-| Language pages render | For multilingual updates: check that each updated language's HTML in `docs/<lang>/` contains the new text |
+| Language pages render | For multilingual updates: check that each updated language's HTML in `_preview/<lang>/` contains the new text |
+| Preview covers every changed language | A `_preview/<lang>/` render exists for every language whose source changed |
 
 ---
 

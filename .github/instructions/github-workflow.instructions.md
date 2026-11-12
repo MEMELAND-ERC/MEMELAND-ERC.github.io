@@ -58,30 +58,27 @@ _Requested by @[issue author's GitHub handle]_
 - **The agent must NEVER merge a PR**
 - Delete the branch after merge
 
-## docs/ merge conflicts
+## Generated output (`docs/`, `_preview/`)
 
-Conflicts in the `docs/` folder are expected and harmless — the site is fully re-rendered after every merge to `main`.
+PRs contain **source changes only**. `docs/` is rendered and committed by the `Re-render site after merge` workflow after every merge into `main`; `_preview/` is a local, git-ignored preview folder. Neither may appear in a PR.
 
-When a PR or rebase produces conflicts in `docs/`, **always prefer the branch's version** (i.e. keep the newly rendered output):
+If a branch contains `docs/` changes (for example from an older branch, or after a render without `--output-dir`), restore `docs/` from `main` and commit:
 
 ```bash
-# During a rebase or merge conflict
-git checkout --ours docs/
-git add docs/
+git fetch origin main
+git checkout origin/main -- docs/
+git commit -m "Remove generated docs/ from PR"
 ```
 
-> `--ours` keeps the current branch's files when rebasing onto main.
-> If using `git merge` instead of `git rebase`, swap `--ours` / `--theirs` accordingly — always keep the branch's rendered output.
+Because PRs no longer touch `docs/`, `docs/` merge conflicts should not occur. If one appears during a rebase, resolve it the same way: take `main`'s `docs/`.
 
-Note this in the PR description if it applied, e.g.:
-
-> _`docs/` conflicts resolved in favour of this branch; site will be re-rendered on merge._
+Do not put `[no-render]` in the merge commit of a content change; it stops the re-render workflow, so the site would not be updated.
 
 ## PR iteration (after review comments)
 
 1. Rebase onto main: `git rebase main`
-2. For `docs/` conflicts, resolve with: `git checkout --ours docs/` (see "docs/ merge conflicts" above)
-3. Apply requested fixes + re-render
+2. For `docs/` conflicts, take `main`'s version (see "Generated output" above)
+3. Apply requested fixes + preview render into `_preview/`
 4. Force-push: `git push --force-with-lease`
 5. Re-invoke `change-reviewer`
 6. Re-request review from @OndrejMottl

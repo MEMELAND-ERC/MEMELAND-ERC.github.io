@@ -1,15 +1,23 @@
 name: Re-render site after merge
 
-# Runs whenever a PR is merged into main.
-# Purpose: guarantees the published docs/ is always based on the final state
-# of main, regardless of the order in which PRs were merged.
+# Runs whenever something is pushed to main (normally a merged PR).
+# This is the ONLY place where docs/ (the published site) is generated and
+# committed. PRs change source files only and never commit docs/.
+# Renders with the exact Quarto version pinned in QUARTO_VERSION.
 # The commit produced by this workflow is tagged [no-render] so it does
-# not trigger another run of this workflow.
+# not trigger another run of this workflow. Do not use [no-render] when
+# merging content changes, or the site will not be updated.
 
 on:
   push:
     branches:
       - main
+
+# If several PRs are merged in quick succession, cancel the older run: the
+# newest run renders the latest main, which includes all of them.
+concurrency:
+  group: rerender-main
+  cancel-in-progress: true
 
 jobs:
   rerender:
@@ -25,12 +33,14 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
-      - name: Install Quarto
+      - name: Install pinned Quarto (QUARTO_VERSION)
         run: |
-          wget -q https://quarto.org/download/latest/quarto-linux-amd64.deb
-          sudo dpkg -i quarto-linux-amd64.deb
+          REQUIRED=$(tr -d '[:space:]' < QUARTO_VERSION)
+          wget -q "https://github.com/quarto-dev/quarto-cli/releases/download/v${REQUIRED}/quarto-${REQUIRED}-linux-amd64.deb"
+          sudo dpkg -i "quarto-${REQUIRED}-linux-amd64.deb"
           quarto --version
 
       - name: Render English
