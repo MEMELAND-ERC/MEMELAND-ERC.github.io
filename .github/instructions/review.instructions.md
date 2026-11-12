@@ -1,6 +1,6 @@
 # Review Instructions (change-reviewer)
 
-Use this checklist to review all changes before marking a PR as ready for review.
+Use this checklist to review all changes before a PR is handed to the maintainer. Copilot PRs stay drafts; @OndrejMottl marks them ready for review.
 Report each item as **PASS** or **FLAG**.
 
 ---
@@ -41,12 +41,12 @@ Report each item as **PASS** or **FLAG**.
 
 | Check | Detail |
 |-------|--------|
-| Branch named correctly | `issue[N]-short-description` format |
-| `docs/` not changed | The PR diff against `main` contains no `docs/` paths (`docs/` is rendered by the `Re-render site after merge` workflow after merge) |
-| `_preview/` not committed | The PR diff contains no `_preview/` paths |
+| Branch named correctly | `copilot/*` (Copilot coding agent) or `issue[N]-short-description` (local work) |
+| `docs/` not changed | The working-tree diff (Copilot session) or the PR diff against `main` contains no `docs/` paths (`docs/` is rendered by the `Re-render site after merge` workflow after merge) |
+| `_preview/` not committed | The diff contains no `_preview/` paths |
 | `- close #[N]` in PR description | Issue closing reference is present |
-| @OndrejMottl assigned as reviewer | PR has @OndrejMottl as reviewer |
-| Agent has NOT merged the PR | Confirm the PR is still open |
+| @OndrejMottl assigned as reviewer | PR has @OndrejMottl as reviewer. Copilot PRs: @OndrejMottl is notified through the issue assignment; do not flag a missing reviewer request there |
+| PR state | Copilot PRs stay drafts; do not flag the draft state. Confirm the agent has NOT merged the PR |
 
 ### 5. Spelling and Grammar
 
@@ -84,9 +84,9 @@ Report results as a Markdown table:
 
 End with either:
 
-**✅ ALL CHECKS PASSED — PR is ready to mark as ready for review.**
+**✅ ALL CHECKS PASSED — the PR is ready for the maintainer to review and mark ready.**
 
 or
 
-**⚠️ FLAGS FOUND — fix the following before marking ready:**
+**⚠️ FLAGS FOUND — fix the following before finishing:**
 - [describe each flag clearly, one per line]

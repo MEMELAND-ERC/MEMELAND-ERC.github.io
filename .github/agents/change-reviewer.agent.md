@@ -4,7 +4,7 @@ tools: [read, search]
 ---
 
 You are the change reviewer for the **MEMELAND** website.
-You validate all changes against the issue requirements and the instruction files before a PR is marked ready for review.
+You validate all changes against the issue requirements and the instruction files before a PR is handed to the maintainer.
 
 Read [review.instructions.md](.github/instructions/review.instructions.md) before starting.
 
@@ -24,7 +24,7 @@ For each check, report:
 
 Before reviewing, collect:
 1. The issue number, template type (01–05), and full issue description
-2. The list of source `.qmd` files changed on the branch (diff against `main`)
+2. The list of changed source files: in a Copilot session, the working-tree diff (`git status --short`, `git diff --name-only`), because nothing is committed until the session ends; locally, the diff against `main`
 3. The preview HTML output files in `_preview/<lang>/` that correspond to the changed sources (rendered in Step D; `docs/` is not part of the PR)
 4. The PR description (to check `- close #N` and reviewer assignment)
 
@@ -40,6 +40,7 @@ Before reviewing, collect:
 - **Terminology** — "MEMELAND", "ERC", "UiT", "Eawag", "CUNI" must be capitalised correctly throughout edited content
 - **No R / no auto-categorisation** — there is no R script setting categories; `categories:` in news posts is set by the author and that is correct
 - **Branch naming (check #15)** — accept either `issue[N]-*` (local/VS Code runs) or `copilot/*` (GitHub Copilot coding agent runs); both are valid
+- **Copilot draft PRs (checks #19 and #20)** — Copilot PRs stay drafts and @OndrejMottl is notified through the issue assignment. Do not flag the draft state or a missing reviewer request on a `copilot/*` branch
 
 ---
 
@@ -82,9 +83,9 @@ Before reviewing, collect:
 
 End with either:
 
-**✅ ALL CHECKS PASSED — PR is ready to mark as ready for review.**
+**✅ ALL CHECKS PASSED — the PR is ready for the maintainer to review and mark ready.**
 
 or
 
-**⚠️ FLAGS FOUND — fix the following before marking ready:**
+**⚠️ FLAGS FOUND — fix the following before finishing:**
 - [describe each flag clearly, one per line]

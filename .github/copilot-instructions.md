@@ -91,6 +91,7 @@ When assigned an issue, follow this sequence:
    - `- close #[issue number]`
    - `_Requested by @[issue author]_` footer
    - Tag @OndrejMottl as reviewer
+   - `<!-- copilot-implementation-attempted -->` after a non-empty implementation
 
 Before finishing, verify that `git status --short` and the staged/unstaged diff contain the intended changed files. Do not report a completed implementation with an empty diff. Do not run `git commit`, `git push`, or create a PR manually; GitHub's managed finalizer performs those operations. Keep the PR in draft for @OndrejMottl to mark ready.
 

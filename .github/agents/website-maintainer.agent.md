@@ -278,9 +278,13 @@ Provide a final summary in this format so Copilot can update the PR, filled in w
 
 ---
 _Requested by @[issue author's GitHub handle]_
+
+<!-- copilot-implementation-attempted -->
 ```
 
 List source files only; `docs/` and `_preview/` are never part of the PR.
+
+End the PR body with `<!-- copilot-implementation-attempted -->` whenever you made changes. The `Recover empty Copilot PRs` workflow uses it: if the PR still has no changed files after the session, it asks you once to re-implement on the same branch. Leave the marker out when you stopped on purpose without changes (for example, waiting for the submitter after Step A4).
 
 - Assign **@OndrejMottl** as reviewer.
 - Keep the PR as a **draft**. Copilot cloud agent cannot mark its own PR ready for review; @OndrejMottl does that after reviewing the result.
