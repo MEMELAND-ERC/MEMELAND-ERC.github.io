@@ -11,7 +11,7 @@ The website is **multilingual**: it is available in **English, German, French, C
 
 ## Submitting Content Requests via GitHub Issues
 
-The primary way to request website changes is through **GitHub Issues**. A GitHub Copilot agent will pick up each issue, implement the changes, and open a Pull Request for review by @OndrejMottl.
+The primary way to request website changes is through **GitHub Issues**. A GitHub Copilot agent will pick up each issue and implement the changes in a draft Pull Request for review by @OndrejMottl.
 
 Go to **[Issues → New issue](https://github.com/MEMELAND-ERC/MEMELAND-ERC.github.io/issues/new/choose)** and choose the template that fits your request:
 
@@ -26,7 +26,7 @@ Go to **[Issues → New issue](https://github.com/MEMELAND-ERC/MEMELAND-ERC.gith
 
 **No technical knowledge required.** Fill in the form, submit, and the agent will handle the rest. If information is missing, it will post a comment asking for clarification before making any changes.
 
-Once the agent opens a Pull Request, @OndrejMottl reviews and merges it. The site re-renders automatically after the merge.
+Once the agent has finished its draft Pull Request, @OndrejMottl reviews and merges it. The site re-renders automatically after the merge.
 
 ---
 
@@ -266,9 +266,10 @@ quarto render --profile german --output-dir _preview/de
 
 1. Submit a GitHub Issue using one of the templates.
 2. A readiness check comments on the issue if something is missing; once complete, the Copilot agent is assigned automatically.
-3. The agent creates a branch, implements the changes, checks them with a preview render, and opens a Pull Request with source changes only.
-4. @OndrejMottl reviews and merges.
-5. The site re-renders automatically after the merge and goes live a few minutes later.
+3. GitHub creates a `copilot/` branch and a draft Pull Request; the agent implements the changes there, checks them with a preview render, and GitHub commits the source changes when the session ends.
+4. If Copilot finishes but the PR still has no file changes, a scheduled watchdog asks Copilot once to retry, then alerts @OndrejMottl if the retry also fails.
+5. @OndrejMottl reviews, marks the draft ready, and merges.
+6. The site re-renders automatically after the merge and goes live a few minutes later.
 
 **Manual workflow (for maintainers):**
 

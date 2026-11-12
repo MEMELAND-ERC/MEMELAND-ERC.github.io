@@ -13,7 +13,7 @@ name: Assign issue to Copilot (manual)
 # It requires a Personal Access Token (PAT) stored as COPILOT_TRIGGER_PAT.
 # The built-in GITHUB_TOKEN cannot assign copilot-swe-agent[bot]; a real user
 # token from someone with a Copilot seat is required. The same secret is used
-# by copilot-readiness-check.yml.
+# by copilot-readiness-check.yml and copilot-empty-pr-watchdog.yml.
 #
 # How to create the PAT (classic token is simplest):
 #   1. Sign in as @OndrejMottl (must have an active Copilot seat)

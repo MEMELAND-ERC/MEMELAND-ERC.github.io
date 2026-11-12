@@ -16,8 +16,8 @@ const CUSTOM_INSTRUCTIONS = [
   'Implement the issue now; do not stop after writing a plan.',
   'Read all instructions in .github/ first, especially .github/agents/website-maintainer.agent.md.',
   'Work on the branch and draft PR provisioned by Copilot. Do not manually create a branch, commit, push, or open another PR.',
-  'Change source files only: preview renders go to _preview/, never docs/ (it is rebuilt automatically after merge).',
-  'Before finishing an implementation, verify that git status shows the intended changes.',
+  'Change source files only: render only into _preview/, never change docs/ (it is rebuilt automatically after merge).',
+  'Before finishing an implementation, verify that git status shows the intended changes and include <!-- copilot-implementation-attempted --> in the final PR summary.',
 ].join(' ');
 
 function labelNames(issue) {
@@ -59,7 +59,7 @@ async function assignCopilot({ github, context, core, issueNumber, force = false
     }
   }
 
-  await github.request('POST /repos/{owner}/{repo}/issues/{issue_number}/assignees', {
+  const response = await github.request('POST /repos/{owner}/{repo}/issues/{issue_number}/assignees', {
     owner,
     repo,
     issue_number: issueNumber,
@@ -72,9 +72,14 @@ async function assignCopilot({ github, context, core, issueNumber, force = false
       model: '',
     },
     headers: {
+      accept: 'application/vnd.github+json',
       'X-GitHub-Api-Version': '2022-11-28',
     },
   });
+
+  if (!isCopilotAssigned(response.data)) {
+    throw new Error(`GitHub accepted the request but did not assign Copilot to issue #${issueNumber}.`);
+  }
 
   core.notice(`Assigned issue #${issueNumber} to the Copilot coding agent.`);
   return 'assigned';

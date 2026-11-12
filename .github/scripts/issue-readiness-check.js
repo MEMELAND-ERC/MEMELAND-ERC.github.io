@@ -374,7 +374,7 @@ function statusCommentBody(result) {
       STATUS_MARKER,
       '✅ **Thank you! Your request has everything it needs.**',
       '',
-      'The website assistant (GitHub Copilot) will now start working on it and open a pull request for the website maintainer to review. The pull request will appear on this issue within a few minutes.',
+      'The website assistant (GitHub Copilot) will now start working on it in a draft pull request, which the website maintainer reviews when the work is done. The draft pull request will appear on this issue within a few minutes.',
     ].join('\n');
   }
   return [
