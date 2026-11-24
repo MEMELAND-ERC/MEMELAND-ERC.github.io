@@ -265,7 +265,7 @@ quarto render --profile german --output-dir _preview/de
 **Automated workflow (via GitHub Issues + Copilot agent):**
 
 1. Submit a GitHub Issue using one of the templates.
-2. A readiness check comments on the issue if something is missing; once complete, the Copilot agent is assigned automatically.
+2. A readiness check comments on the issue if something is missing; once complete, the Copilot agent is assigned automatically. The check runs again when the issue is edited or when the submitter replies in a comment. If a reply does not complete the issue text, the bot hands the issue to @OndrejMottl, who can start Copilot anyway by commenting `/assign-copilot`. Media requests always wait for this comment, so that @OndrejMottl can check the image rights first.
 3. GitHub creates a `copilot/` branch and a draft Pull Request; the agent implements the changes there, checks them with a preview render, and GitHub commits the source changes when the session ends.
 4. If Copilot finishes but the PR still has no file changes, a scheduled watchdog asks Copilot once to retry, then alerts @OndrejMottl if the retry also fails.
 5. @OndrejMottl reviews, marks the draft ready, and merges.

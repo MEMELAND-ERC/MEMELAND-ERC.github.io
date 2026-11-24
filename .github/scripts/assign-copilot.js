@@ -2,6 +2,7 @@
 //
 // Used by:
 //   - copilot-readiness-check.yml (automatic, after the issue passes the readiness check)
+//   - copilot-readiness-check.yml after a maintainer's `/assign-copilot` comment (`force: true`)
 //   - copilot-assign.yml (manual maintainer override, `force: true`)
 //
 // The `github` client must be authenticated with COPILOT_TRIGGER_PAT: the
@@ -15,6 +16,7 @@ const COPILOT_LOGINS = ['copilot', 'copilot-swe-agent', 'copilot-swe-agent[bot]'
 const CUSTOM_INSTRUCTIONS = [
   'Implement the issue now; do not stop after writing a plan.',
   'Read all instructions in .github/ first, especially .github/agents/website-maintainer.agent.md.',
+  'Read the issue comments as well as the issue text: the submitter or the maintainer may have added or corrected information there.',
   'Work on the branch and draft PR provisioned by Copilot. Do not manually create a branch, commit, push, or open another PR.',
   'Change source files only: render only into _preview/, never change docs/ (it is rebuilt automatically after merge).',
   'Before finishing an implementation, verify that git status shows the intended changes and include <!-- copilot-implementation-attempted --> in the final PR summary.',

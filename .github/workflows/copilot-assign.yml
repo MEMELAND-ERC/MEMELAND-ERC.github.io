@@ -9,6 +9,8 @@ name: Assign issue to Copilot (manual)
 #
 # Run it from the Actions tab ("Run workflow") or with:
 #   gh workflow run copilot-assign.yml -f issue_number=<N>
+# The quicker route is a comment on the issue that starts with `/assign-copilot`
+# (maintainers only; handled by copilot-readiness-check.yml).
 #
 # It requires a Personal Access Token (PAT) stored as COPILOT_TRIGGER_PAT.
 # The built-in GITHUB_TOKEN cannot assign copilot-swe-agent[bot]; a real user
