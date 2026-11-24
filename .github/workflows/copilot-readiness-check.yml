@@ -21,6 +21,11 @@ name: Copilot issue readiness check
 #     fails, the bot hands the issue to the maintainer with a new comment
 #     (which sends a notification) instead of stalling silently.
 #
+# Media requests are not started automatically: image rights cannot be
+# confirmed by a checkbox. A complete media request gets `🤖 ready-for-copilot`
+# and one comment asking the maintainer to check the images and reply
+# `/assign-copilot`.
+#
 # `⏸️ no-agent` opts an issue out. Maintainers can also start Copilot by hand
 # with the "Assign issue to Copilot (manual)" workflow (copilot-assign.yml).
 
@@ -56,7 +61,8 @@ jobs:
           script: |
             const run = require('./.github/scripts/issue-readiness-check.js');
             const result = await run({ github, context, core });
-            const assign = result.forceAssign || (result.ready && !result.optedOut && !result.closed);
+            const assign = result.forceAssign ||
+              (result.ready && !result.maintainerStart && !result.optedOut && !result.closed);
             core.setOutput('assign', String(assign));
             core.setOutput('force', String(Boolean(result.forceAssign)));
 

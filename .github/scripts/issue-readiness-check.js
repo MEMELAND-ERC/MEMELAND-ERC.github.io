@@ -1,3 +1,5 @@
+const { isCopilotAssigned } = require('./assign-copilot.js');
+
 const READY_LABEL = '🤖 ready-for-copilot';
 const NEEDS_INFO_LABEL = '❓ status:needs-info';
 const NO_AGENT_LABEL = '⏸️ no-agent';
@@ -7,6 +9,12 @@ const STATUS_MARKER = '<!-- memeland-readiness -->';
 // Hidden marker on the comment that hands an incomplete issue to the maintainer
 // after the submitter replied in a comment.
 const HANDOVER_MARKER = '<!-- memeland-readiness-handover -->';
+// Hidden marker on the one-off comment asking the maintainer to start Copilot
+// on a complete issue whose template needs a maintainer check first.
+const MAINTAINER_START_MARKER = '<!-- memeland-maintainer-start -->';
+// Templates whose complete issues still wait for a maintainer's
+// `/assign-copilot`: image rights cannot be confirmed by a checkbox.
+const MAINTAINER_START_TEMPLATES = ['media'];
 const MAINTAINER = '@OndrejMottl';
 // Repository permissions that count as maintainer (GitHub reports "maintain" as "write").
 const MAINTAINER_PERMISSIONS = ['admin', 'write'];
@@ -384,6 +392,14 @@ async function removeLabel(github, issue, label) {
 }
 
 function statusCommentBody(result) {
+  if (result.ready && result.maintainerStart) {
+    return [
+      STATUS_MARKER,
+      '✅ **Thank you! Your request has everything it needs.**',
+      '',
+      'Because it involves images, the website maintainer first checks that they can be published on the website, then starts the website assistant (GitHub Copilot). It works in a draft pull request, which the maintainer reviews when the work is done.',
+    ].join('\n');
+  }
   if (result.ready) {
     return [
       STATUS_MARKER,
@@ -404,6 +420,23 @@ function statusCommentBody(result) {
     '',
     'If anything is unclear, mention `@OndrejMottl` in a comment.',
   ].join('\n');
+}
+
+function maintainerStartCommentBody() {
+  return [
+    MAINTAINER_START_MARKER,
+    `${MAINTAINER}: this request is complete but waits for you. Please check that the images may be published, then reply \`/assign-copilot\` to start the website assistant, or reply to the submitter.`,
+  ].join('\n');
+}
+
+async function hasCommentWithMarker(github, issue, marker) {
+  const comments = await github.paginate(github.rest.issues.listComments, {
+    owner: issue.owner,
+    repo: issue.repo,
+    issue_number: issue.number,
+    per_page: 100,
+  });
+  return comments.some((comment) => (comment.body || '').startsWith(marker));
 }
 
 // Posted as a new comment (not an edit) so that the maintainer mention sends a
@@ -535,10 +568,17 @@ async function run({ github, context, core }) {
     return { ready: result.ready, forceAssign: false, template: result.template, optedOut: true, closed: false };
   }
 
+  // Complete issues of some templates wait for the maintainer's
+  // `/assign-copilot`, unless Copilot has already been started.
+  result.maintainerStart =
+    result.ready &&
+    MAINTAINER_START_TEMPLATES.includes(result.template) &&
+    !isCopilotAssigned(payloadIssue);
+
   if (result.ready) {
     await removeLabel(github, issue, NEEDS_INFO_LABEL);
     await addLabels(github, issue, [READY_LABEL]);
-    core.notice('Issue is ready for Copilot.');
+    core.notice(result.maintainerStart ? 'Issue is complete; waiting for the maintainer to start Copilot.' : 'Issue is ready for Copilot.');
   } else {
     await removeLabel(github, issue, READY_LABEL);
     await addLabels(github, issue, [NEEDS_INFO_LABEL]);
@@ -562,9 +602,27 @@ async function run({ github, context, core }) {
       });
       core.notice('Comment did not complete the issue; handed over to the maintainer.');
     }
+
+    // Ask the maintainer once; later edits only update the status comment.
+    if (result.maintainerStart && !(await hasCommentWithMarker(github, issue, MAINTAINER_START_MARKER))) {
+      await github.rest.issues.createComment({
+        owner: issue.owner,
+        repo: issue.repo,
+        issue_number: issue.number,
+        body: maintainerStartCommentBody(),
+      });
+      core.notice('Asked the maintainer to start Copilot.');
+    }
   }
 
-  return { ready: result.ready, forceAssign: false, template: result.template, optedOut: false, closed: false };
+  return {
+    ready: result.ready,
+    forceAssign: false,
+    maintainerStart: result.maintainerStart,
+    template: result.template,
+    optedOut: false,
+    closed: false,
+  };
 }
 
 module.exports = run;
