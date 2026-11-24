@@ -4,6 +4,17 @@ const NO_AGENT_LABEL = '⏸️ no-agent';
 
 // Hidden marker that identifies the single status comment this check maintains.
 const STATUS_MARKER = '<!-- memeland-readiness -->';
+// Hidden marker on the comment that hands an incomplete issue to the maintainer
+// after the submitter replied in a comment.
+const HANDOVER_MARKER = '<!-- memeland-readiness-handover -->';
+const MAINTAINER = '@OndrejMottl';
+// Repository permissions that count as maintainer (GitHub reports "maintain" as "write").
+const MAINTAINER_PERMISSIONS = ['admin', 'write'];
+// Maintainer command, at the start of a comment, that starts Copilot regardless of the check.
+const ASSIGN_COMMAND_RE = /^\s*\/assign-copilot\b/i;
+// An image counts wherever it appears in the "Image file or URL" box: a GitHub
+// attachment, a Markdown or HTML image, or a direct link to an image file.
+const IMAGE_RE = /!\[[^\]]*\]\([^)\s]+\)|<img\b[^>]*\bsrc=|https:\/\/github\.com\/user-attachments\/|https?:\/\/\S+\.(?:png|jpe?g|gif|webp|svg|tiff?)(?:[?#]\S*)?(?=\s|\)|$)/i;
 
 const TITLE_PREFIXES = {
   '[New news]:': 'news',
@@ -240,7 +251,11 @@ function validateMedia(sections, reasons) {
   const asset = unwrapCodeFence(sections['Image file or URL']);
   const assetMatch = asset.match(/^Image URL or attachment:\s*\n([\s\S]*?)\n\s*Where on the page should it appear:\s*\n([\s\S]*)$/i);
   const assetSource = normalize(assetMatch ? assetMatch[1] : asset);
-  if (!assetSource || isPlaceholderText(sections['Image file or URL'], ['Image URL or attachment:\n\nWhere on the page should it appear:'])) {
+  // Submitters often paste the image below "Where on the page should it
+  // appear:" instead of below "Image URL or attachment:", so accept an image
+  // anywhere in the box before falling back to the first sub-field.
+  const hasImage = IMAGE_RE.test(asset);
+  if (!hasImage && (!assetSource || isPlaceholderText(sections['Image file or URL'], ['Image URL or attachment:\n\nWhere on the page should it appear:']))) {
     reasons.push('Image file or URL must be provided.');
   }
 
@@ -385,8 +400,70 @@ function statusCommentBody(result) {
     '',
     'To do so, edit the issue (click **···** at the top right of the issue text, then **Edit**) and save. This check runs again automatically every time you save.',
     '',
+    'You can also reply in a comment. The check then runs again too, but it reads only the issue text; if something is still missing there, the website maintainer reads your reply and decides how to continue.',
+    '',
     'If anything is unclear, mention `@OndrejMottl` in a comment.',
   ].join('\n');
+}
+
+// Posted as a new comment (not an edit) so that the maintainer mention sends a
+// notification; GitHub does not notify for mentions added by editing.
+function handoverCommentBody(commenter) {
+  return [
+    HANDOVER_MARKER,
+    `Thank you for your reply, @${commenter}. The automatic check still cannot find everything it needs in the issue text (see the list in the comment above), so ${MAINTAINER} will read your reply and decide how to continue.`,
+    '',
+    `${MAINTAINER}: reply \`/assign-copilot\` to start the website assistant with the information in this thread, or ask for what is still missing.`,
+  ].join('\n');
+}
+
+async function hasMaintainerAccess(github, issue, login) {
+  try {
+    const { data } = await github.rest.repos.getCollaboratorPermissionLevel({
+      owner: issue.owner,
+      repo: issue.repo,
+      username: login,
+    });
+    return MAINTAINER_PERMISSIONS.includes(data.permission);
+  } catch (error) {
+    if (error.status === 404) return false;
+    throw error;
+  }
+}
+
+// Handles a new comment on an issue. Returns a final result when the comment
+// needs no readiness check, or null to continue with the normal check.
+async function handleComment({ github, context, core, issue, labels }) {
+  const comment = context.payload.comment;
+  const login = comment.user.login;
+  const maintainer = await hasMaintainerAccess(github, issue, login);
+
+  if (maintainer && ASSIGN_COMMAND_RE.test(comment.body || '')) {
+    await removeLabel(github, issue, NEEDS_INFO_LABEL);
+    await addLabels(github, issue, [READY_LABEL]);
+    await github.rest.reactions.createForIssueComment({
+      owner: issue.owner,
+      repo: issue.repo,
+      comment_id: comment.id,
+      content: 'rocket',
+    });
+    if (getTemplate(issue)) {
+      await upsertStatusComment(github, issue, statusCommentBody({ ready: true }));
+    }
+    core.notice(`/assign-copilot from ${login}; starting Copilot without the readiness check.`);
+    return { ready: true, forceAssign: true, optedOut: false, closed: false, template: getTemplate(issue) };
+  }
+
+  const skip = { ready: false, forceAssign: false, optedOut: false, closed: false, template: null };
+  if (maintainer) {
+    core.notice(`Comment from maintainer ${login} without a command; nothing to do.`);
+    return skip;
+  }
+  if (!labels.includes(NEEDS_INFO_LABEL)) {
+    core.notice('Issue is not waiting for information; ignoring the comment.');
+    return skip;
+  }
+  return null;
 }
 
 // Keep exactly one status comment per issue and edit it in place, so repeated
@@ -435,7 +512,13 @@ async function run({ github, context, core }) {
 
   if (payloadIssue.state === 'closed') {
     core.notice('Issue is closed; skipping readiness check.');
-    return { ready: false, template: null, optedOut: false, closed: true };
+    return { ready: false, forceAssign: false, template: null, optedOut: false, closed: true };
+  }
+
+  const isComment = context.eventName === 'issue_comment';
+  if (isComment) {
+    const handled = await handleComment({ github, context, core, issue, labels });
+    if (handled) return handled;
   }
 
   const result = evaluateIssue(issue);
@@ -449,7 +532,7 @@ async function run({ github, context, core }) {
   if (optedOut) {
     await removeLabel(github, issue, READY_LABEL);
     core.notice('Issue is opted out via ⏸️ no-agent; skipping readiness label updates.');
-    return { ready: result.ready, template: result.template, optedOut: true, closed: false };
+    return { ready: result.ready, forceAssign: false, template: result.template, optedOut: true, closed: false };
   }
 
   if (result.ready) {
@@ -467,12 +550,26 @@ async function run({ github, context, core }) {
   if (result.template) {
     const outcome = await upsertStatusComment(github, issue, statusCommentBody(result));
     core.notice(`Status comment: ${outcome}.`);
+
+    // The submitter answered in a comment, but the issue text is still
+    // incomplete: hand the issue to the maintainer instead of stalling.
+    if (isComment && !result.ready) {
+      await github.rest.issues.createComment({
+        owner: issue.owner,
+        repo: issue.repo,
+        issue_number: issue.number,
+        body: handoverCommentBody(context.payload.comment.user.login),
+      });
+      core.notice('Comment did not complete the issue; handed over to the maintainer.');
+    }
   }
 
-  return { ready: result.ready, template: result.template, optedOut: false, closed: false };
+  return { ready: result.ready, forceAssign: false, template: result.template, optedOut: false, closed: false };
 }
 
 module.exports = run;
 module.exports.evaluateIssue = evaluateIssue;
 module.exports.statusCommentBody = statusCommentBody;
+module.exports.handoverCommentBody = handoverCommentBody;
 module.exports.STATUS_MARKER = STATUS_MARKER;
+module.exports.HANDOVER_MARKER = HANDOVER_MARKER;

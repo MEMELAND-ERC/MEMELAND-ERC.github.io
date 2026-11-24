@@ -12,12 +12,23 @@ name: Copilot issue readiness check
 # 3. `report-failure`: comments on the issue if the assignment fails
 #    (for example an expired COPILOT_TRIGGER_PAT).
 #
-# `⏸️ no-agent` opts an issue out. Maintainers can start Copilot by hand with
-# the "Assign issue to Copilot (manual)" workflow (copilot-assign.yml).
+# New comments (from people, on issues only) also run the check:
+#   - A maintainer comment starting with `/assign-copilot` starts Copilot
+#     without the check (the issue thread is the agent's context).
+#   - Other maintainer comments are ignored.
+#   - A comment from anyone else on an issue labelled `❓ status:needs-info`
+#     re-runs the check. The check reads only the issue text, so if it still
+#     fails, the bot hands the issue to the maintainer with a new comment
+#     (which sends a notification) instead of stalling silently.
+#
+# `⏸️ no-agent` opts an issue out. Maintainers can also start Copilot by hand
+# with the "Assign issue to Copilot (manual)" workflow (copilot-assign.yml).
 
 on:
   issues:
     types: [opened, edited, reopened, labeled, unlabeled]
+  issue_comment:
+    types: [created]
 
 permissions:
   contents: read
@@ -25,6 +36,11 @@ permissions:
 
 jobs:
   readiness-check:
+    # Comments on pull requests and comments by bots (this workflow's own
+    # status comments, Copilot) must not run the check.
+    if: >-
+      github.event_name == 'issues' ||
+      (!github.event.issue.pull_request && github.event.comment.user.type != 'Bot')
     runs-on: ubuntu-latest
     concurrency:
       group: copilot-readiness-${{ github.event.issue.number }}
@@ -40,8 +56,9 @@ jobs:
           script: |
             const run = require('./.github/scripts/issue-readiness-check.js');
             const result = await run({ github, context, core });
-            const assign = result.ready && !result.optedOut && !result.closed;
+            const assign = result.forceAssign || (result.ready && !result.optedOut && !result.closed);
             core.setOutput('assign', String(assign));
+            core.setOutput('force', String(Boolean(result.forceAssign)));
 
       - name: Assign issue to Copilot coding agent
         id: assign
@@ -56,6 +73,7 @@ jobs:
               context,
               core,
               issueNumber: context.payload.issue.number,
+              force: '${{ steps.readiness.outputs.force }}' === 'true',
             });
 
       - name: Report assignment failure
